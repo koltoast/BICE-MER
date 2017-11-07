@@ -1,0 +1,26 @@
+﻿division_template = {
+
+	name = "Orde Wingate Militia"
+
+	regiments = {
+	infantry = { x = 0 y = 0 }
+	infantry = { x = 0 y = 1 }
+	infantry = { x = 0 y = 2 }
+	}
+	
+	support = {
+      	recon = { x = 0 y = 0 }
+	}
+
+	priority = 0
+}
+
+units = {
+
+	division = {
+		name = "Orde Wingate Forces"
+		location = 4206
+		division_template = "Orde Wingate Militia"
+		start_experience_factor = 0
+	}
+}

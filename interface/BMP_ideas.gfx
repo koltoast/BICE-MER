@@ -1,0 +1,22 @@
+spriteTypes = {
+
+
+
+	spriteType = {
+		name = "GFX_BMP_immigration"
+		texturefile = "gfx/interface/ideas/BMP_immigration.dds"
+	}
+	
+	
+	spriteType = {
+		name = "BMP_immigration"
+		texturefile = "gfx/interface/ideas/BMP_immigration.dds"
+	}
+	
+	spriteType = {
+		name = "idea_bmpimmigration"
+		texturefile = "gfx/interface/ideas/idea_bmpimmigration.dds"
+	}
+
+
+}

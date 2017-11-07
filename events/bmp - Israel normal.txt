@@ -1,0 +1,256 @@
+﻿###########################
+# Israel Events
+###########################
+
+add_namespace = israel
+
+#Militias join the army and give 500 political power to ISR and trigger arab leader claims 1
+country_event = {
+	id = israel.1
+	title = israel.1.t
+	desc = israel.1.d
+	picture = GFX_report_event_czech_soldiers_01
+
+	trigger = {
+		tag = ISR
+		date > 1936.1.1
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = israel.1.a
+		load_oob = "ISR_militias_join_the_army"
+		add_political_power = 500
+
+		SAU = {
+			country_event = { id = israel.2 hours = 1 }
+		}
+		
+		JOR = {
+			country_event = { id = israel.2 hours = 1 }
+		}
+
+		IRQ = {
+			country_event = { id = israel.2 hours = 1 }
+		}
+
+		EGY = {
+			country_event = { id = israel.2 hours = 1 }
+		}
+
+		PAL = {
+			country_event = { id = israel.2 hours = 1 }
+		}
+
+		SYR = {
+			country_event = { id = israel.2 hours = 1 }
+		}
+
+		LEB = {
+			country_event = { id = israel.2 hours = 1 }
+		}
+		
+		YEM = {
+			country_event = { id = israel.2 hours = 1 }
+		}
+		
+		OMA = {
+			country_event = { id = israel.2 hours = 1 }
+		}
+	}
+}
+
+#Give Claims to Arab Leaders 2
+country_event = {
+	id = israel.2
+	title = israel.2.t
+	desc = israel.2.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = israel.2.a
+
+		add_state_claim = 454
+		
+		add_opinion_modifier = {
+                        target = ISR
+                        modifier = protest_action_strong
+                    }
+		
+		create_wargoal = {
+			type = take_state_focus
+			target = ISR
+			generator = { 454 }
+		}
+	}
+}
+##########
+#Altalena Affair 3
+country_event = {
+	id = israel.3
+	title = israel.3.t
+	desc = israel.3.d
+	picture = GFX_report_altalena_affair
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ISR
+		date > 1936.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = israel.3.a
+		ai_chance = { factor = 100 }
+		load_oob = "ISR_irgun_joins_the_army"
+		add_political_power = -80
+	}
+	option = {
+		name = israel.3.b
+		ai_chance = { factor = 0 }
+		add_political_power = 150
+	}
+}
+	
+#Israel holds all of Palestine for now 4
+country_event = {
+	id = israel.4
+	title = israel.4.t
+	desc = israel.4.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	trigger = {
+		tag = ISR
+		date > 1936.1.1
+		OR = {
+					has_war_with = SAU
+					has_war_with = JOR
+					has_war_with = IRQ
+					has_war_with = EGY
+					has_war_with = PAL
+					has_war_with = SYR
+					has_war_with = LEB
+					has_war_with = YEM
+					has_war_with = OMA
+					}
+		ISR = { controls_state = 454 }
+		ISR = { controls_state = 974 }
+		ISR = { controls_state = 973 }
+	}
+
+	option = {
+		name = israel.4.a
+		ai_chance = { factor = 100 }
+		add_timed_idea = { idea = ISR_holds_all_of_palestine days = 71 }
+		remove_ideas = ISR_held_all_of_palestine_at_least_once
+		add_ideas = ISR_held_all_of_palestine_at_least_once
+	}
+}
+	
+#Israel no longer holds all of Palestine 5
+country_event = {
+	id = israel.5
+	title = israel.5.t
+	desc = israel.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	trigger = {
+		tag = ISR
+		date > 1936.1.1
+		OR = {
+					has_war_with = SAU
+					has_war_with = JOR
+					has_war_with = IRQ
+					has_war_with = EGY
+					has_war_with = PAL
+					has_war_with = SYR
+					has_war_with = LEB
+					has_war_with = YEM
+					has_war_with = OMA
+					}
+		NOT = {
+			AND = {
+			ISR = { controls_state = 454 }
+			ISR = { controls_state = 974 }
+			ISR = { controls_state = 973 }
+			}
+		}
+		has_idea = ISR_held_all_of_palestine_at_least_once
+	}
+
+	option = {
+		name = israel.5.a
+		ai_chance = { factor = 100 }
+		remove_ideas = ISR_holds_all_of_palestine
+		add_ideas = ISR_no_longer_holds_all_of_palestine
+	}
+}
+
+#Israel held all of Palestine for 71 days 6
+country_event = {
+	id = israel.6
+	title = israel.6.t
+	desc = israel.6.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	trigger = {
+		tag = ISR
+		date > 1936.1.1
+		OR = {
+					has_war_with = SAU
+					has_war_with = JOR
+					has_war_with = IRQ
+					has_war_with = EGY
+					has_war_with = PAL
+					has_war_with = SYR
+					has_war_with = LEB
+					has_war_with = YEM
+					has_war_with = OMA
+					}
+		ISR = { controls_state = 454 }
+		ISR = { controls_state = 974 }
+		ISR = { controls_state = 973 }
+		has_idea = ISR_held_all_of_palestine_at_least_once
+		NOT = { has_idea = ISR_holds_all_of_palestine }
+		NOT = { has_idea = ISR_no_longer_holds_all_of_palestine }
+	}
+
+	option = {
+		name = israel.6.a
+		ai_chance = { factor = 100 }
+		ISR = {
+			transfer_state = 454
+			}
+		EGY = {
+			transfer_state = 973
+			}
+		JOR = {
+			transfer_state = 974
+			}
+		SAU = { white_peace = ISR }
+		JOR = { white_peace = ISR }
+		IRQ = { white_peace = ISR }
+		EGY = { white_peace = ISR }
+		PAL = { white_peace = ISR }
+		SYR = { white_peace = ISR }
+		LEB = { white_peace = ISR }
+		YEM = { white_peace = ISR }
+		OMA = { white_peace = ISR }
+		ISR = { white_peace = SAU }
+		ISR = { white_peace = JOR }
+		ISR = { white_peace = IRQ }
+		ISR = { white_peace = EGY }
+		ISR = { white_peace = PAL }
+		ISR = { white_peace = SYR }
+		ISR = { white_peace = LEB }
+		ISR = { white_peace = YEM }
+		ISR = { white_peace = OMA }
+	}
+}

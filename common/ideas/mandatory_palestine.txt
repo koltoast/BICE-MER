@@ -1,0 +1,355 @@
+ideas = {
+
+	country = {
+
+		BMP_jewish_militias1 = {
+			
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		BMP_fortify_the_mandate = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
+			}
+		}
+		
+		BMP_jewish_immigration {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = idea_bmpimmigration
+
+			modifier = {
+				monthly_population = 1.5
+				unity_factor = -0.05
+			}
+		}
+
+		BMP_limited_jewish_immigration {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				monthly_population = 0.1
+			}
+		}
+		
+		BMP_arab_revolt {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				unity_factor = -0.15
+			}
+		}
+
+		BMP_encourage_refugee_smuggling {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				monthly_population = 0.15
+			}
+		}
+
+
+##########
+	BMP_death_of_izz_ad-din_al-qassam {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				unity_factor = -0.05
+			}
+	}
+
+	BMP_arab_general_strikes = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory =  -0.4
+				unity_factor = -0.1
+			}
+		}
+		
+	BMP_peel_commission = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				unity_factor = -0.05
+			}
+		}
+
+##########
+}
+
+	political_advisor = {
+
+		BMP_amin_al-husseini = {
+			
+			picture = generic_army_arab_2
+			
+			allowed = {
+				original_tag = BMP
+			}
+			
+			traits = { popular_figurehead }
+		}
+
+
+		BMP_pinhas_rutenberg = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = BMP
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+	
+
+		BMP_walter_guinness = {
+			
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = BMP
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		BMP_ernest_bevin = {
+			
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = BMP
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+	}
+
+	army_chief = {
+
+		BMP_orde_wingate = {
+			
+			picture = generic_army_arab_1
+			
+			allowed = {
+				original_tag = BMP
+			}
+			
+
+			
+			traits = { army_chief_drill_3 }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	navy_chief = {
+
+
+	}
+
+	high_command = {
+
+		BMP_evelyn_barker = {
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = BMP
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		BMP_charles_tegart = {
+			
+			picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = BMP
+			}
+			
+
+			
+			traits = { army_entrenchment_2 }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		BMP_John_Rymer-Jones = {
+			
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = BMP
+			}
+			
+
+			
+			traits = { army_artillery_1 }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	naval_manufacturer = {
+		
+		designer = yes
+
+
+			BMP_coastal_defence_manufacturer = {
+			
+				picture = generic_naval_manufacturer_1
+				
+				allowed = {
+					original_tag = BMP
+				}
+			
+				research_bonus = {
+					naval_equipment = 0.10
+				}
+			
+				traits = { coastal_defence_naval_manufacturer }
+			
+				equipment_bonus = {
+				
+			}
+		}
+
+	}
+
+	industrial_concern = {
+					
+		BMP_palestine_railways = {
+			
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				original_tag = BMP
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+		
+		BMP_palestine_electric_company = {
+			
+			picture = generic_electronics_concern_1
+			
+			allowed = {
+				original_tag = BMP
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+	}
+	theorist = {
+		BMP_orde_wingate1 = {
+			
+			picture = generic_army_arab_1
+
+			allowed = {
+				original_tag = BMP
+			}
+			
+			cost = 150
+			
+			traits = { military_theorist }
+		}
+	}
+}

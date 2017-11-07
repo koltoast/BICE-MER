@@ -1,0 +1,10 @@
+#reload countrycolors
+
+BMP = {
+	color = rgb { 188 0 37 }
+	color_ui = rgb { 188 0 37 }
+}
+ISR = {
+	color = rgb { 0 0 190 }
+	color_ui = rgb { 0 0 190 }
+}

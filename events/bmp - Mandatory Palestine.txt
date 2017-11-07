@@ -1,0 +1,442 @@
+﻿###########################
+# Mandatory Palestine Events
+###########################
+
+add_namespace = mandate
+
+#Send a Message 1
+country_event = {
+	id = mandate.1
+	title = mandate.1.t
+	desc = mandate.1.d
+	picture = GFX_report_king_david_hotel
+
+	is_triggered_only = yes
+
+	option = { 
+		name = mandate.1.a
+		news_event = { hours = 2 id = news.5000 }
+	}
+}
+
+#Demand Independence 2
+country_event = {
+	id = mandate.2
+	title = mandate.2.t
+	desc = mandate.2.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #demand palistine
+		name = mandate.2.a
+
+		ai_chance = { factor = 100 }
+			
+		ENG = {
+			country_event = { id = britain.500 hours = 1 }
+			}
+	}
+		
+	option = { #demand Palestine and Jordan
+		
+		name = mandate.2.b
+		
+		ai_chance = { factor = 0 }
+
+			ENG = {
+			country_event = { id = britain.501 hours = 1 }
+			}
+	}
+}
+
+#Demand Independence Refused (just Palestine) 3
+country_event = {
+	id = mandate.3
+	title = mandate.3.t
+	desc = mandate.3.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = mandate.3.a
+		news_event = { id = news.5001}
+		454 = {
+				add_core_of = ISR
+				}
+		ISR = {
+				transfer_state = 454
+				country_event = { id = israel.1 hours = 1 }
+				change_tag_from = BMP
+				}
+		ENG = {
+			annex_country = { target = BMP transfer_troops = no }
+			declare_war_on = {
+				target = ISR
+				type = take_state
+				generator = { 454 }
+			}
+		}
+	}
+}
+
+#Demand Independence Refused (Palestine and Jordan) 4
+country_event = {
+	id = mandate.4
+	title = mandate.4.t
+	desc = mandate.4.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = mandate.4.a
+		news_event = { id = news.5001}
+
+		454 = {
+			add_core_of = ISR
+			}
+		ISR = {
+			transfer_state = 454
+			add_state_claim = 455
+			country_event = { id = israel.1 hours = 1 }
+			change_tag_from = BMP
+			}
+		
+		ENG = {
+			annex_country = { target = BMP transfer_troops = no }
+			declare_war_on = {
+				target = ISR
+				type = take_state
+				generator = { 454 455 }
+			}
+		}
+	}
+}
+
+#Negotiate for Independence 5
+country_event = {
+	id = mandate.5
+	title = mandate.5.t
+	desc = mandate.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #Palistine and stay in Allies
+		name = mandate.5.a
+		ai_chance = { factor = 20 }
+		ENG = {
+			country_event = { id = britain.502 hours = 1 }
+			}
+		}
+	option = { #Palistine, Jordan, and Allies
+		name = mandate.5.b
+		ai_chance = { factor = 10 }
+		ENG = {
+			country_event = { id = britain.503 hours = 1 }
+			}
+		}
+	option = { #Just Palistine
+		name = mandate.5.c
+		ai_chance = { factor = 50 }
+		ENG = {
+			country_event = { id = britain.504 hours = 1 }
+			}
+		}
+	option = { #Palistine and Jordan. No Allies
+		name = mandate.5.e
+		ai_chance = { factor = 20 }
+		ENG = {
+			country_event = { id = britain.505 hours = 1 }
+			}
+		}
+	}
+
+#Britain refuses the negotiated terms 6
+country_event = {
+	id = mandate.6
+	title = mandate.6.t
+	desc = mandate.6.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #go to war
+		name = mandate.6.a
+		news_event = { id = news.5001}
+		454 = {
+			add_core_of = ISR
+			}
+		455 = {
+			add_core_of = ISR
+			}
+		ISR = {
+			transfer_state = 454
+			transfer_state = 455
+			add_ideas = ISR_unexpected_war
+			country_event = { id = israel.1 hours = 1 }
+			change_tag_from = BMP
+			}
+
+		ENG = {
+			annex_country = { target = BMP transfer_troops = no }
+			declare_war_on = {
+				target = ISR
+				type = take_state
+				generator = { 454 455 }
+			}
+		}
+	}
+	option = { #accept the situation
+		name = mandate.6.b
+	}
+}
+
+#Switch High Commisioners from Wauchope to MacMichael 7
+country_event = {
+	id = mandate.7
+	title = mandate.7.t
+	desc = mandate.7.d
+	picture = GFX_report_event_journalists_speech
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BMP
+		date > 1938.3.1 #1936.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = mandate.7.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Harold Alfred MacMichael"
+			desc = ""
+			picture = "Portrait_Harold_MacMichael.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+	}
+}
+
+#Switch High Commisioners from MacMichael to Gort 8
+country_event = {
+	id = mandate.8
+	title = mandate.8.t
+	desc = mandate.8.d
+	picture = GFX_report_event_journalists_speech
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BMP
+		date > 1944.11.1 #1936.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = mandate.8.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "The Viscount Gort"
+			desc = ""
+			picture = "Portrait_The_Viscount_Gort.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+	}
+}
+
+#Switch High Commisioners from Gort to Cunningham 9
+country_event = {
+	id = mandate.9
+	title = mandate.9.t
+	desc = mandate.9.d
+	picture = GFX_report_event_journalists_speech
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BMP
+		date > 1945.11.21 #1936.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = mandate.9.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Alan Cunningham"
+			desc = ""
+			picture = "Portrait_Alan_Cunningham.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+	}
+}
+
+##########
+
+#Begins the General Stirke. Triggers in april 10
+country_event = {
+	id = mandate.10
+	title = mandate.10.t
+	desc = mandate.10.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BMP
+		date > 1936.4.1 #1936.1.1 
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = { 
+		name = mandate.10.a
+		add_ideas = BMP_arab_general_strikes
+	}
+}
+
+#Begins the Peel Commission 11
+country_event = {
+	id = mandate.11
+	title = mandate.11.t
+	desc = mandate.11.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BMP
+		date > 1936.10.1 #1936.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = { 
+		name = mandate.11.a
+		remove_ideas = BMP_arab_general_strikes
+		add_ideas = BMP_peel_commission
+	}
+}
+
+#Ends the Peel Commission, restoring General Strike and adding Arab Revolt 12
+country_event = {
+	id = mandate.12
+	title = mandate.12.t
+	desc = mandate.12.d
+	picture = GFX_report_arab_revolt
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BMP
+		date > 1937.10.1 #1936.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = { 
+		name = mandate.12.a
+		remove_ideas = BMP_peel_commission
+		add_ideas = BMP_arab_revolt
+		add_ideas = BMP_arab_general_strikes
+	}
+}
+
+#1939 White Paper (Triggered by Limit Jewish Immigration) 13
+country_event = {
+	id = mandate.13
+	title = mandate.13.t
+	desc = mandate.13.d
+	picture = GFX_report_white_paper
+
+	is_triggered_only = yes
+
+	option = { 
+		name = mandate.13.a
+		remove_ideas = BMP_jewish_immigration
+		add_ideas = BMP_limited_jewish_immigration
+		add_political_power = 150
+	}
+}
+
+#Orde Wingate Special Night Squads 14
+country_event = {
+	id = mandate.14
+	title = mandate.14.t
+	desc = mandate.14.d
+	picture = GFX_report_event_british_inspect_troops
+
+	is_triggered_only = yes
+
+	option = { 
+		name = mandate.14.a
+		army_experience = 25
+		add_tech_bonus = {
+				name = special_night_squads
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = night_vision
+		}
+	}
+	option = { 
+		name = mandate.14.b
+		load_oob = "BMP_orde_wingate"
+	}
+}
+
+#End of Arab Revolt (Triggered by "Put down the Arab Revolt" Focus) 15
+country_event = {
+	id = mandate.15
+	title = mandate.15.t
+	desc = mandate.15.d
+	picture = GFX_report_arab_revolt
+
+	is_triggered_only = yes
+
+	option = { 
+		name = mandate.15.a
+		if = {
+			limit = { has_idea = BMP_arab_revolt }
+			remove_ideas = BMP_arab_revolt
+		}
+
+		if = {
+			limit = { has_idea = BMP_death_of_izz_ad-din_al-qassam }
+			remove_ideas = BMP_death_of_izz_ad-din_al-qassam
+		}
+
+		if = {
+			limit = { has_idea = BMP_arab_general_strikes }
+			remove_ideas = BMP_arab_general_strikes
+		}		
+	}
+}

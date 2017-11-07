@@ -1,0 +1,42 @@
+spriteTypes = {
+
+	
+
+	#### END TFV EVENTS ####
+
+#####
+
+spriteType = {
+		name = "GFX_report_event_mandate_bombing_of_the_king_david_hotel"
+		texturefile = "gfx/event_pictures/report_event_mandate_bombing_of_the_king_david_hotel.dds"
+	}
+
+spriteType = {
+		name = "GFX_news_event_bombing_of_the_king_david_hotel"
+		texturefile = "gfx/event_pictures/news_event_bombing_of_the_king_david_hotel.dds"
+	}
+spriteType = {
+		name = "GFX_news_event_israeli_soldiers"
+		texturefile = "gfx/event_pictures/news_event_israeli_soldiers.dds"
+	}
+spriteType = {
+		name = "GFX_report_king_david_hotel"
+		texturefile = "gfx/event_pictures/report_king_david_hotel.dds"
+	}
+
+##########
+spriteType = {
+		name = "GFX_report_altalena_affair"
+		texturefile = "gfx/event_pictures/report_altalena_affair.dds"
+	}
+
+spriteType = {
+		name = "GFX_report_arab_revolt"
+		texturefile = "gfx/event_pictures/report_arab_revolt.dds"
+	}
+
+spriteType = {
+		name = "GFX_report_white_paper"
+		texturefile = "gfx/event_pictures/report_white_paper.dds"
+	}
+}

@@ -1,0 +1,1 @@
+BMP = "countries/Mandatory Palestine.txt"
