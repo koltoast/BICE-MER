@@ -1,0 +1,41 @@
+﻿division_template = {
+	name = "Assyrian Levies"			# Binary Infantry Corps
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "1 Assyrian Levies"
+		location = 2097
+		division_template = "Assyrian Levies"
+	}
+	division = {
+		name = "2 Assyrian Levies"
+		location = 2097
+		division_template = "Assyrian Levies"
+	}
+	division = {
+		name = "3 Assyrian Levies"
+		location = 2097
+		division_template = "Assyrian Levies"
+	}
+	division = {
+		name = "4 Assyrian Levies"
+		location = 2097
+		division_template = "Assyrian Levies"
+	}
+	division = {
+		name = "5 Assyrian Levies"
+		location = 2097
+		division_template = "Assyrian Levies"
+	}
+}

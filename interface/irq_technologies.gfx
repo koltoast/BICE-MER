@@ -1,0 +1,77 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_IRQ_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/IRQ_basic_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRQ_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/IRQ_basic_medium_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/IRQ_improved_heavy_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/IRQ_main_battle_tank.dds"
+
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_CAS1_medium"
+		texturefile = "gfx/interface/technologies/IRQ_CAS1.dds"
+
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_CAS2_medium"
+		texturefile = "gfx/interface/technologies/IRQ_CAS2.dds"
+
+	}
+
+	SpriteType = {
+		name = "GFX_IRQ_CAS3_medium"
+		texturefile = "gfx/interface/technologies/IRQ_CAS3.dds"
+
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/IRQ_early_fighter.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_fighter3_medium"
+		texturefile = "gfx/interface/technologies/IRQ_fighter3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/IRQ_heavy_fighter2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/IRQ_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/IRQ_strategic_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/IRQ_jet_tactical_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/IRQ_jet_tactical_bomber2.dds"
+
+	}
+}

@@ -1,0 +1,46 @@
+﻿l_english:
+ 
+ ##### Fighters #####
+ 
+ IRQ_fighter_equipment_0:0 "Gloster Gladiator Mk.I"
+ IRQ_fighter_equipment_0_short:0 "Gladiator"
+ IRQ_fighter_equipment_0_desc:0 "Version powered by a single 840 hp (627 kW) Bristol Mercury IX air-cooled radial piston engine. The aircraft was designated J 8 in Swedish Air Force service. Delivered 1937–38, 378 built."
+ IRQ_fighter_equipment_3:0 "Hawker Fury I'"
+ IRQ_fighter_equipment_3_short:0 "Fury I"
+ IRQ_fighter_equipmente_3_desc:0 "Single-seat land-based fighter version for the Iraqi Air Force. Unofficially known as the "Baghdad Fury", 55 built."
+
+ ##### Heavy Fighters #####
+ 
+ IRQ_heavy_fighter_equipment_2:0 "Messerschmitt Bf 110 D-3"
+ IRQ_heavy_fighter_equipment_2_short:0 "Bf 110 D-3"
+ IRQ_heavy_fighter_equipment_2_desc:0 "Long-range Zerstörer, lengthened tail for rescue dinghy. Either two wing-mounted 300 L (80 US gal) or 900 L (240 US gal) drop tanks could be fitted. Optional fitting of ETC 500 bombracks (impossible with 900 L drop tanks)."
+ 
+ ##### Strategic Bomber #####
+ 
+ IRQ_strat_bomber_equipment_2:0 "Savoia-Marchetti SM.79B"
+ IRQ_strat_bomber_equipment_2_short:0 "SM.79B"
+ IRQ_strat_bomber_equipment_2_desc:0 "Twin-engine export version powered by the less reliable Fiat A.80 engines and with a glazed nose for improved bomb-aiming. More economical but slower (420 km/h; 260 mph) and 21.45 minutes to 5,000 m (16,000 ft) than the standard SM.79, but weighing 6,600–10,100 kg (14,600–22,300 lb), around 500 kg (1,100 lb) less than the basic SM.79), was longer (16.22 m; 53.2 ft), and had the same armament. Iraq bought five, but this version achieved little success in Italy."
+
+ ##### Tactical Bomber #####
+ 
+ IRQ_tac_bomber_equipment_2:0 "Heinkel He.111H-6s"
+ IRQ_tac_bomber_equipment_2_short:0 "Heinkel He.111H-6s"
+ IRQ_tac_bomber_equipmente_2_desc:0 "Torpedo bomber, could carry two LT F5b torpedoes externally, powered by Jumo 211F-1 engines, had six MG 15s and one MG FF cannon in forward gondola."
+ IRQ_jet_tac_bomber_equipment_1:0 "De Havilland Vampire FB.52/FB.6"
+ IRQ_jet_tac_bomber_equipment_1_short:0 "Vampire"
+ IRQ_jet_tac_bomber_equipment_1_desc:0 "Export version of Mk 6, 101 built; 36 exported to Norway and in use from 1949 to 1957"
+ IRQ_jet_tac_bomber_equipment_2:0 "De Havilland Venom FB.50"
+ IRQ_jet_tac_bomber_equipment_2_short:0 "Venom"
+ IRQ_jet_tac_bomber_equipment_2_desc:0 "Export version used by Iraq and Switzerland in the 1950s; 15 Built."
+ 
+ ###### CAS #####
+ 
+ IRQ_CAS_equipment_1:0 "Hawker Audax-Nisr'"
+ IRQ_CAS_equipment_1_short:0 "Audax-Nisr"
+ IRQ_CAS_equipment_1_desc:0 "was the first aircraft Iraqi air force capable of conducting combat missions and were the most numerous aircrft in the first period of the establishment of the Royal Iraqi Air Force for the period from 1931 until 1941"
+ IRQ_CAS_equipment_2:0 "Breda BA.65/A.80"
+ IRQ_CAS_equipment_2_short:0 "BA.65/A.80"
+ IRQ_CAS_equipment_2_desc:0 "The Breda Ba.65 was an Italian all-metal single-engine, low-wing monoplane used by Aviazione Legionaria during the Spanish Civil War and Regia Aeronautica in the first part of World War II. It was the only Italian ground-attack aircraft that saw active service in this role. It saw service almost exclusively on the North African front. In addition to more than 150 aircraft operated by the Italian forces, a total of 55 were exported and used by the air forces of Iraq, Chile and Portugal."
+ IRQ_CAS_equipment_3:0 "Northrop A-17/8A-4"
+ IRQ_CAS_equipment_3_short:0 "A-17/8A-4"
+ IRQ_CAS_equipment_3_desc:0 "Iraq purchased 15 Model 8A-4s, in 1940. They were destroyed in the Anglo-Iraqi War in 1941."

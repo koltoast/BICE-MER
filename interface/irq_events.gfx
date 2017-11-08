@@ -1,0 +1,25 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_country_event_king_ghazi"
+		texturefile = "gfx/event_pictures/king.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_ipc_oil"
+		texturefile = "gfx/event_pictures/ipc_oil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_assyrians"
+		texturefile = "gfx/event_pictures/assyrians.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_country_event_bakr_sidqi"
+		texturefile = "gfx/event_pictures/bakr_sidqi.dds"
+	}
+}
+
+
+

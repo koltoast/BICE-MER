@@ -1,0 +1,23 @@
+﻿l_english:
+ 
+ ##### Tanks #####
+ 
+ IRQ_light_tank_equipment_1:0 "Carro Veloce L.35"
+ IRQ_light_tank_equipment_1_short:0 "L.35"
+ IRQ_light_tank_equipment_1_desc:0 "The Carro Veloce CV35 II or L.35 was a tankette originally built in 1936 and used by the Italian Army before and during World War II. The CV-33 carried a two-man crew protected by 12 mm of welded armour and was armed with a single 6.5 mm machine gun."
+ IRQ_medium_tank_equipment_1:0 "T-34/85M"
+ IRQ_medium_tank_equipment_1_short: "T-34/85M"
+ IRQ_medium_tank_equipment_1_desc:0 "T-34 with 85mm ZIS Gun"
+ IRQ_heavy_tank_equipment_2:0 "ISU-152"
+ IRQ_heavy_tank_equipment_2_short:0 "ISU-152"
+ IRQ_heavy_tank_equipment_2_desc:0 "The ISU-152 was a Soviet Heavy Assault Gun developed and used during World War II."
+ IRQ_modern_tank_equipment_1:0 "T-54/55"
+ IRQ_modern_tank_equipment_1_short:0 "T-54/55"
+ IRQ_modern_tank_equipment_1_desc:0 "The T-54 and T-55 tanks are a series of Soviet main battle tanks introduced just as the Second World War ended. The first T-54 prototype appeared in March of 1945 and entered full production in 1947."
+ 
+ ##### Equipment #####
+ 
+ IRQ_infantry_equipment_0:0 "Rifle No.1 MkIII"
+ IRQ_infantry_equipment_0_short:0 "Rifle No.1 MkIII"
+ IRQ_infantry_equipment_1:0 "Rifle No.4 MkI"
+ IRQ_infantry_equipment_1_short:0 "Rifle No.4 MkI"

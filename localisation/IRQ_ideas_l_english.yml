@@ -1,0 +1,32 @@
+﻿l_english:
+ ###Ideas###
+ IRQ_iraqi_navy:0 "River Dockyards"
+ IRQ_iraqi_navy_desc:0 "Our small coast does not allow us to build dockyards, our only option is to build dockyards on the Tigris and Euphrates Rivers."
+ IRQ_nationalism:0 "Free Iraq Movement"
+ IRQ_nationalism_desc:0 "The people seek freedom they are tired of imperialist nations meddling in our affairs, invading our sacred lands and usurping our natural resources."
+ IRQ_simele:0 "Simele Massacre"
+ IRQ_simele_desc:0 "The Simele massacre was a massacre committed by the armed forces of the Kingdom of Iraq led by Bakr Sidqi during a campaign systematically targeting the Assyrians of northern Iraq in August 1933. The term is used to describe not only the massacre in Simele, but also the killing spree that took place among 63 Assyrian villages in the Dohuk and Mosul districts that led to the deaths of between 5,000 and 6,000 Assyrians."
+ IRQ_revolt:0 "Shia Revolts"
+ IRQ_revolt_desc:0 "1935 Rumaytha and Diwaniyya revolt or the 1935–1936 Iraqi Shia revolts consisted of a series of Shia tribal uprisings in the mid-Euphrates region against the Sunni dominated authority of the Kingdom of Iraq. In each revolt, the response of the Iraqi government was to use military force to crush the rebellions with little mercy."
+
+ ###Ministers###
+ 
+ IRQ_ali_abn_hussein:0 "Ali Abn Hussein"
+ IRQ_nuri_as_said:0 "Nuri as Said"
+ IRQ_amir_al_illah:0 "Amir al Illah"
+ IRQ_rashid_ali_al_gaylani:0 "Rashid Ali al-Gaylani"
+ IRQ_fawzi_alq_awuqji:0 "Fawzi al-Qawuqji"
+ IRQ_abd_al_karim_qasim:0 "Abdul Karim Kassem"
+ IRQ_amin_al_husseini:0 "Amin al-Husayni"
+ IRQ_khaled_al_dalabeeh:0 "Khaled al Dalabeeh"
+ IRQ_abdullah_al-tell:0 "Abdullah al-Tell"
+ IRQ_mahmud_salman:0 "Mahmud Salman"
+ IRQ_jamil_al_midfai:0 "Jamil al Midfai"
+ IRQ_hamdi_al_pachachi:0 "Hamdi al Pachachi"
+ IRQ_ali_mahmud_al_shaykh:0 "Ali Mahmud al Shaykh"
+ IRQ_fahmi_said:0 "Fahmi Sa'id"
+ IRQ_bakr_sidqi:0 "Bakr Sidqi"
+ IRQ_taha_al_ahmani:0 "Taha al Ahmani"
+ IRQ_mustafa_al_quidsi:0 "Mustafa al-Qudsi"
+ IRQ_iskandar_al-shami:0 "Iskandar al-Shami"
+ IRQ_ali_ben_jawad:0 "Ali ben Jawad"

@@ -1,0 +1,9 @@
+spriteTypes = {	
+
+	#### Iraq goals Icons
+
+	SpriteType = {
+	name = "GFX_IRQ_air"
+	texturefile = "gfx/interface/goals/IRQ_air.dds"			
+	}	
+}
