@@ -1,3 +1,7 @@
+####################################
+# MANDATORY PALESTINE NATIONAL FOCUS TREE
+#Written by: TragicNumberOne
+###################################
 focus_tree = {
 	id = BMP_mandatory_palestine_focus
 
