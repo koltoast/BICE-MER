@@ -2,6 +2,8 @@
 
 set_research_slots = 3
 
+country_event = bmpisrael.1
+
 # Starting tech
 set_technology = {
 	BICE_sub_balance = 1

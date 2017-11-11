@@ -21,7 +21,7 @@ country_event = {
 			}
 		ISR = {
 			transfer_state = 454
-			country_event = { id = israel.1 hours = 1 }
+			country_event = { id = bmpisrael.1 hours = 1 }
 			change_tag_from = BMP
 			}
 	
@@ -61,7 +61,7 @@ country_event = {
 		ISR = {
 			transfer_state = 454
 			transfer_state = 455
-			country_event = { id = israel.1 hours = 1 }
+			country_event = { id = bmpisrael.1 hours = 1 }
 			change_tag_from = BMP
 			}
 	
@@ -97,7 +97,7 @@ country_event = {
 			
 		ISR = {
 			transfer_state = 454
-			country_event = { id = israel.1 hours = 1 }
+			country_event = { id = bmpisrael.1 hours = 1 }
 			change_tag_from = BMP
 			}
 		
@@ -144,7 +144,7 @@ country_event = {
 		ISR = {
 			transfer_state = 454
 			transfer_state = 455
-			country_event = { id = israel.1 hours = 1 }
+			country_event = { id = bmpisrael.1 hours = 1 }
 			change_tag_from = BMP
 			}
 		ENG = {
@@ -185,7 +185,7 @@ country_event = {
 			
 		ISR = {
 			transfer_state = 454
-			country_event = { id = israel.1 hours = 1 }
+			country_event = { id = bmpisrael.1 hours = 1 }
 			change_tag_from = BMP
 			}
 
@@ -228,7 +228,7 @@ country_event = {
 		ISR = {
 			transfer_state = 454
 			transfer_state = 455
-			country_event = { id = israel.1 hours = 1 }
+			country_event = { id = bmpisrael.1 hours = 1 }
 			change_tag_from = BMP
 			}
 

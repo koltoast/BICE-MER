@@ -2,13 +2,13 @@
 # Israel Events
 ###########################
 
-add_namespace = israel
+add_namespace = bmpisrael
 
 #Militias join the army and give 500 political power to ISR and trigger arab leader claims 1
 country_event = {
-	id = israel.1
-	title = israel.1.t
-	desc = israel.1.d
+	id = bmpisrael.1
+	title = bmpisrael.1.t
+	desc = bmpisrael.1.d
 	picture = GFX_report_event_czech_soldiers_01
 
 	trigger = {
@@ -19,59 +19,59 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = israel.1.a
+		name = bmpisrael.1.a
 		load_oob = "ISR_militias_join_the_army"
 		add_political_power = 500
 
 		SAU = {
-			country_event = { id = israel.2 hours = 1 }
+			country_event = { id = bmpisrael.2 hours = 1 }
 		}
 		
 		JOR = {
-			country_event = { id = israel.2 hours = 1 }
+			country_event = { id = bmpisrael.2 hours = 1 }
 		}
 
 		IRQ = {
-			country_event = { id = israel.2 hours = 1 }
+			country_event = { id = bmpisrael.2 hours = 1 }
 		}
 
 		EGY = {
-			country_event = { id = israel.2 hours = 1 }
+			country_event = { id = bmpisrael.2 hours = 1 }
 		}
 
 		PAL = {
-			country_event = { id = israel.2 hours = 1 }
+			country_event = { id = bmpisrael.2 hours = 1 }
 		}
 
 		SYR = {
-			country_event = { id = israel.2 hours = 1 }
+			country_event = { id = bmpisrael.2 hours = 1 }
 		}
 
 		LEB = {
-			country_event = { id = israel.2 hours = 1 }
+			country_event = { id = bmpisrael.2 hours = 1 }
 		}
 		
 		YEM = {
-			country_event = { id = israel.2 hours = 1 }
+			country_event = { id = bmpisrael.2 hours = 1 }
 		}
 		
 		OMA = {
-			country_event = { id = israel.2 hours = 1 }
+			country_event = { id = bmpisrael.2 hours = 1 }
 		}
 	}
 }
 
 #Give Claims to Arab Leaders 2
 country_event = {
-	id = israel.2
-	title = israel.2.t
-	desc = israel.2.d
+	id = bmpisrael.2
+	title = bmpisrael.2.t
+	desc = bmpisrael.2.d
 	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
 
 	option = {
-		name = israel.2.a
+		name = bmpisrael.2.a
 
 		add_state_claim = 454
 		
@@ -90,9 +90,9 @@ country_event = {
 ##########
 #Altalena Affair 3
 country_event = {
-	id = israel.3
-	title = israel.3.t
-	desc = israel.3.d
+	id = bmpisrael.3
+	title = bmpisrael.3.t
+	desc = bmpisrael.3.d
 	picture = GFX_report_altalena_affair
 
 	fire_only_once = yes
@@ -107,13 +107,13 @@ country_event = {
 	}
 
 	option = {
-		name = israel.3.a
+		name = bmpisrael.3.a
 		ai_chance = { factor = 100 }
 		load_oob = "ISR_irgun_joins_the_army"
 		add_political_power = -80
 	}
 	option = {
-		name = israel.3.b
+		name = bmpisrael.3.b
 		ai_chance = { factor = 0 }
 		add_political_power = 150
 	}
@@ -121,9 +121,9 @@ country_event = {
 	
 #Israel holds all of Palestine for now 4
 country_event = {
-	id = israel.4
-	title = israel.4.t
-	desc = israel.4.d
+	id = bmpisrael.4
+	title = bmpisrael.4.t
+	desc = bmpisrael.4.d
 	picture = GFX_report_event_generic_sign_treaty2
 
 	trigger = {
@@ -146,7 +146,7 @@ country_event = {
 	}
 
 	option = {
-		name = israel.4.a
+		name = bmpisrael.4.a
 		ai_chance = { factor = 100 }
 		add_timed_idea = { idea = ISR_holds_all_of_palestine days = 71 }
 		remove_ideas = ISR_held_all_of_palestine_at_least_once
@@ -156,9 +156,9 @@ country_event = {
 	
 #Israel no longer holds all of Palestine 5
 country_event = {
-	id = israel.5
-	title = israel.5.t
-	desc = israel.5.d
+	id = bmpisrael.5
+	title = bmpisrael.5.t
+	desc = bmpisrael.5.d
 	picture = GFX_report_event_generic_sign_treaty2
 
 	trigger = {
@@ -186,7 +186,7 @@ country_event = {
 	}
 
 	option = {
-		name = israel.5.a
+		name = bmpisrael.5.a
 		ai_chance = { factor = 100 }
 		remove_ideas = ISR_holds_all_of_palestine
 		add_ideas = ISR_no_longer_holds_all_of_palestine
@@ -195,9 +195,9 @@ country_event = {
 
 #Israel held all of Palestine for 71 days 6
 country_event = {
-	id = israel.6
-	title = israel.6.t
-	desc = israel.6.d
+	id = bmpisrael.6
+	title = bmpisrael.6.t
+	desc = bmpisrael.6.d
 	picture = GFX_report_event_generic_sign_treaty2
 
 	trigger = {
@@ -223,7 +223,7 @@ country_event = {
 	}
 
 	option = {
-		name = israel.6.a
+		name = bmpisrael.6.a
 		ai_chance = { factor = 100 }
 		ISR = {
 			transfer_state = 454

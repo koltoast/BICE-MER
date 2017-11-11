@@ -67,7 +67,7 @@ country_event = {
 				}
 		ISR = {
 				transfer_state = 454
-				country_event = { id = israel.1 hours = 1 }
+				country_event = { id = bmpisrael.1 hours = 1 }
 				change_tag_from = BMP
 				}
 		ENG = {
@@ -100,7 +100,7 @@ country_event = {
 		ISR = {
 			transfer_state = 454
 			add_state_claim = 455
-			country_event = { id = israel.1 hours = 1 }
+			country_event = { id = bmpisrael.1 hours = 1 }
 			change_tag_from = BMP
 			}
 		
@@ -176,7 +176,7 @@ country_event = {
 			transfer_state = 454
 			transfer_state = 455
 			add_ideas = ISR_unexpected_war
-			country_event = { id = israel.1 hours = 1 }
+			country_event = { id = bmpisrael.1 hours = 1 }
 			change_tag_from = BMP
 			}
 
