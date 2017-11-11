@@ -10,5 +10,7 @@
 	https://steamcommunity.com/sharedfiles/filedetails/?id=814209088
 	"The Iraqi Uprising" by Z4STY0:
 	https://www.moddb.com/mods/the-iraqi-uprising
+	"Cold War: The Iron Curtain" by the Iron Curtain team:
+	https://steamcommunity.com/sharedfiles/filedetails/?id=1138310824
 	and hopefully others later on
 	Currently using BICE v2.5.3 files except for some .gfx and Commonwealth equipment file localisation that might be from 2.4 but there's barely any point to bother with those at this point
