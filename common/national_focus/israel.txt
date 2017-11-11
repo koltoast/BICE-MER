@@ -15,7 +15,7 @@ focus_tree = {
 
 	default = no
 	
-	continuous_focus_position = { x = 50 y = 1400 }
+	continuous_focus_position = { x = 50 y = 1450 }
 
 	##### RECLAIM THE HOLY LAND TREE #####
 
@@ -2607,19 +2607,39 @@ focus_tree = {
 				is_in_faction = no
 				
 				LEB = {
-					has_government = democratic
+					OR = {
+						has_government = socialism
+						has_government = liberalism
+						has_government = conservatism
+						}
                 }
 				IRQ = {
-					has_government = democratic
+					OR = {
+						has_government = socialism
+						has_government = liberalism
+						has_government = conservatism
+						}
                 }
 				SYR = {
-					has_government = democratic
+					OR = {
+						has_government = socialism
+						has_government = liberalism
+						has_government = conservatism
+						}
                 }
 				SAU = {
-					has_government = democratic
+					OR = {
+						has_government = socialism
+						has_government = liberalism
+						has_government = conservatism
+						}
                 }
 				JOR = {
-					has_government = democratic
+					OR = {
+						has_government = socialism
+						has_government = liberalism
+						has_government = conservatism
+						}
                 }
 		}
 		
