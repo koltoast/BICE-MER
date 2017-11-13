@@ -52,7 +52,7 @@ set_technology = {
 	tech_infantry_tank_equipment_1 = 1
 	tech_british_Tankettes = 1
 	tech_british_Gun_Carriers = 1
-	ENG_captured_armor_tech = 1
+	#ENG_captured_armor_tech = 1
 	#
 	tech_british_ac_recon = 1
 	################ airunits ##############
