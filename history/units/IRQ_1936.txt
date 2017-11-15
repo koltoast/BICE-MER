@@ -14,6 +14,7 @@
 		recon_cav = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
 	name = "Alfurqat Aljabalia"				# Mountain Division
 
@@ -30,6 +31,7 @@ division_template = {
 		recon_cav = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
 	name = "Mechanized Brigade" 			# Independent Mechanized Brigade
 
@@ -43,6 +45,7 @@ division_template = {
 		Tankettes = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
 	name = "Garrison"		
 	
@@ -65,6 +68,7 @@ division_template = {
 		DIV_HQ = { x = 0 y = 0 }
  	}
 }
+
 division_template = {
 	name = "Militia"		# miltia forces, lower experience and equipment
 
@@ -87,6 +91,7 @@ division_template = {
 	}
 	priority = 0
 }
+
 #division_template = {
 #	name = "HQ Command"
 #
@@ -98,7 +103,9 @@ division_template = {
 #		recon = { x = 0 y = 0 }
 #	}
 #}
+
 #### OOB ####
+
 units = {
 	##### Royal Iraqi Army #####
 	#division= {	
@@ -114,39 +121,43 @@ units = {
 		location = 2097
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "2. Alfurqat"
 		location = 10106
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "3. Alfurqat"
 		location = 2097
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "4. Alfurqat"
 		location = 2089
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "Independent Mechanized Brigade"
 		location = 2097
 		division_template = "Mechanized Brigade"	
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 	}
-#### No Naval OOB ####
 }
+
+#### No Naval OOB ####
+
+
 #### Air Wings ####
+
 air_wings = {
 	### Royal Iraqi Air Force (RIrAF)
 	291 = {
@@ -154,7 +165,9 @@ air_wings = {
 		fighter_equipment_0 =  { owner = "IRQ"  amount = 40 }		# 2nd Squadron -- Gladiator, Breda Ba.65
 	}
 }
+
 #### Production ####
+
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

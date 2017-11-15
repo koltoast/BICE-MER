@@ -12,6 +12,8 @@ set_technology = {
 	
 	################# infantry ###############
 	
+	mortars = 1
+	mortars_2 = 1
 	tech_infantry_uniforms = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -22,7 +24,9 @@ set_technology = {
 	
 	################## support ##################
 	
+	tech_support = 1
 	tech_ac_recon = 1
+	tech_ac_recon2 = 1
 	tech_recon = 1
 	subtech_recon_cav_1 = 1
 	
@@ -30,9 +34,12 @@ set_technology = {
 	
 	gw_artillery = 1
 	interwar_artillery = 1
+	interwar_antiair = 1
 	
 	################## armor ##############
 	
+	gwtank = 1
+	basic_light_tank = 1
 	tech_Tankettes = 1
 	generic_armor = 1
 	
@@ -50,6 +57,8 @@ set_technology = {
 	generic_naval = 1
 	
 	############### economy ############
+	
+	basic_machine_tools = 1
 	
 	ww1_infantry = 1
 	infantry_charge = 1
@@ -139,22 +148,22 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Mahmud Salman"
 	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
-	traits = { offensive_doctrine_CC Terrible_General}
+	traits = { offensive_doctrine_CC  Terrible_General}
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Salah ed-Din es-Sabbagh"
 	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
-	traits = { trench_warfare_specialist defensive_doctrine_CC Terrible_General}
+	traits = { trench_warfare_specialist  defensive_doctrine_CC Terrible_General}
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Kamal Shahib"
 	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
-	traits = { mountaineer_CC defensive_doctrine_CC Bad_General}
-	skill = 1
+	traits = { mountaineer_CC  defensive_doctrine_CC Bad_General}
+	skill = 2
 }
 
 create_corps_commander = {
