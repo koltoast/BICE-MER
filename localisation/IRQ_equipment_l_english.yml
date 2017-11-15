@@ -39,7 +39,7 @@
  IRQ_anti_air_equipment_short:0 "Bofors 40 mm"
  IRQ_anti_air_equipment_desc:0 "Anti-air artillery is primarily designed to shoot down hostile planes, although the rapid fire cannons can also be effective against ground targets."
  
- #### Tanks/Armoured Cars ####
+ #### Tankettes/Armoured Cars ####
  
  IRQ_tankette_equipment_0:0 "Carro Veloce L.3/35"
  IRQ_tankette_equipment_0_short:0 "L.3/35"
@@ -51,6 +51,8 @@
  IRQ_motorized_AC_equipment_07:0 "Vickers Crossley MkI Armoured Car"
  IRQ_motorized_AC_equipment_07_short:0 "Crossley MkI AC"
  IRQ_motorized_AC_equipment_07_desc:0 ""
+ 
+ #### Tanks ####
  
  IRQ_light_tank_equipment_1:0 "Carro Veloce L.3/35"
  IRQ_light_tank_equipment_1_short:0 "L.3/35"
