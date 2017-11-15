@@ -13,4 +13,4 @@
 	"Cold War: The Iron Curtain" by the Iron Curtain team:
 	https://steamcommunity.com/sharedfiles/filedetails/?id=1138310824
 	and hopefully others later on
-	Currently using BICE v2.5.4 files except for some .gfx and Commonwealth equipment file localisation that might be from 2.4 but there's barely any point to bother with those at this point
+	Currently using BICE v2.5.5 files except for BMP_technologies.gfx and Commonwealth_equipment_l_english.yml that might be from 2.4 but there's barely any point to bother with those at this point
