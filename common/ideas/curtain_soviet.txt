@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		incompetent_officer_corps = {
+		
+			picture = generic_air_manufacturer_3
+			
+			modifier = {
+				army_org_factor = -0.15
+			}			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+	}
+	
+}

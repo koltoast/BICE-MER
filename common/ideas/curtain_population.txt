@@ -1,0 +1,108 @@
+# Original file from Millenium Dawn Mod, made by Ted52!!
+
+ideas = {
+	
+	country = {
+		population_growth_explosion = {	##Asia
+		
+			picture = neutrality_idea
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = 1.25
+				consumer_goods_factor = 0.12
+				research_time_factor = 0.02
+			}
+			
+		}	
+		population_growth_islamic_migration_to_turkey = {	##Asia
+		
+			picture = neutrality_idea
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = 2.00
+				consumer_goods_factor = 0.12
+				research_time_factor = 0.02
+			}
+			
+		}	
+		population_growth_rapid = {	##Middle East
+			
+			picture = neutrality_idea
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = 0.75
+				consumer_goods_factor = 0.08
+				research_time_factor = -0.02
+			}
+			
+		}
+		
+		population_growth_steady = {	##Europe
+			
+			picture = neutrality_idea
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.15
+				consumer_goods_factor = 0.05
+				research_time_factor = -0.1
+			}
+			
+		}
+		
+		population_growth_stagnation = {	##America
+			
+			picture = neutrality_idea
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = 0.6
+				research_time_factor = -0.04
+				consumer_goods_factor = 0.06
+			}
+			
+		}
+		
+		population_growth_decline = {
+			
+			picture = neutrality_idea
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			modifier = { 
+				MONTHLY_POPULATION = -1.25
+				research_time_factor = -0.06
+				consumer_goods_factor = -0.08
+			}
+			
+		}
+		
+		population_growth_aliyah_soviet = {		##Communist
+		
+			picture = neutrality_idea
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+		modifier = { 
+			MONTHLY_POPULATION = 0.5
+			consumer_goods_factor = 0.05
+			research_time_factor = -0.02
+		}
+			
+	}
+}
