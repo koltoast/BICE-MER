@@ -10,12 +10,12 @@ focus_tree = {
 	default = no
 	
 	continuous_focus_position = { x = 50 y = 1600 }
-
+	
 	focus = {
 		id = IRQ_36_army_innovations
 		icon = GFX_goal_generic_axis_build_infantry
-		cost = 10
-		x = 3
+		cost = 10.00
+		x = 22
 		y = 0
 			completion_reward = {
 					army_experience = 5
@@ -31,8 +31,8 @@ focus_tree = {
 	focus = {
 		id = IRQ_36_air
 		icon = GFX_goal_generic_build_airforce
-		cost = 10
-		x = 11
+		cost = 10.00
+		x = 27
 		y = 0
 			complete_tooltip = {
 					air_experience = 25
@@ -115,8 +115,8 @@ focus_tree = {
 	focus = {
 		id = IRQ_36_dockyard
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10
-		x = 16
+		cost = 10.00
+		x = 1
 		y = 0
 			available = {
 					OR = {
@@ -180,8 +180,8 @@ focus_tree = {
 	focus = {
 		id = IRQ_36_reform
 		icon = GFX_focus_rom_royal_dictatorship
-		cost = 10
-		x = 32
+		cost = 10.00
+		x = 15
 		y = 0
 			complete_tooltip = {
 					remove_ideas = IRQ_revolt
@@ -195,8 +195,8 @@ focus_tree = {
 	focus = {
 		id = IRQ_36_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10
-		x = 22
+		cost = 10.00
+		x = 6
 		y = 0
 			bypass = {
 					custom_trigger_tooltip = {
@@ -280,305 +280,24 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_36_anglo_treaty
-		icon = GFX_goal_generic_scientific_exchange
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_army_innovations
-		}
-		x = 3
-		y = 1
-			bypass = {
-					OR = {
-							has_war_with = ENG
-							NOT = {
-									country_exists = ENG
-								}
-						}
-				}
-			completion_reward = {
-					ENG = {
-							country_event = {
-									id = iraq.1
-									days = 1
-								}
-							custom_effect_tooltip = needs_approval
-						}
-					effect_tooltip = {
-							add_tech_bonus = {
-									name = air_doc_bonus
-									bonus = 0.5
-									uses = 2
-									category = air_doctrine
-								}
-							add_tech_bonus = {
-									name = fighter_bonus
-									bonus = 0.5
-									uses = 2
-									technology = fighter1
-									technology = fighter2
-									technology = fighter3
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_equipment
-		icon = GFX_goal_generic_small_arms
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_anglo_treaty
-		}
-		x = 2
+		id = IRQ_the_israeli_question
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
+		x = 16
 		y = 2
 			completion_reward = {
-					add_tech_bonus = {
-							name = infantry_weapons_bonus
-							bonus = 0.2
-							uses = 1
-							category = infantry_weapons
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_arty
-		icon = GFX_goal_generic_army_artillery
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_equipment
-		}
-		x = 0
-		y = 3
-			completion_reward = {
-					add_tech_bonus = {
-							name = infantry_weapons_bonus
-							bonus = 0.2
-							uses = 1
-							category = artillery
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_motor
-		icon = GFX_goal_generic_army_motorized
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_anglo_treaty
-		}
-		x = 4
-		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = motorized_bonus
-							bonus = 0.50
-							technology = motorised_infantry
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_doctrine
-		icon = GFX_goal_generic_army_doctrines
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_equipment
-		}
-		prerequisite = {
-			focus = IRQ_36_motor
-		}
-		x = 3
-		y = 3
-			completion_reward = {
-					army_experience = 15
-					add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 0.4
-							uses = 2
-							category = land_doctrine
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_mechanized
-		icon = GFX_goal_generic_build_tank
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_motor
-		}
-		x = 6
-		y = 3
-			completion_reward = {
-					add_tech_bonus = {
-							name = motorized_bonus
-							ahead_reduction = 0.5
-							uses = 1
-							category = motorized_equipment
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_fighters
-		icon = GFX_goal_generic_air_fighter
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_air
-		}
-		x = 11
-		y = 1
-			completion_reward = {
-					add_tech_bonus = {
-							name = fighter_bonus
-							bonus = 0.5
-							uses = 2
-							technology = fighter1
-							technology = fighter2
-							technology = fighter3
-							technology = heavy_fighter1
-							technology = heavy_fighter2
-							technology = heavy_fighter3
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_cas
-		icon = GFX_goal_generic_CAS
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_fighters
-		}
-		x = 9
-		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = CAS_bonus
-							bonus = 0.25
-							uses = 2
-							category = cas_bomber
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_air2
-		icon = GFX_goal_generic_air_doctrine
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_fighters
-		}
-		x = 11
-		y = 2
-			complete_tooltip = {
-					air_experience = 25
-					if = {
-							limit = {
-									has_country_flag = aviation_effort_2_AB
-								}
-							add_building_construction = {
-									type = air_base
-									level = 2
-									instant_build = yes
-								}
-						}
-					add_tech_bonus = {
-							name = air_doc_bonus
-							bonus = 0.5
-							uses = 1
-							category = air_doctrine
-						}
-				}
-			completion_reward = {
-					air_experience = 25
-					if = {
-							limit = {
-									capital_scope = {
-											OR = {
-													NOT = {
-															is_controlled_by = ROOT
-														}
-													NOT = {
-															free_building_slots = {
-																	building = air_base
-																	size > 1
-																}
-														}
-												}
-										}
-								}
-							random_owned_controlled_state = {
-									limit = {
-											free_building_slots = {
-													building = air_base
-													size > 1
-												}
-										}
-									add_building_construction = {
-											type = air_base
-											level = 2
-											instant_build = yes
-										}
-									ROOT = {
-											set_country_flag = aviation_effort_2_AB
-										}
-								}
-						}
-					if = {
-							limit = {
-									capital_scope = {
-											is_controlled_by = ROOT
-											free_building_slots = {
-													building = air_base
-													size > 1
-												}
-										}
-								}
-							capital_scope = {
-									add_building_construction = {
-											type = air_base
-											level = 2
-											instant_build = yes
-										}
-									ROOT = {
-											set_country_flag = aviation_effort_2_AB
-										}
-								}
-						}
-					add_tech_bonus = {
-							name = air_doc_bonus
-							bonus = 0.5
-							uses = 1
-							category = air_doctrine
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_military_advance
-		icon = GFX_focus_research
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_air2
-		}
-		x = 11
-		y = 3
-			completion_reward = {
-					add_research_slot = 1
+					add_political_power = 150
 				}
 
 	}
 	focus = {
 		id = IRQ_36_coastal_navy
 		icon = GFX_goal_generic_build_navy
-		cost = 10
+		cost = 10.00
 		prerequisite = {
 			focus = IRQ_36_dockyard
 		}
-		x = 16
+		x = 1
 		y = 1
 			completion_reward = {
 					add_tech_bonus = {
@@ -597,11 +316,11 @@ focus_tree = {
 	focus = {
 		id = IRQ_36_dockyard2
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10
+		cost = 10.00
 		prerequisite = {
 			focus = IRQ_36_coastal_navy
 		}
-		x = 16
+		x = 1
 		y = 2
 			complete_tooltip = {
 					navy_experience = 30
@@ -720,17 +439,39 @@ focus_tree = {
 	focus = {
 		id = IRQ_36_destroyer
 		icon = GFX_goal_generic_occupy_states_coastal
-		cost = 10
+		cost = 10.00
 		prerequisite = {
 			focus = IRQ_36_dockyard2
 		}
-		x = 15
+		x = 0
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
 							name = dd_bonus
 							bonus = 0.5
 							ahead_reduction = 1
+							uses = 1
+							technology = early_destroyer
+							technology = basic_destroyer
+							technology = improved_destroyer
+							technology = advanced_destroyer
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_navy_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_destroyer
+		}
+		x = 0
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 0.30
 							uses = 1
 							technology = early_destroyer
 							technology = basic_destroyer
@@ -743,11 +484,11 @@ focus_tree = {
 	focus = {
 		id = IRQ_36_submarines
 		icon = GFX_goal_generic_navy_submarine
-		cost = 10
+		cost = 10.00
 		prerequisite = {
 			focus = IRQ_36_dockyard2
 		}
-		x = 17
+		x = 2
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
@@ -764,597 +505,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_36_fac
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_infrastructure
-		}
-		x = 21
-		y = 1
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = production_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = arms_factory
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = arms_factory
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_civ
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_infrastructure
-		}
-		x = 23
-		y = 1
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = construction_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = industrial_complex
-											size < 2
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-							type = industrial_complex
-							level = 2
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 1
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_infrastructure2
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_fac
-		}
-		prerequisite = {
-			focus = IRQ_36_civ
-		}
-		x = 22
-		y = 2
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = infrastructure_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = infrastructure
-											size < 1
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = infrastructure
-											size > 0
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 0
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = infrastructure
-											size > 1
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 1
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_building_construction = {
-									type = infrastructure
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_fac2
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_infrastructure2
-		}
-		x = 21
-		y = 3
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = production_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = arms_factory
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = arms_factory
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_civ2
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_infrastructure2
-		}
-		x = 23
-		y = 3
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = construction_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = industrial_complex
-											size < 2
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-							type = industrial_complex
-							level = 2
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 1
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_break_treaty
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_reform
-		}
-		x = 30
-		y = 1
-			completion_reward = {
-					add_political_power = 120
-					add_opinion_modifier = {
-							target = ENG
-							modifier = break_anglo_iraq_treaty
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_oil
-		icon = GFX_goal_generic_oil_refinery
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_break_treaty
-		}
-		x = 27
-		y = 2
-			completion_reward = {
-					country_event = {
-							days = 1
-							id = iraq.5
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_oil_ref
-		icon = GFX_goal_generic_oil_refinery
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_oil
-		}
-		prerequisite = {
-			focus = IRQ_36_infrastructure2
-		}
-		x = 27
-		y = 3
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = synthetic_refinery_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = synthetic_refinery
-											size < 1
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_building_construction = {
-							type = synthetic_refinery
-							level = 1
-							instant_build = yes
-						}
-					add_building_construction = {
-							type = synthetic_refinery
-							level = 1
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = synthetic_refinery
-											size > 0
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = synthetic_refinery
-																			size > 0
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_building_construction = {
-									type = synthetic_refinery
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = synthetic_refinery
-											size > 1
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = synthetic_refinery
-																			size > 1
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_building_construction = {
-									type = synthetic_refinery
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_arab_nationalism
-		icon = GFX_goal_generic_propaganda
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_break_treaty
-		}
-		x = 30
-		y = 2
-			completion_reward = {
-					add_ideas = IRQ_nationalism
-				}
-
-	}
-	focus = {
-		id = IRQ_36_purge
-		icon = GFX_goal_demand_sudetenland
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_arab_nationalism
-		}
-		x = 30
-		y = 3
-			complete_tooltip = {
-					remove_ideas = IRQ_nuri_as_said
-				}
-			completion_reward = {
-					add_political_power = 120
-					remove_ideas = IRQ_nuri_as_said
-				}
-
-	}
-	focus = {
-		id = IRQ_36_tank
-		icon = GFX_goal_generic_army_tanks
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_mechanized
-		}
-		x = 6
-		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 0.2
-							uses = 2
-							category = armor
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_mountain
-		icon = GFX_goal_generic_special_forces
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_doctrine
-		}
-		x = 3
-		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = special_forces_bonus
-							bonus = 0.5
-							uses = 1
-							technology = tech_mountaineers
-							technology = tech_mountaineers2
-							technology = tech_mountaineers3
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_arty2
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_arty
-		}
-		x = 0
-		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = infantry_weapons_bonus
-							bonus = 0.25
-							uses = 2
-							category = artillery
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_rocket
-		icon = GFX_focus_rocketry
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_military_advance
-		}
-		x = 11
-		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = jet_rocket_bonus
-							ahead_reduction = 0.5
-							uses = 2
-							category = rocketry
-							category = jet_technology
-						}
-				}
-
-	}
-	focus = {
 		id = IRQ_36_torpedoes
 		icon = GFX_goal_generic_occupy_start_war
-		cost = 10
+		cost = 10.00
 		prerequisite = {
 			focus = IRQ_36_submarines
 		}
-		x = 17
+		x = 2
 		y = 4
 			completion_reward = {
 					add_tech_bonus = {
@@ -1370,103 +527,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_36_navy_doctrine
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_destroyer
-		}
-		x = 15
-		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = dd_bonus
-							bonus = 0.30
-							uses = 1
-							technology = early_destroyer
-							technology = basic_destroyer
-							technology = improved_destroyer
-							technology = advanced_destroyer
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_assyrians
-		icon = GFX_focus_generic_military_mission
-		cost = 5
-		prerequisite = {
-			focus = IRQ_36_simele_massacre
-		}
-		x = 34
-		y = 2
-			completion_reward = {
-					country_event = {
-							days = 1
-							id = iraq.6
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_coup
-		icon = GFX_focus_generic_support_the_left_right
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_purge
-		}
-		x = 30
-		y = 4
-			bypass = {
-					has_government = fascism
-				}
-			completion_reward = {
-					set_politics = {
-							ruling_party = fascism
-							elections_allowed = no
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_simele_massacre
-		icon = GFX_goal_generic_national_unity
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_reform
-		}
-		x = 34
-		y = 1
-			complete_tooltip = {
-					remove_ideas = IRQ_simele
-				}
-			completion_reward = {
-					remove_ideas = IRQ_simele
-				}
-
-	}
-	focus = {
-		id = IRQ_36_university
-		icon = GFX_focus_research
-		cost = 10
-		prerequisite = {
-			focus = IRQ_36_fac2
-		}
-		prerequisite = {
-			focus = IRQ_36_civ2
-		}
-		x = 22
-		y = 4
-			completion_reward = {
-					add_research_slot = 1
-				}
-
-	}
-	focus = {
 		id = irq_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
-		x = 34
+		prerequisite = {
+			focus = IRQ_36_navy_doctrine
+		}
+		prerequisite = {
+			focus = IRQ_36_torpedoes
+		}
+		x = 1
 		y = 5
 			available_if_capitulated = yes
 			available = {
@@ -1590,10 +660,526 @@ focus_tree = {
 
 	}
 	focus = {
+		id = irq_large_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = irq_naval_effort
+		}
+		mutually_exclusive = {
+			focus = irq_flexible_navy
+		}
+		x = 2
+		y = 6
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 0.5
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = irq_flexible_navy
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
+		prerequisite = {
+			focus = irq_naval_effort
+		}
+		mutually_exclusive = {
+			focus = irq_large_navy
+		}
+		x = 0
+		y = 6
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 0.5
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+				}
+
+	}
+	focus = {
+		id = irq_cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = irq_large_navy
+			focus = irq_flexible_navy
+		}
+		x = 2
+		y = 7
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 0.5
+							ahead_reduction = 1
+							uses = 1
+							technology = improved_light_cruiser
+							technology = advanced_light_cruiser
+						}
+				}
+
+	}
+	focus = {
+		id = irq_capital_ships_effort
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = irq_cruiser_effort
+		}
+		x = 2
+		y = 8
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 0.5
+							ahead_reduction = 1
+							uses = 1
+							technology = early_battlecruiser
+							technology = basic_battlecruiser
+							technology = early_battleship
+							technology = basic_battleship
+							technology = improved_battleship
+							technology = early_carrier
+							technology = basic_carrier
+							technology = improved_carrier
+							technology = advanced_carrier
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_fac
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_infrastructure
+		}
+		x = 5
+		y = 1
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_civ
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_infrastructure
+		}
+		x = 7
+		y = 1
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_infrastructure2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_fac
+		}
+		prerequisite = {
+			focus = IRQ_36_civ
+		}
+		x = 6
+		y = 2
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_fac2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_infrastructure2
+		}
+		x = 5
+		y = 3
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_civ2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_infrastructure2
+		}
+		x = 9
+		y = 3
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_university
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_fac2
+		}
+		prerequisite = {
+			focus = IRQ_36_civ2
+		}
+		x = 7
+		y = 4
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
 		id = irq_industrial_effort
 		icon = GFX_goal_generic_production
 		cost = 10.00
-		x = 4
+		prerequisite = {
+			focus = IRQ_36_university
+		}
+		x = 7
 		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1625,30 +1211,1011 @@ focus_tree = {
 
 	}
 	focus = {
+		id = irq_production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = irq_industrial_effort
+		}
+		x = 7
+		y = 6
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = irq_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = irq_production_effort
+		}
+		x = 7
+		y = 7
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = irq_production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = irq_production_effort_2
+		}
+		x = 7
+		y = 8
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_oil_development
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = irq_industrial_effort
+		}
+		x = 9
+		y = 6
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = oil
+									amount = 50
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_oil_development_II
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_oil_development
+		}
+		x = 9
+		y = 7
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = oil
+									amount = 50
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_oil_development_III
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_oil_development_II
+		}
+		x = 9
+		y = 8
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = oil
+									amount = 25
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_oil_extraction_efficiency
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_oil_development_III
+		}
+		x = 9
+		y = 9
+			completion_reward = {
+					random_owned_state = {
+							add_resource = {
+									type = oil
+									amount = 25
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_break_treaty
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_reform
+		}
+		x = 12
+		y = 1
+			completion_reward = {
+					add_political_power = 120
+					add_opinion_modifier = {
+							target = ENG
+							modifier = break_anglo_iraq_treaty
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_break_treaty
+		}
+		x = 11
+		y = 2
+			completion_reward = {
+					country_event = {
+							days = 1
+							id = iraq.5
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_oil_ref
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_oil
+		}
+		prerequisite = {
+			focus = IRQ_36_infrastructure2
+		}
+		x = 11
+		y = 3
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = synthetic_refinery_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = synthetic_refinery
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = synthetic_refinery
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = synthetic_refinery
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = synthetic_refinery
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = synthetic_refinery
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = synthetic_refinery
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = synthetic_refinery
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_arab_nationalism
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_break_treaty
+		}
+		x = 13
+		y = 2
+			completion_reward = {
+					add_ideas = IRQ_nationalism
+				}
+
+	}
+	focus = {
+		id = IRQ_36_purge
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_arab_nationalism
+		}
+		x = 13
+		y = 3
+			complete_tooltip = {
+					remove_ideas = IRQ_nuri_as_said
+				}
+			completion_reward = {
+					add_political_power = 120
+					remove_ideas = IRQ_nuri_as_said
+				}
+
+	}
+	focus = {
+		id = IRQ_36_coup
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_purge
+		}
+		x = 13
+		y = 4
+			bypass = {
+					has_government = fascism
+				}
+			completion_reward = {
+					set_politics = {
+							ruling_party = fascism
+							elections_allowed = no
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_recognize_israel
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_the_israeli_question
+		}
+		mutually_exclusive = {
+			focus = IRQ_condemn_israeli_agression
+		}
+		x = 15
+		y = 3
+			completion_reward = {
+					ISR = {
+							add_opinion_modifier = {
+									target = IRQ
+									modifier = small_increase
+								}
+						}
+					IRQ = {
+							add_opinion_modifier = {
+									target = ISR
+									modifier = small_increase
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_align_with_israel
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_recognize_israel
+		}
+		x = 15
+		y = 4
+			completion_reward = {
+					ISR = {
+							add_opinion_modifier = {
+									target = IRQ
+									modifier = large_increase
+								}
+						}
+					IRQ = {
+							add_opinion_modifier = {
+									target = ISR
+									modifier = large_increase
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_condemn_israeli_agression
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_the_israeli_question
+		}
+		mutually_exclusive = {
+			focus = IRQ_recognize_israel
+		}
+		x = 17
+		y = 3
+			completion_reward = {
+					ISR = {
+							add_opinion_modifier = {
+									target = IRQ
+									modifier = small_decrease
+								}
+						}
+					IRQ = {
+							add_opinion_modifier = {
+									target = ISR
+									modifier = small_decrease
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_recognize_palestine
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_condemn_israeli_agression
+		}
+		x = 17
+		y = 4
+			completion_reward = {
+					ISR = {
+							add_opinion_modifier = {
+									target = IRQ
+									modifier = large_decrease
+								}
+						}
+					IRQ = {
+							add_opinion_modifier = {
+									target = ISR
+									modifier = large_decrease
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_simele_massacre
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_reform
+		}
+		x = 19
+		y = 1
+			complete_tooltip = {
+					remove_ideas = IRQ_simele
+				}
+			completion_reward = {
+					remove_ideas = IRQ_simele
+				}
+
+	}
+	focus = {
+		id = IRQ_36_assyrians
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = IRQ_36_simele_massacre
+		}
+		x = 19
+		y = 2
+			completion_reward = {
+					country_event = {
+							days = 1
+							id = iraq.6
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_anglo_treaty
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_army_innovations
+		}
+		x = 22
+		y = 1
+			bypass = {
+					OR = {
+							has_war_with = ENG
+							NOT = {
+									country_exists = ENG
+								}
+						}
+				}
+			completion_reward = {
+					ENG = {
+							country_event = {
+									id = iraq.1
+									days = 1
+								}
+							custom_effect_tooltip = needs_approval
+						}
+					effect_tooltip = {
+							add_tech_bonus = {
+									name = air_doc_bonus
+									bonus = 0.5
+									uses = 2
+									category = air_doctrine
+								}
+							add_tech_bonus = {
+									name = fighter_bonus
+									bonus = 0.5
+									uses = 2
+									technology = fighter1
+									technology = fighter2
+									technology = fighter3
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_equipment
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_anglo_treaty
+		}
+		x = 21
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 0.2
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_arty
+		icon = GFX_goal_generic_army_artillery
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_equipment
+		}
+		x = 20
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 0.2
+							uses = 1
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_arty2
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_arty
+		}
+		x = 20
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 0.25
+							uses = 2
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_motor
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_anglo_treaty
+		}
+		x = 23
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							bonus = 0.50
+							technology = motorised_infantry
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_equipment
+		}
+		prerequisite = {
+			focus = IRQ_36_motor
+		}
+		x = 22
+		y = 3
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.4
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_mountain
+		icon = GFX_goal_generic_special_forces
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_doctrine
+		}
+		x = 22
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 0.5
+							uses = 1
+							technology = tech_mountaineers
+							technology = tech_mountaineers2
+							technology = tech_mountaineers3
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_mechanized
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_motor
+		}
+		x = 24
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 0.5
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_tank
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_mechanized
+		}
+		x = 24
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 0.2
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_fighters
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_air
+		}
+		x = 27
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 0.5
+							uses = 2
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_cas
+		icon = GFX_goal_generic_CAS
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_fighters
+		}
+		x = 26
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 0.25
+							uses = 2
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_air2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_fighters
+		}
+		x = 28
+		y = 2
+			complete_tooltip = {
+					air_experience = 25
+					if = {
+							limit = {
+									has_country_flag = aviation_effort_2_AB
+								}
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = air_doctrine
+						}
+				}
+			completion_reward = {
+					air_experience = 25
+					if = {
+							limit = {
+									capital_scope = {
+											OR = {
+													NOT = {
+															is_controlled_by = ROOT
+														}
+													NOT = {
+															free_building_slots = {
+																	building = air_base
+																	size > 1
+																}
+														}
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_2_AB
+										}
+								}
+						}
+					if = {
+							limit = {
+									capital_scope = {
+											is_controlled_by = ROOT
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+								}
+							capital_scope = {
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_2_AB
+										}
+								}
+						}
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_military_advance
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_air2
+		}
+		prerequisite = {
+			focus = IRQ_36_cas
+		}
+		x = 27
+		y = 3
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = IRQ_36_rocket
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_military_advance
+		}
+		x = 27
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = jet_rocket_bonus
+							ahead_reduction = 0.5
+							uses = 2
+							category = rocketry
+							category = jet_technology
+						}
+				}
+
+	}
+	focus = {
 		id = IRQ_non_aligned
 		icon = GFX_goal_generic_neutrality_focus
 		cost = 10.00
+		prerequisite = {
+			focus = IRQ_arab_cold_war
+		}
 		mutually_exclusive = {
 			focus = IRQ_soviet_alignment
+			focus = IRQ_agrarian_reform
 		}
-		x = 12
-		y = 5
-		completion_reward = {
-			add_political_power = 120
-			add_national_unity = 5.10
-		}
+		x = 15
+		y = 6
+			completion_reward = {
+					add_political_power = 120
+					add_national_unity = 5.10
+				}
+
 	}
 	focus = {
 		id = IRQ_soviet_alignment
 		icon = GFX_goal_support_communism
 		cost = 10.00
-		mutually_exclusive = {
-			focus = IRQ_american_alignment
-			focus = IRQ_non_aligned
+		prerequisite = {
+			focus = IRQ_arab_cold_war
 		}
-		x = 20
-		y = 5
-		completion_reward = {
+		mutually_exclusive = {
+			focus = IRQ_non_aligned
+			focus = IRQ_american_alignment
+			focus = IRQ_american_weapon_sale
+			focus = IRQ_agrarian_reform
+		}
+		x = 23
+		y = 6
+			completion_reward = {
 					IRQ = {
 							add_opinion_modifier = {
 									target = SOV
@@ -1660,29 +2227,23 @@ focus_tree = {
 									target = IRQ
 									modifier = large_increase
 								}
-						}				
-		}
-	}
-	focus = {
-		id = IRQ_the_israeli_question
-		icon = GFX_goal_generic_neutrality_focus
-		cost = 10.00
-		x = 34
-		y = 9
-		completion_reward = {
-			add_political_power = 150
-		}
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_american_alignment
 		icon = GFX_goal_support_democracy
 		cost = 10.00
+		prerequisite = {
+			focus = IRQ_arab_cold_war
+		}
 		mutually_exclusive = {
 			focus = IRQ_soviet_alignment
 		}
-		x = 28
-		y = 5
-		completion_reward = {
+		x = 31
+		y = 6
+			completion_reward = {
 					IRQ = {
 							add_opinion_modifier = {
 									target = USA
@@ -1694,18 +2255,48 @@ focus_tree = {
 									target = IRQ
 									modifier = large_increase
 								}
-						}				
-		}
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_arab_cold_war
 		icon = GFX_goal_generic_neutrality_focus
 		cost = 10.00
-		x = 48
-		y = 5
-		completion_reward = {
-			add_political_power = 150
+		prerequisite = {
+			focus = IRQ_36_arty2
 		}
+		prerequisite = {
+			focus = IRQ_36_mountain
+		}
+		prerequisite = {
+			focus = IRQ_36_tank
+		}
+		prerequisite = {
+			focus = IRQ_36_rocket
+		}
+		prerequisite = {
+			focus = IRQ_36_assyrians
+		}
+		prerequisite = {
+			focus = IRQ_recognize_palestine
+			focus = IRQ_align_with_israel
+		}
+		prerequisite = {
+			focus = IRQ_36_coup
+		}
+		prerequisite = {
+			focus = IRQ_36_oil_ref
+		}
+		prerequisite = {
+			focus = irq_extra_tech_slot_2
+		}
+		x = 11
+		y = 5
+			completion_reward = {
+					add_political_power = 150
+				}
+
 	}
 	focus = {
 		id = irq_construction_effort
@@ -1714,7 +2305,7 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_industrial_effort
 		}
-		x = 2
+		x = 5
 		y = 6
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1781,7 +2372,7 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_construction_effort
 		}
-		x = 2
+		x = 5
 		y = 7
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1848,7 +2439,7 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_construction_effort_2
 		}
-		x = 2
+		x = 5
 		y = 8
 			available_if_capitulated = yes
 			bypass = {
@@ -1939,7 +2530,7 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_infrastructure_effort
 		}
-		x = 2
+		x = 5
 		y = 9
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2000,207 +2591,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = irq_production_effort
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = irq_industrial_effort
-		}
-		x = 4
-		y = 6
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 2
-				}
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = production_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = arms_factory
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = arms_factory
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = irq_production_effort_2
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = irq_production_effort
-		}
-		x = 4
-		y = 7
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 2
-				}
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = production_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = arms_factory
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = arms_factory
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = irq_production_effort_3
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = irq_production_effort_2
-		}
-		x = 4
-		y = 8
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 2
-				}
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = production_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = arms_factory
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = arms_factory
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
 		id = irq_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
@@ -2210,7 +2600,7 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_production_effort_3
 		}
-		x = 4
+		x = 7
 		y = 9
 			available_if_capitulated = yes
 			bypass = {
@@ -2304,7 +2694,7 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_construction_effort_3
 		}
-		x = 1
+		x = 6
 		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2336,7 +2726,7 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_construction_effort_3
 		}
-		x = 3
+		x = 8
 		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2365,7 +2755,16 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_construction_effort_3
 		}
-		x = 5
+		prerequisite = {
+			focus = IRQ_oil_extraction_efficiency
+		}
+		prerequisite = {
+			focus = irq_capital_ships_effort
+		}
+		prerequisite = {
+			focus = irq_destroyer_effort
+		}
+		x = 4
 		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2374,86 +2773,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_oil_development
-		icon = GFX_goal_generic_oil_refinery
-		cost = 10.00
-		prerequisite = {
-			focus = irq_industrial_effort
-		}
-		x = 6
-		y = 6
-		completion_reward = {
-			random_owned_state = {
-				add_resource = {
-					type = oil
-					amount = 50
-				}
-			}
-		}		
-	}
-	focus = {
-		id = IRQ_oil_development_II
-		icon = GFX_goal_generic_oil_refinery
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_oil_development
-		}
-		x = 6
-		y = 7
-		completion_reward = {
-			random_owned_state = {
-				add_resource = {
-					type = oil
-					amount = 50
-				}
-			}
-		}	
-	}
-	focus = {
-		id = IRQ_oil_development_III
-		icon = GFX_goal_generic_oil_refinery
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_oil_development_II
-		}
-		x = 6
-		y = 8
-		completion_reward = {
-			random_owned_state = {
-				add_resource = {
-					type = oil
-					amount = 25
-				}
-			}
-		}	
-	}
-	focus = {
-		id = IRQ_oil_extraction_efficiency
-		icon = GFX_goal_generic_oil_refinery
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_oil_development_III
-		}
-		x = 6
-		y = 9
-		completion_reward = {
-			random_owned_state = {
-				add_resource = {
-					type = oil
-					amount = 25
-				}
-			}
-		}	
-	}
-	focus = {
 		id = irq_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
 		prerequisite = {
 			focus = IRQ_non_aligned
 		}
-		x = 10
-		y = 6
+		x = 13
+		y = 7
 			available_if_capitulated = yes
 			completion_reward = {
 					army_experience = 5
@@ -2473,8 +2800,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_army_effort
 		}
-		x = 9
-		y = 7
+		x = 12
+		y = 8
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -2494,8 +2821,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_equipment_effort
 		}
-		x = 9
-		y = 9
+		x = 12
+		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -2515,8 +2842,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_equipment_effort_2
 		}
-		x = 9
-		y = 11
+		x = 12
+		y = 12
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -2536,8 +2863,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_army_effort
 		}
-		x = 10
-		y = 8
+		x = 13
+		y = 9
 			available_if_capitulated = yes
 			completion_reward = {
 					army_experience = 5
@@ -2557,8 +2884,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_doctrine_effort
 		}
-		x = 10
-		y = 10
+		x = 13
+		y = 11
 			available_if_capitulated = yes
 			completion_reward = {
 					army_experience = 5
@@ -2578,8 +2905,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_army_effort
 		}
-		x = 11
-		y = 7
+		x = 14
+		y = 8
 			bypass = {
 					has_tech = motorised_infantry
 				}
@@ -2600,8 +2927,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_motorization_effort
 		}
-		x = 11
-		y = 9
+		x = 14
+		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -2620,8 +2947,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_mechanization_effort
 		}
-		x = 11
-		y = 11
+		x = 14
+		y = 12
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -2646,8 +2973,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_armor_effort
 		}
-		x = 10
-		y = 12
+		x = 13
+		y = 13
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -2671,8 +2998,8 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_non_aligned
 		}
-		x = 14
-		y = 6
+		x = 17
+		y = 7
 			available_if_capitulated = yes
 			complete_tooltip = {
 					air_experience = 25
@@ -2761,9 +3088,11 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = irq_bomber_focus
+			focus = irq_soviet_fighters
+			focus = irq_soviet_bombers
 		}
-		x = 13
-		y = 7
+		x = 16
+		y = 8
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -2791,8 +3120,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = irq_fighter_focus
 		}
-		x = 15
-		y = 7
+		x = 18
+		y = 8
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -2815,8 +3144,8 @@ focus_tree = {
 			focus = irq_bomber_focus
 			focus = irq_fighter_focus
 		}
-		x = 14
-		y = 8
+		x = 17
+		y = 9
 			available_if_capitulated = yes
 			complete_tooltip = {
 					air_experience = 25
@@ -2909,8 +3238,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_aviation_effort_2
 		}
-		x = 13
-		y = 9
+		x = 16
+		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -2930,8 +3259,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_aviation_effort_2
 		}
-		x = 15
-		y = 9
+		x = 18
+		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -2954,8 +3283,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_NAV_effort
 		}
-		x = 14
-		y = 10
+		x = 17
+		y = 11
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -2985,11 +3314,12 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_rocket_effort
 		}
-		x = 12
-		y = 13
-		completion_reward = {
-			remove_ideas = incompetent_officer_corps
-		}
+		x = 15
+		y = 14
+			completion_reward = {
+					remove_ideas = incompetent_officer_corps
+				}
+
 	}
 	focus = {
 		id = IRQ_soviet_advisors
@@ -2998,11 +3328,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_soviet_alignment
 		}
-		x = 18
-		y = 6
-		completion_reward = {
-			add_ideas = soviet_advisors
-		}
+		x = 21
+		y = 7
+			completion_reward = {
+					add_ideas = soviet_advisors
+				}
+
 	}
 	focus = {
 		id = IRQ_surplus_soviet_equipment
@@ -3011,14 +3342,31 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_soviet_advisors
 		}
-		x = 17
-		y = 7
-		completion_reward = {
-			add_equipment_to_stockpile = { type = assault_rifle_equipment_1 amount = 2000 producer = SOV }	
-			add_equipment_to_stockpile = { type = main_battle_tanks_2 amount = 150 producer = SOV }	
-			add_equipment_to_stockpile = { type = lt_equipment_1 amount = 300 producer = SOV }	
-			add_equipment_to_stockpile = { type = ht_equipment_2 amount = 100 producer = SOV }	
-		}
+		x = 20
+		y = 9
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = assault_rifle_equipment_1
+							amount = 2000
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = main_battle_tanks_2
+							amount = 150
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = lt_equipment_1
+							amount = 300
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = ht_equipment_2
+							amount = 100
+							producer = SOV
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_soviet_armed_divisions
@@ -3027,11 +3375,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_surplus_soviet_equipment
 		}
-		x = 17
-		y = 8
-		completion_reward ={
-			load_oob = irq_soviet_armed_division
-		}
+		x = 20
+		y = 9
+			completion_reward = {
+					load_oob = irq_soviet_armed_division
+				}
+
 	}
 	focus = {
 		id = IRQ_soviet_trainer_pilots
@@ -3040,11 +3389,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_soviet_alignment
 		}
-		x = 22
-		y = 6
-		completion_reward = {
-			air_experience = 25
-		}
+		x = 25
+		y = 7
+			completion_reward = {
+					air_experience = 25
+				}
+
 	}
 	focus = {
 		id = IRQ_personel_exchanges
@@ -3056,12 +3406,13 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_soviet_advisors
 		}
-		x = 20
-		y = 7
+		x = 23
+		y = 8
 			completion_reward = {
 					add_manpower = 50000
 					army_experience = 5
 				}
+
 	}
 	focus = {
 		id = IRQ_soviet_army_doctrine
@@ -3073,8 +3424,8 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_surplus_soviet_equipment
 		}
-		x = 19
-		y = 8
+		x = 22
+		y = 9
 			completion_reward = {
 					army_experience = 5
 					add_tech_bonus = {
@@ -3084,6 +3435,7 @@ focus_tree = {
 							category = land_doctrine
 						}
 				}
+
 	}
 	focus = {
 		id = IRQ_more_surplus_equipment
@@ -3095,14 +3447,31 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_soviet_army_doctrine
 		}
-		x = 17
-		y = 9
-		completion_reward = {
-			add_equipment_to_stockpile = { type = assault_rifle_equipment_1 amount = 2000 producer = SOV }	
-			add_equipment_to_stockpile = { type = main_battle_tanks_2 amount = 150 producer = SOV }	
-			add_equipment_to_stockpile = { type = lt_equipment_1 amount = 300 producer = SOV }	
-			add_equipment_to_stockpile = { type = ht_equipment_2 amount = 100 producer = SOV }	
-		}
+		x = 20
+		y = 10
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = assault_rifle_equipment_1
+							amount = 2000
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = main_battle_tanks_2
+							amount = 150
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = lt_equipment_1
+							amount = 300
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = ht_equipment_2
+							amount = 100
+							producer = SOV
+						}
+				}
+
 	}
 	focus = {
 		id = irq_soviet_fighters
@@ -3114,13 +3483,21 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = irq_fighter_focus
 		}
-		x = 23
-		y = 7
+		x = 26
+		y = 8
 			completion_reward = {
-					add_equipment_to_stockpile = { type = CAS_equipment_4 amount = 200 producer = SOV }	
-					add_equipment_to_stockpile = { type = jet_fighter_equipment_2 amount = 800 producer = SOV }	
-					
+					add_equipment_to_stockpile = {
+							type = CAS_equipment_4
+							amount = 200
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = jet_fighter_equipment_2
+							amount = 800
+							producer = SOV
+						}
 				}
+
 	}
 	focus = {
 		id = irq_soviet_bombers
@@ -3135,13 +3512,21 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = irq_fighter_focus
 		}
-		x = 21
-		y = 8
+		x = 24
+		y = 9
 			completion_reward = {
-					add_equipment_to_stockpile = { type = jet_strat_bomber_equipment_2 amount = 200 producer = SOV }	
-					add_equipment_to_stockpile = { type = jet_tac_bomber_equipment_2 amount = 800 producer = SOV }	
-					
+					add_equipment_to_stockpile = {
+							type = jet_strat_bomber_equipment_2
+							amount = 200
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = jet_tac_bomber_equipment_2
+							amount = 800
+							producer = SOV
+						}
 				}
+
 	}
 	focus = {
 		id = IRQ_soviet_air_doctrine
@@ -3153,16 +3538,17 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_personel_exchanges
 		}
-		x = 23
-		y = 8
-		completion_reward = {
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 0.5
-				uses = 3
-				category = air_doctrine
-			}
-		}
+		x = 26
+		y = 9
+			completion_reward = {
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 0.5
+							uses = 3
+							category = air_doctrine
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_soviet_airfield_development
@@ -3174,8 +3560,8 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_soviet_bombers
 		}
-		x = 21
-		y = 9
+		x = 24
+		y = 10
 			completion_reward = {
 					air_experience = 25
 					if = {
@@ -3233,6 +3619,7 @@ focus_tree = {
 								}
 						}
 				}
+
 	}
 	focus = {
 		id = IRQ_soviet_anti_air_defenses
@@ -3244,43 +3631,43 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_soviet_bombers
 		}
-		x = 23
-		y = 9
-		completion_reward = {
-						random_owned_controlled_state = {
-									limit = {
-											free_building_slots = {
-													building = anti_air_building
-													size > 3
-												}
+		x = 26
+		y = 10
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = anti_air_building
+											size > 3
 										}
-									add_building_construction = {
-											type = anti_air_building
-											level = 2
-											instant_build = yes
+								}
+							add_building_construction = {
+									type = anti_air_building
+									level = 2
+									instant_build = yes
+								}
+							ROOT = {
+									set_country_flag = aviation_effort_2_AB
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = anti_air_building
+											size > 3
 										}
-									ROOT = {
-											set_country_flag = aviation_effort_2_AB
-										}
-								}			
-						random_owned_controlled_state = {
-									limit = {
-											free_building_slots = {
-													building = anti_air_building
-													size > 3
-												}
-										}
-									add_building_construction = {
-											type = anti_air_building
-											level = 2
-											instant_build = yes
-										}
-									ROOT = {
-											set_country_flag = aviation_effort_2_AB
-										}
-								}				
-			
-		}
+								}
+							add_building_construction = {
+									type = anti_air_building
+									level = 2
+									instant_build = yes
+								}
+							ROOT = {
+									set_country_flag = aviation_effort_2_AB
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_research_advances_air
@@ -3292,16 +3679,17 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_soviet_anti_air_defenses
 		}
-		x = 22
-		y = 10
-		completion_reward = {
+		x = 25
+		y = 11
+			completion_reward = {
 					add_tech_bonus = {
 							name = TUR_fighter_modernisation
 							bonus = 0.5
 							uses = 2
 							category = light_fighter
-						}	
-		}
+						}
+				}
+
 	}
 	focus = {
 		id = irq_soviet_scuds
@@ -3310,11 +3698,16 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_research_advances_air
 		}
-		x = 22
-		y = 11
-		completion_reward = {
-			add_equipment_to_stockpile = { type = cruisemissile_1 amount = 400 producer = SOV }	
-		}
+		x = 25
+		y = 12
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = cruisemissile_1
+							amount = 400
+							producer = SOV
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_american_advisors
@@ -3323,11 +3716,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_alignment
 		}
-		x = 26
-		y = 6
-		completion_reward = {
-			add_ideas = american_advisors
-		}
+		x = 29
+		y = 7
+			completion_reward = {
+					add_ideas = american_advisors
+				}
+
 	}
 	focus = {
 		id = IRQ_american_surplus_equipment
@@ -3336,14 +3730,31 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_advisors
 		}
-		x = 25
-		y = 7
-		completion_reward = {
-			add_equipment_to_stockpile = { type = assault_rifle_equipment_1 amount = 2000 producer = USA }	
-			add_equipment_to_stockpile = { type = main_battle_tanks_2 amount = 150 producer = USA }	
-			add_equipment_to_stockpile = { type = lt_equipment_1 amount = 300 producer = USA }	
-			add_equipment_to_stockpile = { type = ht_equipment_2 amount = 100 producer = USA }	
-		}
+		x = 28
+		y = 8
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = assault_rifle_equipment_1
+							amount = 2000
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = main_battle_tanks_2
+							amount = 150
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = lt_equipment_1
+							amount = 300
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = ht_equipment_2
+							amount = 100
+							producer = USA
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_american_armed_divisions
@@ -3352,11 +3763,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_surplus_equipment
 		}
-		x = 25
-		y = 8
-		completion_reward = {
-			load_oob = IRQ_american_armed_division
-		}
+		x = 28
+		y = 9
+			completion_reward = {
+					load_oob = IRQ_american_armed_division
+				}
+
 	}
 	focus = {
 		id = IRQ_american_aircraft_training
@@ -3365,11 +3777,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_alignment
 		}
-		x = 30
-		y = 6
-		completion_reward = {
-			air_experience = 25
-		}
+		x = 33
+		y = 7
+			completion_reward = {
+					air_experience = 25
+				}
+
 	}
 	focus = {
 		id = IRQ_american_weapon_sale
@@ -3384,14 +3797,31 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_soviet_alignment
 		}
-		x = 28
-		y = 7
-		completion_reward = {
-			add_equipment_to_stockpile = { type = assault_rifle_equipment_1 amount = 2000 producer = USA }	
-			add_equipment_to_stockpile = { type = main_battle_tanks_2 amount = 150 producer = USA }	
-			add_equipment_to_stockpile = { type = lt_equipment_1 amount = 300 producer = USA }	
-			add_equipment_to_stockpile = { type = ht_equipment_2 amount = 100 producer = USA }	
-		}
+		x = 31
+		y = 8
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = assault_rifle_equipment_1
+							amount = 2000
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = main_battle_tanks_2
+							amount = 150
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = lt_equipment_1
+							amount = 300
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = ht_equipment_2
+							amount = 100
+							producer = USA
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_american_doctrine
@@ -3403,8 +3833,8 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_surplus_equipment
 		}
-		x = 27
-		y = 8
+		x = 30
+		y = 9
 			completion_reward = {
 					army_experience = 5
 					add_tech_bonus = {
@@ -3414,6 +3844,7 @@ focus_tree = {
 							category = land_doctrine
 						}
 				}
+
 	}
 	focus = {
 		id = IRQ_american_intelligence_aid
@@ -3425,11 +3856,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_armed_divisions
 		}
-		x = 26
-		y = 9
-		completion_reward = {
-			add_ideas = american_intel_sharing
-		}
+		x = 29
+		y = 10
+			completion_reward = {
+					add_ideas = american_intel_sharing
+				}
+
 	}
 	focus = {
 		id = IRQ_american_tanks
@@ -3438,13 +3870,26 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_intelligence_aid
 		}
-		x = 25
-		y = 10
-		completion_reward = {
-			add_equipment_to_stockpile = { type = main_battle_tanks_2 amount = 150 producer = USA }	
-			add_equipment_to_stockpile = { type = lt_equipment_1 amount = 300 producer = USA }	
-			add_equipment_to_stockpile = { type = ht_equipment_2 amount = 100 producer = USA }	
-		}
+		x = 28
+		y = 11
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = main_battle_tanks_2
+							amount = 150
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = lt_equipment_1
+							amount = 300
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = ht_equipment_2
+							amount = 100
+							producer = USA
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_american_weapon_sale_Copy
@@ -3453,14 +3898,31 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_weapon_sale
 		}
-		x = 28
-		y = 9
-		completion_reward = {
-			add_equipment_to_stockpile = { type = assault_rifle_equipment_1 amount = 2000 producer = USA }	
-			add_equipment_to_stockpile = { type = main_battle_tanks_2 amount = 150 producer = USA }	
-			add_equipment_to_stockpile = { type = lt_equipment_1 amount = 300 producer = USA }	
-			add_equipment_to_stockpile = { type = ht_equipment_2 amount = 100 producer = USA }	
-		}
+		x = 31
+		y = 10
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = assault_rifle_equipment_1
+							amount = 2000
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = main_battle_tanks_2
+							amount = 150
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = lt_equipment_1
+							amount = 300
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = ht_equipment_2
+							amount = 100
+							producer = USA
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_american_weapon_sale_Copy_Copy
@@ -3469,14 +3931,31 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_weapon_sale_Copy
 		}
-		x = 28
-		y = 11
-		completion_reward = {
-			add_equipment_to_stockpile = { type = assault_rifle_equipment_1 amount = 2000 producer = USA }	
-			add_equipment_to_stockpile = { type = main_battle_tanks_2 amount = 150 producer = USA }	
-			add_equipment_to_stockpile = { type = lt_equipment_1 amount = 300 producer = USA }	
-			add_equipment_to_stockpile = { type = ht_equipment_2 amount = 100 producer = USA }	
-		}
+		x = 31
+		y = 12
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = assault_rifle_equipment_1
+							amount = 2000
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = main_battle_tanks_2
+							amount = 150
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = lt_equipment_1
+							amount = 300
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = ht_equipment_2
+							amount = 100
+							producer = USA
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_reform_officer_corps_2
@@ -3485,9 +3964,8 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_mic_contracts
 		}
-
-		x = 28
-		y = 12
+		x = 31
+		y = 13
 			completion_reward = {
 					remove_ideas = incompetent_officer_corps
 				}
@@ -3500,13 +3978,21 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_aircraft_training
 		}
-		x = 31
-		y = 7
+		x = 34
+		y = 8
 			completion_reward = {
-					add_equipment_to_stockpile = { type = CAS_equipment_4 amount = 200 producer = USA }	
-					add_equipment_to_stockpile = { type = jet_fighter_equipment_2 amount = 800 producer = USA }	
-					
+					add_equipment_to_stockpile = {
+							type = CAS_equipment_4
+							amount = 200
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = jet_fighter_equipment_2
+							amount = 800
+							producer = USA
+						}
 				}
+
 	}
 	focus = {
 		id = irq_american_bombers
@@ -3518,13 +4004,21 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_american_fighters
 		}
-		x = 29
-		y = 8
+		x = 32
+		y = 9
 			completion_reward = {
-					add_equipment_to_stockpile = { type = jet_strat_bomber_equipment_2 amount = 200 producer = USA }	
-					add_equipment_to_stockpile = { type = jet_tac_bomber_equipment_2 amount = 800 producer = USA }	
-					
+					add_equipment_to_stockpile = {
+							type = jet_strat_bomber_equipment_2
+							amount = 200
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = jet_tac_bomber_equipment_2
+							amount = 800
+							producer = USA
+						}
 				}
+
 	}
 	focus = {
 		id = IRQ_american_doctrine_air
@@ -3533,16 +4027,17 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_american_fighters
 		}
-		x = 31
-		y = 8
-		completion_reward = {
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 0.5
-				uses = 3
-				category = air_doctrine
-			}
-		}
+		x = 34
+		y = 9
+			completion_reward = {
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 0.5
+							uses = 3
+							category = air_doctrine
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_american_anti_air_defences
@@ -3554,43 +4049,43 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_doctrine_air
 		}
-		x = 30
-		y = 9
-		completion_reward = {
-						random_owned_controlled_state = {
-									limit = {
-											free_building_slots = {
-													building = anti_air_building
-													size > 3
-												}
+		x = 33
+		y = 10
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = anti_air_building
+											size > 3
 										}
-									add_building_construction = {
-											type = anti_air_building
-											level = 2
-											instant_build = yes
+								}
+							add_building_construction = {
+									type = anti_air_building
+									level = 2
+									instant_build = yes
+								}
+							ROOT = {
+									set_country_flag = aviation_effort_2_AB
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = anti_air_building
+											size > 3
 										}
-									ROOT = {
-											set_country_flag = aviation_effort_2_AB
-										}
-								}			
-						random_owned_controlled_state = {
-									limit = {
-											free_building_slots = {
-													building = anti_air_building
-													size > 3
-												}
-										}
-									add_building_construction = {
-											type = anti_air_building
-											level = 2
-											instant_build = yes
-										}
-									ROOT = {
-											set_country_flag = aviation_effort_2_AB
-										}
-								}				
-			
-		}
+								}
+							add_building_construction = {
+									type = anti_air_building
+									level = 2
+									instant_build = yes
+								}
+							ROOT = {
+									set_country_flag = aviation_effort_2_AB
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = irq_american_rocket_tech
@@ -3599,11 +4094,16 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_anti_air_defences
 		}
-		x = 29
-		y = 10
-		completion_reward = {
-			add_equipment_to_stockpile = { type = cruisemissile_1 amount = 400 producer = USA }	
-		}
+		x = 32
+		y = 11
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = cruisemissile_1
+							amount = 400
+							producer = USA
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_american_airfield_development
@@ -3612,8 +4112,8 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_anti_air_defences
 		}
-		x = 31
-		y = 10
+		x = 34
+		y = 11
 			completion_reward = {
 					air_experience = 25
 					if = {
@@ -3671,6 +4171,7 @@ focus_tree = {
 								}
 						}
 				}
+
 	}
 	focus = {
 		id = IRQ_american_mic_contracts
@@ -3682,83 +4183,10 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_airfield_development
 		}
-		x = 30
-		y = 11
-		completion_reward = {
-			add_ideas = american_mic_advisors
-		}
-	}
-	focus = {
-		id = irq_flexible_navy
-		icon = GFX_goal_generic_build_navy
-		cost = 10.00
-		prerequisite = {
-			focus = irq_naval_effort
-		}
-		mutually_exclusive = {
-			focus = irq_large_navy
-		}
 		x = 33
-		y = 6
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 1
-					modifier = {
-							factor = 0
-							all_owned_state = {
-									OR = {
-											is_coastal = no
-											dockyard < 1
-										}
-								}
-						}
-				}
+		y = 12
 			completion_reward = {
-					add_tech_bonus = {
-							name = sub_op_bonus
-							bonus = 0.5
-							uses = 2
-							technology = convoy_interdiction_ti
-							technology = unrestricted_submarine_warfare
-							technology = wolfpacks
-							technology = advanced_submarine_warfare
-							technology = combined_operations_raiding
-						}
-				}
-
-	}
-	focus = {
-		id = irq_large_navy
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10.00
-		prerequisite = {
-			focus = irq_naval_effort
-		}
-		mutually_exclusive = {
-			focus = irq_flexible_navy
-		}
-		x = 35
-		y = 6
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 1
-					modifier = {
-							factor = 0
-							all_owned_state = {
-									OR = {
-											is_coastal = no
-											dockyard < 1
-										}
-								}
-						}
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = fleet_in_being_bonus
-							bonus = 0.5
-							uses = 2
-							category = fleet_in_being_tree
-						}
+					add_ideas = american_mic_advisors
 				}
 
 	}
@@ -3770,7 +4198,7 @@ focus_tree = {
 			focus = irq_flexible_navy
 			focus = irq_large_navy
 		}
-		x = 33
+		x = 0
 		y = 7
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -3806,7 +4234,7 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_submarine_effort
 		}
-		x = 33
+		x = 0
 		y = 8
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -3836,185 +4264,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_recognize_israel
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_the_israeli_question
-		}
-		mutually_exclusive = {
-			focus = IRQ_condemn_israeli_agression
-		}
-		x = 33
-		y = 10
-		completion_reward = {
-				ISR = {
-							add_opinion_modifier = {
-									target = IRQ
-									modifier = small_increase
-								}
-						}
-					IRQ = {
-							add_opinion_modifier = {
-									target = ISR
-						modifier = small_increase
-						}
-			}
-		}
-	}
-	focus = {
-		id = IRQ_align_with_israel
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_recognize_israel
-		}
-		x = 33
-		y = 11
-		completion_reward = {
-			ISR = {
-				add_opinion_modifier = {
-					target = IRQ
-					modifier = large_increase
-				}
-			}
-			IRQ = {
-				add_opinion_modifier = {
-					target = ISR
-					modifier = large_increase
-				}
-			}
-		}
-	}
-	focus = {
-		id = irq_cruiser_effort
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 10.00
-		prerequisite = {
-			focus = irq_large_navy
-			focus = irq_flexible_navy
-		}
-		x = 35
-		y = 7
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 1
-					modifier = {
-							factor = 0
-							all_owned_state = {
-									OR = {
-											is_coastal = no
-											dockyard < 1
-										}
-								}
-						}
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = cr_bonus
-							bonus = 0.5
-							ahead_reduction = 1
-							uses = 1
-							technology = improved_light_cruiser
-							technology = advanced_light_cruiser
-						}
-				}
-
-	}
-	focus = {
-		id = irq_capital_ships_effort
-		icon = GFX_goal_generic_navy_battleship
-		cost = 10.00
-		prerequisite = {
-			focus = irq_cruiser_effort
-		}
-		x = 35
-		y = 8
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 1
-					modifier = {
-							factor = 0
-							all_owned_state = {
-									OR = {
-											is_coastal = no
-											dockyard < 1
-										}
-								}
-						}
-				}
-			completion_reward = {
-					navy_experience = 25
-					add_tech_bonus = {
-							name = capital_ships_bonus
-							bonus = 0.5
-							ahead_reduction = 1
-							uses = 1
-							technology = early_battlecruiser
-							technology = basic_battlecruiser
-							technology = early_battleship
-							technology = basic_battleship
-							technology = improved_battleship
-							technology = early_carrier
-							technology = basic_carrier
-							technology = improved_carrier
-							technology = advanced_carrier
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_condemn_israeli_agression
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_the_israeli_question
-		}
-		mutually_exclusive = {
-			focus = IRQ_recognize_israel
-		}
-		x = 35
-		y = 10
-		completion_reward = {
-				ISR = {
-							add_opinion_modifier = {
-									target = IRQ
-									modifier = small_decrease
-								}
-						}
-					IRQ = {
-							add_opinion_modifier = {
-									target = ISR
-						modifier = small_decrease
-						}
-			}
-		}
-	}
-	focus = {
-		id = IRQ_recognize_palestine
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_condemn_israeli_agression
-		}
-		x = 35
-		y = 11
-		completion_reward = {
-				ISR = {
-							add_opinion_modifier = {
-									target = IRQ
-									modifier = large_decrease
-								}
-						}
-					IRQ = {
-							add_opinion_modifier = {
-									target = ISR
-						modifier = large_decrease
-						}
-			}
-		}
-	}
-	focus = {
 		id = IRQ_new_direction
 		icon = GFX_focus_generic_support_the_left_right
 		cost = 10.00
@@ -4025,11 +4274,12 @@ focus_tree = {
 			focus = IRQ_embrace_radical_shiaism
 			focus = IRQ_traditionalist_values
 		}
-		x = 44
+		x = 43
 		y = 6
-		completion_reward = {
-			add_political_power = 150
-		}
+			completion_reward = {
+					add_political_power = 150
+				}
+
 	}
 	focus = {
 		id = IRQ_embrace_democracy
@@ -4041,11 +4291,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_recruit_religous_minorities
 		}
-		x = 39
+		x = 38
 		y = 7
-		completion_reward = {
-			add_ideas = democratic_party_drift
-		}
+			completion_reward = {
+					add_ideas = democratic_party_drift
+				}
+
 	}
 	focus = {
 		id = IRQ_constitutional_monarchy
@@ -4057,12 +4308,16 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_democratic_republic
 		}
-		x = 38
+		x = 37
 		y = 8
-		completion_reward = {
-			set_politics = { ruling_party = socialism elections_allowed = yes }
-			add_political_power = 150
-		}
+			completion_reward = {
+					set_politics = {
+							ruling_party = socialism
+							elections_allowed = yes
+						}
+					add_political_power = 150
+				}
+
 	}
 	focus = {
 		id = IRQ_democratic_republic
@@ -4074,12 +4329,16 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_constitutional_monarchy
 		}
-		x = 40
+		x = 39
 		y = 8
-		completion_reward = {
-			set_politics = { ruling_party = socialism elections_allowed = yes }
-			add_national_unity = 5.10
-		}
+			completion_reward = {
+					set_politics = {
+							ruling_party = socialism
+							elections_allowed = yes
+						}
+					add_national_unity = 5.10
+				}
+
 	}
 	focus = {
 		id = IRQ_recruit_religous_minorities
@@ -4089,16 +4348,17 @@ focus_tree = {
 			focus = IRQ_new_direction
 		}
 		mutually_exclusive = {
+			focus = IRQ_embrace_democracy
 			focus = IRQ_strengthen_the_monarchy
 			focus = IRQ_embrace_radical_shiaism
 			focus = IRQ_rise_of_the_baathist_party
-			focus = IRQ_embrace_democracy
 		}
-		x = 42
+		x = 41
 		y = 7
-		completion_reward = {
-			add_ideas = minority_recruitment
-		}
+			completion_reward = {
+					add_ideas = minority_recruitment
+				}
+
 	}
 	focus = {
 		id = IRQ_assyrian_coup
@@ -4107,11 +4367,15 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_recruit_religous_minorities
 		}
-		x = 42
+		x = 41
 		y = 8
-		completion_reward = {
-			set_politics = { ruling_party = neutrality elections_allowed = no }
-		}
+			completion_reward = {
+					set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_embrace_capitalism
@@ -4122,7 +4386,7 @@ focus_tree = {
 			focus = IRQ_democratic_republic
 			focus = IRQ_assyrian_coup
 		}
-		x = 39
+		x = 38
 		y = 9
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -4155,7 +4419,6 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-				
 					random_owned_controlled_state = {
 							limit = {
 									free_building_slots = {
@@ -4217,6 +4480,7 @@ focus_tree = {
 								}
 						}
 				}
+
 	}
 	focus = {
 		id = IRQ_alliance_of_minorities
@@ -4225,11 +4489,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_assyrian_coup
 		}
-		x = 41
+		x = 40
 		y = 9
-		completion_reward = {
-			add_national_unity = 5.15
-		}
+			completion_reward = {
+					add_national_unity = 5.15
+				}
+
 	}
 	focus = {
 		id = IRQ_retake_syria
@@ -4238,15 +4503,20 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_alliance_of_minorities
 		}
-		x = 41
+		x = 40
 		y = 10
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
 							target = SYR
 						}
-						SYR = { every_owned_state = { add_core_of = IRQ }	}
+					SYR = {
+							every_owned_state = {
+									add_core_of = IRQ
+								}
+						}
 				}
+
 	}
 	focus = {
 		id = IRQ_rise_of_the_baathist_party
@@ -4256,14 +4526,15 @@ focus_tree = {
 			focus = IRQ_new_direction
 		}
 		mutually_exclusive = {
-			focus = IRQ_pan_arabist_coup
 			focus = IRQ_recruit_religous_minorities
+			focus = IRQ_pan_arabist_coup
 		}
-		x = 44
+		x = 43
 		y = 7
-		completion_reward = {
-			add_ideas = baathist_propaganda
-		}
+			completion_reward = {
+					add_ideas = baathist_propaganda
+				}
+
 	}
 	focus = {
 		id = IRQ_militarism
@@ -4272,11 +4543,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_rise_of_the_baathist_party
 		}
-		x = 44
+		x = 43
 		y = 8
-		completion_reward = {
-			add_ideas = militarism_focus
-		}
+			completion_reward = {
+					add_ideas = militarism_focus
+				}
+
 	}
 	focus = {
 		id = IRQ_baathist_coup
@@ -4285,11 +4557,15 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_militarism
 		}
-		x = 44
+		x = 43
 		y = 9
-		completion_reward = {
-			set_politics = { ruling_party = fascism elections_allowed = no }
-		}
+			completion_reward = {
+					set_politics = {
+							ruling_party = fascism
+							elections_allowed = no
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_republican_guard
@@ -4298,11 +4574,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_baathist_coup
 		}
-		x = 44
+		x = 43
 		y = 10
-		completion_reward = {
-			load_oob = irq_republican_guard
-		}
+			completion_reward = {
+					load_oob = irq_republican_guard
+				}
+
 	}
 	focus = {
 		id = IRQ_crush_the_kurds
@@ -4312,10 +4589,10 @@ focus_tree = {
 			focus = IRQ_retake_syria
 			focus = IRQ_republican_guard
 		}
-		x = 43
+		x = 42
 		y = 11
-		completion_reward = {
-			remove_ideas = kurdish_conflict
+			completion_reward = {
+					remove_ideas = kurdish_conflict
 					TUR = {
 							release = KUR
 							declare_war_on = {
@@ -4323,8 +4600,8 @@ focus_tree = {
 									type = annex_everything
 								}
 						}
-				
-		}
+				}
+
 	}
 	focus = {
 		id = IRQ_claim_khuzestan
@@ -4336,16 +4613,19 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_republican_guard
 		}
-		x = 44
+		x = 43
 		y = 12
-		completion_reward = {
-			413 = { add_core_of = IRQ }
-			create_wargoal = {
-				type = take_state_focus
-				target = PER
-				generator = { 413 }
-			}
-		}
+			completion_reward = {
+					413 = {
+							add_core_of = IRQ
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = PER
+							generator = { 413 }
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_pan_arabist_coup
@@ -4357,12 +4637,19 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_rise_of_the_baathist_party
 		}
-		x = 46
+		x = 45
 		y = 7
-		completion_reward = {
-			set_politics = { ruling_party = neutrality elections_allowed = no }
-			add_timed_idea = { idea = pan_arab_influence days = 365 }	
-		}
+			completion_reward = {
+					set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+					add_timed_idea = {
+							idea = pan_arab_influence
+							days = 365
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_crush_kurdish_seperatism
@@ -4374,10 +4661,10 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_free_officer_victory
 		}
-		x = 46
+		x = 45
 		y = 8
-		completion_reward = {
-			remove_ideas = kurdish_conflict
+			completion_reward = {
+					remove_ideas = kurdish_conflict
 					TUR = {
 							release = KUR
 							declare_war_on = {
@@ -4385,8 +4672,8 @@ focus_tree = {
 									type = annex_everything
 								}
 						}
-				
-		}
+				}
+
 	}
 	focus = {
 		id = IRQ_join_UAR
@@ -4395,9 +4682,9 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_crush_kurdish_seperatism
 		}
-		x = 46
+		x = 45
 		y = 9
-		#NEEDS EVENTS
+
 	}
 	focus = {
 		id = IRQ_traditionalist_values
@@ -4409,11 +4696,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_new_direction
 		}
-		x = 51
+		x = 50
 		y = 6
-		completion_reward = {
-			add_timed_idea = { idea = IRQ_traditionalist_drift days = 365 }	
-		}
+			completion_reward = {
+					add_timed_idea = {
+							idea = IRQ_traditionalist_drift
+							days = 365
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_strengthen_the_monarchy
@@ -4423,13 +4714,19 @@ focus_tree = {
 			focus = IRQ_traditionalist_values
 		}
 		mutually_exclusive = {
+			focus = IRQ_recruit_religous_minorities
 			focus = IRQ_embrace_radical_shiaism
+			focus = IRQ_the_arab_federation
 		}
-		x = 48
+		x = 47
 		y = 7
-		completion_reward = {
-			add_timed_idea = { idea = monarchist_influence days = 365 }	
-		}
+			completion_reward = {
+					add_timed_idea = {
+							idea = monarchist_influence
+							days = 365
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_the_arab_federation
@@ -4441,9 +4738,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_strengthen_the_monarchy
 		}
-		x = 48
+		x = 47
 		y = 8
-		#NEEDS EVENTS
+
 	}
 	focus = {
 		id = IRQ_14th_of_july_revolution
@@ -4452,11 +4749,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_the_arab_federation
 		}
-		x = 48
+		x = 47
 		y = 9
-		completion_reward = {
-			#NEEDS EVENT
-		}
+			completion_reward = {
+
+}
+
 	}
 	focus = {
 		id = IRQ_free_officer_victory
@@ -4466,14 +4764,24 @@ focus_tree = {
 			focus = IRQ_14th_of_july_revolution
 		}
 		mutually_exclusive = {
+			focus = IRQ_crush_kurdish_seperatism
 			focus = IRQ_preserve_the_federation
+			focus = IRQ_align_with_the_socialists
+			focus = IRQ_demand_kuwait
 		}
-		x = 46
+		x = 45
 		y = 10
-		completion_reward = {
-			set_politics = { ruling_party = socialism elections_allowed = no }
-			add_timed_idea = { idea = IRQ_free_officer_era_drift days = 365 }	
-		}
+			completion_reward = {
+					set_politics = {
+							ruling_party = socialism
+							elections_allowed = no
+						}
+					add_timed_idea = {
+							idea = IRQ_free_officer_era_drift
+							days = 365
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_align_with_the_iraqi_communists
@@ -4485,13 +4793,20 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_align_with_the_socialists
 		}
-		x = 45
+		x = 44
 		y = 11
-		completion_reward = {
-			set_politics = { ruling_party = communism elections_allowed = no }
-			add_timed_idea = { idea = internationalism days = 365 }	
-			add_national_unity = -0.10
-		}
+			completion_reward = {
+					set_politics = {
+							ruling_party = communism
+							elections_allowed = no
+						}
+					add_timed_idea = {
+							idea = internationalism
+							days = 365
+						}
+					add_national_unity = -0.10
+				}
+
 	}
 	focus = {
 		id = IRQ_align_with_the_socialists
@@ -4501,14 +4816,15 @@ focus_tree = {
 			focus = IRQ_free_officer_victory
 		}
 		mutually_exclusive = {
-			focus = IRQ_free_officer_victory
 			focus = IRQ_align_with_the_iraqi_communists
+			focus = IRQ_free_officer_victory
 		}
-		x = 47
+		x = 46
 		y = 11
-		completion_reward = {
-			add_political_power = 150
-		}
+			completion_reward = {
+					add_political_power = 150
+				}
+
 	}
 	focus = {
 		id = IRQ_demand_kuwait
@@ -4522,9 +4838,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_free_officer_victory
 		}
-		x = 48
+		x = 47
 		y = 12
-		#EVENT
+
 	}
 	focus = {
 		id = IRQ_preserve_the_federation
@@ -4536,11 +4852,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_free_officer_victory
 		}
-		x = 50
+		x = 49
 		y = 10
-		completion_reward = {
-			start_civil_war = { ideology = socialism size = 0.40 }	
-		}
+			completion_reward = {
+					start_civil_war = {
+							ideology = socialism
+							size = 0.40
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_strengthen_ties_to_uk
@@ -4549,9 +4869,9 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_preserve_the_federation
 		}
-		x = 50
+		x = 49
 		y = 11
-		completion_reward = {
+			completion_reward = {
 					ENG = {
 							add_opinion_modifier = {
 									target = IRQ
@@ -4563,8 +4883,9 @@ focus_tree = {
 									target = ENG
 									modifier = large_increase
 								}
-						}			
-		}
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_request_kuwait
@@ -4573,9 +4894,9 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_strengthen_ties_to_uk
 		}
-		x = 50
+		x = 49
 		y = 12
-		#EVENT
+
 	}
 	focus = {
 		id = IRQ_begin_economic_liberalization
@@ -4584,9 +4905,9 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_request_kuwait
 		}
-		x = 50
+		x = 49
 		y = 13
-		completion_reward = {
+			completion_reward = {
 					random_owned_controlled_state = {
 							limit = {
 									free_building_slots = {
@@ -4617,7 +4938,6 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-				
 					random_owned_controlled_state = {
 							limit = {
 									free_building_slots = {
@@ -4679,6 +4999,7 @@ focus_tree = {
 								}
 						}
 				}
+
 	}
 	focus = {
 		id = IRQ_embrace_radical_shiaism
@@ -4688,14 +5009,20 @@ focus_tree = {
 			focus = IRQ_traditionalist_values
 		}
 		mutually_exclusive = {
+			focus = IRQ_new_direction
+			focus = IRQ_recruit_religous_minorities
 			focus = IRQ_strengthen_the_monarchy
 			focus = IRQ_embrace_islamism
 		}
-		x = 51
+		x = 50
 		y = 7
-		completion_reward = {
-			add_timed_idea = { idea = shia_radical_drift days = 365 }	
-		}
+			completion_reward = {
+					add_timed_idea = {
+							idea = shia_radical_drift
+							days = 365
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_iraqi_revolution
@@ -4704,11 +5031,15 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_embrace_radical_shiaism
 		}
-		x = 51
+		x = 50
 		y = 8
-		completion_reward = {
-			set_politics = { ruling_party = fascism elections_allowed = no }
-		}
+			completion_reward = {
+					set_politics = {
+							ruling_party = fascism
+							elections_allowed = no
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_liberate_eastern_arabia
@@ -4717,25 +5048,38 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_iraqi_revolution
 		}
-		x = 52
+		x = 51
 		y = 9
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
 							target = SAU
 						}
-						SAU = { every_owned_state = { add_core_of = IRQ }	}
+					SAU = {
+							every_owned_state = {
+									add_core_of = IRQ
+								}
+						}
 					create_wargoal = {
 							type = annex_everything
 							target = OMA
 						}
-						OMA = { every_owned_state = { add_core_of = IRQ }	}
+					OMA = {
+							every_owned_state = {
+									add_core_of = IRQ
+								}
+						}
 					create_wargoal = {
 							type = annex_everything
 							target = YEM
 						}
-						YEM = { every_owned_state = { add_core_of = IRQ }	}
+					YEM = {
+							every_owned_state = {
+									add_core_of = IRQ
+								}
+						}
 				}
+
 	}
 	focus = {
 		id = IRQ_export_the_revolution
@@ -4744,14 +5088,35 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_liberate_eastern_arabia
 		}
-		x = 52
+		x = 51
 		y = 10
-		completion_reward = {
-			SYR = { add_timed_idea = { idea = shia_radical_drift days = 300 } }
-			PER = { add_timed_idea = { idea = shia_radical_drift days = 300 } }
-			AFG = { add_timed_idea = { idea = shia_radical_drift days = 300 } }
-			LEB = { add_timed_idea = { idea = shia_radical_drift days = 300 } }
-		}
+			completion_reward = {
+					SYR = {
+							add_timed_idea = {
+									idea = shia_radical_drift
+									days = 300
+								}
+						}
+					PER = {
+							add_timed_idea = {
+									idea = shia_radical_drift
+									days = 300
+								}
+						}
+					AFG = {
+							add_timed_idea = {
+									idea = shia_radical_drift
+									days = 300
+								}
+						}
+					LEB = {
+							add_timed_idea = {
+									idea = shia_radical_drift
+									days = 300
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_shia_crescent
@@ -4760,25 +5125,38 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_export_the_revolution
 		}
-		x = 52
+		x = 51
 		y = 11
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
 							target = SYR
 						}
-						SYR = { every_owned_state = { add_core_of = IRQ }	}
+					SYR = {
+							every_owned_state = {
+									add_core_of = IRQ
+								}
+						}
 					create_wargoal = {
 							type = annex_everything
 							target = LEB
 						}
-						LEB = { every_owned_state = { add_core_of = IRQ }	}
+					LEB = {
+							every_owned_state = {
+									add_core_of = IRQ
+								}
+						}
 					create_wargoal = {
 							type = annex_everything
 							target = JOR
 						}
-						JOR = { every_owned_state = { add_core_of = IRQ }	}
+					JOR = {
+							every_owned_state = {
+									add_core_of = IRQ
+								}
+						}
 				}
+
 	}
 	focus = {
 		id = irq_extra_tech_slot_2
@@ -4793,7 +5171,7 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_secret_weapons
 		}
-		x = 3
+		x = 6
 		y = 11
 			available = {
 					num_of_factories > 50
@@ -4816,11 +5194,16 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_soviet_armed_divisions
 		}
-		x = 19
-		y = 9
-		completion_reward = {
-			add_equipment_to_stockpile = { type = motorized_equipment_2 amount = 500 producer = SOV }	
-		}
+		x = 22
+		y = 10
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = motorized_equipment_2
+							amount = 500
+							producer = SOV
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_soviet_tanks
@@ -4832,13 +5215,26 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_more_surplus_equipment
 		}
-		x = 17
-		y = 10
-		completion_reward = {
-			add_equipment_to_stockpile = { type = main_battle_tanks_2 amount = 150 producer = SOV }	
-			add_equipment_to_stockpile = { type = lt_equipment_1 amount = 300 producer = SOV }	
-			add_equipment_to_stockpile = { type = ht_equipment_2 amount = 100 producer = SOV }	
-		}
+		x = 20
+		y = 11
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = main_battle_tanks_2
+							amount = 150
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = lt_equipment_1
+							amount = 300
+							producer = SOV
+						}
+					add_equipment_to_stockpile = {
+							type = ht_equipment_2
+							amount = 100
+							producer = SOV
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_soviet_mechanized_equipment
@@ -4850,11 +5246,16 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_soviet_motorization_aid
 		}
-		x = 19
-		y = 10
-		completion_reward = {
-			add_equipment_to_stockpile = { type = mechanized_equipment_3 amount = 500 producer = SOV }	
-		}
+		x = 22
+		y = 11
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = mechanized_equipment_3
+							amount = 500
+							producer = SOV
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_backwards_engineer_soviet_designs
@@ -4866,11 +5267,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_soviet_tanks
 		}
-		x = 18
-		y = 11
-		completion_reward = {
-			add_ideas = soviet_military_desgins
-		}
+		x = 21
+		y = 12
+			completion_reward = {
+					add_ideas = soviet_military_desgins
+				}
+
 	}
 	focus = {
 		id = irq_purge_officer_corps
@@ -4885,11 +5287,12 @@ focus_tree = {
 		prerequisite = {
 			focus = irq_soviet_scuds
 		}
-		x = 20
-		y = 12
-		completion_reward = {
-			remove_ideas = incompetent_officer_corps
-		}
+		x = 23
+		y = 13
+			completion_reward = {
+					remove_ideas = incompetent_officer_corps
+				}
+
 	}
 	focus = {
 		id = IRQ_american_mechanized_equipment
@@ -4898,12 +5301,21 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_intelligence_aid
 		}
-		x = 27
-		y = 10
-		completion_reward = {
-			add_equipment_to_stockpile = { type = mechanized_equipment_3 amount = 500 producer = USA }
-			add_equipment_to_stockpile = { type = motorized_equipment_2 amount = 500 producer = SOV }	
-		}
+		x = 30
+		y = 11
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = mechanized_equipment_3
+							amount = 500
+							producer = USA
+						}
+					add_equipment_to_stockpile = {
+							type = motorized_equipment_2
+							amount = 500
+							producer = SOV
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_american_license_agreements
@@ -4915,20 +5327,91 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_american_tanks
 		}
-		x = 26
-		y = 11
-		completion_reward = {
-			create_production_license = { target = USA	cost_factor = 1.0 equipment = {	type = motorized_equipment_2 version = 0 }	}
-			create_production_license = { target = USA	cost_factor = 1.0 equipment = {	type = mechanized_equipment_3 version = 0 }	}
-			create_production_license = { target = USA	cost_factor = 1.0 equipment = {	type = main_battle_tanks_2 version = 0 }	}
-			create_production_license = { target = USA	cost_factor = 1.0 equipment = {	type = lt_equipment_1 version = 0 }	}
-			create_production_license = { target = USA	cost_factor = 1.0 equipment = {	type = ht_equipment_2 version = 0 }	}
-			create_production_license = { target = USA	cost_factor = 1.0 equipment = {	type = assault_rifle_equipment_1 version = 0 }	}
-			create_production_license = { target = USA	cost_factor = 1.0 equipment = {	type = CAS_equipment_4 version = 0 }	}
-			create_production_license = { target = USA	cost_factor = 1.0 equipment = {	type = jet_fighter_equipment_2 version = 0 }		}
-			create_production_license = { target = USA	cost_factor = 1.0 equipment = {	type = jet_tac_bomber_equipment_2 version = 0 }	}
-			create_production_license = { target = USA	cost_factor = 1.0 equipment = {	type = jet_strat_bomber_equipment_2 version = 0 }	}			
-		}
+		x = 29
+		y = 12
+			completion_reward = {
+					create_production_license = {
+							target = USA
+							cost_factor = 1.0
+							equipment = {
+									type = motorized_equipment_2
+									version = 0
+								}
+						}
+					create_production_license = {
+							target = USA
+							cost_factor = 1.0
+							equipment = {
+									type = mechanized_equipment_3
+									version = 0
+								}
+						}
+					create_production_license = {
+							target = USA
+							cost_factor = 1.0
+							equipment = {
+									type = main_battle_tanks_2
+									version = 0
+								}
+						}
+					create_production_license = {
+							target = USA
+							cost_factor = 1.0
+							equipment = {
+									type = lt_equipment_1
+									version = 0
+								}
+						}
+					create_production_license = {
+							target = USA
+							cost_factor = 1.0
+							equipment = {
+									type = ht_equipment_2
+									version = 0
+								}
+						}
+					create_production_license = {
+							target = USA
+							cost_factor = 1.0
+							equipment = {
+									type = assault_rifle_equipment_1
+									version = 0
+								}
+						}
+					create_production_license = {
+							target = USA
+							cost_factor = 1.0
+							equipment = {
+									type = CAS_equipment_4
+									version = 0
+								}
+						}
+					create_production_license = {
+							target = USA
+							cost_factor = 1.0
+							equipment = {
+									type = jet_fighter_equipment_2
+									version = 0
+								}
+						}
+					create_production_license = {
+							target = USA
+							cost_factor = 1.0
+							equipment = {
+									type = jet_tac_bomber_equipment_2
+									version = 0
+								}
+						}
+					create_production_license = {
+							target = USA
+							cost_factor = 1.0
+							equipment = {
+									type = jet_strat_bomber_equipment_2
+									version = 0
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = irq_soviet_military_development
@@ -4940,8 +5423,8 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_soviet_mechanized_equipment
 		}
-		x = 20
-		y = 11
+		x = 23
+		y = 12
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 2
@@ -5010,12 +5493,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_embrace_radical_shiaism
 		}
-		x = 55
+		x = 54
 		y = 7
-		completion_reward = {
-			add_timed_idea = { idea = islamism_drift days = 365 }	
-		}
-		
+			completion_reward = {
+					add_timed_idea = {
+							idea = islamism_drift
+							days = 365
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_agrarian_reform
@@ -5031,11 +5517,12 @@ focus_tree = {
 			focus = IRQ_soviet_alignment
 			focus = IRQ_non_aligned
 		}
-		x = 46
+		x = 45
 		y = 12
-		completion_reward = {
-			add_ideas = agrarian_reform
-		}
+			completion_reward = {
+					add_ideas = agrarian_reform
+				}
+
 	}
 	focus = {
 		id = IRQ_industrial_development
@@ -5044,7 +5531,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_nationalize_british_assets
 		}
-		x = 46
+		x = 45
 		y = 14
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -5077,7 +5564,6 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-				
 					random_owned_controlled_state = {
 							limit = {
 									free_building_slots = {
@@ -5139,6 +5625,7 @@ focus_tree = {
 								}
 						}
 				}
+
 	}
 	focus = {
 		id = IRQ_five_year_plan
@@ -5147,7 +5634,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_industrial_development
 		}
-		x = 46
+		x = 45
 		y = 15
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -5180,7 +5667,6 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-				
 					random_owned_controlled_state = {
 							limit = {
 									free_building_slots = {
@@ -5242,6 +5728,7 @@ focus_tree = {
 								}
 						}
 				}
+
 	}
 	focus = {
 		id = IRQ_the_mosul_uprising
@@ -5250,11 +5737,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_five_year_plan
 		}
-		x = 46
+		x = 45
 		y = 16
-		completion_reward = {
-			#Event
-		}
+			completion_reward = {
+
+}
+
 	}
 	focus = {
 		id = IRQ_join_the_warsaw_pact
@@ -5269,11 +5757,14 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_governmental_stability
 		}
-		x = 45
+		x = 44
 		y = 17
-		completion_reward = {
-				SOV = { add_to_faction = IRQ }
-		}
+			completion_reward = {
+					SOV = {
+							add_to_faction = IRQ
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_governmental_stability
@@ -5288,11 +5779,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IRQ_join_the_warsaw_pact
 		}
-		x = 47
+		x = 46
 		y = 17
-		completion_reward = {
-			add_political_power = 160
-		}
+			completion_reward = {
+					add_political_power = 160
+				}
+
 	}
 	focus = {
 		id = IRQ_strengthen_western_ties
@@ -5301,9 +5793,9 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_embrace_capitalism
 		}
-		x = 39
+		x = 38
 		y = 10
-		completion_reward = {
+			completion_reward = {
 					IRQ = {
 							add_opinion_modifier = {
 									target = USA
@@ -5315,8 +5807,9 @@ focus_tree = {
 									target = IRQ
 									modifier = large_increase
 								}
-						}			
-		}
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_join_NATO
@@ -5325,11 +5818,14 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_strengthen_western_ties
 		}
-		x = 39
+		x = 38
 		y = 11
-		completion_reward = {
-			USA = { add_to_faction = IRQ }
-		}
+			completion_reward = {
+					USA = {
+							add_to_faction = IRQ
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_revenge_for_the_assyrian_genocide
@@ -5341,11 +5837,15 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_retake_syria
 		}
-		x = 41
+		x = 40
 		y = 12
-		completion_reward = {
-			create_wargoal = { type = annex_everything target = TUR }
-		}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = TUR
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_nationalize_british_assets
@@ -5354,11 +5854,12 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_agrarian_reform
 		}
-		x = 46
+		x = 45
 		y = 13
-		completion_reward = {
-			remove_ideas = Iraq_Petroleum_Company
-		}
+			completion_reward = {
+					remove_ideas = Iraq_Petroleum_Company
+				}
+
 	}
 	focus = {
 		id = IRQ_align_with_saudi_arabia
@@ -5367,9 +5868,9 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_embrace_islamism
 		}
-		x = 55
+		x = 54
 		y = 8
-		completion_reward = {
+			completion_reward = {
 					IRQ = {
 							add_opinion_modifier = {
 									target = SAU
@@ -5381,8 +5882,9 @@ focus_tree = {
 									target = IRQ
 									modifier = large_increase
 								}
-						}				
-		}
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_embrace_wahabism
@@ -5391,12 +5893,15 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_align_with_saudi_arabia
 		}
-		x = 55
+		x = 54
 		y = 9
-		
-		completion_reward = {
-			set_politics = { ruling_party = neutrality elections_allowed = no }	
-		}
+			completion_reward = {
+					set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+				}
+
 	}
 	focus = {
 		id = IRQ_unite_the_arab_levant
@@ -5405,20 +5910,29 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_embrace_wahabism
 		}
-		x = 55
+		x = 54
 		y = 10
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
 							target = JOR
 						}
-						JOR = { every_owned_state = { add_core_of = IRQ }	}
+					JOR = {
+							every_owned_state = {
+									add_core_of = IRQ
+								}
+						}
 					create_wargoal = {
 							type = annex_everything
 							target = SYR
 						}
-						SYR = { every_owned_state = { add_core_of = IRQ }	}
+					SYR = {
+							every_owned_state = {
+									add_core_of = IRQ
+								}
+						}
 				}
+
 	}
 	focus = {
 		id = IRQ_liberate_khuzestan
@@ -5427,15 +5941,18 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_unite_the_arab_levant
 		}
-		x = 55
+		x = 54
 		y = 11
-		completion_reward = {
-			413 = { add_core_of = IRQ }
-			create_wargoal = {
-				type = take_state_focus
-				target = PER
-				generator = { 413 }
-			}
-		}
+			completion_reward = {
+					413 = {
+							add_core_of = IRQ
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = PER
+							generator = { 413 }
+						}
+				}
+
 	}
 }
