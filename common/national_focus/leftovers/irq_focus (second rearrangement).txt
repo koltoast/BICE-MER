@@ -9,13 +9,13 @@ focus_tree = {
 	}
 	default = no
 	
-	continuous_focus_position = { x = 50 y = 2890 }
+	continuous_focus_position = { x = 50 y = 2900 }
 	
 	focus = {
 		id = IRQ_36_army_innovations
 		icon = GFX_goal_generic_axis_build_infantry
 		cost = 10.00
-		x = 16
+		x = 22
 		y = 7
 			completion_reward = {
 					army_experience = 5
@@ -32,7 +32,7 @@ focus_tree = {
 		id = IRQ_36_air
 		icon = GFX_goal_generic_build_airforce
 		cost = 10.00
-		x = 12
+		x = 27
 		y = 7
 			complete_tooltip = {
 					air_experience = 25
@@ -283,7 +283,7 @@ focus_tree = {
 		id = IRQ_the_israeli_question
 		icon = GFX_goal_generic_neutrality_focus
 		cost = 10.00
-		x = 26
+		x = 16
 		y = 7
 			completion_reward = {
 					add_political_power = 150
@@ -1668,13 +1668,153 @@ focus_tree = {
 
 	}
 	focus = {
+		id = IRQ_recognize_israel
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_the_israeli_question
+		}
+		mutually_exclusive = {
+			focus = IRQ_condemn_israeli_agression
+		}
+		x = 15
+		y = 8
+			completion_reward = {
+					ISR = {
+							add_opinion_modifier = {
+									target = IRQ
+									modifier = small_increase
+								}
+						}
+					IRQ = {
+							add_opinion_modifier = {
+									target = ISR
+									modifier = small_increase
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_align_with_israel
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_recognize_israel
+		}
+		x = 15
+		y = 9
+			completion_reward = {
+					ISR = {
+							add_opinion_modifier = {
+									target = IRQ
+									modifier = large_increase
+								}
+						}
+					IRQ = {
+							add_opinion_modifier = {
+									target = ISR
+									modifier = large_increase
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_condemn_israeli_agression
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_the_israeli_question
+		}
+		mutually_exclusive = {
+			focus = IRQ_recognize_israel
+		}
+		x = 17
+		y = 8
+			completion_reward = {
+					ISR = {
+							add_opinion_modifier = {
+									target = IRQ
+									modifier = small_decrease
+								}
+						}
+					IRQ = {
+							add_opinion_modifier = {
+									target = ISR
+									modifier = small_decrease
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_recognize_palestine
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_condemn_israeli_agression
+		}
+		x = 17
+		y = 9
+			completion_reward = {
+					ISR = {
+							add_opinion_modifier = {
+									target = IRQ
+									modifier = large_decrease
+								}
+						}
+					IRQ = {
+							add_opinion_modifier = {
+									target = ISR
+									modifier = large_decrease
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_36_simele_massacre
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_reform
+		}
+		x = 19
+		y = 1
+			complete_tooltip = {
+					remove_ideas = IRQ_simele
+				}
+			completion_reward = {
+					remove_ideas = IRQ_simele
+				}
+
+	}
+	focus = {
+		id = IRQ_36_assyrians
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = IRQ_36_simele_massacre
+		}
+		x = 19
+		y = 2
+			completion_reward = {
+					country_event = {
+							days = 1
+							id = iraq.6
+						}
+				}
+
+	}
+	focus = {
 		id = IRQ_36_anglo_treaty
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 10.00
 		prerequisite = {
 			focus = IRQ_36_army_innovations
 		}
-		x = 16
+		x = 22
 		y = 8
 			bypass = {
 					OR = {
@@ -1718,7 +1858,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_36_anglo_treaty
 		}
-		x = 15
+		x = 21
 		y = 9
 			completion_reward = {
 					add_tech_bonus = {
@@ -1737,7 +1877,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_36_equipment
 		}
-		x = 14
+		x = 20
 		y = 10
 			completion_reward = {
 					add_tech_bonus = {
@@ -1756,7 +1896,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_36_anglo_treaty
 		}
-		x = 17
+		x = 23
 		y = 9
 			completion_reward = {
 					add_tech_bonus = {
@@ -1777,7 +1917,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_36_motor
 		}
-		x = 16
+		x = 22
 		y = 10
 			completion_reward = {
 					army_experience = 15
@@ -1797,7 +1937,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_36_doctrine
 		}
-		x = 16
+		x = 22
 		y = 11
 			completion_reward = {
 					add_tech_bonus = {
@@ -1812,13 +1952,32 @@ focus_tree = {
 
 	}
 	focus = {
+		id = IRQ_36_arty2
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_36_arty
+		}
+		x = 20
+		y = 11
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 0.25
+							uses = 2
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
 		id = IRQ_36_mechanized
 		icon = GFX_goal_generic_build_tank
 		cost = 10.00
 		prerequisite = {
 			focus = IRQ_36_motor
 		}
-		x = 18
+		x = 24
 		y = 10
 			completion_reward = {
 					add_tech_bonus = {
@@ -1837,7 +1996,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_36_mechanized
 		}
-		x = 18
+		x = 24
 		y = 11
 			completion_reward = {
 					add_tech_bonus = {
@@ -1850,66 +2009,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_36_simele_massacre
-		icon = GFX_goal_generic_national_unity
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_36_reform
-		}
-		x = 19
-		y = 1
-			complete_tooltip = {
-					remove_ideas = IRQ_simele
-				}
-			completion_reward = {
-					remove_ideas = IRQ_simele
-				}
-
-	}
-	focus = {
-		id = IRQ_36_assyrians
-		icon = GFX_focus_generic_military_mission
-		cost = 5.00
-		prerequisite = {
-			focus = IRQ_36_simele_massacre
-		}
-		x = 19
-		y = 2
-			completion_reward = {
-					country_event = {
-							days = 1
-							id = iraq.6
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_36_arty2
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_36_arty
-		}
-		x = 14
-		y = 11
-			completion_reward = {
-					add_tech_bonus = {
-							name = infantry_weapons_bonus
-							bonus = 0.25
-							uses = 2
-							category = artillery
-						}
-				}
-
-	}
-	focus = {
 		id = IRQ_36_fighters
 		icon = GFX_goal_generic_air_fighter
 		cost = 10.00
 		prerequisite = {
 			focus = IRQ_36_air
 		}
-		x = 12
+		x = 27
 		y = 8
 			completion_reward = {
 					add_tech_bonus = {
@@ -1933,7 +2039,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_36_fighters
 		}
-		x = 11
+		x = 26
 		y = 9
 			completion_reward = {
 					add_tech_bonus = {
@@ -1952,7 +2058,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_36_fighters
 		}
-		x = 13
+		x = 28
 		y = 9
 			complete_tooltip = {
 					air_experience = 25
@@ -2048,7 +2154,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_36_cas
 		}
-		x = 12
+		x = 27
 		y = 10
 			completion_reward = {
 					add_research_slot = 1
@@ -2062,7 +2168,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_36_military_advance
 		}
-		x = 12
+		x = 27
 		y = 11
 			completion_reward = {
 					add_tech_bonus = {
@@ -2071,112 +2177,6 @@ focus_tree = {
 							uses = 2
 							category = rocketry
 							category = jet_technology
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_recognize_israel
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_the_israeli_question
-		}
-		mutually_exclusive = {
-			focus = IRQ_condemn_israeli_agression
-		}
-		x = 25
-		y = 8
-			completion_reward = {
-					ISR = {
-							add_opinion_modifier = {
-									target = IRQ
-									modifier = small_increase
-								}
-						}
-					IRQ = {
-							add_opinion_modifier = {
-									target = ISR
-									modifier = small_increase
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_align_with_israel
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_recognize_israel
-		}
-		x = 25
-		y = 9
-			completion_reward = {
-					ISR = {
-							add_opinion_modifier = {
-									target = IRQ
-									modifier = large_increase
-								}
-						}
-					IRQ = {
-							add_opinion_modifier = {
-									target = ISR
-									modifier = large_increase
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_condemn_israeli_agression
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_the_israeli_question
-		}
-		mutually_exclusive = {
-			focus = IRQ_recognize_israel
-		}
-		x = 27
-		y = 8
-			completion_reward = {
-					ISR = {
-							add_opinion_modifier = {
-									target = IRQ
-									modifier = small_decrease
-								}
-						}
-					IRQ = {
-							add_opinion_modifier = {
-									target = ISR
-									modifier = small_decrease
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_recognize_palestine
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = IRQ_condemn_israeli_agression
-		}
-		x = 27
-		y = 9
-			completion_reward = {
-					ISR = {
-							add_opinion_modifier = {
-									target = IRQ
-									modifier = large_decrease
-								}
-						}
-					IRQ = {
-							add_opinion_modifier = {
-									target = ISR
-									modifier = large_decrease
-								}
 						}
 				}
 
