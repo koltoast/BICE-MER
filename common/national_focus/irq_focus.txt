@@ -4735,9 +4735,6 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_strengthen_the_monarchy
 		}
-		mutually_exclusive = {
-			focus = IRQ_strengthen_the_monarchy
-		}
 		x = 35
 		y = 15
 
