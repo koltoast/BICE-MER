@@ -13,6 +13,7 @@ country_event = {
 
 	trigger = {
 		tag = ISR
+		ISR = { exists = yes }
 		date > 1936.1.1
 	}
 	
@@ -99,6 +100,7 @@ country_event = {
 
 	trigger = {
 		tag = ISR
+		ISR = { exists = yes }
 		date > 1936.1.1
 	}
 
@@ -128,6 +130,7 @@ country_event = {
 
 	trigger = {
 		tag = ISR
+		ISR = { exists = yes }
 		date > 1936.1.1
 		OR = {
 					has_war_with = SAU
@@ -163,6 +166,7 @@ country_event = {
 
 	trigger = {
 		tag = ISR
+		ISR = { exists = yes }
 		date > 1936.1.1
 		OR = {
 					has_war_with = SAU
@@ -202,6 +206,7 @@ country_event = {
 
 	trigger = {
 		tag = ISR
+		ISR = { exists = yes }
 		date > 1936.1.1
 		OR = {
 					has_war_with = SAU

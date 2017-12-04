@@ -1,0 +1,27 @@
+on_actions = {
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+
+		}
+	}
+	
+	on_subject_autonomy_level_change = {
+		effect = {
+			if = {
+				limit =  {
+					AND = {
+						BMP = { is_subject = no }
+						BMP = { exists = yes }
+					}
+				}
+					
+			}
+			BMP =  { country_event = bmpisrael.1 }
+		}
+	}
+
+	
+	
+}
