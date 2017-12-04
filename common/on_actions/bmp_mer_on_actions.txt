@@ -16,9 +16,9 @@ on_actions = {
 						BMP = { exists = yes }
 					}
 				}
-					
+				BMP =  { country_event = bmpisrael.1 }
 			}
-			BMP =  { country_event = bmpisrael.1 }
+			
 		}
 	}
 

@@ -504,10 +504,6 @@ give_military_access = BUR
 add_to_faction = BUR	# Must be after puppet
 give_military_access = NEW
 add_to_faction = NEW
-#####
-add_to_faction = BMP
-add_to_faction = JOR
-#####
 
 #give_guarantee = CZE
 
