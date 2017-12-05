@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	default = no
 	
-	continuous_focus_position = { x = 50 y = 2890 }
+	continuous_focus_position = { x = 50 y = 2880 }
 	
 	focus = {
 		id = IRQ_36_army_innovations

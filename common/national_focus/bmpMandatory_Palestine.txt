@@ -16,7 +16,7 @@ country = {
 
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = 50 y = 1060 }
 	
 focus = {
 		id = BMP_surface_fleet
