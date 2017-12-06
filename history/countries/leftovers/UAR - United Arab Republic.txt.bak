@@ -1,0 +1,112 @@
+﻿capital = 554
+
+#no OOB
+
+# Starting tech
+set_technology = {
+	BICE_sub_balance = 1
+	BICE_airrange_balance = 1
+	################# infantry ###############
+	tech_infantry_uniforms = 1
+	infantry_weapons = 1
+	tech_Garrison = 1
+	tech_Headquarters = 1
+	################## support ##################
+	tech_recon = 1
+	subtech_recon_cav_1 = 1
+	################## artillery ###############
+	
+	################## armor ##############
+	#generic_armor = 1
+	################## aircraft ##############
+	generic_fighter = 1
+	generic_bomber = 1
+	generic_strategic_bomber = 1
+	################# ships ################
+	generic_submarine = 1
+	generic_naval = 1
+	############### economy ############
+	
+	ww1_infantry = 1
+	infantry_charge = 1
+	
+	complex_trench_systems = 1
+	
+	ww1_artillery = 1
+	
+	foot_runners = 1
+	
+	mobile_doctrines = 1
+	cavalry_charges = 1
+	cavalry_dismounting = 1
+	
+
+	ww1_battlefield_support = 1
+}
+
+
+add_ideas = {
+
+}
+
+set_convoys = 200
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 20
+		}
+
+		fascism = {
+			popularity = 5
+		}
+		
+		communism = {
+			popularity = 5
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 80
+		}
+
+	}
+	
+	ruling_party = neutrality
+	last_election = "1949.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Gamal Abdel Nasser"
+	desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
+	picture = "Gamal.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gamal Abdel Nasser"
+	desc = "POLITICS_MACKENZIE_KING_DESC"
+	picture = "Gamal.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Gamal Abdel Nasser"
+	desc = "POLITICS_JS_WOODSWORTH_DESC"
+	picture = "Gamal.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
