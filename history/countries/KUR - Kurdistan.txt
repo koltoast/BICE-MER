@@ -5,60 +5,28 @@ oob = "KUR_1936"
 # Starting tech
 set_technology = {
 	
-	### BICE STUFF ###
-	
 	BICE_sub_balance = 1
 	BICE_airrange_balance = 1
-	
 	################# infantry ###############
-	
-	mortars = 1
-	mortars_2 = 1
 	tech_infantry_uniforms = 1
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	semi_motorised_infantry = 1
-	tech_mountaineers = 1
 	tech_Garrison = 1
 	tech_Headquarters = 1
-	
 	################## support ##################
-	
-	tech_support = 1
-	tech_ac_recon = 1
-	tech_ac_recon2 = 1
 	tech_recon = 1
 	subtech_recon_cav_1 = 1
-	
 	################## artillery ###############
 	
-	gw_artillery = 1
-	interwar_artillery = 1
-	interwar_antiair = 1
-	
 	################## armor ##############
-	
-	gwtank = 1
-	basic_light_tank = 1
-	tech_Tankettes = 1
-	generic_armor = 1
-	
+	#generic_armor = 1
 	################## aircraft ##############
-	
-	early_fighter = 1
-	CAS1 = 1
 	generic_fighter = 1
 	generic_bomber = 1
 	generic_strategic_bomber = 1
-	
 	################# ships ################
-	
 	generic_submarine = 1
 	generic_naval = 1
-	
 	############### economy ############
-	
-	basic_machine_tools = 1
 	
 	ww1_infantry = 1
 	infantry_charge = 1
@@ -104,8 +72,29 @@ add_ideas = {
 		neutrality_idea
 }
 
-add_ideas = {
-	population_growth_explosion
+add_ideas = { 	
+		export_focus
+		tax_low
+		tariffs_average
+		
+		civilian_economy
+		press_regulated
+		key_industries
+		labor_none
+		fdi_allowed
+		
+		cons_volunteer
+		foreign_volunteers
+		mob_reserve
+		train_none
+		age_19
+		officer_train_none
+		security_minor_restrictions
+		edu_minimal
+		
+		unity_united_nation		
+		foreign_isolationism
+		neutrality_idea
 }
 
 set_politics = {
