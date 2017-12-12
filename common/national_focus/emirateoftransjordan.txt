@@ -1,0 +1,396 @@
+focus_tree = {
+	id = emirateoftransjordan
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JOR
+		}
+	}
+	default = no
+	focus = {
+		id = eJOR_Search_For_Oil_Deposits
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = eJOR_Bureaucracy
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 3
+		y = 0
+
+	}
+	focus = {
+		id = eJOR_Recognize_Peel_Commission_Plan
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		mutually_exclusive = {
+			focus = eJOR_Declare_Neutrality
+			focus = eJOR_Protest_Peel_Commission_Plan
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = eJOR_Protest_Balfour_Declaration
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		x = 19
+		y = 0
+
+	}
+	focus = {
+		id = eJOR_Declare_Neutrality
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		mutually_exclusive = {
+			focus = eJOR_Recognize_Peel_Commission_Plan
+			focus = eJOR_Protest_Peel_Commission_Plan
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = eJOR_Build_Schools
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Bureaucracy
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = eJOR_Build_More_Schools
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Build_Schools
+		}
+		x = 0
+		y = 2
+
+	}
+	focus = {
+		id = eJOR_Research_Funding
+		icon = GFX_focus_research
+		cost = 20.00
+		prerequisite = {
+			focus = eJOR_Build_More_Schools
+		}
+		x = 0
+		y = 3
+
+	}
+	focus = {
+		id = eJOR_Revise_Bedouin_Control_Law
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Bureaucracy
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = eJOR_Integrate_Nomads
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Revise_Bedouin_Control_Law
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = eJOR_Subsidize_Farmers
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Bureaucracy
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = eJOR_Welfare
+		icon = GFX_focus_generic_concessions
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Subsidize_Farmers
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = eJOR_Healthcare
+		icon = GFX_focus_generic_concessions
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Welfare
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = eJOR_Agriculture
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Bureaucracy
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = eJOR_Develop_Oil_Industry
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Search_For_Oil_Deposits
+		}
+		prerequisite = {
+			focus = eJOR_Bureaucracy
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = eJOR_Trade
+		icon = GFX_goal_generic_trade
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Develop_Oil_Industry
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = eJOR_Jordanian_Petroleum_Company
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Develop_Oil_Industry
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = eJOR_Mining_Operations
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Develop_Oil_Industry
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = eJOR_Trade_More
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Jordanian_Petroleum_Company
+		}
+		prerequisite = {
+			focus = eJOR_Trade
+		}
+		prerequisite = {
+			focus = eJOR_Mining_Operations
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = eJOR_Support_Britain
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Recognize_Peel_Commission_Plan
+		}
+		mutually_exclusive = {
+			focus = eJOR_Expel_British_Administration
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = eJOR_Invite_More_British_Advisors
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Support_Britain
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = eJOR_Motorize_Arab_Legion
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Invite_More_British_Advisors
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = eJOR_Protest_Peel_Commission_Plan
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Protest_Balfour_Declaration
+		}
+		mutually_exclusive = {
+			focus = eJOR_Recognize_Peel_Commission_Plan
+			focus = eJOR_Declare_Neutrality
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = eJOR_Expel_British_Administration
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Protest_Peel_Commission_Plan
+			focus = eJOR_Declare_Neutrality
+		}
+		mutually_exclusive = {
+			focus = eJOR_Support_Britain
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = eJOR_Call_Upon_Arab_Leaders
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Expel_British_Administration
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = eJOR_Close_Mosul-Haifa_Pipeline
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Expel_British_Administration
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = eJOR_Support_Germany
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Protest_Balfour_Declaration
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = eJOR_Arab_Ultranationalism
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Expel_British_Administration
+		}
+		prerequisite = {
+			focus = eJOR_Support_Germany
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = eJOR_Claim_Greater_Syria
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Arab_Ultranationalism
+		}
+		prerequisite = {
+			focus = eJOR_Call_Upon_Arab_Leaders
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = eJOR_Found_Fascist_Movement
+		icon = GFX_focus_RAJ_indian_gurkhas
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Arab_Ultranationalism
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = eJOR_Declare_Fascist_State
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Found_Fascist_Movement
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = eJOR_Invite_German_Advisors
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Expel_British_Administration
+		}
+		prerequisite = {
+			focus = eJOR_Support_Germany
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = eJOR_Arab_League
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = eJOR_Call_Upon_Arab_Leaders
+		}
+		x = 17
+		y = 4
+
+	}
+}
