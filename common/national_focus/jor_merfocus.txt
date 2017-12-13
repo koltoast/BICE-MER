@@ -1,5 +1,5 @@
 focus_tree = {
-	id = emirateoftransjordan
+	id = jor_merfocus
 	country = {
 		factor = 0
 		modifier = {
@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 50 y = 540 }
 	focus = {
 		id = merJOR_Search_For_Oil_Deposits
 		icon = GFX_goal_generic_oil_refinery
@@ -22,7 +23,9 @@ focus_tree = {
 		cost = 10.00
 		x = 3
 		y = 0
-
+        completion_reward = {
+			add_political_power = 50
+		}
 	}
 	focus = {
 		id = merJOR_Recognize_Peel_Commission_Plan
@@ -259,6 +262,9 @@ focus_tree = {
 		id = merJOR_Protest_Peel_Commission_Plan
 		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 10.00
+		available = {
+			threat > 0.25
+		}
 		prerequisite = {
 			focus = merJOR_Protest_Balfour_Declaration
 		}
