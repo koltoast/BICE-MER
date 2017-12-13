@@ -1,5 +1,7 @@
 ﻿capital = 454
 
+set_cosmetic_tag = BMP_UK
+
 OOB = "BMP_1936"
 
 set_research_slots = 1
@@ -46,8 +48,9 @@ set_technology = {
 
 	ww1_battlefield_support = 1
 }
-set_cosmetic_tag = BMP_UK
+
 set_convoys = 5
+
 add_ideas = { 	
 		export_focus
 		tax_low

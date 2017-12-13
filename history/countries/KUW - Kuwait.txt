@@ -1,5 +1,7 @@
 ﻿capital = 656
 
+set_cosmetic_tag = KUW_UK
+
 #NO OOB YET
 
 # Starting tech
