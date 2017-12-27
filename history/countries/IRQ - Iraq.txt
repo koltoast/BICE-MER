@@ -8,7 +8,7 @@ set_technology = {
 	### BICE STUFF ###
 	
 	BICE_sub_balance = 1
-	BICE_airrange_balance = 1
+	#BICE_airrange_balance = 1
 	
 	################# infantry ###############
 	
