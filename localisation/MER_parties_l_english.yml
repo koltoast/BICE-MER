@@ -1,8 +1,4 @@
 ﻿l_english:
- ISR_conservatism_party:0 "Hapoel HaMizrachi"
- ISR_conservatism_party_long:0 "Hapoel HaMizrachi"
- ISR_liberalism_party:0 "Miflaga Progresivit"
- ISR_liberalism_party_long:0 "Miflaga Progresivit"
  BMP_neutrality_party:0 "Mandate"
  BMP_neutrality_party_long:0 "The British Mandate"
  BMP_communism_party:0 "PCP"
@@ -23,8 +19,8 @@
  JOR_fascism_party_long:0 "Hizb ut-Tahrir"
  JOR_socialism_party:0 "NSP"
  JOR_socialism_party_long:0 "Al-Hizb Al-Watani Al-Ishtiraki"
+ IRQ_democratic_party:0 "IDC"
+ IRQ_democratic_party_long:0 "Iraq Democratic Coalition"
+ IRQ_conservatism_party:0 "IDC"
+ IRQ_conservatism_party_long:0 "Iraq Democratic Coalition"
  
- JOR_monarchism_party:0 "Hashemite Dynasty"
- 
- IRQ_fascism_party:0 "NBP"
- IRQ_monarchism_party:0 "Hashemite Dynasty"
