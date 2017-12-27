@@ -746,7 +746,7 @@ focus = {
 
 focus = {
 		id = BMP_put_down_the_arab_revolt
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_BMP_crush_arab_revolt
 		prerequisite = { focus = BMP_assist_great_britain focus = BMP_resist_the_empire }
 		x = 12
 		y = 2
@@ -785,7 +785,7 @@ focus = {
 
 focus = {
 	id = BMP_jewish_militias
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_BMP_jewish_militias
 	prerequisite = { focus = BMP_put_down_the_arab_revolt }
 	x = 13
 	y = 3
