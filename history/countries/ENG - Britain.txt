@@ -283,7 +283,7 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	#set_autonomy = {
-	##	target = MAL
+	#	target = MAL
 	#	autonomous_state = autonomy_integrated_puppet
 	#}
 	set_autonomy = {
@@ -312,6 +312,21 @@ if = {
 		freedom_level = 0.2
 	}
 	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_colony
+		freedom_level = 0.1
+	}
+	#set_autonomy = {
+	#	target = JOR
+	#	autonomous_state = autonomy_colony
+	#	freedom_level = 0.1
+	#}
+	#set_autonomy = {
+	#	target = BMP
+	#	autonomous_state = autonomy_colony
+	#	freedom_level = 0.1
+	#}
+	set_autonomy = {
 		target = NZL
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
@@ -329,7 +344,6 @@ if = {
 	}
 	#####
 	else = {
-		#puppet = MAL
 		puppet = RAJ
 		puppet = BUR
 		puppet = BMP
@@ -504,10 +518,12 @@ give_military_access = BUR
 add_to_faction = BUR	# Must be after puppet
 give_military_access = NEW
 add_to_faction = NEW
-#####
-add_to_faction = BMP
+give_military_access = EGY
+add_to_faction = EGY
+give_military_access = JOR
 add_to_faction = JOR
-#####
+give_military_access = BMP
+add_to_faction = BMP
 
 #give_guarantee = CZE
 
@@ -529,7 +545,7 @@ create_country_leader = {
 	desc = "POLITICS_OSWALD_MOSLEY_DESC"
 	picture = "Portrait_Britain_Oswald_Mosley.dds"
 	expire = "1965.1.1"
-	ideology = british_fascism
+	ideology = fascism_ideology
 	traits = {
 		fascist
 		inexperienced_amateur
