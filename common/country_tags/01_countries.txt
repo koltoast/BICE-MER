@@ -1,3 +1,2 @@
-BMP = "countries/Mandatory Palestine.txt"
 KUR = "countries/Kurdistan.txt"
 KUW = "countries/Kuwait.txt"
