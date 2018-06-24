@@ -1,16 +1,18 @@
-﻿##### In the BICE-fied version of the Mandate Mod: BMP and JOR are made puppets of ENG, and are added to the ENG faction
-capital = 126
+﻿capital = 126
 
 oob = "ENG_1936"
 
 set_research_slots = 6
 
-set_national_unity = 0.60
+set_stability = 0.60
+
+set_war_support = 0.1
+
+set_convoys = 1200
 
 # Starting tech
 set_technology = {
 	BICE_sub_balance = 1
-	##BICE_airrange_balance = 1
 	################# infantry #############
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -52,8 +54,6 @@ set_technology = {
 	tech_infantry_tank_equipment_1 = 1
 	tech_british_Tankettes = 1
 	tech_british_Gun_Carriers = 1
-	#ENG_captured_armor_tech = 1
-	#
 	tech_british_ac_recon = 1
 	################ airunits ##############
 	tech_raf = 1
@@ -72,7 +72,7 @@ set_technology = {
 	#tech_heyford_bomber_equipment_1 = 1 
 	tech_hendon_equipment_1 = 1 
 	tech_saro_london_equipment_1 = 1 
-	############### subamrines ################
+	############### submarines ################
 	tech_britishnaval_sub = 1
 	tech_rn_patrol_submarine_0 = 1
 	tech_rn_patrol_submarine_1 = 1
@@ -84,7 +84,7 @@ set_technology = {
 	tech_rn_lr_patrol_submarine_0 = 1
 	############### surface ships ################
 	tech_rn = 1
-	# RN Destroyer
+	### RN Destroyer ###
 	tech_rn_dd_obs1 = 1
 	tech_rn_dd_obs2 = 1
 	tech_rn_dd_obs3 = 1
@@ -98,7 +98,7 @@ set_technology = {
 	tech_rn_dd_obs11 = 1
 	tech_rn_dd_obs12 = 1
 	tech_rn_dd = 1
-	# RN Light cruiser
+	### RN Light cruiser ###
 	tech_rn_cl_obs1 = 1
 	tech_rn_cl_obs2 = 1
 	tech_rn_cl_obs3 = 1
@@ -107,32 +107,26 @@ set_technology = {
 	tech_rn_cl_obs6 = 1
 	tech_rn_cl_obs7 = 1
 	tech_rn_cl = 1
-	# RN Heavy cruiser
+	### RN Heavy cruiser ###
 	tech_rn_ca_obs1 = 1
 	tech_rn_ca_obs2 = 1
 	tech_rn_ca_obs3 = 1
 	tech_rn_ca_obs4 = 1
 	tech_rn_ca_obs5 = 1
-	# RN Battlecruiser
+	### RN Battlecruiser ###
 	tech_rn_bc_obs1 = 1
 	tech_rn_bc = 1
-	# RN Battleship
+	### RN Battleship ###
 	tech_rn_bb_obs1 = 1
 	tech_rn_bb_obs2 = 1
 	tech_rn_bb = 1
-	# RN Carrier
+	### RN Carrier ###
 	tech_rn_cv_obs1 = 1
 	tech_rn_cv_obs2 = 1
 	tech_rn_cv_obs3 = 1
 	tech_rn_cv_obs4 = 1
 	tech_rn_cv_obs5 = 1
 	tech_rn_cv = 1
-	############### Doctrines ##################
-	trench_warfare = 1
-	fleet_in_being = 1
-	electronic_mechanical_engineering = 1
-	radio = 1
-	radio_detection = 1
 	############### economy ##################
 	basic_machine_tools = 1
 	smallarms_industry = 1
@@ -140,7 +134,6 @@ set_technology = {
 	ammo_industry = 1
 	ship_industry = 1
 	ship_industry2 = 1
-	heavy_industry = 1
 	infra_works = 1
 	rail_infra = 1
 	rail_infra2 = 1
@@ -152,18 +145,13 @@ set_technology = {
 	housing_work = 1
 	hospital_work = 1
 	schools_work = 1
-	#pre_fab = 1
-	#on_site = 1
-	#defence_works = 1
-	
-	
+	############### WW1 doctrines ##################
 	ww1_infantry = 1
 	infantry_charge = 1
 	small_unit_raids = 1
 	night_patrols = 1
 	dispersed_infantry_attacks = 1
 	infiltration_attacks = 1
-	
 	complex_trench_systems = 1
 	offensive_trenches = 1
 	defensive_trenches = 1
@@ -175,13 +163,11 @@ set_technology = {
 	sniper_pits = 1
 	nomans_land_saps = 1
 	tunnel_mines = 1
-	
 	basic_MG_defences = 1
 	multiple_MG_nests = 1
 	enfilade_MG_fire_fields = 1
 	infantry_MG_coordination = 1
 	MG_support_infantry_doctrine = 1
-	
 	ww1_artillery = 1
 	artillery_concentration = 1
 	offensive_prep_fire = 1
@@ -191,7 +177,6 @@ set_technology = {
 	dummy_barrage = 1
 	standing_barrage = 1
 	box_barrage = 1
-	
 	block_barrage = 1
 	creeping_barrage = 1
 	rolling_barrage = 1
@@ -201,7 +186,6 @@ set_technology = {
 	foot_runners = 1
 	carrier_pidgeons = 1
 	telephone_communications = 1
-	
 	mobile_doctrines = 1
 	cavalry_charges = 1
 	cavalry_dismounting = 1
@@ -211,7 +195,6 @@ set_technology = {
 	armored_car_recon = 1
 	motorcycle_liaison = 1
 	staff_officer_vehicles = 1
-
 	ww1_battlefield_support = 1
 	battlefield_commissions = 1
 	weather_reporting = 1
@@ -219,6 +202,12 @@ set_technology = {
 	AA_positions = 1
 	camouflage_positions = 1
 	first_aid_stations = 1
+	############### doctrines ##################
+	trench_warfare = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
 }
 
 add_ideas = {
@@ -282,10 +271,10 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
-	#set_autonomy = {
-	#	target = MAL
-	#	autonomous_state = autonomy_integrated_puppet
-	#}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_integrated_puppet
+	}
 	set_autonomy = {
 		target = RAJ
 		autonomous_state = autonomy_colony
@@ -316,33 +305,21 @@ if = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.1
 	}
-	#set_autonomy = {
-	#	target = JOR
-	#	autonomous_state = autonomy_colony
-	#	freedom_level = 0.1
-	#}
-	#set_autonomy = {
-	#	target = BMP
-	#	autonomous_state = autonomy_colony
-	#	freedom_level = 0.1
-	#}
+	set_autonomy = {
+		target = BMP
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = JOR
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.35
+	}
 	set_autonomy = {
 		target = NZL
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
-	#####
-		set_autonomy = {
-		target = BMP
-		autonomous_state = autonomy_puppet
-		freedom_level = 0.35
-	}
-		set_autonomy = {
-		target = JOR
-		autonomous_state = autonomy_puppet
-		freedom_level = 0.35
-	}
-	#####
 	else = {
 		puppet = RAJ
 		puppet = BUR
@@ -359,122 +336,6 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-set_convoys = 1200
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#adding ministers
-	add_ideas = {
-		ENG_ernest_bevin
-		bernard_montgomery
-		rsaf_enfield
-		archibald_wavell
-		charles_portal
-		english_electric		
-
-		#laws
-		partial_economic_mobilisation
-		cons_one
-
-		ENG_george_vi
-	}
-	
-	create_country_leader = {
-		name = "Neville Chamberlain"
-		desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-		picture = "Portrait_Britain_Neville_Chamberlain.dds"
-		expire = "1941.1.1"
-		ideology = moderate
-		traits = {
-			
-		}
-	}
-	
-	remove_ideas = george_v #Dead
-
-	complete_national_focus = limited_rearmament_focus
-	complete_national_focus = air_defense_focus
-	complete_national_focus = radar_focus
-	complete_national_focus = shadow_scheme_focus
-	complete_national_focus = uk_empire_focus
-	complete_national_focus = uk_service_focus
-	complete_national_focus = uk_colonial_focus
-	complete_national_focus = uk_mediterranean_focus
-	complete_national_focus = uk_asia_focus
-	complete_national_focus = uk_commonwealth_focus
-
-	give_guarantee = POL
-	
-	set_national_unity = 0.8
-	oob = "ENG_1939"
-	set_technology = {
-		fighter1 = 1
-		fighter2 = 1
-		heavy_fighter1 = 1
-		heavy_fighter2 = 1
-		CAS2 = 1
-		naval_bomber2 = 1
-		tactical_bomber1 = 1
-		tactical_bomber2 = 1
-		strategic_bomber1 = 1
-		cv_CAS1 = 1
-		improved_light_tank = 1
-		basic_medium_tank = 1
-		basic_heavy_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		hmg = 1
-		hmg_2 = 1
-		mortars = 1
-		basic_submarine = 1
-		improved_submarine = 1
-		improved_destroyer = 1
-		basic_light_cruiser = 1
-		improved_light_cruiser = 1
-		basic_battleship = 1
-		basic_carrier = 1
-		improved_carrier = 1
-		#doctrines
-		#Air
-		air_superiority = 1
-		home_defence = 1
-		naval_strike_tactics = 1
-		grand_battle_plan = 1
-		prepared_defense = 1
-		battlefleet_concentration = 1
-		subsidiary_carrier_role = 1
-		convoy_sailing = 1
-		convoy_escorts = 1
-		submarine_operations = 1
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-
-	set_convoys = 200
-}
 
 set_politics = {
 
@@ -511,13 +372,12 @@ add_to_faction = NZL
 add_to_faction = SAF
 #puppet = RAJ
 give_military_access = RAJ
+give_military_access = IRQ
 add_to_faction = RAJ		# Must be after puppet
-#add_to_faction = MAL
+add_to_faction = MAL
 puppet = BUR
 give_military_access = BUR
 add_to_faction = BUR	# Must be after puppet
-give_military_access = NEW
-add_to_faction = NEW
 give_military_access = EGY
 add_to_faction = EGY
 give_military_access = JOR
@@ -528,17 +388,14 @@ add_to_faction = BMP
 #give_guarantee = CZE
 
 # Order matters - here Chamberlain becomes starting leader
-
+##### Country Leaders #####
 create_country_leader = {
 	name = "Stanley Baldwin"
 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
 	picture = "Portrait_Britain_Stanley_Baldwin.dds"
 	expire = "1938.1.1"
 	ideology = classical_liberalism
-	traits = {
-		conservative
-		effective_leader
-	}
+	traits = { conservative effective_leader }
 }
 create_country_leader = {
 	name = "Oswald Mosley"
@@ -546,10 +403,7 @@ create_country_leader = {
 	picture = "Portrait_Britain_Oswald_Mosley.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		fascist
-		inexperienced_amateur
-	}
+	traits = { fascist inexperienced_amateur }
 }
 create_country_leader = {
 	name = "Rajani Palme Dutt"
@@ -557,10 +411,7 @@ create_country_leader = {
 	picture = "Portrait_Britain_Palme_Dutt.dds"
 	expire = "1965.1.1"
 	ideology = leninism
-	traits = {
-		communist
-		tough_guy
-	}
+	traits = { communist tough_guy }
 }
 create_country_leader = {
 	name = "Clement Attlee"
@@ -568,10 +419,7 @@ create_country_leader = {
 	picture = "Portrait_Clement_Attlee.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy
-	traits = {
-		socialist
-		silent_workhorse
-	}
+	traits = { socialist silent_workhorse }
 }
 create_country_leader = {
 	name = "George V"
@@ -579,3348 +427,5264 @@ create_country_leader = {
 	picture = "Portrait_George_V.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
-	traits = {
-		monarchist
-		effective_leader
-	}
+	traits = { monarchist effective_leader }
 }
-###### Army ######
-#### Field Marshal
+##### Field Marshals #####
 create_field_marshal = {
 	name = "Brooke, Alan"
 	picture = "Portrait_Britain_Alan_Brooke.dds"
-	traits = { ENG_tag Masterful_General Victory_Medal offensive_doctrine_FM defensive_doctrine_FM_II defensive_doctrine_FM }
+	traits = {  Masterful_General trait_cautious career_officer Victory_Medal offensive_doctrine_FM defensive_doctrine_FM }
 	skill = 5
+	#Paradox values#
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 3
 	id = 300
 }
 create_field_marshal = {
 	name = "Auchinleck, Claude"
 	picture = "Portrait_Britain_Claude_Auchinleck.dds"
-	traits = { ENG_tag Masterful_General Distinguished_Service_Order logistics_wizard_FM logistics_wizard_FM_II  offensive_doctrine_FM defensive_doctrine_FM thorough_planner}
+	traits = {  Masterful_General inflexible_strategist career_officer Distinguished_Service_Order logistics_wizard_FM offensive_doctrine_FM defensive_doctrine_FM thorough_planner}
 	skill = 5
+	#Paradox values#
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 5
 	id = 301
 }
 #### Corps Commanders
 create_corps_commander = {
 	name = "Montgomery, Bernard"
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
-	traits = { ENG_tag Masterful_General Victory_Medal logistics_wizard_CC logistics_wizard_CC_II offensive_doctrine_CC offensive_doctrine_CC_II fortress_buster_CC cautious_general inspirational_leader }
+	traits = {  Masterful_General media_personality trait_cautious Victory_Medal logistics_wizard_CC logistics_wizard_CC_II offensive_doctrine_CC offensive_doctrine_CC_II inspirational_leader }
 	skill = 4
+	#Paradox values#
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
 	id = 302
 }
 create_corps_commander = {
 	name = "Ritchie, Neil"
 	picture = "Portrait_Britain_Neil_Ritchie.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge logistics_wizard_CC panzer_leader  }
+	traits = {  Awesome_General armor_officer Silver_War_Badge logistics_wizard_CC panzer_leader  }
 	skill = 4
+	#Paradox values#
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 	id = 303
 }
 create_corps_commander = {
 	name = "Cunningham, Alan"
 	picture = "Portrait_Britain_Alan_Cunningham.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross offensive_doctrine_CC }
+	traits = {  Competent_General infantry_officer Victoria_Cross offensive_doctrine_CC }
 	skill = 4
+	#Paradox values#
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
 	id = 304
 }
 create_corps_commander = {
 	name = "Slim, William"
 	picture = "Portrait_Britain_William_Slim.dds"
-	traits = { ENG_tag Masterful_General Distinguished_Service_Order logistics_wizard_CC trickster_CC jungle_rat_CC }
+	traits = {  Masterful_General war_hero Distinguished_Service_Order logistics_wizard_CC trickster_CC jungle_rat }
 	skill = 5
+	#Paradox values#
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
 	id = 305
 }
 create_corps_commander = {
 	name = "O'Connor, Richard"
 	picture = "Portrait_Britain_Richard_OConnor.dds"
-	traits = { ENG_tag Masterful_General Distinguished_Service_Order offensive_doctrine_CC panzer_leader logistics_wizard_CC }
+	traits = {  Masterful_General armor_officer Distinguished_Service_Order offensive_doctrine_CC panzer_leader logistics_wizard_CC }
 	skill = 4
+	#Paradox values#
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
 	id = 306
 }
 create_corps_commander = {
 	name = "Platt, William"
 	picture = "Portrait_Britain_William_Platt.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC offensive_doctrine_CC }
+	traits = {  Competent_General infantry_officer Victoria_Cross logistics_wizard_CC offensive_doctrine_CC }
 	skill = 3
+	#Paradox values#
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
 	id = 307
 }
 create_corps_commander = {
 	name = "Giffard, George"
 	picture = "Portrait_Britain_George_Giffard.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross offensive_doctrine_CC }
+	traits = {  Competent_General career_officer Victoria_Cross offensive_doctrine_CC }
 	skill = 3
+	#Paradox values#
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 	id = 308
 }
 create_corps_commander = {
 	name = "Alexander, Harold"
 	picture = "Portrait_Britain_Harold_Alexander.dds"
-	traits = { ENG_tag Masterful_General Victory_Medal logistics_wizard_CC logistics_wizard_CC_II defensive_doctrine_CC offensive_doctrine_CC  }
+	traits = {  Masterful_General politically_connected Victory_Medal logistics_wizard_CC logistics_wizard_CC_II defensive_doctrine_CC offensive_doctrine_CC  }
 	skill = 5
+	#Paradox values#
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 5
 	id = 309
 }
 create_corps_commander = {
 	name = "Smyth, Jackie"
 	picture = "Portrait_Britain_John_Jackie_Smyth.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
 	id = 310
 }
 create_corps_commander = {
 	name = "Hutton, Thomas Jacomb"
 	picture = "Portrait_Britain_Thomas_Jacomb_Hutton.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross offensive_doctrine_CC }
+	traits = {  old_guard Competent_General Victoria_Cross offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3 
 	id = 311
 }
 create_corps_commander = {
 	name = "Percival, Arthur"
 	picture = "Portrait_Britain_Arthur_Percival.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	#Paradox values#
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
 	id = 312
 }
 create_corps_commander = {
 	name = "Beckwith-Smith, Merton"
 	picture = "Portrait_Britain_Merton_Beckwith_Smith.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = {  Decent_General infantry_officer Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
 	id = 313
 }
 create_corps_commander = {
 	name = "Pownall, Henry"
 	picture = "Portrait_Britain_Henry_Pownall.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross trickster_CC logistics_wizard_CC }
+	traits = {  Competent_General Victoria_Cross trickster_CC logistics_wizard_CC }
 	skill = 2
+	#Paradox values#
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 	id = 314
 }
 create_corps_commander = {
 	name = "Lord Gort, John Vereker"
 	picture = "Portrait_Britain_John_Vereker.dds"
-	traits = { ENG_tag Competent_General Distinguished_Service_Order offensive_doctrine_CC }
+	traits = {  Competent_General politically_connected trait_cautious Distinguished_Service_Order offensive_doctrine_CC }
 	skill = 4
+	#Paradox values#
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
 	id = 315
 }
 create_corps_commander = {
 	name = "Wilson, Henry"
 	picture = "Portrait_Britain_Henry_Maitland_Wilson.dds"
-	traits = { ENG_tag Competent_General }
+	traits = {  old_guard Competent_General politically_connected }
 	skill = 4
+	#Paradox values#
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
 	id = 316
 }
 create_corps_commander = {
 	name = "Gott, William"
 	picture = "Portrait_Britain_William_Gott.dds"
-	traits = { ENG_tag Decent_General panzer_leader }
+	traits = {  Decent_General armor_officer war_hero inflexible_strategist }
 	skill = 3
+	#Paradox values#
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
 	id = 317
 }
 create_corps_commander = {
 	name = "Campbell, Jock"
 	picture = "Portrait_Britain_Jock_Campbell.dds"
-	traits = { ENG_tag Awesome_General Most_Excellent_Order panzer_leader  }
+	traits = {  Awesome_General armor_officer Most_Excellent_Order  }
 	skill = 4
+	#Paradox values#
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
 	id = 318
 }
 create_corps_commander = {
 	name = "Leese, Oliver"
 	picture = "Portrait_Britain_Oliver_Leese.dds"
-	traits = { ENG_tag Masterful_General Distinguished_Service_Order logistics_wizard_CC panzer_leader panzer_leader_II }
+	traits = {  Masterful_General armor_officer harsh_leader politically_connected Distinguished_Service_Order logistics_wizard_CC }
 	skill = 4
+	#Paradox values#
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
 	id = 319
 }
 create_corps_commander = {
 	name = "Dempsey, Miles"
 	picture = "Portrait_Britain_Miles_Dempsey.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge logistics_wizard_CC offensive_doctrine_CC }
+	traits = {  Awesome_General infantry_officer career_officer Silver_War_Badge logistics_wizard_CC offensive_doctrine_CC }
 	skill = 4
+	#Paradox values#
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 2
+	id = 320
 }
 create_corps_commander = {
 	name = "Horrocks, Brian"
 	picture = "Portrait_Britain_Brian_Horrocks.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge logistics_wizard_CC panzer_leader panzer_leader_II }
+	traits = {  Awesome_General armor_officer career_officer war_hero Silver_War_Badge logistics_wizard_CC }
 	skill = 3
+	#Paradox values#
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	id = 321
 }
 create_corps_commander = {
 	name = "Wavell, Archibald"
 	picture = "Portrait_Britain_Archibald_Wavell.dds"
-	traits = { ENG_tag Masterful_General Victory_Medal logistics_wizard_CC logistics_wizard_CC_II defensive_doctrine_CC defensive_doctrine_CC_II }
+	traits = {  Masterful_General career_officer Victory_Medal logistics_wizard_CC logistics_wizard_CC_II defensive_doctrine_CC defensive_doctrine_CC_II }
 	skill = 4
+	#Paradox values#
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+	id = 322
 }
-
 create_corps_commander = {
 	name = "Reoch, N."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Terrible_General fortress_buster_CC }
+	traits = {  Terrible_General fortress_buster }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 323
 }
 create_corps_commander = {
 	name = "Cumming, G."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Terrible_General urban_assault_specialist_CC hill_fighter_CC }
+	traits = {  Terrible_General urban_assault_specialist hill_fighter }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 324
 }
 create_corps_commander = {
 	name = "MacRaild, I."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Incompetent_General commando_CC  hill_fighter_CC }
+	traits = {  Incompetent_General commando hill_fighter }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 325
 }
 create_corps_commander = {
 	name = "Edmundson, W."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Terrible_General swamp_fox_CC  hill_fighter_CC }
+	traits = {  Terrible_General swamp_fox hill_fighter }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 326
 }
 create_corps_commander = {
 	name = "MacClure, A."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Incompetent_General }
+	traits = {  Incompetent_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 327
 }
 create_corps_commander = {
 	name = "MacKrycul, B."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Terrible_General desert_fox_CC }
+	traits = {  Terrible_General desert_fox }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 328
 }
 create_corps_commander = {
 	name = "Murchison, E."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Terrible_General commando_CC }
+	traits = {  Terrible_General commando }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 329
 }
 create_corps_commander = {
 	name = "Kerracher, V."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General }
+	traits = {  Decent_General }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 330
 }
 create_corps_commander = {
 	name = "Sheen, I."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Incompetent_General }
+	traits = {  Incompetent_General }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 331
 }
 create_corps_commander = {
 	name = "MacIldonich, L."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Terrible_General defensive_doctrine_CC urban_assault_specialist_CC }
+	traits = {  Terrible_General defensive_doctrine_CC urban_assault_specialist }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 332
 }
 create_corps_commander = {
 	name = "Lane, H."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Bad_General naval_invader_CC }
+	traits = {  Bad_General naval_invader }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 333
 }
 create_corps_commander = {
 	name = "Mackintosh, O."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General swamp_fox_CC }
+	traits = {  Decent_General infantry_officer swamp_fox }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	id = 334
 }
 create_corps_commander = {
 	name = "MacGeachen, C."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Terrible_General old_guard }
+	traits = {  old_guard Terrible_General}
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 335
 }
 create_corps_commander = {
 	name = "Milliken, J."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General jungle_rat_CC }
+	traits = {  Decent_General infantry_officer jungle_rat }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 336
 }
 create_corps_commander = {
 	name = "Clenachan, K."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Terrible_General fortress_buster_CC }
+	traits = {  Terrible_General fortress_buster }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 337
 }
 create_corps_commander = {
 	name = "Crum, C."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General }
+	traits = {  Decent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 338
 }
 create_corps_commander = {
 	name = "MacLeod, J."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Bad_General ranger_CC }
+	traits = {  Bad_General infantry_officer ranger }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 339
 }
 create_corps_commander = {
 	name = "Millar, A."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General }
+	traits = {  Decent_General }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 340
 }
 create_corps_commander = {
 	name = "MacHardie, W."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General }
+	traits = {  Decent_General }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 341
 }
 create_corps_commander = {
 	name = "Coull, J."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Terrible_General winter_specialist_CC }
+	traits = {  Terrible_General winter_specialist }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 342
 }
 create_corps_commander = {
 	name = "Laurie, L."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Bad_General ranger_CC panzer_leader }
+	traits = {  Bad_General armor_officer ranger }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 343
 }
 create_corps_commander = {
 	name = "Garvie, V."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Terrible_General }
+	traits = {  Terrible_General }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 344
 }
 create_corps_commander = {
 	name = "Braithnoch, L."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Terrible_General }
+	traits = {  Terrible_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 345
 }
 create_corps_commander = {
 	name = "MacRory, H."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Bad_General defensive_doctrine_CC winter_specialist_CC }
+	traits = {  Bad_General defensive_doctrine_CC winter_specialist }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 346
 }
 create_corps_commander = {
 	name = "MacGilchrist, D."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Bad_General ranger_CC logistics_wizard_CC }
+	traits = {  Bad_General ranger logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 347
 }
 create_corps_commander = {
 	name = "Monk, K."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Terrible_General urban_assault_specialist_CC naval_invader_CC }
+	traits = {  Terrible_General urban_assault_specialist naval_invader }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 348
 }
 create_corps_commander = {
 	name = "MacCaig, C."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Incompetent_General jungle_rat_CC }
+	traits = {  Incompetent_General jungle_rat }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 349
 }
 create_corps_commander = {
 	name = "Loynachan, F."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Terrible_General panzer_leader swamp_fox_CC }
+	traits = {  Terrible_General armor_officer swamp_fox }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 350
 }
 create_corps_commander = {
 	name = "Howie, C."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Terrible_General old_guard trickster_CC }
+	traits = {  old_guard Terrible_General trickster_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 351
 }
 create_corps_commander = {
 	name = "Mackinlay, M."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General ranger_CC }
+	traits = {  Decent_General ranger }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 352
 }
 create_corps_commander = {
 	name = "Lennox, F."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Terrible_General desert_fox_CC urban_assault_specialist_CC }
+	traits = {  Terrible_General desert_fox urban_assault_specialist }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 353
 }
 create_corps_commander = {
 	name = "MacVitie, B."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General }
+	traits = {  Decent_General }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 354
 }
 create_corps_commander = {
 	name = "MacLintock, I."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Incompetent_General old_guard }
+	traits = {  old_guard Incompetent_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 355
 }
 create_corps_commander = {
 	name = "Buttar, A."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General old_guard }
+	traits = {  old_guard Decent_General }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 356
 }
 create_corps_commander = {
 	name = "Sinclair, V."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Terrible_General panzer_leader hill_fighter_CC }
+	traits = {  Terrible_General armor_officer hill_fighter }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 357
 }
 create_corps_commander = {
 	name = "MacMeeken, K."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Incompetent_General }
+	traits = {  Incompetent_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 358
 }
 create_corps_commander = {
 	name = "MacCluie, M."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General ranger_CC }
+	traits = {  Decent_General infantry_officer ranger }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 359
 }
 create_corps_commander = {
 	name = "MacHardy, Q."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General engineer_CC mountaineer_CC }
+	traits = {  Decent_General infantry_officer trait_engineer trait_mountaineer }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 360
 }
 create_corps_commander = {
 	name = "MacKerron, L."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Incompetent_General trickster_CC }
+	traits = {  Incompetent_General trickster_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 361
 }
 create_corps_commander = {
 	name = "Bursnell, I."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General panzer_leader old_guard }
+	traits = {  old_guard Decent_General armor_officer }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 4
+	id = 362
 }
 create_corps_commander = {
 	name = "Downie, F."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Incompetent_General }
+	traits = {  Incompetent_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 363
 }
 create_corps_commander = {
 	name = "Campbell, W."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Incompetent_General fortress_buster_CC urban_assault_specialist_CC }
+	traits = {  Incompetent_General fortress_buster urban_assault_specialist }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 364
 }
 create_corps_commander = {
 	name = "Iveson, W."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Terrible_General panzer_leader old_guard }
+	traits = {  old_guard Terrible_General armor_officer }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 365
 }
 create_corps_commander = {
 	name = "Gow, P."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General }
+	traits = {  Decent_General }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 366
 }
 create_corps_commander = {
 	name = "Johnston, U."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Incompetent_General }
+	traits = {  Incompetent_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 367
 }
 create_corps_commander = {
 	name = "MacAlpine, P."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Terrible_General }
+	traits = {  Terrible_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 368
 }
 create_corps_commander = {
 	name = "Hardie, O."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Terrible_General }
+	traits = {  Terrible_General }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 369
 }
 create_corps_commander = {
 	name = "Dowall, P."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Incompetent_General swamp_fox_CC mountaineer_CC }
+	traits = {  Incompetent_General swamp_fox trait_mountaineer }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 370
 }
 create_corps_commander = {
 	name = "Munn, E."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Bad_General }
+	traits = {  Bad_General }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 371
 }
 create_corps_commander = {
 	name = "MacFeat, H."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Incompetent_General swamp_fox_CC }
-	skill = 1 
+	traits = {  Incompetent_General swamp_fox }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 372
 }
 create_corps_commander = {
 	name = "MacAughtrie, R."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Incompetent_General naval_invader_CC }
-	skill = 1 
+	traits = {  Incompetent_General naval_invader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 373
 }
 create_corps_commander = {
 	name = "MacKechnie, U."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Incompetent_General trickster_CC jungle_rat_CC }
-	skill = 2 
+	traits = {  Incompetent_General trickster_CC jungle_rat }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 374
 }
 create_corps_commander = {
 	name = "Tyre, D."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Bad_General logistics_wizard_CC defensive_doctrine_CC }
-	skill = 2 
+	traits = {  Bad_General logistics_wizard_CC defensive_doctrine_CC }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 375
 }
 create_corps_commander = {
 	name = "Reoch, Q."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General }
-	skill = 1 
+	traits = {  Decent_General }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 376
 }
 create_corps_commander = {
 	name = "Charleson, K."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Bad_General }
-	skill = 1 
+	traits = {  Bad_General }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 377
 }
 create_corps_commander = {
 	name = "Peniakoff, V."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Terrible_General commando_CC desert_fox_CC desert_fox_CC_II }
-	skill = 2 
+	traits = {  Terrible_General commando desert_fox desert_fox_CC_II }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 378
 }
-
 create_corps_commander = {
 	name = "Adair, Allan"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
-	skill = 2 
+	traits = {  Decent_General Most_Excellent_Order }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 379
 }
 create_corps_commander = {
 	name = "Adam, Ronald"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC }
-	skill = 3 
+	traits = {  Competent_General Victoria_Cross logistics_wizard_CC }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 380
 }
 create_corps_commander = {
 	name = "Aikenhead, David"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross fortress_buster_CC }
-	skill = 2 
+	traits = {  Competent_General Victoria_Cross fortress_buster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 381
 }
 create_corps_commander = {
 	name = "Airey, Terrence"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC panzer_leader }
-	skill = 2 
+	traits = {  Competent_General armor_officer Victoria_Cross logistics_wizard_CC }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 382
 }
 create_corps_commander = {
 	name = "Aizlewood, John"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader }
-	skill = 2 
+	traits = {  Competent_General armor_officer Victoria_Cross panzer_leader }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 655
 }
 create_corps_commander = {
 	name = "Allfrey, Charles"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross defensive_doctrine_CC }
-	skill = 2 
+	traits = {  Competent_General career_officer Victoria_Cross defensive_doctrine_CC }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+	id = 383
 }
 create_corps_commander = {
 	name = "Ambrose, Robert"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order trickster_CC }
-	skill = 1 
+	traits = {  Decent_General Most_Excellent_Order trickster_CC }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 384
 }
 create_corps_commander = {
 	name = "Amyatt-Hull, Richard"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge panzer_leader }
-	skill = 3 
+	traits = {  Awesome_General armor_officer Silver_War_Badge panzer_leader }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 385
 }
 create_corps_commander = {
 	name = "Anderson, Desmond"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
-	skill = 3 
+	traits = {  Decent_General Most_Excellent_Order }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 386
 }
 create_corps_commander = {
 	name = "Anderson  K.A.N."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge logistics_wizard_CC defensive_doctrine_CC }
-	skill = 3 
+	traits = {  Awesome_General Silver_War_Badge logistics_wizard_CC defensive_doctrine_CC }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 387
 }
 create_corps_commander = {
 	name = "Arbuthnott, Keith"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
-	skill = 1 
+	traits = {  Decent_General Most_Excellent_Order }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 388
 }
 create_corps_commander = {
 	name = "Arkwright, Robert"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
-	skill = 1 
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	id = 389
 }
 create_corps_commander = {
 	name = "Baillon, Joseph"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
-	skill = 1 
+	traits = {  Decent_General Most_Excellent_Order }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 390
 }
 create_corps_commander = {
 	name = "Baird, Douglas"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC old_guard }
-	skill = 1 
+	traits = {  old_guard Decent_General Most_Excellent_Order defensive_doctrine_CC }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 391
 }
 create_corps_commander = {
 	name = "Balerno, Alick"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross }
-	skill = 1 
+	traits = {  Bad_General Conspicuous_Galantry_Cross }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 392
 }
 create_corps_commander = {
 	name = "Balfour, Phillip"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
-	skill = 2 
+	traits = {  Decent_General Most_Excellent_Order }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 393
 }
 create_corps_commander = {
 	name = "Ballentine, John"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
-	skill = 1 
+	traits = {  Decent_General Most_Excellent_Order }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 394
 }
 create_corps_commander = {
 	name = "Cooke, Ronald"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge fortress_buster_CC panzer_leader }
-	skill = 2 
+	traits = {  Awesome_General armor_officer Silver_War_Badge fortress_buster panzer_leader }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 395
 }
 create_corps_commander = {
 	name = "Banks, Donald"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross offensive_doctrine_CC old_guard }
+	traits = {  old_guard Bad_General Conspicuous_Galantry_Cross offensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 396
 }
 create_corps_commander = {
 	name = "Barker, Evelyn"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge }
+	traits = {  Awesome_General Silver_War_Badge }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 656
 }
 create_corps_commander = {
 	name = "Barker, Michael"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross old_guard trickster_CC }
+	traits = {  old_guard Bad_General Conspicuous_Galantry_Cross trickster_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 397
 }
 create_corps_commander = {
 	name = "Bartholomew, William"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 398
 }
 create_corps_commander = {
 	name = "Barstow, Arthur"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = {  Decent_General Most_Excellent_Order commando }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 399
 }
 create_corps_commander = {
 	name = "Bastyan, Edric"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = {  Decent_General Most_Excellent_Order offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 400
 }
 create_corps_commander = {
 	name = "Bateman, Donald"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 401
 }
 create_corps_commander = {
 	name = "Beard, Edmund"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC }
+	traits = {  Decent_General Most_Excellent_Order defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 402
 }
 create_corps_commander = {
 	name = "Beauman, Archibald"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 403
 }
 create_corps_commander = {
 	name = "Beck, Edward"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 404
 }
 create_corps_commander = {
 	name = "Beckett, Clifford"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order fortress_buster_CC }
+	traits = {  Decent_General Most_Excellent_Order fortress_buster }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 405
 }
 create_corps_commander = {
 	name = "Brooke, Bertram"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 406
 }
 create_corps_commander = {
 	name = "Bernard, Denis"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order engineer_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order trait_engineer }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 407
 }
 create_corps_commander = {
 	name = "Berney-Ficklin, Horatio"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 408
 }
 create_corps_commander = {
 	name = "Betts, Douglas"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 409
 }
 create_corps_commander = {
 	name = "Bird, Clarence"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC engineer_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC trait_engineer }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 410
 }
 create_corps_commander = {
 	name = "Birks, Horace"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order logistics_wizard_CC panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	id = 411
 }
 create_corps_commander = {
 	name = "Blakiston-Houston, John"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC fortress_buster_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order logistics_wizard_CC fortress_buster }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 412
 }
 create_corps_commander = {
 	name = "Blaxland, Alan"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 413
 }
 create_corps_commander = {
 	name = "Bolton, Charles"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross panzer_leader }
+	traits = {  Bad_General armor_officer Conspicuous_Galantry_Cross panzer_leader }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 414
 }
 create_corps_commander = {
 	name = "Bolton, Charles"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross commando_CC }
+	traits = {  Competent_General Victoria_Cross commando }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 415
 }
 create_corps_commander = {
 	name = "Boucher, Charles"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge commando_CC }
+	traits = {  Awesome_General Silver_War_Badge commando }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+	id = 416
 }
 create_corps_commander = {
 	name = "Bourne, Geoffrey"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge logistics_wizard_CC commando_CC }
+	traits = {  Awesome_General infantry_officer Silver_War_Badge logistics_wizard_CC commando }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 417
 }
 create_corps_commander = {
 	name = "Bower, Roger"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General  Most_Excellent_Order commando_CC }
+	traits = {  Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 418
 }
 create_corps_commander = {
 	name = "Bradshaw, William"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 419
 }
 create_corps_commander = {
 	name = "Briggs, Harold"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 420
 }
 create_corps_commander = {
 	name = "Briggs, Raymond"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 421
 }
 create_corps_commander = {
 	name = "Broad, Charles"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 422
 }
 create_corps_commander = {
 	name = "Burrows, Montagu"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = {  Decent_General Most_Excellent_Order offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 423
 }
 create_corps_commander = {
 	name = "Brooke-Popham, Robert"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC old_guard }
+	traits = {  old_guard Competent_General Victoria_Cross logistics_wizard_CC }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+	id = 424
 }
 create_corps_commander = {
 	name = "Brown, Alan"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	id = 425
 }
 create_corps_commander = {
 	name = "Browning, Frederick"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge commando_CC logistics_wizard_CC defensive_doctrine_CC }
+	traits = {  Awesome_General career_officer Silver_War_Badge commando logistics_wizard_CC defensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 3
+	id = 426
 }
 create_corps_commander = {
 	name = "Bruce, John"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order winter_specialist_CC }
+	traits = {  Decent_General Most_Excellent_Order winter_specialist }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 427
 }
 create_corps_commander = {
 	name = "Bucknall, Gerald"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 428
 }
 create_corps_commander = {
 	name = "Bullen-Smith, Charles"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 429
 }
 create_corps_commander = {
 	name = "Burns, Lionel"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order fortress_buster_CC }
+	traits = {  Decent_General Most_Excellent_Order fortress_buster }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 430
 }
 create_corps_commander = {
 	name = "Butler, Patrick"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross logistics_wizard_CC }
+	traits = {  Bad_General Conspicuous_Galantry_Cross logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 431
 }
 create_corps_commander = {
 	name = "Calthrop-Thorne, Gordon"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 432
 }
 create_corps_commander = {
 	name = "Calvert, Michael"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge fortress_buster_CC commando_CC }
+	traits = {  Awesome_General Silver_War_Badge fortress_buster commando }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 433
 }
 create_corps_commander = {
 	name = "Campbell, Robin"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order engineer_CC commando_CC }
+	traits = {  Decent_General Most_Excellent_Order trait_engineer commando }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 434
 }
 create_corps_commander = {
 	name = "Campbell of Achalader, Archibald"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = {  Decent_General Most_Excellent_Order offensive_doctrine_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 435
 }
 create_corps_commander = {
 	name = "Campbell of Airds"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 436
 }
 create_corps_commander = {
 	name = "Campbell, James"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 437
 }
 create_corps_commander = {
 	name = "Cameron, Alexander"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC }
+	traits = {  Decent_General Most_Excellent_Order defensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 438
 }
 create_corps_commander = {
 	name = "Carne, Charles"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross }
+	traits = {  Bad_General Conspicuous_Galantry_Cross }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 439
 }
 create_corps_commander = {
 	name = "Carr-White, Gerald"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross logistics_wizard_CC }
+	traits = {  Bad_General Conspicuous_Galantry_Cross logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 440
 }
 create_corps_commander = {
 	name = "Carton de Wiart, Adrian"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order commando logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 441
 }
 create_corps_commander = {
 	name = "Carver, Michael"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Awesome_General Victory_Medal panzer_leader logistics_wizard_CC offensive_doctrine_CC }
+	traits = {  Awesome_General armor_officer Victory_Medal panzer_leader logistics_wizard_CC offensive_doctrine_CC }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 442
 }
 create_corps_commander = {
 	name = "Cassels, Jim"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Awesome_General Distinguished_Service_Order logistics_wizard_CC offensive_doctrine_CC }
+	traits = {  Awesome_General infantry_officer Distinguished_Service_Order logistics_wizard_CC offensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 443
 }
 create_corps_commander = {
 	name = "Cassels, Robert"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross logistics_wizard_CC old_guard }
+	traits = {  old_guard  Bad_General Conspicuous_Galantry_Cross logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 444
 }
 create_corps_commander = {
 	name = "Charrington, Harold"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader old_guard }
+	traits = {  old_guard Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 4
+	id = 445
 }
 create_corps_commander = {
 	name = "Miller, Christie"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 446
 }
 create_corps_commander = {
 	name = "Christison, Phillip"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross }
+	traits = {  Competent_General Victoria_Cross }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 447
 }
 create_corps_commander = {
 	name = "Churchill, Thomas"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC }
+	traits = {  Competent_General Victoria_Cross logistics_wizard_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 448
 }
 create_corps_commander = {
 	name = "Clark, John"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross defensive_doctrine_CC }
+	traits = {  Competent_General Victoria_Cross defensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 449
 }
 create_corps_commander = {
 	name = "Clarke, William"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 450
 }
 create_corps_commander = {
 	name = "Clutterbuck, Walter"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 451
 }
 create_corps_commander = {
 	name = "Collett, John"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 452
 }
 create_corps_commander = {
 	name = "Collier, Angus"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = {  Decent_General Most_Excellent_Order offensive_doctrine_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 657
 }
 create_corps_commander = {
 	name = "Combe, John"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+	id = 453
 }
 create_corps_commander = {
 	name = "Cottrell-Hill, Robert"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 454
 }
 create_corps_commander = {
 	name = "Cox, Lionel"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross }
+	traits = {  Competent_General Victoria_Cross }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 455
 }
 create_corps_commander = {
 	name = "Craven-Vicary, Alexander"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross defensive_doctrine_CC old_guard }
+	traits = {  old_guard Bad_General Conspicuous_Galantry_Cross defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 456
 }
 create_corps_commander = {
 	name = "Crocker, John"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader }
+	traits = {  Competent_General armor_officer Victoria_Cross panzer_leader }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 457
 }
 create_corps_commander = {
 	name = "Currie, John"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order offensive_doctrine_CC panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	id = 458
 }
 create_corps_commander = {
 	name = "Curtis, Alfred"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 459
 }
 create_corps_commander = {
 	name = "Custance, Edward"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader }
+	traits = {  Competent_General armor_officer Victoria_Cross panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+	id = 460
 }
 create_corps_commander = {
 	name = "Dalrymple-Fanshawe, Evelyn"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	id = 461
 }
 create_corps_commander = {
 	name = "D'Arcy, John"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge panzer_leader }
+	traits = {  Awesome_General armor_officer Silver_War_Badge panzer_leader }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 462
 }
 create_corps_commander = {
 	name = "Davy, George"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	id = 463
 }
 create_corps_commander = {
 	name = "Dawnay, David"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader }
+	traits = {  Competent_General Victoria_Cross panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+	id = 464
 }
 create_corps_commander = {
 	name = "de Burgh, Eric"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order trickster_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order trickster_CC }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 465
 }
 create_corps_commander = {
 	name = "Beresford-Peirse, Noel"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC offensive_doctrine_CC }
+	traits = {  Competent_General career_officer Victoria_Cross logistics_wizard_CC offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+	id = 466
 }
 create_corps_commander = {
 	name = "Simmons, Keith"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC }
+	traits = {  Decent_General infantry_officer Most_Excellent_Order defensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 467
 }
 create_corps_commander = {
 	name = "de L'Isle, William"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 468
 }
 create_corps_commander = {
 	name = "de Renzy-Channer, George"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross commando_CC }
+	traits = {  Bad_General Conspicuous_Galantry_Cross commando }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 469
 }
 create_corps_commander = {
 	name = "Denholm-Young, Eric"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC commando_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 470
 }
 create_corps_commander = {
 	name = "de Riemer-Morgan, Harold"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge }
+	traits = {  Awesome_General Silver_War_Badge }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 471
 }
 create_corps_commander = {
 	name = "des Voux, William"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = {  Decent_General Most_Excellent_Order commando }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 472
 }
 create_corps_commander = {
 	name = "Deverell, Cyrill"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 473
 }
 create_corps_commander = {
 	name = "Dickinson, Douglas"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross engineer_CC }
+	traits = {  Competent_General Victoria_Cross trait_engineer }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 474
 }
 create_corps_commander = {
 	name = "Dill, John"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge logistics_wizard_CC }
+	traits = {  Awesome_General Silver_War_Badge logistics_wizard_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 475
 }
 create_corps_commander = {
 	name = "Dobbie, William"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC engineer_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC trait_engineer }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 476
 }
 create_corps_commander = {
 	name = "Dobie, David"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = {  Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 477
 }
 create_corps_commander = {
 	name = "Dobree, Thomas"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 478
 }
 create_corps_commander = {
 	name = "Dorman-Smith, Eric"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross trickster_CC }
+	traits = {  Competent_General Victoria_Cross trickster_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 479
 }
 create_corps_commander = {
 	name = "Down, Eric"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross commando_CC }
+	traits = {  Competent_General Victoria_Cross commando }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 480
 }
 create_corps_commander = {
 	name = "Drew, James"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order fortress_buster_CC }
+	traits = {  Decent_General Most_Excellent_Order fortress_buster }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 481
 }
 create_corps_commander = {
 	name = "Duncan, Nigel"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	id = 482
 }
 create_corps_commander = {
 	name = "Dunford, Cyril"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 483
 }
 create_corps_commander = {
 	name = "Ebbels, Wilfred"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order fortress_buster_CC panzer_leader }
+	traits = {  Decent_General Most_Excellent_Order fortress_buster panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	id = 484
 }
 create_corps_commander = {
 	name = "Erskine, Bobby"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge logistics_wizard_CC }
+	traits = {  Awesome_General Silver_War_Badge logistics_wizard_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 485
 }
 create_corps_commander = {
 	name = "Evans, Geoffrey"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge logistics_wizard_CC }
+	traits = {  Awesome_General Silver_War_Badge logistics_wizard_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 486
 }
 create_corps_commander = {
 	name = "Evelegh, Vyvyan"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader }
+	traits = {  Competent_General armor_officer Victoria_Cross panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 487
 }
 create_corps_commander = {
 	name = "Fergusson, Bernard"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 488
 }
 create_corps_commander = {
 	name = "Festing, Francis"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge logistics_wizard_CC }
+	traits = {  Awesome_General Silver_War_Badge logistics_wizard_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 489
 }
 create_corps_commander = {
 	name = "Fisher, Arthur"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 490
 }
 create_corps_commander = {
 	name = "Loder-Symonds, Robert"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = {  Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 491
 }
 create_corps_commander = {
 	name = "Floyer-Acland, Arthur"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC }
+	traits = {  Decent_General infantry_officer Most_Excellent_Order defensive_doctrine_CC }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 492
 }
 create_corps_commander = {
 	name = "Fortune, Victor"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 493
 }
 create_corps_commander = {
 	name = "Fowkes, Charles"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 494
 }
 create_corps_commander = {
 	name = "Fox-Pitt, William"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 495
 }
 create_corps_commander = {
 	name = "Franklyn, Harold"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross defensive_doctrine_CC }
+	traits = {  Competent_General Victoria_Cross defensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 496
 }
 create_corps_commander = {
 	name = "Fraser, William"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 497
 }
 create_corps_commander = {
 	name = "Frost, Johnny"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross commando_CC commando_CC_II offensive_doctrine_CC }
+	traits = {  Competent_General infantry_officer Victoria_Cross commando commando_CC_II offensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 498
 }
 create_corps_commander = {
 	name = "Gairdner, Charles"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader }
+	traits = {  Competent_General armor_officer Victoria_Cross panzer_leader }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 499
 }
 create_corps_commander = {
 	name = "Gale, Richard"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross commando_CC }
+	traits = {  Competent_General Victoria_Cross commando }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 500
 }
 create_corps_commander = {
 	name = "Gambier-Parry, Michael"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 501
 }
 create_corps_commander = {
 	name = "Gatehouse, Alexander"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 502
 }
 create_corps_commander = {
 	name = "Godley, Alexander"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 503
 }
 create_corps_commander = {
 	name = "Godwin-Austin, Alfred"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC }
+	traits = {  Competent_General Victoria_Cross logistics_wizard_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 504
 }
 create_corps_commander = {
 	name = "Gordon-Finlayson, Robert"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order trickster_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order trickster_CC }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 505
 }
 create_corps_commander = {
 	name = "Gott, Strafer"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge panzer_leader }
+	traits = {  Awesome_General armor_officer Silver_War_Badge panzer_leader }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 506
 }
 create_corps_commander = {
 	name = "Stockwell, Hugh"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge commando_CC logistics_wizard_CC offensive_doctrine_CC }
+	traits = {  Awesome_General infantry_officer Silver_War_Badge commando logistics_wizard_CC offensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 507
 }
 create_corps_commander = {
 	name = "Earl of Gowrie"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 508
 }
 create_corps_commander = {
 	name = "Gracey, Douglas"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross }
+	traits = {  Competent_General Victoria_Cross }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 509
 }
 create_corps_commander = {
 	name = "Grant, Ian"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 510
 }
 create_corps_commander = {
 	name = "Grant, Charles"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC old_guard }
+	traits = {  old_guard Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 511
 }
 create_corps_commander = {
 	name = "Grasett, Arthur"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 512
 }
 create_corps_commander = {
 	name = "Hill, Leslie"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross }
+	traits = {  Bad_General Conspicuous_Galantry_Cross }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 513
 }
 create_corps_commander = {
 	name = "Greenacre, Douglas"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	id = 514
 }
 create_corps_commander = {
 	name = "Gregson-Ellis, Philip"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader offensive_doctrine_CC }
+	traits = {  Decent_General armor_officer Most_Excellent_Order panzer_leader offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 515
 }
 create_corps_commander = {
 	name = "Gubbins, Colin"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 516
 }
 create_corps_commander = {
 	name = "Hackett, John"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Masterful_General Distinguished_Service_Order commando_CC panzer_leader offensive_doctrine_CC logistics_wizard_CC }
+	traits = {  Masterful_General armor_officer Distinguished_Service_Order commando panzer_leader offensive_doctrine_CC logistics_wizard_CC }
 	skill = 3
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 4
+	id = 517
 }
 create_corps_commander = {
 	name = "Haddon, Tommy"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross commando_CC }
+	traits = {  Competent_General Victoria_Cross commando }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 518
 }
 create_corps_commander = {
 	name = "Hakewill-Smith, Edmund"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross }
+	traits = {  Competent_General Victoria_Cross }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 519
 }
 create_corps_commander = {
 	name = "Harding, John"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Masterful_General Distinguished_Service_Order defensive_doctrine_CC offensive_doctrine_CC logistics_wizard_CC }
+	traits = {  Masterful_General infantry_officer Distinguished_Service_Order defensive_doctrine_CC offensive_doctrine_CC logistics_wizard_CC }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+	id = 520
 }
 create_corps_commander = {
 	name = "Hardy, Campbell"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge commando_CC engineer_CC }
+	traits = {  Awesome_General Silver_War_Badge commando trait_engineer }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+	id = 521
 }
 create_corps_commander = {
 	name = "Harvey, George"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 522
 }
 create_corps_commander = {
 	name = "Haydon, Joseph"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = {  Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 523
 }
 create_corps_commander = {
 	name = "Hayman-Joyce, John"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 524
 }
 create_corps_commander = {
 	name = "Heath, Lewis"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = {  Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 525
 }
 create_corps_commander = {
 	name = "Heidenstam, P.C.S."
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross fortress_buster_CC panzer_leader }
+	traits = {  Bad_General Conspicuous_Galantry_Cross fortress_buster panzer_leader }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 526
 }
 create_corps_commander = {
 	name = "Hemming, William"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge commando_CC panzer_leader }
+	traits = {  Awesome_General armor_officer Silver_War_Badge commando panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+	id = 527
 }
 create_corps_commander = {
 	name = "Hicks, Philip"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross commando_CC }
+	traits = {  Competent_General Victoria_Cross commando }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 528
 }
 create_corps_commander = {
 	name = "Hill, James"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = { Decent_General Most_Excellent_Order commando }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 529
 }
 create_corps_commander = {
 	name = "Hilton, Richard"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross fortress_buster_CC }
+	traits = { Bad_General Conspicuous_Galantry_Cross fortress_buster }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 530
 }
 create_corps_commander = {
 	name = "Hilton-Green, Henry"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Incompetent_General General_Service_Medal old_guard }
+	traits = { old_guard Incompetent_General General_Service_Medal old_guard }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 531
 }
 create_corps_commander = {
 	name = "Hinde, William"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader }
+	traits = { Competent_General armor_officer Victoria_Cross panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+	id = 532
 }
 create_corps_commander = {
 	name = "Hobart, Percy"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge engineer_CC engineer_CC_II panzer_leader }
+	traits = {  Awesome_General armor_officer Silver_War_Badge trait_engineer engineer_CC_II panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 533
 }
 create_corps_commander = {
 	name = "Hollington, A.A."
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = { Decent_General Most_Excellent_Order offensive_doctrine_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 534
 }
 create_corps_commander = {
 	name = "Holworthy, Alan"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 535
 }
 create_corps_commander = {
 	name = "Hopkinson, George"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross commando_CC }
+	traits = { Competent_General Victoria_Cross commando }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 536
 }
 create_corps_commander = {
 	name = "Hutton, Reginald"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 537
 }
 create_corps_commander = {
 	name = "Huxley-Waller, Noel"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Incompetent_General General_Service_Medal engineer_CC old_guard }
+	traits = { old_guard Incompetent_General General_Service_Medal trait_engineer }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 538
 }
 create_corps_commander = {
 	name = "Ironside, Edmund"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC logistics_wizard_CC_II }
+	traits = { Competent_General Victoria_Cross logistics_wizard_CC logistics_wizard_CC_II }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 539
 }
 create_corps_commander = {
 	name = "Irwin, Noel"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = { Decent_General infantry_officer Most_Excellent_Order offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 540
 }
 create_corps_commander = {
 	name = "Ismay, Lionel"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Masterful_General Distinguished_Service_Order defensive_doctrine_CC }
+	traits = { Masterful_General career_officer Distinguished_Service_Order defensive_doctrine_CC }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 4
+	id = 541
 }
 create_corps_commander = {
 	name = "Johnson, Dudley"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross defensive_doctrine_CC }
+	traits = { Competent_General infantry_officer Victoria_Cross defensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 542
 }
 create_corps_commander = {
 	name = "Kavanagh, Charles"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC old_guard }
+	traits = { old_guard Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 543
 }
 create_corps_commander = {
 	name = "Keightley, Charles"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader }
+	traits = {  Competent_General armor_officer Victoria_Cross panzer_leader }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 544
 }
 create_corps_commander = {
-	name = "Keightley, Charles"
+	name = "Keightley, Peter"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = { Decent_General armor_officer Most_Excellent_Order }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+	id = 545
 }
 create_corps_commander = {
 	name = "Kirke, St.George"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order fortress_buster_CC old_guard }
+	traits = { old_guard Decent_General Most_Excellent_Order fortress_buster }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 546
 }
 create_corps_commander = {
 	name = "Lane-Dunphie, Charles"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader }
+	traits = { Competent_General armor_officer Victoria_Cross panzer_leader }
 	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+	id = 547
 }
 create_corps_commander = {
 	name = "Lathbury, Gerald"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = { Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 548
 }
 create_corps_commander = {
 	name = "Laurie, John"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 549
 }
 create_corps_commander = {
 	name = "Lawson,Edward"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross defensive_doctrine_CC }
+	traits = { Bad_General Conspicuous_Galantry_Cross defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 550
 }
 create_corps_commander = {
 	name = "Laycock, Edward"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge commando_CC }
+	traits = { Awesome_General Silver_War_Badge commando }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 551
 }
 create_corps_commander = {
 	name = "Le Fleming, Roger"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = { Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 552
 }
 create_corps_commander = {
 	name = "Lentaigne, Walter"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = { Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 553
 }
 create_corps_commander = {
 	name = "Liardet, Claude"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order old_guard }
+	traits = { old_guard Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 554
 }
 create_corps_commander = {
 	name = "Liddell, Clive"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross defensive_doctrine_CC }
+	traits = {  Competent_General Victoria_Cross defensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 555
 }
 create_corps_commander = {
 	name = "Lindsell, Wilfrid"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = { Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 556
 }
 create_corps_commander = {
 	name = "Lloyd, Wilfrid"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = { Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 557
 }
 create_corps_commander = {
 	name = "Loewen, Charles"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader }
+	traits = { Competent_General armor_officer Victoria_Cross panzer_leader }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 558
 }
 create_corps_commander = {
 	name = "Loftus-Tottenham, Frederick"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = { Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 559
 }
 create_corps_commander = {
 	name = "Flavell, Ted"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross commando_CC }
+	traits = { Competent_General Victoria_Cross commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 560
 }
 create_corps_commander = {
 	name = "Lord Lovat"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross commando_CC naval_invader_CC }
+	traits = { Competent_General Victoria_Cross commando naval_invader }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 561
 }
 create_corps_commander = {
 	name = "Loyd, Henry"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross defensive_doctrine_CC offensive_doctrine_CC }
+	traits = { Competent_General infantry_officer Victoria_Cross defensive_doctrine_CC offensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+	id = 562
 }
 create_corps_commander = {
 	name = "Lumsden, Herbert"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader offensive_doctrine_CC }
+	traits = { Competent_General Victoria_Cross panzer_leader offensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 563
 }
 create_corps_commander = {
 	name = "Macdonald, Harry"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC old_guard }
+	traits = { old_guard Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 564
 }
 create_corps_commander = {
 	name = "MacFarlane, Frank"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = { Decent_General Most_Excellent_Order commando }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 565
 }
 create_corps_commander = {
 	name = "Mackenzie, Charles"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = { Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 566
 }
 create_corps_commander = {
 	name = "MacKenzie,  D.A.L."
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 567
 }
 create_corps_commander = {
 	name = "Mackesy, Pierce"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross defensive_doctrine_CC }
+	traits = { Competent_General Victoria_Cross defensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 568
 }
 create_corps_commander = {
 	name = "MacMillan, Gordon"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC }
+	traits = { Competent_General Victoria_Cross logistics_wizard_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 569
 }
 create_corps_commander = {
 	name = "Collingwood, Richard"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = { Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 570
 }
 create_corps_commander = {
 	name = "Chaduri, Joyanto"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC offensive_doctrine_CC }
+	traits = { Competent_General infantry_officer Victoria_Cross logistics_wizard_CC offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 571
 }
 create_corps_commander = {
 	name = "Mansergh, Eric"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge panzer_leader offensive_doctrine_CC }
+	traits = { Awesome_General armor_officer Silver_War_Badge panzer_leader offensive_doctrine_CC }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 572
 }
 create_corps_commander = {
 	name = "Martin, James"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = { Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 573
 }
 create_corps_commander = {
 	name = "Massy, Hugh"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC offensive_doctrine_CC }
+	traits = { Decent_General career_officer Most_Excellent_Order commando offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 574
 }
 create_corps_commander = {
 	name = "Mayne, Paddy"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC offensive_doctrine_CC }
+	traits = { Decent_General Most_Excellent_Order commando offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 575
 }
 create_corps_commander = {
 	name = "McCardie, Derek"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = { Decent_General Most_Excellent_Order offensive_doctrine_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 576
 }
 create_corps_commander = {
 	name = "McCreery, Richard"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge offensive_doctrine_CC panzer_leader engineer_CC }
+	traits = { Awesome_General armor_officer Silver_War_Badge offensive_doctrine_CC panzer_leader trait_engineer }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 577
 }
 create_corps_commander = {
 	name = "McCulloch, Andrew"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC engineer_CC old_guard }
+	traits = { old_guard Decent_General Most_Excellent_Order defensive_doctrine_CC trait_engineer }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 578
 }
 create_corps_commander = {
 	name = "McLeod, Roderick"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge commando_CC }
+	traits = { Awesome_General Silver_War_Badge commando }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+	id = 579
 }
 create_corps_commander = {
 	name = "McLeod, Donald"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC old_guard }
+	traits = { old_guard Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 580
 }
 create_corps_commander = {
 	name = "Messervy, Frank"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge logistics_wizard_CC panzer_leader offensive_doctrine_CC }
+	traits = { Awesome_General armor_officer Silver_War_Badge logistics_wizard_CC panzer_leader offensive_doctrine_CC }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 581
 }
 create_corps_commander = {
 	name = "Miles, Eric"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = { Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 582
 }
 create_corps_commander = {
 	name = "Miller, Austin"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = { Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 583
 }
 create_corps_commander = {
 	name = "Norrie, Charles"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge panzer_leader }
+	traits = { Awesome_General armor_officer Silver_War_Badge panzer_leader }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 584
 }
 create_corps_commander = {
 	name = "Montgomery-Massingberd, Archibald"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC old_guard }
+	traits = { old_guard Decent_General Most_Excellent_Order defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 585
 }
 create_corps_commander = {
 	name = "Morgan, Fredrick"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross }
+	traits = { Competent_General Victoria_Cross }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 586
 }
 create_corps_commander = {
 	name = "Morris, Edwin"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = { Decent_General Most_Excellent_Order offensive_doctrine_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 587
 }
 create_corps_commander = {
 	name = "Mosely-Mayne, Ashton"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross defensive_doctrine_CC }
+	traits = { Competent_General Victoria_Cross defensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 588
 }
 create_corps_commander = {
 	name = "Lord Mountbatten"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge commando_CC commando_CC_II }
+	traits = { Awesome_General infantry_officer Silver_War_Badge commando commando_CC_II }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 589
 }
 create_corps_commander = {
 	name = "Murray  G.D.K."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = {  Decent_General Most_Excellent_Order offensive_doctrine_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 590
 }
 create_corps_commander = {
 	name = "Murray  Horatius"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross offensive_doctrine_CC }
+	traits = {  Competent_General Victoria_Cross offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 591
 }
 create_corps_commander = {
 	name = "Neame, Phillip"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC }
+	traits = { Competent_General Victoria_Cross logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 592
 }
 create_corps_commander = {
 	name = "Newth, Arthur"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 593
 }
 create_corps_commander = {
 	name = "Nicholson, Cameron"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge panzer_leader }
+	traits = { Awesome_General Silver_War_Badge panzer_leader }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 594
 }
 create_corps_commander = {
 	name = "Nye, Archibald"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 595
 }
 create_corps_commander = {
 	name = "O'Moore-Creagh, Michael"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross panzer_leader }
+	traits = { Bad_General Conspicuous_Galantry_Cross panzer_leader }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 596
 }
 create_corps_commander = {
 	name = "Wingate, Orde"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge trickster_CC commando_CC jungle_rat_CC jungle_rat_CC_II }
+	traits = { Awesome_General harsh_leader Silver_War_Badge trickster_CC commando jungle_rat jungle_rat_CC_II }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 597
 }
 create_corps_commander = {
 	name = "Ozanne, William"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 598
 }
 create_corps_commander = {
 	name = "Paget, Bernard"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross }
+	traits = { Competent_General Victoria_Cross }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 599
 }
 create_corps_commander = {
 	name = "Pakenham-Walsh, Ridley"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross engineer_CC }
+	traits = {  Competent_General Victoria_Cross trait_engineer }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 600
 }
 create_corps_commander = {
 	name = "Palairet-Scobell, John"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC defensive_doctrine_CC old_guard }
+	traits = { old_guard Decent_General Most_Excellent_Order logistics_wizard_CC defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 601
 }
 create_corps_commander = {
 	name = "Parham, Jack"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross fortress_buster_CC }
+	traits = { Bad_General Conspicuous_Galantry_Cross fortress_buster }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 602
 }
 create_corps_commander = {
 	name = "Parry"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = { Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 603
 }
 create_corps_commander = {
 	name = "Payton-Reid, Robert"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = { Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 604
 }
 create_corps_commander = {
 	name = "Penney, William"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 605
 }
 create_corps_commander = {
 	name = "Pert, Claude"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = {  Decent_General Most_Excellent_Order panzer_leader }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 606
 }
 create_corps_commander = {
 	name = "Poett, Nigel"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross commando_CC }
+	traits = {  Competent_General Victoria_Cross commando }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 607
 }
 create_corps_commander = {
 	name = "Powell, Donald"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = {  Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 608
 }
 create_corps_commander = {
 	name = "Pyman, Harold"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Awesome_General logistics_wizard_CC panzer_leader }
+	traits = { Awesome_General armor_officer logistics_wizard_CC panzer_leader }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
+	id = 609
 }
 create_corps_commander = {
 	name = "Ramsden, William"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order fortress_buster_CC }
+	traits = { Decent_General Most_Excellent_Order fortress_buster }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 610
 }
 create_corps_commander = {
 	name = "Read, John"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order fortress_buster_CC }
+	traits = { Decent_General Most_Excellent_Order fortress_buster }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 611
 }
 create_corps_commander = {
 	name = "Redman, Harold"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = { Decent_General Most_Excellent_Order offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 612
 }
 create_corps_commander = {
 	name = "Reid, Dennis"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = { Decent_General Most_Excellent_Order offensive_doctrine_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 613
 }
 create_corps_commander = {
 	name = "Rennie, Tom"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross commando_CC }
+	traits = { Competent_General Victoria_Cross commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 614
 }
 create_corps_commander = {
 	name = "Richards, George"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order panzer_leader }
+	traits = { Decent_General armor_officer Most_Excellent_Order panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 615
 }
 create_corps_commander = {
 	name = "Appleyard, Kenelm"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 616
 }
 create_corps_commander = {
 	name = "Roberts, George"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross panzer_leader }
+	traits = { Competent_General armor_officer Victoria_Cross panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 617
 }
 create_corps_commander = {
 	name = "Roberts, Ourvy"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC }
+	traits = { Competent_General Victoria_Cross logistics_wizard_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 618
 }
 create_corps_commander = {
 	name = "Robertson, Brian"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge commando_CC offensive_doctrine_CC }
+	traits = { Awesome_General Silver_War_Badge commando offensive_doctrine_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 619
 }
 create_corps_commander = {
 	name = "Russell, Dudley"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC }
+	traits = { Decent_General Most_Excellent_Order offensive_doctrine_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 620
 }
 create_corps_commander = {
 	name = "Salomons, Joseph"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order fortress_buster_CC }
+	traits = { Decent_General Most_Excellent_Order fortress_buster }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 621
 }
 create_corps_commander = {
 	name = "Savory, Reginald"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = {  Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 622
 }
 create_corps_commander = {
 	name = "Schreiber, Edmund"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC fortress_buster_CC }
+	traits = { Decent_General Most_Excellent_Order defensive_doctrine_CC fortress_buster }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 623
 }
 create_corps_commander = {
 	name = "Scobie, Ronald"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross }
+	traits = { Competent_General politically_connected Victoria_Cross }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+	id = 624
 }
 create_corps_commander = {
 	name = "Scoones, Goeffrey"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Awesome_General Silver_War_Badge logistics_wizard_CC }
+	traits = { Awesome_General Silver_War_Badge logistics_wizard_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 625
 }
 create_corps_commander = {
 	name = "Scott, John"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC }
+	traits = { Decent_General Most_Excellent_Order defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 626
 }
 create_corps_commander = {
 	name = "Selby, William"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC }
+	traits = { Decent_General Most_Excellent_Order defensive_doctrine_CC }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 627
 }
 create_corps_commander = {
 	name = "Somerset, Nigel"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Bad_General Conspicuous_Galantry_Cross }
+	traits = { Bad_General Conspicuous_Galantry_Cross }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 628
 }
 create_corps_commander = {
 	name = "Brind, Spenser"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC old_guard }
+	traits = { old_guard Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 629
 }
 create_corps_commander = {
 	name = "St.Clair-Ford, Peter"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 630
 }
 create_corps_commander = {
 	name = "St.Clair-Morford, Albert"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC engineer_CC }
+	traits = { Decent_General Most_Excellent_Order commando trait_engineer }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 631
 }
 create_corps_commander = {
 	name = "Stephens, Frederick"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 632
 }
 create_corps_commander = {
 	name = "Stopford, Montagu"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC }
+	traits = { Competent_General Victoria_Cross logistics_wizard_CC }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 633
 }
 create_corps_commander = {
 	name = "Studholme-Brownrigg, Douglas"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order defensive_doctrine_CC old_guard }
+	traits = { old_guard Decent_General Most_Excellent_Order defensive_doctrine_CC }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+	id = 634
 }
 create_corps_commander = {
 	name = "Sturges, Robert"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC engineer_CC }
+	traits = {  Decent_General Most_Excellent_Order commando trait_engineer }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 635
 }
 create_corps_commander = {
 	name = "Symes, George"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 636
 }
 create_corps_commander = {
 	name = "Templer, Gerald"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Masterful_General Distinguished_Service_Order defensive_doctrine_CC fortress_buster_CC logistics_wizard_CC commando_CC }
+	traits = { Masterful_General Distinguished_Service_Order defensive_doctrine_CC fortress_buster logistics_wizard_CC commando }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	id = 637
 }
 create_corps_commander = {
 	name = "Thomas, Gwilym"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross defensive_doctrine_CC panzer_leader logistics_wizard_CC }
+	traits = { Competent_General armor_officer Victoria_Cross defensive_doctrine_CC panzer_leader logistics_wizard_CC }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 638
 }
 create_corps_commander = {
 	name = "Thompson, Sheriff"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = { Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 639
 }
 create_corps_commander = {
 	name = "Thorne, Andrew"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC }
+	traits = {  Competent_General Victoria_Cross logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 640
 }
 create_corps_commander = {
 	name = "Toye, Hugh"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Competent_General Most_Excellent_Order }
+	traits = { Competent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+	id = 641
 }
 create_corps_commander = {
 	name = "Tuker, Francis"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross logistics_wizard_CC }
+	traits = { Competent_General Victoria_Cross logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 642
 }
 create_corps_commander = {
 	name = "Urquhart, Roy"
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Competent_General Most_Excellent_Order commando_CC commando_CC_II }
+	traits = { Competent_General Most_Excellent_Order commando commando_CC_II }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 643
 }
 create_corps_commander = {
 	name = "Utterson-Kelso, John"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 644
 }
 create_corps_commander = {
 	name = "Vaughan-Hughes, Gerald"
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order }
+	traits = { Decent_General Most_Excellent_Order }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 645
 }
 create_corps_commander = {
 	name = "Vaughan, Charles"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order commando_CC }
+	traits = { Decent_General Most_Excellent_Order commando }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 646
 }
 create_corps_commander = {
 	name = "Vavasour, Frederick"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross trickster_CC }
+	traits = { Competent_General Victoria_Cross trickster_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 647
 }
 create_corps_commander = {
 	name = "Walwyn, C.E.B."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order trickster_CC old_guard }
+	traits = { old_guard Decent_General Most_Excellent_Order trickster_CC }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 648
 }
 create_corps_commander = {
 	name = "Warren, Dermot"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = { Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 649
 }
 create_corps_commander = {
 	name = "Warren  T.R.P."
 	picture = "Portrait_Britain_Generic_land_4.dds"
-	traits = { ENG_tag Competent_General Victoria_Cross offensive_doctrine_CC }
+	traits = { Competent_General Victoria_Cross offensive_doctrine_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 650
 }
 create_corps_commander = {
 	name = "Wetherall, Robillard"
 	picture = "Portrait_Britain_Generic_land_5.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC }
+	traits = { Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 651
 }
 create_corps_commander = {
 	name = "Williams, Guy"
 	picture = "Portrait_Britain_Generic_land_1.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order offensive_doctrine_CC  engineer_CC }
+	traits = { Decent_General Most_Excellent_Order offensive_doctrine_CC trait_engineer }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 652
 }
 create_corps_commander = {
 	name = "Wilson  B.T."
 	picture = "Portrait_Britain_Generic_land_2.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC old_guard}
+	traits = { old_guard Decent_General Most_Excellent_Order logistics_wizard_CC }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+	id = 653
 }
 create_corps_commander = {
 	name = "Wilson, Maitland"
 	picture = "Portrait_Britain_Generic_land_3.dds"
-	traits = { ENG_tag Decent_General Most_Excellent_Order logistics_wizard_CC}
+	traits = { Decent_General Most_Excellent_Order logistics_wizard_CC}
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	id = 654
 }
-
 ########## Navy ###########
 create_navy_leader = {
-	name = "James Fownes Somerville"
+	name = "Somerville, James Fownes"
 	picture = "Portrait_Britain_James_Fownes_Somerville.dds"
 	traits = { superior_tactician }
 	skill = 5
+	id = 820
 }
 create_navy_leader = {
-	name = "Henry Harwood"
+	name = "Harwood, Henry"
 	picture = "Portrait_Britain_Henry_Harwood.dds"
 	traits = { old_guard_navy blockade_runner }
 	skill = 3
+	id = 821
 }
 create_navy_leader = {
-	name = "Andrew Cunningham"
+	name = "Cunningham, Andrew"
 	picture = "Portrait_Britain_Andrew_Cunningham.dds"
 	traits = { blockade_runner superior_tactician }
 	skill = 5
+	id = 822
 }
 create_navy_leader = {
-	name = "Bruce Fraser"
+	name = "Fraser, Bruce"
 	picture = "Portrait_Britain_Bruce_Fraser.dds"
 	traits = { blockade_runner }
 	skill = 4
+	id = 658
 }
 create_navy_leader = {
-	name = "John Tovey"
+	name = "Tovey, John"
 	picture = "Portrait_Britain_John_Tovey.dds"
 	traits = { superior_tactician }
 	skill = 4
+	id = 659
 }
 create_navy_leader = {
-	name = "Bernard Rawlings"
+	name = "Rawlings, Bernard"
 	picture = "Portrait_Britain_Bernard_Rawlings.dds"
 	traits = {  }
 	skill = 1
+	id = 670
 }
 create_navy_leader = {
-	name = "John Cunningham"
+	name = "Cunningham, John"
 	picture = "Portrait_Britain_John_Cunningham.dds"
 	traits = {  }
 	skill = 4
+	id = 671
 }
 create_navy_leader = {
-	name = "Charles Forbes"
+	name = "Forbes, Charles"
 	picture = "Portrait_Britain_Charles_Forbes.dds"
 	traits = { fly_swatter }
 	skill = 3
+	id = 672
 }
 create_navy_leader = {
-	name = "Algernon Willis"
+	name = "Willis, Algernon"
 	picture = "Portrait_Britain_Algernon_Willis.dds"
 	traits = { spotter }
 	skill = 3
+	id = 673
 }
 create_navy_leader = {
-	name = "Arthur Power"
+	name = "Power, Arthur"
 	picture = "Portrait_Britain_Arthur_Power.dds"
 	traits = {  }
 	skill = 2
+	id = 674
 }
-
 create_navy_leader = {
-	name = "Henry Blagrove"
+	name = "Blagrove, Henry"
 	picture = "Portrait_Blagrove.dds"
 	traits = { }
 	skill = 3
+	id = 675
 }
 create_navy_leader = {
-	name = "Denis Boyd"
+	name = "Boyd, Denis"
 	picture = "Portrait_Boyd.dds"
 	traits = { blockade_runner  }
 	skill = 3
+	id = 676
 }
 create_navy_leader = {
-	name = "Lord Cork"
+	name = "Cork, Lord"
 	picture = "Portrait_Lord_Cork.dds"
 	traits = {}
 	skill = 2
+	id = 677
 }
 create_navy_leader = {
-	name = "Edmund Carver"
+	name = "Carver, Edmund"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { superior_tactician  }
 	skill = 2
+	id = 678
 }
 create_navy_leader = {
-	name = "Victor Crutchley"
+	name = "Crutchley, Victor"
 	picture = "Portrait_Crutchley.dds"
 	traits = { seawolf }
 	skill = 3
+	id = 679
 }
 create_navy_leader = {
-	name = "Hugh England"
+	name = "England, Hugh"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { old_guard_navy }
 	skill = 2
+	id = 680
 }
 create_navy_leader = {
-	name = "Arthur D'Oyly Lyon"
+	name = "D'Oyly Lyon, Arthur"
 	picture = "Portrait_DOyly.dds"
 	traits = { superior_tactician  }
 	skill = 2
+	id = 681
 }
 create_navy_leader = {
-	name = "Martin Dunbar-Naismith"
+	name = "Dunbar-Naismith, Martin"
 	picture = "Portrait_Dunbar_Naismith.dds"
 	traits = { superior_tactician  }
 	skill = 4
+	id = 682
 }
 create_navy_leader = {
-	name = "Edward Evans"
+	name = "Evans, Edward"
 	picture = "Portrait_Evans.dds"
 	traits = { superior_tactician  }
 	skill = 3
+	id = 683
 }
 create_navy_leader = {
-	name = "Lancelot Holland"
+	name = "Holland, Lancelot"
 	picture = "Portrait_Lancelot_Holland.dds"
 	traits = {}
 	skill = 3
+	id = 684
 }
 create_navy_leader = {
-	name = "Max Horton"
+	name = "Horton, Max"
 	picture = "Portrait_Horton.dds"
 	traits = {spotter }
 	skill = 3
+	id = 685
 }
 create_navy_leader = {
-	name = "Geoffrey Layton"
+	name = "Layton, Geoffrey"
 	picture = "Portrait_Layton.dds"
 	traits = {spotter }
 	skill = 4
+	id = 686
 }
 create_navy_leader = {
-	name = "Ralph Leatham"
+	name = "Leatham, Ralph"
 	picture = "Portrait_Leatham.dds"
 	traits = { }
 	skill = 3
+	id = 687
 }
 create_navy_leader = {
-	name = "Henry Moore"
+	name = "Moore, Henry"
 	picture = "Portrait_Moore.dds"
 	traits = {}
 	skill = 3
+	id = 688
 }
 create_navy_leader = {
-	name = "Percy Noble"
+	name = "Noble, Percy"
 	picture = "Portrait_Noble.dds"
 	traits = {}
 	skill = 4
+	id = 689
 }
 create_navy_leader = {
-	name = "William Parry"
+	name = "Parry, William"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = {}
 	skill = 3
+	id = 690
 }
 create_navy_leader = {
-	name = "Tom Phillips"
+	name = "Phillips, Tom"
 	picture = "Portrait_Phillips.dds"
 	traits = { }
 	skill = 3
+	id = 691
 }
 create_navy_leader = {
-	name = "Charles Pizey"
+	name = "Pizey, Charles"
 	picture = "Portrait_Pizey.dds"
 	traits = { superior_tactician  }
 	skill = 3
+	id = 692
 }
 create_navy_leader = {
-	name = "Dudley Pound"
+	name = "Pound, Dudley"
 	picture = "Portrait_Dudley_pound.dds"
 	traits = { superior_tactician  spotter }
 	skill = 2
+	id = 693
 }
 create_navy_leader = {
-	name = "Bertram Ramsey"
+	name = "Ramsey, Bertram"
 	picture = "Portrait_Ramsey.dds"
 	traits = { superior_tactician blockade_runner }
 	skill = 4
+	id = 694
 }
 create_navy_leader = {
-	name = "Phillip Vian"
+	name = "Vian, Phillip"
 	picture = "Portrait_Vian.dds"
 	traits = { superior_tactician }
 	skill = 4
+	id = 695
 }
 create_navy_leader = {
-	name = "Frederic Wake-Walker"
+	name = "Wake-Walker, Frederic"
 	picture = "Portrait_Wake_Walker.dds"
 	traits = { superior_tactician }
 	skill = 3
+	id = 696
 }
 create_navy_leader = {
 	name = "Davis, D."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { blockade_runner spotter }
 	skill = 1
+	id = 697
 }
 create_navy_leader = {
 	name = "MacClanachan, L."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 698
 }
 create_navy_leader = {
 	name = "Buttar, F."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { spotter }
 	skill = 1
+	id = 699
 }
 create_navy_leader = {
 	name = "Juson, G."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { spotter superior_tactician }
 	skill = 1
+	id = 700
 }
 create_navy_leader = {
 	name = "Albertson, N."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { spotter seawolf }
 	skill = 2
+	id = 701
 }
 create_navy_leader = {
 	name = "Munro, C."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 2
+	id = 702
 }
 create_navy_leader = {
 	name = "Gilmichael, F."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { blockade_runner }
 	skill = 2
+	id = 703
 }
 create_navy_leader = {
 	name = "Fleming, N."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { spotter }
 	skill = 1
+	id = 704
 }
 create_navy_leader = {
 	name = "MacTear, A."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { spotter superior_tactician }
 	skill = 2
+	id = 705
 }
 create_navy_leader = {
 	name = "Gilmartin, W."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { seawolf }
 	skill = 2
+	id = 706
 }
 create_navy_leader = {
 	name = "MacKessock, L."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { spotter superior_tactician }
 	skill = 2
+	id = 707
 }
 create_navy_leader = {
 	name = "MacMurchy, P."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 2
+	id = 708
 }
 create_navy_leader = {
 	name = "Coxon, E."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 709
 }
 create_navy_leader = {
 	name = "MacAlonie, J."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { spotter blockade_runner }
 	skill = 1
+	id = 710
 }
 create_navy_leader = {
 	name = "Selvaratnam, F."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { seawolf }
 	skill = 1
+	id = 711
 }
 create_navy_leader = {
 	name = "Edmundson, I."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 712
 }
 create_navy_leader = {
 	name = "Charleson, I."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { blockade_runner }
 	skill = 1
+	id = 713
 }
 create_navy_leader = {
 	name = "Mustow, N."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { blockade_runner }
 	skill = 2
+	id = 714
 }
 create_navy_leader = {
 	name = "Wadeson, V."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 715
 }
 create_navy_leader = {
 	name = "MacNeillie, H."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { seawolf }
 	skill = 1
+	id = 716
 }
 create_navy_leader = {
 	name = "Cuthbertson, A."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { seawolf }
 	skill = 1
+	id = 717
 }
 create_navy_leader = {
 	name = "Peat, B."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { blockade_runner }
 	skill = 2
+	id = 718
 }
 create_navy_leader = {
 	name = "MacCrain, B."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 719
 }
 create_navy_leader = {
 	name = "Neilson, U."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { superior_tactician }
 	skill = 1
+	id = 720
 }
 create_navy_leader = {
 	name = "MacVitie, U."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { blockade_runner spotter }
 	skill = 2
+	id = 721
 }
 create_navy_leader = {
 	name = "Wadd, R."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { seawolf spotter }
 	skill = 2
+	id = 722
 }
 create_navy_leader = {
 	name = "MacNeilage, H."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { seawolf superior_tactician }
 	skill = 2
+	id = 723
 }
 create_navy_leader = {
 	name = "MacIlroy, P."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { blockade_runner spotter }
 	skill = 1
+	id = 724
 }
 create_navy_leader = {
 	name = "Logan, C."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { seawolf }
 	skill = 1
+	id = 725
 }
 create_navy_leader = {
 	name = "MacNichol, C."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { seawolf }
 	skill = 1
+	id = 726
 }
 create_navy_leader = {
 	name = "McKiddie, I."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { blockade_runner }
 	skill = 2
+	id = 727
 }
 create_navy_leader = {
 	name = "MacCurley, J."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { spotter }
 	skill = 2
+	id = 728
 }
 create_navy_leader = {
 	name = "Morris, S."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { seawolf blockade_runner }
 	skill = 2
+	id = 729
 }
 create_navy_leader = {
 	name = "Chisholm, T."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 2
+	id = 730
 }
 create_navy_leader = {
 	name = "Hobson, A."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { seawolf superior_tactician }
 	skill = 2
+	id = 731
 }
 create_navy_leader = {
 	name = "Findlay, U."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { seawolf blockade_runner }
 	skill = 2
+	id = 732
 }
 create_navy_leader = {
 	name = "Skinner, N."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { seawolf spotter }
 	skill = 1
+	id = 733
 }
 create_navy_leader = {
 	name = "MacKimmie, Q."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { spotter }
 	skill = 1
+	id = 734
 }
 create_navy_leader = {
 	name = "MacIan, B."
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { seawolf superior_tactician }
 	skill = 2
+	id = 735
 }
 create_navy_leader = {
 	name = "MacCririe, B."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { superior_tactician }
 	skill = 2
+	id = 736
 }
 create_navy_leader = {
 	name = "Campbell, O."
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { superior_tactician }
 	skill = 1
+	id = 737
 }
 create_navy_leader = {
 	name = "Agnew, Peter"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = {  }
 	skill = 1
+	id = 738
 }
 create_navy_leader = {
 	name = "Backhouse, Roger"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = {  }
 	skill = 2
+	id = 739
 }
 create_navy_leader = {
 	name = "Bisset, James"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { blockade_runner }
 	skill = 1
+	id = 740
 }
 create_navy_leader = {
 	name = "Chatfield, Ernle"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { old_guard_navy spotter }
 	skill = 1
+	id = 741
 }
 create_navy_leader = {
 	name = "Dickens, Peter"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { seawolf }
 	skill = 1
+	id = 742
 }
 create_navy_leader = {
 	name = "Domvile, Barry"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
-	traits = { spotter old_guard_navy }
+	traits = { old_guard_navy spotter }
 	skill = 1
+	id = 743
 }
 create_navy_leader = {
 	name = "Dreyer, Frederic"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
-	traits = { superior_tactician old_guard_navy }
+	traits = { old_guard_navy superior_tactician }
 	skill = 3
+	id = 744
 }
 create_navy_leader = {
 	name = "Edwards-Collins, George"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 2
+	id = 745
 }
 create_navy_leader = {
 	name = "Forbes, Charles"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 3
+	id = 746
 }
 create_navy_leader = {
 	name = "Gretton, Peter"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { spotter }
 	skill = 1
+	id = 747
 }
 create_navy_leader = {
 	name = "Hallifx, Ronald"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 2
+	id = 748
 }
 create_navy_leader = {
 	name = "Mansergh, Maurice"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 2
+	id = 749
 }
 create_navy_leader = {
 	name = "Harwood, Henry"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { spotter blockade_runner }
 	skill = 3
+	id = 750
 }
 create_navy_leader = {
 	name = "Hope-Carlill, Stephen"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 751
 }
 create_navy_leader = {
 	name = "James, Thomas"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { old_guard_navy }
 	skill = 2
+	id = 752
 }
 create_navy_leader = {
 	name = "Keble-White, Geoffrey"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { seawolf }
 	skill = 1
+	id = 753
 }
 create_navy_leader = {
 	name = "Makeig-Jones, William"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 2
+	id = 754
 }
 create_navy_leader = {
 	name = "Manners, Erroll"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 755
 }
 create_navy_leader = {
 	name = "Martin, Benjamin"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 2
+	id = 756
 }
 create_navy_leader = {
 	name = "Meirs, Anthony"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 757
 }
 create_navy_leader = {
 	name = "Moir, Dashwood"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { old_guard_navy }
 	skill = 2
+	id = 758
 }
 create_navy_leader = {
 	name = "Murray, Arthur"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 2
+	id = 759
 }
 create_navy_leader = {
 	name = "Palliser, Arthur"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 2
+	id = 760
 }
 create_navy_leader = {
 	name = "Pumphrey, Nigel"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 761
 }
 create_navy_leader = {
 	name = "Ruck-Keene, Philip"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { seawolf }
 	skill = 2
+	id = 762
 }
 create_navy_leader = {
 	name = "Sommerville, James"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { superior_tactician }
 	skill = 4
+	id = 763
 }
 create_navy_leader = {
 	name = "Lyster, St. George"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 2
+	id = 764
 }
 create_navy_leader = {
 	name = "Brownrigg, Studholme"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = {  }
 	skill = 3
+	id = 765
 }
 create_navy_leader = {
 	name = "Syfret, Neville"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { old_guard_navy spotter }
 	skill = 3
+	id = 766
 }
 create_navy_leader = {
 	name = "Talbot-Savignac-Hall, John"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 767
 }
 create_navy_leader = {
 	name = "Thomson, Evelyn"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 1
+	id = 768
 }
 create_navy_leader = {
 	name = "Tours, F.B."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 769
 }
 create_navy_leader = {
 	name = "Tufnell, Desmond"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 770
 }
 create_navy_leader = {
 	name = "Vivian, John"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 2
+	id = 771
 }
 create_navy_leader = {
 	name = "Walwyn, Humphrey"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { old_guard_navy }
 	skill = 2
+	id = 772
 }
 create_navy_leader = {
 	name = "Warburton-Lee, Philip"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 773
 }
 create_navy_leader = {
 	name = "Ward, Basil"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 1
+	id = 774
 }
 create_navy_leader = {
 	name = "Wilkinson, John"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 775
 }
 create_navy_leader = {
 	name = "Harrison-Wallace, Steuart"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { old_guard_navy }
 	skill = 1
+	id = 776
 }
 create_navy_leader = {
 	name = "McGrigor, Roderick"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 4
+	id = 777
 }
 create_navy_leader = {
 	name = "Mountbatten, Louis"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { spotter }
 	skill = 4
+	id = 778
 }
 create_navy_leader = {
 	name = "Luce, David"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { seawolf }
 	skill = 4
+	id = 779
 }
 create_navy_leader = {
 	name = "Binney, Hugh"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 3
+	id = 780
 }
 create_navy_leader = {
 	name = "Adams, John"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 2
+	id = 781
 }
 create_navy_leader = {
 	name = "Adams, William"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 782
 }
 create_navy_leader = {
 	name = "Agar, Gus"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 1
+	id = 783
 }
 create_navy_leader = {
 	name = "Agnew, Bill"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 2
+	id = 784
 }
 create_navy_leader = {
 	name = "Alexander, Courtney"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 2
+	id = 785
 }
 create_navy_leader = {
 	name = "Alexander, Robert"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 1
+	id = 786
 }
 create_navy_leader = {
 	name = "Allen, George"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 787
 }
 create_navy_leader = {
 	name = "Anstice, Edmund"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 2
+	id = 788
 }
 create_navy_leader = {
 	name = "Arbuthnot, Geoffrey"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 3
+	id = 789
 }
 create_navy_leader = {
 	name = "Archdale, Nicholas"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { old_guard_navy }
 	skill = 3
+	id = 790
 }
 create_navy_leader = {
 	name = "Arliss, Stephen"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { old_guard_navy }
 	skill = 2
+	id = 791
 }
 create_navy_leader = {
 	name = "Ashmore, Edward"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 4
+	id = 792
 }
 create_navy_leader = {
 	name = "Ashmore, Leslie"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 3
+	id = 793
 }
 create_navy_leader = {
 	name = "Ashmore, Peter"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 3
+	id = 794
 }
 create_navy_leader = {
 	name = "Ashton, James"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { old_guard_navy }
 	skill = 1
+	id = 795
 }
 create_navy_leader = {
 	name = "Atcherley, John"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 796
 }
 create_navy_leader = {
 	name = "Austin, Peter"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 2
+	id = 797
 }
 create_navy_leader = {
 	name = "Aylen, Jan"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 1
+	id = 798
 }
 create_navy_leader = {
 	name = "Bailey, Sidney"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { old_guard_navy }
 	skill = 3
+	id = 799
 }
 create_navy_leader = {
 	name = "Baillie-Grohman, Tom"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 2
+	id = 800
 }
 create_navy_leader = {
 	name = "Balfour, George"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 1
+	id = 801
 }
 create_navy_leader = {
 	name = "Barnard, Geoffrey"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 2
+	id = 802
 }
 create_navy_leader = {
 	name = "Barry, Claude"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { superior_tactician }
 	skill = 2
+	id = 803
 }
 create_navy_leader = {
 	name = "Bax, Robert"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { old_guard_navy }
 	skill = 2
+	id = 804
 }
 create_navy_leader = {
 	name = "Bayly, Patrick"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 2
+	id = 805
 }
 create_navy_leader = {
 	name = "Bellars, Edward"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 806
 }
 create_navy_leader = {
 	name = "Benn, William"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 3
+	id = 807
 }
 create_navy_leader = {
 	name = "Berthon, Stephen"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 808
 }
 create_navy_leader = {
 	name = "Bevan, Richard"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 809
 }
 create_navy_leader = {
 	name = "Bevir, Oliver"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { }
 	skill = 1
+	id = 810
 }
 create_navy_leader = {
 	name = "Bigelow, H.C."
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 811
 }
 create_navy_leader = {
 	name = "Bingley, Alexander"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { superior_tactician }
 	skill = 2
+	id = 812
 }
 create_navy_leader = {
 	name = "Blake, Geoffrey"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
-	traits = { superior_tactician blockade_runner old_guard_navy }
+	traits = { old_guard_navy superior_tactician blockade_runner }
 	skill = 3
+	id = 813
 }
 create_navy_leader = {
 	name = "Blakeney-Carpenter, Alfred"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = { }
 	skill = 1
+	id = 814
 }
 create_navy_leader = {
 	name = "Bolt, Arthur"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = { }
 	skill = 1
+	id = 815
 }
 create_navy_leader = {
 	name = "Bonham-Carter, Stuart"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = { superior_tactician }
 	skill = 3
+	id = 816
 }
 create_navy_leader = {
 	name = "Bovell, Henry"
 	picture = "Portrait_Britain_Generic_navy_1.dds"
 	traits = {  }
 	skill = 1
+	id = 817
 }
 create_navy_leader = {
 	name = "Bowyer-Smith, Phillip"
 	picture = "Portrait_Britain_Generic_navy_2.dds"
 	traits = {  }
 	skill = 2
+	id = 818
 }
 create_navy_leader = {
 	name = "Bradley, Frederic"
 	picture = "Portrait_Britain_Generic_navy_3.dds"
 	traits = {  }
 	skill = 1
+	id = 819
 }
+##### SHIP & PLANE VARIANTS #####
 ### Plane Variants ###
-	create_equipment_variant = {
-		name = "Hawker Hart"
-		type = prewar_cas_equipment_1
-		upgrades = {
-			hawker_hart_upgrade = 1  
-		}
-		obsolete = yes
+create_equipment_variant = {
+	name = "Hawker Hart"
+	type = prewar_cas_equipment_1
+	upgrades = {
+		hawker_hart_upgrade = 1  
 	}
-	create_equipment_variant = {
-		name = "Hawker Hart Special"
-		type = prewar_cas_equipment_1
-		upgrades = {
-			hawker_hart_upgrade = 1  
-			floats_upgrade = 1 
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Hawker Hart India"
-		type = prewar_cas_equipment_1
-		upgrades = {
-			hawker_hart_upgrade = 1  
-			tropicalised_upgrade = 1 
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Hawker Audax"
-		type = prewar_cas_equipment_1
-		upgrades = {
-			hawker_audax_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "A.W. Atlas"
-		type = prewar_cas_equipment_1
-		upgrades = {
-			aw_atlas_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "A.W. Atlas II"
-		type = prewar_cas_equipment_1
-		upgrades = {
-			aw_atlasii_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Wapiti"
-		type = prewar_cas_equipment_1
-		upgrades = {
-			wapiti_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Fairey III"
-		type = prewar_cas_equipment_1
-		upgrades = {
-			fairey_iii_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Fairey IIIF"
-		type = prewar_cas_equipment_1
-		upgrades = {
-			fairey_iiif_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Fairey Gordon"
-		type = prewar_cas_equipment_1
-		upgrades = {
-			fairey_gordon_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "A.W. Siskin"
-		type = pre_war_fighter_equipment_1
-		upgrades = {
-			aw_siskin_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "A.W. 16"
-		type = pre_war_af_equipment_1
-		upgrades = {
-			aw_xvi_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "A.W. 35 Scimitar"
-		type = pre_war_af_equipment_1
-		upgrades = {
-			aw_scimitar_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Bristol Bulldog II"
-		type = pre_war_af_equipment_1
-		upgrades = {
-			bulldog_ii_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Bristol Bulldog IV"
-		type = pre_war_af_equipment_1
-		upgrades = {
-			bulldog_iv_upgrade = 1  
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = { #actually slower, but don't want to make its own equipment
-		name = "Swedish Osprey"
-		type = hawker_osprey_fighter_equipment_1
-		upgrades = {
-			cv_plane_gun_upgrade = 2
-			plane_reliability_upgrade = 3 			
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = { 
-		name = "Portugese Osprey"
-		type = hawker_osprey_fighter_equipment_1
-		upgrades = {
-			cv_plane_gun_upgrade = 2
-			plane_reliability_upgrade = 3 
-			plane_engine_upgrade = 3 
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = { 
-		name = "Osprey IV"
-		type = hawker_osprey_fighter_equipment_1
-		upgrades = {
-			cv_plane_gun_upgrade = 2
-			plane_reliability_upgrade = 3 
-			plane_engine_upgrade = 5
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = { 
-		name = "Handley Page Heyford I"
-		type = prewar_medium_bomber_equipment_1
-		upgrades = {
-			heyford_upgrade = 1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = { 
-		name = "Handley Page Heyford IA"
-		type = prewar_medium_bomber_equipment_1
-		upgrades = {
-			heyford_upgrade = 1 
-			heyford_ia_upgrade = 1 
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = { 
-		name = "Handley Page Heyford II"
-		type = prewar_medium_bomber_equipment_1
-		upgrades = {
-			heyford_upgrade = 1 
-			heyford_ii_upgrade = 1 
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = { 
-		name = "Vickers Virginia IX"
-		type = prewar_medium_bomber_equipment_1
-		upgrades = {
-			virginia_ix_upgrade = 1 
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = { 
-		name = "Vickers Virginia X"
-		type = prewar_medium_bomber_equipment_1
-		upgrades = {
-			virginia_ix_upgrade = 1 
-			virginia_x_upgrade = 1 
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = { 
-		name = "Boulton Paul Overstrand"
-		type = prewar_bomber_equipment_1
-		upgrades = {
-			overstrand_upgrade = 1 
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = { 
-		name = "Supermarine Scapa"
-		type = prewar_flying_boat_equipment_1
-		upgrades = {
-			supermarine_scapa_upgrade = 1 
-		}
-		obsolete = yes
-	}
-### Ship Variants ###
-1939.1.1 = {
-	create_equipment_variant = {
-		name = "Tribal Class"
-		type = destroyer_2
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
-	}
-	create_equipment_variant = {
-		name = "Edinburgh Class"
-		type = light_cruiser_2
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 3
-			ship_gun_upgrade = 3
-			ship_anti_air_upgrade = 3
-		}
-	}
+	obsolete = yes
 }
+create_equipment_variant = {
+	name = "Hawker Hart Special"
+	type = prewar_cas_equipment_1
+	upgrades = {
+		hawker_hart_upgrade = 1  
+		floats_upgrade = 1 
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Hawker Hart India"
+	type = prewar_cas_equipment_1
+	upgrades = {
+		hawker_hart_upgrade = 1  
+		tropicalised_upgrade = 1 
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Hawker Audax"
+	type = prewar_cas_equipment_1
+	upgrades = {
+		hawker_audax_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "A.W. Atlas"
+	type = prewar_cas_equipment_1
+	upgrades = {
+		aw_atlas_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "A.W. Atlas II"
+	type = prewar_cas_equipment_1
+	upgrades = {
+		aw_atlasii_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Wapiti"
+	type = prewar_cas_equipment_1
+	upgrades = {
+		wapiti_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Fairey III"
+	type = prewar_cas_equipment_1
+	upgrades = {
+		fairey_iii_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Fairey IIIF"
+	type = prewar_cas_equipment_1
+	upgrades = {
+		fairey_iiif_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Fairey Gordon"
+	type = prewar_cas_equipment_1
+	upgrades = {
+		fairey_gordon_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "A.W. Siskin"
+	type = pre_war_fighter_equipment_1
+	upgrades = {
+		aw_siskin_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "A.W. 16"
+	type = pre_war_af_equipment_1
+	upgrades = {
+		aw_xvi_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "A.W. 35 Scimitar"
+	type = pre_war_af_equipment_1
+	upgrades = {
+		aw_scimitar_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Bristol Bulldog II"
+	type = pre_war_af_equipment_1
+	upgrades = {
+		bulldog_ii_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Bristol Bulldog IV"
+	type = pre_war_af_equipment_1
+	upgrades = {
+		bulldog_iv_upgrade = 1  
+	}
+	obsolete = yes
+}
+create_equipment_variant = { #actually slower, but don't want to make its own equipment
+	name = "Swedish Osprey"
+	type = hawker_osprey_fighter_equipment_1
+	upgrades = {
+		cv_plane_gun_upgrade = 2
+		plane_reliability_upgrade = 3 			
+	}
+	obsolete = yes
+}
+create_equipment_variant = { 
+	name = "Portugese Osprey"
+	type = hawker_osprey_fighter_equipment_1
+	upgrades = {
+		cv_plane_gun_upgrade = 2
+		plane_reliability_upgrade = 3 
+		plane_engine_upgrade = 3 
+	}
+	obsolete = yes
+}
+create_equipment_variant = { 
+	name = "Osprey IV"
+	type = hawker_osprey_fighter_equipment_1
+	upgrades = {
+		cv_plane_gun_upgrade = 2
+		plane_reliability_upgrade = 3 
+		plane_engine_upgrade = 5
+	}
+	obsolete = yes
+}
+create_equipment_variant = { 
+	name = "Handley Page Heyford I"
+	type = prewar_medium_bomber_equipment_1
+	upgrades = {
+		heyford_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = { 
+	name = "Handley Page Heyford IA"
+	type = prewar_medium_bomber_equipment_1
+	upgrades = {
+		heyford_upgrade = 1 
+		heyford_ia_upgrade = 1 
+	}
+	obsolete = yes
+}
+create_equipment_variant = { 
+	name = "Handley Page Heyford II"
+	type = prewar_medium_bomber_equipment_1
+	upgrades = {
+		heyford_upgrade = 1 
+		heyford_ii_upgrade = 1 
+	}
+	obsolete = yes
+}
+create_equipment_variant = { 
+	name = "Vickers Virginia IX"
+	type = prewar_medium_bomber_equipment_1
+	upgrades = {
+		virginia_ix_upgrade = 1 
+	}
+	obsolete = yes
+}
+create_equipment_variant = { 
+	name = "Vickers Virginia X"
+	type = prewar_medium_bomber_equipment_1
+	upgrades = {
+		virginia_ix_upgrade = 1 
+		virginia_x_upgrade = 1 
+	}
+	obsolete = yes
+}
+create_equipment_variant = { 
+	name = "Boulton Paul Overstrand"
+	type = prewar_bomber_equipment_1
+	upgrades = {
+		overstrand_upgrade = 1 
+	}
+	obsolete = yes
+}
+create_equipment_variant = { 
+	name = "Supermarine Scapa"
+	type = prewar_flying_boat_equipment_1
+	upgrades = {
+		supermarine_scapa_upgrade = 1 
+	}
+	obsolete = yes
+}
+### EOF ###

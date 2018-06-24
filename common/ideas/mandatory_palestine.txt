@@ -47,7 +47,7 @@ ideas = {
 
 			modifier = {
 				monthly_population = 1.5
-				unity_factor = -0.05
+				stability_factor = -0.05
 			}
 		}
 
@@ -77,7 +77,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				unity_factor = -0.15
+				stability_factor = -0.15
 			}
 		}
 
@@ -109,7 +109,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				unity_factor = -0.05
+				stability_factor = -0.05
 			}
 	}
 
@@ -122,7 +122,7 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory =  -0.4
-				unity_factor = -0.1
+				stability_factor = -0.1
 			}
 		}
 		
@@ -134,7 +134,7 @@ ideas = {
 			}
 
 			modifier = {
-				unity_factor = -0.05
+				stability_factor = -0.05
 			}
 		}
 

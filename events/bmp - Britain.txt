@@ -2,6 +2,8 @@
 
 #####
 
+#to do: remove jordan stuff, maybe replace it with west bank and gaza strip stuff. jordan needs to gain independence separately
+
 #Mandate demands Palestine 500
 country_event = {
 	id = britain.500
@@ -179,12 +181,12 @@ country_event = {
 		ai_chance = { factor = 65 }
 		news_event = { id = news.5003}
 
-		454 = {
+		454 = { #ISRAEL
 			add_core_of = ISR
 			}
 			
 		ISR = {
-			transfer_state = 454
+			transfer_state = 454 #ISRAEL
 			country_event = { id = bmpisrael.1 hours = 1 }
 			change_tag_from = BMP
 			}
@@ -219,15 +221,15 @@ country_event = {
 
 		ai_chance = { factor = 45 }
 			
-		454 = {
+		454 = { #JORDAN
 			add_core_of = ISR
 			}
-		455 = {
+		455 = { #ISRAEL
 			add_core_of = ISR
 			}
 		ISR = {
-			transfer_state = 454
-			transfer_state = 455
+			transfer_state = 454 #JORDAN
+			transfer_state = 455 #ISRAEL
 			country_event = { id = bmpisrael.1 hours = 1 }
 			change_tag_from = BMP
 			}

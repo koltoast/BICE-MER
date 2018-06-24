@@ -6,7 +6,9 @@ OOB = "BMP_1936"
 
 set_research_slots = 1
 
-set_national_unity = 0.5
+set_convoys = 5
+
+set_stability = 0.5
 
 # Starting tech
 set_technology = {
@@ -21,7 +23,6 @@ set_technology = {
 	tech_recon = 1
 	subtech_recon_cav_1 = 1
 	################## artillery ###############
-	
 	################## armor ##############
 	#generic_armor = 1
 	################## aircraft ##############
@@ -32,51 +33,68 @@ set_technology = {
 	generic_submarine = 1
 	generic_naval = 1
 	############### economy ############
+	############### WW1 doctrines ############
 	ww1_infantry = 1
 	infantry_charge = 1
-	
 	complex_trench_systems = 1
-	
 	ww1_artillery = 1
-	
 	foot_runners = 1
-	
 	mobile_doctrines = 1
 	cavalry_charges = 1
 	cavalry_dismounting = 1
-	
-
 	ww1_battlefield_support = 1
+	############### doctrines ############
 }
-
-set_convoys = 5
 
 add_ideas = { 	
-		export_focus
-		tax_low
-		tariffs_average
-		
-		civilian_economy
-		press_regulated
-		key_industries
-		labor_none
-		fdi_allowed
-		
-		cons_volunteer
-		foreign_volunteers
-		mob_reserve
-		train_none
-		age_19
-		officer_train_none
-		security_minor_restrictions
-		edu_minimal
-		
-		unity_divided_nation		
-		foreign_isolationism
-		neutrality_idea
+	export_focus
+	tax_low
+	tariffs_average
+	
+	civilian_economy
+	press_regulated
+	key_industries
+	labor_none
+	fdi_allowed
+	security_minor_restrictions
+	
+	cons_volunteer
+	foreign_volunteers
+	mob_reserve
+	train_none
+	officer_train_none
+	age_19
+	
+	edu_minimal
+	
+	unity_divided_nation		
+	foreign_isolationism
+	neutrality_idea
 }
 
+set_country_flag = export_focus
+set_country_flag = tax_low
+set_country_flag = tariffs_average
 
+set_country_flag = civilian_economy
+set_country_flag = press_regulated
+set_country_flag = key_industries
+set_country_flag = labor_none
+set_country_flag = fdi_allowed
+set_country_flag = security_minor_restrictions
+
+set_country_flag = cons_volunteer
+set_country_flag = foreign_volunteers
+set_country_flag = mob_reserve
+set_country_flag = train_none
+set_country_flag = officer_train_none
+set_country_flag = age_19
+
+set_country_flag = edu_minimal
+
+set_country_flag = unity_divided_nation
+set_country_flag = foreign_isolationism
+set_country_flag = neutrality_idea
 
 set_politics = {
 
@@ -84,23 +102,18 @@ set_politics = {
 		conservatism = { 
 			popularity = 3
 		}
-
 		socialism = { 
 			popularity = 7
 		}
-
 		liberalism = { 
 			popularity = 2
 		}
-		
 		fascism = {
 			popularity = 0
 		}
-		
 		communism = {
 			popularity = 3
 		}
-		
 		neutrality = { 
 			popularity = 85
 		}
@@ -117,6 +130,7 @@ add_ideas = {
 	BMP_jewish_immigration
 }
 
+##### Country Leaders #####
 create_country_leader = {
 	name = "Arthur Grenfell Wauchope"
 	#desc = ""
@@ -124,10 +138,8 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-	#
 	}
 }
-
 create_country_leader = {
 	name = "Amin al-Husseini"
 	desc = ""
@@ -135,10 +147,8 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-	#
 	}
 }
-
 create_country_leader = {
 	name = "Leopold Trepper"
 	desc = ""
@@ -146,10 +156,8 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
-	#
 	}
 }
-
 create_country_leader = {
 	name = "David Ben-Gurion"
 	desc = ""
@@ -157,30 +165,24 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = social_democracy
 	traits = {
-	#
 	}
 }
-
 create_country_leader = {
 	name = "Pinchas Rosen"
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	ideology = social_liberalism
 	traits = {
-		#
 	}
 }
-
 create_country_leader = {
 	name = "Haim-Moshe Shapira"
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	ideology = nationalism
 	traits = {
-		#
 	}
 }
-
 create_country_leader = {
 	name = "Amin al-Husseini"
 	desc = ""
@@ -188,6 +190,8 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = emiratism
 	traits = {
-	#
 	}
 }
+##### Field Marshals #####
+##### Corps Commanders #####
+### EOF ###

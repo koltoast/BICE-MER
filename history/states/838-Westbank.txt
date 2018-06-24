@@ -1,27 +1,22 @@
 state={
-	id=973
-	name="STATE_973"
+	id=838
+	name="West Bank"
 	history={
-		
 		owner = BMP
-		#add_core_of = ENG
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 1
-			air_base = 2
-			}
-		victory_points = {
-			4088  1 
+			
+			
 		}
 		add_core_of = PAL
 		add_core_of = BMP
-
-	
-}
-	provinces={
-		4088 
+		victory_points = { 7107 1 }
 	}
-	manpower=50403
+
+	provinces={
+		7107 
+	}
+	manpower=240000
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

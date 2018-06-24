@@ -1,0 +1,19 @@
+state={
+	id=837
+	name="Golan Heights"
+	history={
+		owner = SYR
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SYR
+
+	}
+	provinces={
+		 13242
+	}
+	manpower=7393
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

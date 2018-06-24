@@ -3,7 +3,7 @@ on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
 		effect = {
-
+			#this thing is meant for structuring the arab-israeli war and making it realistic
 		}
 	}
 	

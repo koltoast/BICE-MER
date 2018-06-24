@@ -62,12 +62,12 @@ focus_tree = {
 		}
 		prerequisite = { focus = ISR_build_the_knesset }
 		complete_tooltip = {
-			add_national_unity = 0.05
+			add_stability = 0.05
 			add_manpower = 10500
 		}
 		completion_reward = {
 			custom_effect_tooltip = ISR_law_of_return_tt
-			add_national_unity = 0.05  # Add 5%
+			add_stability = 0.05  # Add 5%
 			add_manpower = 10500   #Add 10,500 manpower
 		}
 	}
