@@ -561,6 +561,9 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_air2
 		}
+		prerequisite = {
+			focus = IRQ_cas
+		}
 		x = 11
 		y = 3
 			completion_reward = {
