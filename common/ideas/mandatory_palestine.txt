@@ -47,7 +47,8 @@ ideas = {
 
 			modifier = {
 				monthly_population = 1.5
-				stability_factor = -0.05
+			##	stability_factor = -0.05
+				stability_weekly = -0.005
 			}
 		}
 
@@ -110,6 +111,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.05
+				war_support_factor = -0.1
 			}
 	}
 
@@ -309,12 +311,13 @@ ideas = {
 
 			
 			research_bonus = {
-				industry = 0.10
+				industry = 0.08
+			
 			}
 			
 			traits = { industrial_concern }
 			
-			modifier = {
+			modifier = { production_speed_infrastructure_factor = 0.1
 			}
 		}
 		

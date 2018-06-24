@@ -46,6 +46,7 @@ set_technology = {
 	############### doctrines ############
 }
 
+## laws
 add_ideas = { 	
 	export_focus
 	tax_low
@@ -124,9 +125,12 @@ set_politics = {
 	elections_allowed = no
 }
 
+## BMP problems
 add_ideas = {
 	BMP_death_of_izz_ad-din_al-qassam
 	BMP_jewish_immigration
+	CHI_incompetent_officers
+
 }
 
 ##### Country Leaders #####
