@@ -107,7 +107,9 @@ ideas = {
 		
 			do_effect = {
 				NOT = {
-					has_government = democratic
+					has_government = liberalism
+					has_government = socialism
+					has_government = conservatism
 				}
 			}
 		
