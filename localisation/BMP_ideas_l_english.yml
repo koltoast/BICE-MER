@@ -17,6 +17,7 @@ BMP_palestine_electric_company:0 "Palestine Electric Company"
 BMP_orde_wingate1:0 "Orde Wingate"
 #BMP National Spirits
 BMP_jewish_militias1:0 "Jewish Militias"
+BMP_jewish_militias:0 "Jewish Militias"
 BMP_jewish_militias1_desc:0 "To assist the Palestine Police Force in putting down the Arab revolt, we have recruited Jews into Mandate-sponsored militias."
 BMP_fortify_the_mandate:0 "Fortify the Mandate"
 BMP_fortify_the_mandate_desc:0 "To prepare for the eventuality of war, we have allocated resources for constructing fortifications."

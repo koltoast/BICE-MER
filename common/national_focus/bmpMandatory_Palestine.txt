@@ -796,7 +796,8 @@ focus = {
 	completion_reward = {
 		army_experience = 25
 		add_ideas = BMP_jewish_militias1
-		load_oob = "BMP_jewish_militias"
+		custom_effect_tooltip = BMP_jewish_militias1_desc
+		hidden_effect = { load_oob = "BMP_jewish_militias" }
 		}
 }
 
