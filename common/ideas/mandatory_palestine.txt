@@ -304,11 +304,12 @@ ideas = {
 			
 			picture = generic_industrial_concern_1
 			
+			available = {
+				has_completed_focus = BMP_improve_palestinian_railways
+			}
 			allowed = {
 				original_tag = BMP
 			}
-			
-
 			
 			research_bonus = {
 				industry = 0.08
@@ -319,6 +320,8 @@ ideas = {
 			
 			modifier = { production_speed_infrastructure_factor = 0.1
 			}
+			
+			cost = 100
 		}
 		
 		BMP_palestine_electric_company = {
