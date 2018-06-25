@@ -769,7 +769,7 @@ focus = {
 		cost = 10
 		available = {
 			has_idea = BMP_arab_revolt
-			not = ( has_idea = BMP_Riots)
+			not = { has_idea = BMP_Riots}
 		}
 
 		available_if_capitulated = yes
