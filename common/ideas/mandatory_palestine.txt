@@ -79,6 +79,15 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.15
+				stability_weekly = -0.001
+				communism_drift = 0.01
+				fascism_drift = 0.01
+				conservatism_drift = 0.005
+				liberalism_drift = 0.005
+				socialism_drift = 0.005
+				monarchism_drift = 0.01
+				war_support_factor = -0.3
+				
 			}
 		}
 
@@ -125,6 +134,8 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory =  -0.4
 				stability_factor = -0.1
+				production_speed_buildings_factor = -0.4
+				neutrality_drift = -0.01
 			}
 		}
 		
