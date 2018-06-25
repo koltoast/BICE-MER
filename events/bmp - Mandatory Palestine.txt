@@ -368,6 +368,10 @@ country_event = {
 		add_ideas = BMP_arab_revolt
 		add_ideas = BMP_arab_general_strikes
 		add_ideas = BMP_Riots
+		set_country_flag = BMP_Riots_WestBank
+		set_country_flag = BMP_Riots_Gaza
+		set_country_flag = BMP_Riots_Israel
+		set_country_flag = crisis_in_progress
 	}
 }
 
@@ -439,5 +443,77 @@ country_event = {
 			limit = { has_idea = BMP_arab_general_strikes }
 			remove_ideas = BMP_arab_general_strikes
 		}		
+	}
+}
+
+#Riot Damage - factory damaged
+country_event = {
+	id = mandate.16
+	title = mandate.16.t
+	desc = mandate.16.d
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+##Riot Damage - civilian factory sabotaged
+country_event = {
+	id = mandate.17
+	title = mandate.17.t
+	desc = mandate.17.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+##Riot Damage - bridge blown
+country_event = {
+	id = mandate.18
+	title = mandate.18.t
+	desc = mandate.18.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
 	}
 }
