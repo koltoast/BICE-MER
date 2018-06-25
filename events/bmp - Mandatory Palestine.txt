@@ -367,6 +367,7 @@ country_event = {
 		remove_ideas = BMP_peel_commission
 		add_ideas = BMP_arab_revolt
 		add_ideas = BMP_arab_general_strikes
+		add_ideas = BMP_Riots
 	}
 }
 

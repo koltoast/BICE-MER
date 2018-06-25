@@ -105,6 +105,19 @@ ideas = {
 				monthly_population = 0.15
 			}
 		}
+				BMP_riots {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = partisans
+
+			modifier = {
+			}
+		}
 
 
 ##########
