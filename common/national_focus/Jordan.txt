@@ -224,7 +224,7 @@ focus_tree = {
 	}
 	focus = {
 		id = merJOR_Support_Britain
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_chi_british_cooperation
 		cost = 10.00
 		prerequisite = {
 			focus = merJOR_Recognize_Peel_Commission_Plan
@@ -315,7 +315,7 @@ focus_tree = {
 	}
 	focus = {
 		id = merJOR_Support_Germany
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_chi_mission_to_germany
 		cost = 10.00
 		prerequisite = {
 			focus = merJOR_Protest_Balfour_Declaration

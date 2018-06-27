@@ -354,7 +354,7 @@ focus = {
 
 focus = {
 		id = BMP_advanced_subsurface_fleet
-		icon = GFX_goal_generic_navy_submarine
+		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = BMP_subsurface_fleet }
 		x = 2
 		y = 2
@@ -540,7 +540,8 @@ focus = {
 
 focus = {
 	id = BMP_British_Officer_Training
-	icon = GFX_goal_generic_intelligence_exchange
+	#icon = GFX_goal_generic_intelligence_exchange
+	icon = GFX_focus_generic_commonwealth_build_infantry
 	prerequisite = { focus = BMP_create_special_forces }
 	prerequisite = { focus = BMP_arm_the_mandate }
 	x = 5
@@ -715,7 +716,8 @@ focus = {
 
 focus = {
 	id = BMP_assist_great_britain
-	icon =	GFX_goal_generic_improve_relations
+	#icon =	GFX_goal_generic_improve_relations
+	icon =	GFX_focus_chi_british_cooperation
 	prerequisite = { focus = BMP_re-establish_the_mandate }
 	mutually_exclusive = { focus = BMP_resist_the_empire }
 	x = 11
@@ -731,7 +733,8 @@ focus = {
 
 focus = {
 	id = BMP_reinforce_the_palestine_police_force
-	icon = GFX_goal_generic_allies_build_infantry
+	#icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_generic_little_entente
 	prerequisite = { focus = BMP_put_down_the_arab_revolt }
 	x = 11
 	y = 3
@@ -781,7 +784,8 @@ focus = {
 
 focus = {
 	id = BMP_resist_the_empire
-	icon = GFX_goal_generic_political_pressure
+	#icon = GFX_goal_generic_political_pressure
+	icon = GFX_focus_SAF_colonialist_crusade
 	prerequisite = { focus = BMP_re-establish_the_mandate }
 	mutually_exclusive = { focus = BMP_assist_great_britain }
 	x = 13
