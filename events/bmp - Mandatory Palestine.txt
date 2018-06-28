@@ -517,3 +517,19 @@ country_event = {
 		}
 	}
 }
+
+##Election Held
+country_event = {
+	id = mandate.19
+	title = Election
+	desc = mandate.19.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+	
+	option = {
+	Name = VOTE!
+	hold_election = BMP
+		}
+	
+}

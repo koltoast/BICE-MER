@@ -950,11 +950,14 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-			set_politics = {
-					elections_allowed = yes
-					election_frequency = 36
-					}
-			hold_election = BMP
+	##		set_politics = {
+	##				elections_allowed = yes
+	##				election_frequency = 36
+	##				}
+	##		hold_election = BMP
+			### causes an election in 30 days
+			country_event = { id = mandate.19 days = 30} 
+	
 	}
 
 }
