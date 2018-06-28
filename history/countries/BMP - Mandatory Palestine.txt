@@ -132,7 +132,6 @@ add_ideas = {
 	BMP_jewish_immigration
 	CHI_incompetent_officers
 	BMP_British_Rule
-
 }
 
 ##### Country Leaders #####

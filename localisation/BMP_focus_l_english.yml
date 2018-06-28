@@ -1,4 +1,8 @@
 ﻿l_english:
+ BMP_Red_Sea_Trade:0 "Red sea trading ports"
+ BMP_Red_Sea_Trade_desc:0 "Access to the red sea is vital for trade with Asia"
+ BMP_Trade_Fleet:0 "Trade Fleet"
+ BMP_Trade_Fleet_desc:0 "we must build a fleet of trading vessels"
  BMP_surface_fleet:0 "Surface Fleet"
  BMP_surface_fleet_desc:0 "The Mandate’s strategic location near the Suez Canal means we must be able to defend the convoys passing through it. A surface fleet will allow us to better perform this role."
  BMP_mediterranean_fleet:0 "Mediterranean Fleet"
@@ -75,3 +79,7 @@
  BMP_establish_military_industry_desc:0 "With all of the Mandate’s industrial expansion, we should subsidize our fledgling arms industry."
  BMP_British_Officer_Training:0 "British Officer Training"
  BMP_British_Officer_Training_desc:0 "Invite British officers to train and reform our command"
+ BMP_Underground_Government:0 "Form an Underground Government"
+ BMP_Underground_Government_desc:0 "We must organise our political systems to be ready to rule in place of Britain"
+ BMP_Call_Elections:0 "Call for an Election"
+ BMP_Call_Elections_desc:0 "Too long have we heard of the benefits of Democracy without the vote ourselves, today this will change"
