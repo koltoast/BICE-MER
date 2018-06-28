@@ -1,0 +1,31 @@
+
+ai_historical_focus_list_BMP = {
+	ai_national_focuses = {
+	BMP_improve_palestinian_railways
+	BMP_re-establish_the_mandate
+	BMP_improve_arab_railways
+	BMP_Trade_Fleet
+	BMP_assist_great_britain
+	BMP_encourage_palestinian_enterprise
+	BMP_encourage_arab_enterprise
+	BMP_establish_military_industry
+	BMP_modernize_the_army
+	BMP_improved_artillery
+	BMP_create_special_forces
+	BMP_put_down_the_arab_revolt
+	BMP_reinforce_the_palestine_police_force
+	BMP_subsidize_the_mandate
+	BMP_arm_the_mandate
+	BMP_improve_the_airfields
+	BMP_modernize_the_airforce
+	BMP_air_defense
+	BMP_fortify_the_mandate
+	BMP_British_Officer_Training
+	BMP_advanced_research
+	BMP_limit_jewish_immigration
+	BMP_Red_Sea_Trade
+	BMP_military_dockyards
+
+	}
+}
+### EOF ###
