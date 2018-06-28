@@ -425,7 +425,7 @@ focus = {
 	prerequisite = { focus = BMP_improve_the_airfields}
 	x = 4
 	y = 1
-	cost = 10
+	cost = 11
 
 	completion_reward = {
 			air_experience = 25	
@@ -505,7 +505,7 @@ focus = {
 	prerequisite = { focus = BMP_improved_artillery }
 	x = 5
 	y = 3
-	cost = 10
+	cost = 11
 
 	available_if_capitulated = yes
 
@@ -628,7 +628,7 @@ focus = {
 	prerequisite = { focus = BMP_modernize_the_army }
 	x = 9
 	y = 3
-	cost = 10
+	cost = 11
 
 	available_if_capitulated = yes
 
@@ -814,7 +814,7 @@ focus = {
 		prerequisite = { focus = BMP_assist_great_britain focus = BMP_resist_the_empire }
 		x = 12
 		y = 2
-		cost = 12
+		cost = 13
 		available = {
 			has_idea = BMP_arab_revolt
 			NOT = { has_idea = BMP_Riots }
