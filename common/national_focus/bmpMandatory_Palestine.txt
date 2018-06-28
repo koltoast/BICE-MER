@@ -954,8 +954,9 @@ focus = {
 					elections_allowed = yes
 					election_frequency = 36
 					}
+			hold_election = BMP
 	}
-	hold_election = BMP
+
 }
 
 focus = {

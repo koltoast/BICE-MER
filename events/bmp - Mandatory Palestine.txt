@@ -474,7 +474,7 @@ country_event = {
 country_event = {
 	id = mandate.17
 	title = mandate.17.t
-	desc = mandate.17.desc
+	desc = mandate.17.d
 	picture = GFX_report_event_generic_ruins
 
 	is_triggered_only = yes
