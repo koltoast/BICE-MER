@@ -15,6 +15,7 @@ ideas = {
 	
 			modifier = {
 				conscription = 0.02
+				autonomy_gain = 0.1
 			}
 		}
 
@@ -49,6 +50,7 @@ ideas = {
 				monthly_population = 1.5
 			##	stability_factor = -0.05
 				stability_weekly = -0.005
+				monarchism_drift = -0.001
 			}
 		}
 
@@ -84,8 +86,8 @@ ideas = {
 				fascism_drift = 0.01
 				conservatism_drift = 0.005
 				liberalism_drift = 0.005
-				socialism_drift = 0.005
-				monarchism_drift = 0.01
+				socialism_drift = -0.005
+				monarchism_drift = 0.02
 				war_support_factor = -0.3
 				
 			}
@@ -103,6 +105,10 @@ ideas = {
 
 			modifier = {
 				monthly_population = 0.15
+				socialism_drift = 0.005
+				conservatism_drift = 0.001
+				liberalism_drift = 0.001
+				
 			}
 		}
 		BMP_Riots {
@@ -118,7 +124,21 @@ ideas = {
 			modifier = {
 			}
 		}
+		BMP_British_Rule {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
 
+			picture = brittish_stoicism
+
+			modifier = {
+			political_power_gain = -0.25
+			autonomy_gain = -0.1
+			}
+		}
 
 ##########
 	BMP_death_of_izz_ad-din_al-qassam {

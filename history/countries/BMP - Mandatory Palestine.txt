@@ -9,6 +9,7 @@ set_research_slots = 1
 set_convoys = 5
 
 set_stability = 0.5
+set_war_support = 0.15
 
 # Starting tech
 set_technology = {
@@ -130,6 +131,7 @@ add_ideas = {
 	BMP_death_of_izz_ad-din_al-qassam
 	BMP_jewish_immigration
 	CHI_incompetent_officers
+	BMP_British_Rule
 
 }
 
