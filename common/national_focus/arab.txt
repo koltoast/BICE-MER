@@ -65,20 +65,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = motorization_effort
-		icon = GFX_goal_generic_army_motorized
+		id = Horse_effort
+		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = army_effort }
-		bypass = { has_tech = motorised_infantry }
 		x = 2
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				bonus = 0.2
-				technology = motorised_infantry
-			}
+			add_ideas = Arab_Horsemen
 		}
 	}
 
@@ -121,9 +116,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = mechanization_effort
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = motorization_effort }
+		id = motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = Horse_effort }
+		bypass = { has_tech = motorised_infantry }
 		x = 2
 		y = 3
 		cost = 10
@@ -131,9 +127,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				ahead_reduction = 0.2
-				uses = 1
-				category = motorized_equipment
+				bonus = 0.2
+				technology = motorised_infantry
 			}
 		}
 	}
@@ -158,7 +153,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = equipment_effort_3
+		id = Desert_training
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = equipment_effort_2 }
 		x = 0
@@ -166,20 +161,14 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				ahead_reduction = 0.2
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
+			add_ideas = Arab_Heat
 		}
 	}
 
 	focus = {
 		id = armor_effort
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = mechanization_effort }
+		prerequisite = { focus = motorization_effort }
 		x = 2
 		y = 5
 		cost = 10
@@ -197,7 +186,7 @@ focus_tree = {
 	focus = {
 		id = special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = equipment_effort_3 }
+		prerequisite = { focus = Desert_training }
 		prerequisite = { focus = doctrine_effort_2 }
 		prerequisite = { focus = armor_effort }
 		x = 1
@@ -207,7 +196,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = special_forces_bonus
-				bonus = 0.2
+				bonus = 0.1
 				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
@@ -216,6 +205,7 @@ focus_tree = {
 				technology = tech_mountaineers
 				technology = tech_mountaineers2
 			}
+			add_ideas = Arab_Elite
 		}
 	}
 

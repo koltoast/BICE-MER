@@ -1,0 +1,81 @@
+ideas = {
+
+	country = {
+	
+		Arab_Minor {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				political_power_gain = -0.33				
+			}
+		}
+		Arab_Horsemen {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = ideas_horses
+
+			modifier = {
+			cavalry_attack_factor	= 0.1
+			cavalry_defence_factor = 0.05
+			recon_factor = 0.01
+			}
+		}
+		Arab_Heat {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = ideas_horses
+
+			modifier = {		
+			heat_attrition_factor	= -0.25
+			supply_consumption_factor = -0.05
+			}
+		}
+		Arab_Elite {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = ideas_horses
+
+			modifier = {	
+			special_forces_cap = 0.1			
+			}
+		}
+		Arab_oil {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = ideas_horses
+
+			modifier = {	
+			production_oil_factor = 0.1			
+			}
+		}		
+		
+	}
+	
+}
