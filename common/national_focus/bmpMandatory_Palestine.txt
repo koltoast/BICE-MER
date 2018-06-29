@@ -45,7 +45,7 @@ focus = {
 		icon = GFX_goal_continuous_increase_nu
 		x = 2
 		y = 0
-		cost = 5
+		cost = 6
 
 		available_if_capitulated = yes
 
