@@ -31,7 +31,7 @@ focus_tree = {
 		x = 8
 		y = 0
 		completion_reward = {
-				activate_mission = Arab_Search_For_Oil
+				activate_decision = Arab_Search_For_Oil
 				}
 
 	}
@@ -101,6 +101,9 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
+		completion_reward = {
+			add_research_slot = 1
+		}
 
 	}
 	
@@ -167,6 +170,8 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			Arab_hyper_inflation_level_up = yes
+			add_stability = 0.1
+			add_war_support = 0.05
 		}
 
 	}
@@ -187,6 +192,7 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			Arab_hyper_inflation_level_up = yes
+			add_ideas = Arab_Social
 		}
 	}
 	
@@ -206,6 +212,10 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			Arab_hyper_inflation_level_up = yes
+			swap_ideas = { 
+				remove_idea = Arab_Social
+				add_idea = Arab_Social2
+				}
 		}
 	}
 	
@@ -233,15 +243,26 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		cost = 10.00
 		prerequisite = {
-			focus = Arab_Search_For_Oil_Deposits
+			focus = Arab_Search_For_Oil_Deposits		
 		}
 		prerequisite = {
 			focus = Arab_Bureaucracy
 		}
 		x = 8
 		y = 1
-
+		available = {
+			has_country_flag = Arab_oil_Found
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+						add_resource = {
+						type = oil
+						amount = 2
+						}
+					}
+		}
 	}
+	
 	focus = {
 		id = Arab_Trade
 		icon = GFX_goal_generic_trade
@@ -255,6 +276,7 @@ focus_tree = {
 			Arab_hyper_inflation_level_down = yes
 		}
 	}
+	
 	focus = {
 		id = Arab_Jordanian_Petroleum_Company
 		icon = GFX_goal_generic_oil_refinery
@@ -264,8 +286,12 @@ focus_tree = {
 		}
 		x = 8
 		y = 2
+		completion_reward = { 
+			add_ideas = Arab_oil
+		}
 
 	}
+
 	focus = {
 		id = Arab_Mining_Operations
 		icon = GFX_goal_generic_construction2
@@ -275,8 +301,12 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
+		completion_reward = {
+				activate_decision = Arab_Mining
+		}
 
 	}
+	
 	focus = {
 		id = Arab_Trade_More
 		icon = GFX_goal_generic_positive_trade_relations
@@ -292,6 +322,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 3
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
 
 	}
 }

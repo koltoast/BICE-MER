@@ -117,9 +117,7 @@ add_ideas = {
 
 if = {
 	limit = {
-		NOT = {
 			has_dlc = "Waking the Tiger"
-		}
 	}
 	add_ideas = {
 		Arab_Minor

@@ -177,6 +177,56 @@ ideas = {
 			production_oil_factor = 0.1			
 			}
 		}	
+
+		Arab_Social {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {	
+			stability_weekly = 0.01		
+			}
+		}
+		
+		Arab_Social2 {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {	
+			stability_weekly = 0.01	
+			war_support_weekly	= 0.01		
+			}
+		}
+		
+##### Inflation Ideas #####
+		Arab_hyper_inflation_none = {
+			picture = chi_hyper_inflation
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		
 		Arab_hyper_inflation_1 = {
 			picture = chi_hyper_inflation
 		
