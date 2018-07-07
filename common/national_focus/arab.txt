@@ -292,6 +292,45 @@ focus_tree = {
 		}
 
 	}
+	
+	focus = {
+		id = Arab_Road
+		icon = GFX_goal_generic_construction2
+		cost = 5.00
+		x = 10
+		y = 0
+		completion_reward = {
+					capital_scope = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}	
+		}
+
+	}
+	
+	focus = {
+		id = Arab_construction
+		icon = GFX_goal_generic_construction2
+		cost = 5.00
+		x = 10
+		y = 1
+		prerequisite = { focus = Arab_Road }
+		completion_reward = {
+					capital_scope = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}	
+		}
+
+	}
 
 	focus = {
 		id = Arab_Mining_Operations
@@ -300,10 +339,91 @@ focus_tree = {
 		prerequisite = {
 			focus = Arab_Develop_Oil_Industry
 		}
+		prerequisite = {
+			focus = Arab_construction
+		}
 		x = 10
 		y = 2
 		completion_reward = {
 				activate_decision = Arab_Mining
+		}
+
+	}
+	
+	focus = {
+		id = Arab_Industry
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = Arab_Mining_Operations
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.25
+				uses = 2
+				category = industry
+			}
+		}				
+		
+
+	}
+	
+	focus = {
+		id = Arab_Arming
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = Arab_Industry
+		}
+		prerequisite = { 
+			focus = Arab_equipment_effort_2			
+		}
+		x = 15
+		y = 5
+
+		completion_reward = {
+					capital_scope = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}		
+		}
+
+	}
+	
+	focus = {
+		id = Arab_War
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = Arab_Arming
+		}
+		prerequisite = { 
+			focus = Arab_fort_capital			
+		}
+		available = {
+			OR = {
+				threat > 0.75
+				has_war = yes
+			}
+		}
+		x = 15
+		y = 6
+		completion_reward = {
+					capital_scope = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}		
 		}
 
 	}
@@ -1048,6 +1168,12 @@ focus = {
 		y = 5
 		cost = 7
 		available_if_capitulated = yes
+		available = {
+			OR = {
+				threat > 0.05
+				has_war = yes
+			}
+		}
 		completion_reward = {
 					capital_scope = {
 						add_building_construction = {
@@ -1067,6 +1193,12 @@ focus = {
 		y = 6
 		cost = 7
 		available_if_capitulated = yes
+		available = {
+			OR = {
+				threat > 0.10
+				has_war = yes
+			}
+		}
 		completion_reward = {
 			add_ideas = Arab_deterrence
 			}
@@ -1080,6 +1212,13 @@ focus = {
 		y = 7
 		cost = 7
 		available_if_capitulated = yes
+		available = {
+		has_tech = radio
+			OR = {
+				threat > 0.10
+				has_war = yes
+			}
+		}
 		completion_reward = {
 				swap_ideas = { 
 				remove_idea = Arab_deterrence 
@@ -1131,6 +1270,13 @@ focus = {
 		y = 7
 		cost = 7
 		available_if_capitulated = yes
+		available = {
+		has_tech = construction1
+			OR = {
+				threat > 0.10
+				has_war = yes
+			}
+		}
 		completion_reward = {
 				swap_ideas = { 
 				remove_idea = Arab_deterrence 
@@ -1173,4 +1319,376 @@ focus = {
 			}
 	}
 	
+##################
+### Polictical ###
+##################
+
+	focus = {
+		id = Arab_Establish
+		icon = GFX_goal_generic_demand_territory
+		x = 31
+		y = 0
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {
+				swap_ideas = { 
+				remove_idea = Arab_Minor
+				add_idea = Arab_Minor1
+				}
+			}
+	}
+	
+##### Allied ####
+	focus = {
+		id = Arab_Allies
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Establish }
+		mutually_exclusive = { focus = Arab_axis focus = Arab_sov focus = Arab_Indi }
+		x = 36
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+
+	focus = {
+		id = Arab_Brit
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Allies }
+		mutually_exclusive = { focus = Arab_France }
+		x = 35
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Brit_sub
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Brit }
+		x = 35
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Brit_Aid
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Brit_sub }
+		x = 35
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_France
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Allies }
+		mutually_exclusive = { focus = Arab_Brit }
+		x = 37
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+
+	focus = {
+		id = Arab_France_sub
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_France }
+		x = 37
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_France_aid
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_France_sub }
+		x = 37
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_allied_research
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_France_aid focus = Arab_Brit_Aid }
+		x = 36
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_allied_Science
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_allied_research }
+		x = 36
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			add_research_slot = 1
+			}
+	}
+	
+##### Axis ####
+	focus = {
+		id = Arab_axis
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Establish }
+		mutually_exclusive = { focus = Arab_Allies focus = Arab_sov focus = Arab_Indi }
+		x = 26
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Ger
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_axis }
+		mutually_exclusive = { focus = Arab_Ita }
+		x = 27
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+
+	focus = {
+		id = Arab_Ger_sub
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Ger }
+		x = 27
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Ger_aid
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Ger_sub }
+		x = 26
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Ger_train
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Ger_sub }
+		prerequisite = { focus = Arab_officers }
+		x = 27
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Ita
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_axis }
+		mutually_exclusive = { focus = Arab_Ger }
+		x = 25
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Ita_sub
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Ita }
+		x = 25
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Ita_Navy
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Ita_sub }
+		x = 24
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Ita_Air
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Ita_sub }
+		x = 25
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+
+	focus = {
+		id = Arab_sov
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Establish }
+		mutually_exclusive = { focus = Arab_axis focus = Arab_Allies focus = Arab_Indi }
+		x = 29
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+
+	focus = {
+		id = Arab_sov_sub
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_sov }
+		x = 29
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_sov_stable
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_sov_sub }
+		x = 29
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_officers
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_sov_stable focus = Arab_Ita_sub focus = Arab_Ger_sub focus = Arab_Brit_sub focus = Arab_France_sub }
+		x = 29
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = CHI_incompetent_officers
+			}
+	}
+
+#### Independance #####
+	focus = {
+		id = Arab_Indi
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Establish }
+		mutually_exclusive = { focus = Arab_axis focus = Arab_sov focus = Arab_Allies }
+		x = 32
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Indi_demo
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Indi }
+		mutually_exclusive = { focus = Arab_Indi_mono }
+		x = 31
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Indi_mono
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Indi }
+		mutually_exclusive = { focus = Arab_Indi_demo }
+		x = 33
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Indi_friends
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Indi_mono focus = Arab_Indi_demo }
+		x = 32
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_League
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Indi_friends }
+		prerequisite = { focus = Arab_Indi_mono }
+		x = 33
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
+	
+	focus = {
+		id = Arab_Trader
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Arab_Indi_friends }
+		prerequisite = { focus = Arab_Indi_demo }
+		x = 31
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {			
+			}
+	}
 }
