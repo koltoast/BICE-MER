@@ -65,6 +65,21 @@ ideas = {
 				consumer_goods_factor = 0.04
 			}
 		}
+		Arab_Farms {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = idea_civilian_vehicils
+
+			modifier = {
+			monthly_population = .25
+			}
+		}
+		
 		Arab_Horsemen {
 			
 			allowed = {
@@ -73,7 +88,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = ideas_horses
+			picture = idea_horses
 
 			modifier = {
 			cavalry_attack_factor	= 0.1
@@ -122,6 +137,96 @@ ideas = {
 
 			modifier = {	
 			production_oil_factor = 0.1			
+			}
+		}	
+		Arab_hyper_inflation_1 = {
+			picture = chi_hyper_inflation
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		Arab_hyper_inflation_2 = {
+			picture = chi_hyper_inflation2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.10
+			}
+		}
+		Arab_hyper_inflation_3 = {
+			picture = chi_hyper_inflation3
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		Arab_hyper_inflation_4 = {
+			picture = chi_hyper_inflation4
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.20
+			}
+		}
+		Arab_hyper_inflation_5 = {
+			picture = chi_hyper_inflation5
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
 			}
 		}		
 		

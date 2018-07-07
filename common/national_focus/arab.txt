@@ -22,6 +22,8 @@ focus_tree = {
 	
 	default = no
 	continuous_focus_position = { x = 50 y = 540 }
+	
+	
 	focus = {
 		id = Arab_Search_For_Oil_Deposits
 		icon = GFX_goal_generic_oil_refinery
@@ -33,8 +35,9 @@ focus_tree = {
 				}
 
 	}
+	
 	focus = {
-		id = merJOR_Bureaucracy
+		id = Arab_Bureaucracy
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
 		x = 3
@@ -43,173 +46,225 @@ focus_tree = {
 			add_political_power = 50
 		}
 	}
+	
 	focus = {
-		id = merJOR_Build_Schools
+		id = Arab_Build_Schools
 		icon = GFX_focus_generic_self_management
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Bureaucracy
+			focus = Arab_Bureaucracy
+		}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
 		}
 		x = 0
 		y = 1
 		completion_reward = {
+			Arab_hyper_inflation_level_up = yes
 			add_idea = Arab_Schools
 			}
 
 
 	}
+	
 	focus = {
-		id = merJOR_Build_More_Schools
+		id = Arab_Build_More_Schools
 		icon = GFX_focus_generic_self_management
 		cost = 10.00
 		x = 0
 		y = 2
 		prerequisite = {
-			focus = merJOR_Build_Schools
+			focus = Arab_Build_Schools
 				}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
+		}
 		completion_reward = {
+			Arab_hyper_inflation_level_up = yes
 			swap_ideas = { 
 				remove_idea = Arab_Schools 
 				add_idea = Arab_Schools2
 				}
 		}
 	}
+	
 	focus = {
-		id = merJOR_Research_Funding
+		id = Arab_Research_Funding
 		icon = GFX_focus_research
 		cost = 20.00
 		prerequisite = {
-			focus = merJOR_Build_More_Schools
+			focus = Arab_Build_More_Schools
 		}
 		x = 0
 		y = 3
 
 	}
+	
 	focus = {
-		id = merJOR_Revise_Bedouin_Control_Law
+		id = Arab_Revise_Bedouin_Control_Law
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Bureaucracy
+			focus = Arab_Bureaucracy
 		}
 		x = 2
 		y = 1
 
 	}
+	
 	focus = {
-		id = merJOR_Integrate_Nomads
+		id = Arab_Integrate_Nomads
 		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Revise_Bedouin_Control_Law
+			focus = Arab_Revise_Bedouin_Control_Law
 		}
 		x = 2
 		y = 2
 
 	}
 	focus = {
-		id = merJOR_Subsidize_Farmers
+		id = Arab_Subsidize_Farmers
 		icon = GFX_goal_generic_consumer_goods
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Bureaucracy
+			focus = Arab_Bureaucracy
+		}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
 		}
 		x = 4
 		y = 1
+		completion_reward = {
+			Arab_hyper_inflation_level_up = yes
+		}
 
 	}
+	
 	focus = {
-		id = merJOR_Welfare
+		id = Arab_Welfare
 		icon = GFX_focus_generic_concessions
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Subsidize_Farmers
+			focus = Arab_Subsidize_Farmers
+		}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
 		}
 		x = 4
 		y = 2
-
+		completion_reward = {
+			Arab_hyper_inflation_level_up = yes
+		}
 	}
+	
 	focus = {
-		id = merJOR_Healthcare
+		id = Arab_Healthcare
 		icon = GFX_focus_generic_concessions
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Welfare
+			focus = Arab_Welfare
+		}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
 		}
 		x = 4
 		y = 3
-
+		completion_reward = {
+			Arab_hyper_inflation_level_up = yes
+		}
 	}
+	
 	focus = {
-		id = merJOR_Agriculture
+		id = Arab_Agriculture
 		icon = GFX_goal_generic_construct_civilian
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Bureaucracy
+			focus = Arab_Bureaucracy
+		}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
 		}
 		x = 6
 		y = 1
-
+		completion_reward = {
+					add_timed_idea = { idea = Arab_Farms  days = 200 }
+		}
 	}
+	
 	focus = {
-		id = merJOR_Develop_Oil_Industry
+		id = Arab_Develop_Oil_Industry
 		icon = GFX_goal_generic_oil_refinery
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Search_For_Oil_Deposits
+			focus = Arab_Search_For_Oil_Deposits
 		}
 		prerequisite = {
-			focus = merJOR_Bureaucracy
+			focus = Arab_Bureaucracy
 		}
 		x = 8
 		y = 1
 
 	}
 	focus = {
-		id = merJOR_Trade
+		id = Arab_Trade
 		icon = GFX_goal_generic_trade
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Develop_Oil_Industry
+			focus = Arab_Develop_Oil_Industry
 		}
 		x = 6
 		y = 2
-
+		completion_reward = {
+			Arab_hyper_inflation_level_down = yes
+		}
 	}
 	focus = {
-		id = merJOR_Jordanian_Petroleum_Company
+		id = Arab_Jordanian_Petroleum_Company
 		icon = GFX_goal_generic_oil_refinery
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Develop_Oil_Industry
+			focus = Arab_Develop_Oil_Industry
 		}
 		x = 8
 		y = 2
 
 	}
 	focus = {
-		id = merJOR_Mining_Operations
+		id = Arab_Mining_Operations
 		icon = GFX_goal_generic_construction2
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Develop_Oil_Industry
+			focus = Arab_Develop_Oil_Industry
 		}
 		x = 10
 		y = 2
 
 	}
 	focus = {
-		id = merJOR_Trade_More
+		id = Arab_Trade_More
 		icon = GFX_goal_generic_positive_trade_relations
 		cost = 10.00
 		prerequisite = {
-			focus = merJOR_Jordanian_Petroleum_Company
+			focus = Arab_Jordanian_Petroleum_Company
 		}
 		prerequisite = {
-			focus = merJOR_Trade
+			focus = Arab_Trade
 		}
 		prerequisite = {
-			focus = merJOR_Mining_Operations
+			focus = Arab_Mining_Operations
 		}
 		x = 8
 		y = 3
