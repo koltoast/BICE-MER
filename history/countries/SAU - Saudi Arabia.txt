@@ -70,6 +70,7 @@ add_ideas = {
 		neutrality_idea
 		Arab_Minor
 		CHI_incompetent_officers
+		Arab_Tribes		
 }
 1939.1.1 = {
 

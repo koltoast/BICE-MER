@@ -16,6 +16,55 @@ ideas = {
 				political_power_gain = -0.33				
 			}
 		}
+		Arab_Tribes {
+					allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+
+			modifier = {
+					consumer_goods_factor = -0.05
+					conscription_factor = -0.25
+					drift_defence_factor = -0.25
+			}
+		}
+		Arab_Schools {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = HUN_treaty_of_triannon
+
+			modifier = {
+				research_time_factor = -0.03
+				planning_speed = 0.005
+				max_planning = 0.005
+				consumer_goods_factor = 0.02
+			}
+		}
+		Arab_Schools2 {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = HUN_treaty_of_triannon
+
+			modifier = {
+				research_time_factor = -0.05
+				planning_speed = 0.008
+				max_planning = 0.01
+				consumer_goods_factor = 0.04
+			}
+		}
 		Arab_Horsemen {
 			
 			allowed = {
