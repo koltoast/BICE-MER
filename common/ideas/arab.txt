@@ -13,9 +13,12 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 
 			modifier = {
-				political_power_gain = -0.33				
+				political_power_factor = -0.33		
+				guarantee_cost = 0.25
+				opinion_gain_monthly_factor = -0.1
 			}
 		}
+		
 		Arab_Tribes {
 					allowed = {
 				always = no
@@ -31,6 +34,40 @@ ideas = {
 					drift_defence_factor = -0.25
 			}
 		}
+
+		Arab_Tribes2 {
+					allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+
+			modifier = {
+					consumer_goods_factor = -0.04
+					conscription_factor = -0.20
+					drift_defence_factor = -0.15
+			}
+		}
+		
+		Arab_Tribes3 {
+					allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+
+			modifier = {
+					consumer_goods_factor = -0.02
+					conscription_factor = -0.05
+					drift_defence_factor = -0.05
+					monthly_population = .01
+			}
+		}
+		
 		Arab_Schools {
 			
 			allowed = {
@@ -65,6 +102,7 @@ ideas = {
 				consumer_goods_factor = 0.04
 			}
 		}
+		
 		Arab_Farms {
 			
 			allowed = {
@@ -227,6 +265,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.25
 				industrial_capacity_factory = -0.25
+				stability_weekly = -0.005
 			}
 		}		
 		

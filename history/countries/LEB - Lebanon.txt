@@ -24,8 +24,20 @@ add_ideas = {
 		unity_united_nation		
 		foreign_isolationism
 		neutrality_idea
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	add_ideas = {
 		Arab_Minor
 		CHI_incompetent_officers
+		Arab_hyper_inflation_1
+		Arab_Tribes
+	}
 }
 
 # Starting tech

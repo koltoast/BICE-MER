@@ -63,7 +63,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			Arab_hyper_inflation_level_up = yes
-			add_idea = Arab_Schools
+			add_ideas = Arab_Schools
 			}
 
 
@@ -113,6 +113,18 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
+		available = {
+			NOT = {
+				has_idea = security_liberty_first
+			}
+		}
+		completion_reward = {
+		add_stability = -0.15
+			swap_ideas = { 
+				remove_idea = Arab_Tribes 
+				add_idea = Arab_Tribes2
+				}
+		}
 
 	}
 	
@@ -125,7 +137,19 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
-
+		available = {
+			NOT = {
+				has_idea = security_liberty_first
+			}
+		}
+		completion_reward = {
+		add_stability = -0.25
+			swap_ideas = { 
+				remove_idea = Arab_Tribes2 
+				add_idea = Arab_Tribes3
+				}
+		}
+		
 	}
 	focus = {
 		id = Arab_Subsidize_Farmers

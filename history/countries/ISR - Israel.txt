@@ -124,6 +124,21 @@ add_ideas = {
 add_ideas = {
 	ISR_jewish_immigration
 }
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	add_ideas = {
+		Arab_Minor
+		CHI_incompetent_officers
+		Arab_hyper_inflation_1
+		Arab_Tribes
+	}
+}
+
 #####
 
 

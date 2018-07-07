@@ -44,7 +44,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_bmpimmigration
+			picture = mer_jewish_immigration
 
 			modifier = {
 				monthly_population = 1.5
