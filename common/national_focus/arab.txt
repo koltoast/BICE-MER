@@ -1383,8 +1383,19 @@ focus = {
 		y = 3
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		bypass = {
+			is_subject_of = ENG
+		}
+		completion_reward = {
+				ENG = { 
+					set_autonomy = { 
+						target = ROOT
+						autonomy_state = autonomy_colony
+					}
+				}
+
 			}
+			
 	}
 	
 	focus = {
@@ -1395,7 +1406,12 @@ focus = {
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 2 }
+							swap_ideas = { 
+				remove_idea = Arab_Minor1
+				add_idea = Arab_Minor2
+				}
 			}
 	}
 	
@@ -1426,8 +1442,17 @@ focus = {
 		x = 37
 		y = 3
 		cost = 7
-		available_if_capitulated = yes
-		completion_reward = {			
+		available_if_capitulated = yes	
+		bypass = {
+			is_subject_of = FRA
+		}
+		completion_reward = {
+				FRA = { 
+					set_autonomy = { 
+						target = ROOT
+						autonomy_state = autonomy_colony
+					}
+				}		
 			}
 	}
 	
@@ -1439,8 +1464,15 @@ focus = {
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
-			}
+	
+		completion_reward = {
+				add_offsite_building = { type = shipyard level = 1 }
+				add_offsite_building = { type = subyard level = 1 }
+				swap_ideas = { 
+					remove_idea = Arab_Minor1
+					add_idea = Arab_Minor2
+				}
+			}					
 	}
 	
 	focus = {
@@ -1483,10 +1515,7 @@ focus = {
 		cost = 7
 		available_if_capitulated = yes
 		completion_reward = {	
-				swap_ideas = { 
-					remove_idea = Arab_Minor1
-					add_idea = Arab_Minor_F
-				}
+			add_ideas = nationalism
 				set_country_flag = fascism_on_the_rise
 			}
 	}
@@ -1500,8 +1529,18 @@ focus = {
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {	
+			GER = { 
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = fascism_leanings_good
+				}
 			}
+			swap_ideas = { 
+				remove_idea = nationalism
+				add_idea = fascist_influence
+				}			
+		}
 	}
 
 	focus = {
@@ -1512,7 +1551,16 @@ focus = {
 		y = 3
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		bypass = {
+			is_subject_of = GER
+		}
+		completion_reward = {
+				GER = { 
+					set_autonomy = { 
+						target = ROOT
+						autonomy_state = autonomy_satellite
+					}
+				}		
 			}
 	}
 	
@@ -1524,7 +1572,12 @@ focus = {
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {
+				add_offsite_building = { type = arms_factory level = 1 }
+				swap_ideas = { 
+					remove_idea = Arab_Minor1
+					add_idea = Arab_Minor2
+				}		
 			}
 	}
 	
@@ -1537,57 +1590,106 @@ focus = {
 		y = 5
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {
+			add_ideas = Arab_german_advisors
+			create_corps_commander = {
+				name = "Tobias Beisswenger"
+				picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				traits = { skilled_staffer }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+				}
 			}
 	}
 	
 	focus = {
 		id = Arab_Ita
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = Arab_axis }
 		mutually_exclusive = { focus = Arab_Ger }
 		x = 25
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {	
+			ITA = { 
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = fascism_leanings_good
+				}
+			}
+			swap_ideas = { 
+				remove_idea = nationalism
+				add_idea = fascist_influence
+				}		
 			}
 	}
 	
 	focus = {
 		id = Arab_Ita_sub
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = Arab_Ita }
 		x = 25
 		y = 3
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {	
+				ITA = { 
+					set_autonomy = { 
+						target = ROOT
+						autonomy_state = autonomy_satellite
+					}
+				}		
 			}
 	}
 	
 	focus = {
 		id = Arab_Ita_Navy
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = Arab_Ita_sub }
 		x = 24
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		
+		completion_reward = {		
+				add_offsite_building = { type = dockyard level = 1 }
+				swap_ideas = { 
+					remove_idea = Arab_Minor1
+					add_idea = Arab_Minor2
+				}			
 			}
 	}
 	
 	focus = {
 		id = Arab_Ita_Air
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_chi_flying_tigers
 		prerequisite = { focus = Arab_Ita_sub }
 		x = 25
 		y = 5
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {	
+			add_equipment_to_stockpile = {
+				type = cr_32_fighter_equipment_1
+				amount = 50
+				producer = ITA
 			}
+			add_equipment_to_stockpile = {
+				type = sm81_bomber_equipment_1
+				amount = 25
+				producer = ITA
+			}
+		}
 	}
 
 	focus = {
@@ -1599,8 +1701,15 @@ focus = {
 		y = 1
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {
+			add_ideas = internationalism
+			SOV = { 
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = communism_leanings_good
+				}
 			}
+		}
 	}
 
 	focus = {
@@ -1611,7 +1720,13 @@ focus = {
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {	
+				SOV = { 
+					set_autonomy = { 
+						target = ROOT
+						autonomy_state = autonomy_puppet
+					}
+				}	
 			}
 	}
 	
@@ -1623,7 +1738,13 @@ focus = {
 		y = 3
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {
+				add_offsite_building = { type = arms_factory level = 1 }
+				add_offsite_building = { type = industrial_complex level = 2 }
+				swap_ideas = { 
+					remove_idea = Arab_Minor1
+					add_idea = Arab_Minor2
+				}		
 			}
 	}
 	
@@ -1650,7 +1771,8 @@ focus = {
 		y = 1
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {	
+			add_ideas = idea_monarchist_1		
 			}
 	}
 	
@@ -1663,7 +1785,9 @@ focus = {
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {		
+			remove_ideas = idea_monarchist_1
+			add_ideas = socialism_influence
 			}
 	}
 	
@@ -1676,7 +1800,9 @@ focus = {
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {	
+			add_ideas = idea_monarchist_4
+			add_ideas = monarchist_influence
 			}
 	}
 	
@@ -1688,8 +1814,17 @@ focus = {
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {		
+			set_rule = { can_send_volunteers = yes }
+			every_country = { 
+			limit = { is_Arab = yes }
+			add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}	
+				
 			}
+		}
 	}
 	
 	focus = {
@@ -1701,20 +1836,38 @@ focus = {
 		y = 5
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
-			}
+		completion_reward = {	
+		create_faction = Arabia
+		every_country = { 
+			limit = { 
+				is_Arab = yes
+				is_in_faction = no
+				has_country_flag = Arab_ready
+				}
+			add_to_faction = Arabia				
+			}		
+		}
 	}
 	
 	focus = {
-		id = Arab_Trader
-		icon = GFX_goal_generic_positive_trade_relations
+		id = Arab_Science
+		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = Arab_Indi_friends }
 		prerequisite = { focus = Arab_Indi_demo }
 		x = 31
 		y = 5
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {
+		add_to_tech_sharing_group = Arab_research		
+		every_country = { 
+			limit = { 
+				is_Arab = yes
+				is_in_faction = no
+				has_country_flag = Arab_science				
+				}
+			add_to_tech_sharing_group = Arab_research			
+			}		
 			}
 	}
 }

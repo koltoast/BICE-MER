@@ -36,6 +36,22 @@ ideas = {
 			}
 		}
 		
+		Arab_Minor2 {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				political_power_factor = -0.10		
+				autonomy_gain = -0.01
+				
+			}
+		}
 		Arab_Tribes {
 					allowed = {
 				always = no
@@ -374,6 +390,28 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 				max_dig_in = 1
 				army_core_defence_factor = 0.05
+			}
+		}
+		
+		Arab_german_advisors = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.03
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
 			}
 		}
 		

@@ -119,7 +119,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = partisans
+			picture = chi_army_corruption
 
 			modifier = {
 			}
