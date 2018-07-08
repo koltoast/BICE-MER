@@ -295,7 +295,7 @@ focus_tree = {
 	
 	focus = {
 		id = Arab_Road
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
 		x = 10
 		y = 0
@@ -314,7 +314,7 @@ focus_tree = {
 	
 	focus = {
 		id = Arab_construction
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
 		x = 10
 		y = 1
@@ -352,7 +352,7 @@ focus_tree = {
 	
 	focus = {
 		id = Arab_Industry
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_generic_construction
 		cost = 10.00
 		prerequisite = {
 			focus = Arab_Mining_Operations
@@ -373,7 +373,7 @@ focus_tree = {
 	
 	focus = {
 		id = Arab_Arming
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
 			focus = Arab_Industry
@@ -399,7 +399,7 @@ focus_tree = {
 	
 	focus = {
 		id = Arab_War
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
 			focus = Arab_Arming
@@ -1163,7 +1163,7 @@ focus = {
 ###############
 	focus = {
 		id = Arab_fort_capital
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_generic_fortify_city
 		x = 11
 		y = 5
 		cost = 7
@@ -1206,8 +1206,9 @@ focus = {
 	
 	focus = {
 		id = Arab_Elec_Fort
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_generic_radar
 		prerequisite = { focus = Arab_forts }
+		mutually_exclusive = { focus = Arab_Walls }
 		x = 9
 		y = 7
 		cost = 7
@@ -1229,7 +1230,7 @@ focus = {
 	
 	focus = {
 		id = Arab_Listen
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_generic_radar
 		prerequisite = { focus = Arab_Elec_Fort }
 		mutually_exclusive = { focus = Arab_Hide }
 		x = 8
@@ -1246,7 +1247,7 @@ focus = {
 	
 	focus = {
 		id = Arab_Hide
-		icon = GFX_goal_generic_defence
+		icon = GFX_focus_shadow_government
 		prerequisite = { focus = Arab_Elec_Fort }
 		mutually_exclusive = { focus = Arab_Listen }
 		x = 10
@@ -1263,7 +1264,7 @@ focus = {
 	
 	focus = {
 		id = Arab_Walls
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = Arab_forts }
 		mutually_exclusive = { focus = Arab_Elec_Fort }
 		x = 13
@@ -1287,7 +1288,7 @@ focus = {
 	
 	focus = {
 		id = Arab_Walls_ground
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = Arab_Walls }
 		mutually_exclusive = { focus = Arab_Walls_Air }
 		x = 12
@@ -1304,7 +1305,7 @@ focus = {
 	
 	focus = {
 		id = Arab_Walls_Air
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_fortify_city_AA
 		prerequisite = { focus = Arab_Walls }
 		mutually_exclusive = { focus = Arab_Walls_ground }
 		x = 14
@@ -1341,28 +1342,37 @@ focus = {
 ##### Allied ####
 	focus = {
 		id = Arab_Allies
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = Arab_Establish }
 		mutually_exclusive = { focus = Arab_axis focus = Arab_sov focus = Arab_Indi }
 		x = 36
 		y = 1
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {		
+			add_ideas = democratic_influence
+			set_country_flag = democratic_on_the_rise
 			}
 	}
 
 	focus = {
 		id = Arab_Brit
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = Arab_Allies }
 		mutually_exclusive = { focus = Arab_France }
 		x = 35
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {	
+			add_ideas = conservatism_influence
+			ENG = { 
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = democratic_leanings_good
+				}
 			}
+		}
 	}
 	
 	focus = {
@@ -1379,7 +1389,7 @@ focus = {
 	
 	focus = {
 		id = Arab_Brit_Aid
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = Arab_Brit_sub }
 		x = 35
 		y = 4
@@ -1391,15 +1401,22 @@ focus = {
 	
 	focus = {
 		id = Arab_France
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = Arab_Allies }
 		mutually_exclusive = { focus = Arab_Brit }
 		x = 37
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
-			}
+		completion_reward = {	
+			add_ideas = liberalism_influence
+			FRA = { 
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = democratic_leanings_good
+				}
+			}		
+		}
 	}
 
 	focus = {
@@ -1428,19 +1445,23 @@ focus = {
 	
 	focus = {
 		id = Arab_allied_research
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = Arab_France_aid focus = Arab_Brit_Aid }
 		x = 36
 		y = 5
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
-			}
+		completion_reward = {	
+			if = {
+				limit = { is_in_faction_with = ENG }
+				add_to_tech_sharing_group = commonwealth_research
+			}		
+		}
 	}
 	
 	focus = {
 		id = Arab_allied_Science
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_research
 		prerequisite = { focus = Arab_allied_research }
 		x = 36
 		y = 6
@@ -1454,20 +1475,25 @@ focus = {
 ##### Axis ####
 	focus = {
 		id = Arab_axis
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_support_fascism
 		prerequisite = { focus = Arab_Establish }
 		mutually_exclusive = { focus = Arab_Allies focus = Arab_sov focus = Arab_Indi }
 		x = 26
 		y = 1
 		cost = 7
 		available_if_capitulated = yes
-		completion_reward = {			
+		completion_reward = {	
+				swap_ideas = { 
+					remove_idea = Arab_Minor1
+					add_idea = Arab_Minor_F
+				}
+				set_country_flag = fascism_on_the_rise
 			}
 	}
 	
 	focus = {
 		id = Arab_Ger
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_chi_mission_to_germany
 		prerequisite = { focus = Arab_axis }
 		mutually_exclusive = { focus = Arab_Ita }
 		x = 27
@@ -1566,7 +1592,7 @@ focus = {
 
 	focus = {
 		id = Arab_sov
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = Arab_Establish }
 		mutually_exclusive = { focus = Arab_axis focus = Arab_Allies focus = Arab_Indi }
 		x = 29
@@ -1579,7 +1605,7 @@ focus = {
 
 	focus = {
 		id = Arab_sov_sub
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = Arab_sov }
 		x = 29
 		y = 2
@@ -1591,7 +1617,7 @@ focus = {
 	
 	focus = {
 		id = Arab_sov_stable
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = Arab_sov_sub }
 		x = 29
 		y = 3
@@ -1603,7 +1629,7 @@ focus = {
 	
 	focus = {
 		id = Arab_officers
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = Arab_sov_stable focus = Arab_Ita_sub focus = Arab_Ger_sub focus = Arab_Brit_sub focus = Arab_France_sub }
 		x = 29
 		y = 4
@@ -1617,7 +1643,7 @@ focus = {
 #### Independance #####
 	focus = {
 		id = Arab_Indi
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = Arab_Establish }
 		mutually_exclusive = { focus = Arab_axis focus = Arab_sov focus = Arab_Allies }
 		x = 32
@@ -1630,7 +1656,7 @@ focus = {
 	
 	focus = {
 		id = Arab_Indi_demo
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = Arab_Indi }
 		mutually_exclusive = { focus = Arab_Indi_mono }
 		x = 31
@@ -1643,7 +1669,7 @@ focus = {
 	
 	focus = {
 		id = Arab_Indi_mono
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = Arab_Indi }
 		mutually_exclusive = { focus = Arab_Indi_demo }
 		x = 33
@@ -1681,7 +1707,7 @@ focus = {
 	
 	focus = {
 		id = Arab_Trader
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = Arab_Indi_friends }
 		prerequisite = { focus = Arab_Indi_demo }
 		x = 31
