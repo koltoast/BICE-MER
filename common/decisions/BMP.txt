@@ -1,5 +1,6 @@
 @BMP_HUNT_RIOTS_COST_T = 249
 @BMP_HUNT_RIOTS_COST_E = -250
+@BMP_Irgun = 60
 			
 crisis = {
 	BMP_Riots_raids = {
@@ -50,7 +51,7 @@ crisis = {
 		}
 	}
 	
-		BMP_Irgun_raids = {
+	BMP_Irgun_raids = {
 
 		icon = generic_civil_support
 
@@ -61,7 +62,7 @@ crisis = {
 			}
 		}
 
-		days_mission_timeout = 57	
+		days_mission_timeout = @BMP_Irgun	
 
 			
 		
@@ -83,7 +84,9 @@ crisis = {
 		timeout_effect = {
 			hidden_effect = {
 				activate_mission = BMP_Irgun_raids
+				subtract_from_variable = { @BMP_Irgun = 1 }
 			}
+			
 			random_list = {
 				10 = {
 					country_event = mandate.18 ## infra damage
@@ -107,6 +110,35 @@ crisis = {
 			}
 		}
 	}
+	
+	BMP_Police_Patrol = {
+		icon = infiltrate_state
+		available = {
+			has_active_mission = BMP_Irgun_raids
+			has_tech = tech_military_police
+			command_power > 24
+		}
+		visible = {
+			has_active_mission = BMP_Irgun_raids
+			has_tech = tech_military_police			
+		}
+		fire_only_once = no
+		is_good = yes
+		ai_will_do = {
+			factor = 0			
+		}
+		cost = 25
+		complete_effect = {
+			add_manpower = -15
+			hidden_effect = {
+				remove_mission = BMP_Irgun_raids
+				add_to_variable = { @BMP_Irgun = 10 }
+				activate_mission = BMP_Irgun_raids
+			}
+			add_command_power = -25					
+		}		
+	}
+	
 ######### Westbank riots ########
 	BMP_pacify_Riots_West = {
 
@@ -776,6 +808,49 @@ crisis = {
 		}
 	}
 }
+
+####### England ######
+puppet_management = {
+	Eng_Stable_Mandate = {
+		icon = generic_civil_support
+		available = {
+			tag = ENG
+			command_power > 24
+			has_completed_focus = uk_mediterranean_focus			
+			BMP = { 
+				is_subject_of = ENG
+				has_stability < 35
+				has_idea = BMP_arab_revolt
+			}
+		}
+		cost = 50
+        days_re_enable = 25
+		
+		visible = {
+			BMP = { 
+				has_idea = BMP_arab_revolt
+			}		
+		}
+
+		is_good = yes
+		complete_effect = {
+               add_command_power = -25
+				BMP = {
+					add_stability = 0.1
+					add_autonomy_score = {
+						value = -25
+						localization = "British Aid"
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.1
+					}
+				}
+            }	
+	}
+}
+
+###### Other Nations ########
 foreign_politics = {
 	Arab_riot_aid = {
 
