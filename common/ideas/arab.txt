@@ -1,5 +1,18 @@
 ideas = {
 
+	hidden_ideas = {
+		Arab_Command = {
+		allowed = {
+				always = no
+			}
+		removal_cost = -1
+		modifier = {
+				max_command_power = 15		
+				mobilization_speed = 0.05				
+			}
+		}
+	}
+	
 	country = {
 	
 		Arab_Minor {
@@ -10,7 +23,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_army_problems
 
 			modifier = {
 				political_power_factor = -0.33		
@@ -27,7 +40,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_army_problems
 
 			modifier = {
 				political_power_factor = -0.25		
@@ -44,7 +57,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_army_problems
 
 			modifier = {
 				political_power_factor = -0.10		
@@ -61,7 +74,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_central_management
 
 			modifier = {
 				political_power_factor = -0.10		
@@ -76,7 +89,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_disjointed_gov
+			picture = chi_army_corruption2
 
 			modifier = {
 					consumer_goods_factor = -0.05
@@ -92,7 +105,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_disjointed_gov
+			picture = chi_army_corruption2
 
 			modifier = {
 					consumer_goods_factor = -0.04
@@ -108,7 +121,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_disjointed_gov
+			picture = chi_army_corruption2
 
 			modifier = {
 					consumer_goods_factor = -0.02
