@@ -44,7 +44,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = mer_jewish_immigration
+			picture = generic_manpower_bonus
 
 			modifier = {
 				monthly_population = 1.5
@@ -132,7 +132,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = brittish_stoicism
+			picture = ast_abandon_the_westminster_system
 
 			modifier = {
 			political_power_gain = -0.25
