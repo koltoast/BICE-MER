@@ -16,3 +16,5 @@
   BMP_hunt_Riots_West:0 "hunt down the rioters in the Westbank"
   BMP_hunt_Riots_Gaza:0 "hunt down the rioters in Gaza"
   BMP_hunt_Riots_Israel:0 "hunt down the rioters in Israel"
+  Arab_riot_aid:0 "Aid our Arab brethern in the riots"
+  Arab_riot_aid_desc:0 "Too long have our brethern suffered under British rule, we shall lend our support and bring down the Mandate"

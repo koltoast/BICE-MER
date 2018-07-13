@@ -518,6 +518,39 @@ country_event = {
 	}
 }
 
+### Market Place Bomb ###
+country_event = {
+	id = mandate.20
+	title = mandate.20.t
+	desc = mandate.20.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		add_stability = -0.05
+	}
+}
+
+### Shooting ###
+country_event = {
+	id = mandate.21
+	title = mandate.21.t
+	desc = mandate.21.desc
+	picture = GFX_report_event_generic_civil_war
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		add_manpower  = -5
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+	}
+}
 ##Election Held
 country_event = {
 	id = mandate.19

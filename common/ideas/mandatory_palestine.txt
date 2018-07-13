@@ -172,20 +172,23 @@ ideas = {
 			}
 		}
 		
-	BMP_peel_commission = {
-			picture = generic_disjointed_gov
+	Arab_Meddle = {
+			picture = generic_secret_police
 			
 			allowed = {
 				always = no
 			}
 
 			modifier = {
-				stability_factor = -0.05
+				monarchism_drift = 0.02
+				fascism_drift = 0.01
+				industry_free_repair_factor = -0.05
 			}
 		}
-
+		
+	}
 ##########
-}
+
 
 	political_advisor = {
 

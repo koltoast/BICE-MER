@@ -1,5 +1,6 @@
 @BMP_HUNT_RIOTS_COST_T = 249
 @BMP_HUNT_RIOTS_COST_E = -250
+			
 crisis = {
 	BMP_Riots_raids = {
 
@@ -26,19 +27,83 @@ crisis = {
 		is_good = no
 
 		timeout_effect = {
+		hidden_effect = {
+				activate_mission = BMP_Riots_raids
+			}
 			random_list = {
-				40 = {
+				30 = {
 					country_event = mandate.18 ## infra damage
 				}
-				20 = {
+				15 = {
 					country_event = mandate.16 ## MIC damage
 				}
-				20 = {
+				15 = {
 					country_event = mandate.17 ## CIV damage
 				}
 				20 = {
 					## no impact YAY!
 				}
+				20 = {
+					country_event = mandate.20 ## Stability hit
+				}
+			}
+		}
+	}
+	
+		BMP_Irgun_raids = {
+
+		icon = generic_civil_support
+
+		available = {
+			Or = {
+				has_war_with = GER
+				has_war_with = ITA
+			}
+		}
+
+		days_mission_timeout = 57	
+
+			
+		
+
+		activation = {
+			has_idea = BMP_limited_jewish_immigration
+		}
+
+		visible = {
+		always = no			
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			hidden_effect = {
+				activate_mission = BMP_Irgun_raids
+			}
+			random_list = {
+				10 = {
+					country_event = mandate.18 ## infra damage
+				}
+				1 = {
+					country_event = mandate.16 ## MIC damage
+				}
+				2 = {
+					country_event = mandate.17 ## CIV damage
+				}
+				39 = {
+					## no impact YAY!
+				}
+				24 = {
+					country_event = mandate.20 ## Stability hit
+				}
+				24 = {
+					country_event = mandate.21 ## Manpower hit
+				}
+				
 			}
 		}
 	}
@@ -124,7 +189,14 @@ crisis = {
 		complete_effect = {
 			custom_effect_tooltip = BMP_hunt_Riots_tt
 			add_manpower = -500
-			
+			every_country = { 
+			limit = { is_Arab = yes }
+			add_opinion_modifier = {
+					target = ROOT
+					modifier = protest_action
+				}	
+				
+			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = @BMP_HUNT_RIOTS_COST_E
@@ -191,6 +263,14 @@ crisis = {
 			add_autonomy_ratio = {
 			value = -0.1
 			localization = BMP_Bristish_Needed
+			}
+			every_country = { 
+			limit = { is_Arab = yes }
+			add_opinion_modifier = {
+					target = ROOT
+					modifier = protest_action_light
+				}	
+				
 			}
 			clr_country_flag = BMP_Riots_WestBank
 			if = {
@@ -333,7 +413,14 @@ crisis = {
 		complete_effect = {
 			custom_effect_tooltip = BMP_hunt_Riots_tt
 			add_manpower = -500
-			
+			every_country = { 
+			limit = { is_Arab = yes }
+			add_opinion_modifier = {
+					target = ROOT
+					modifier = protest_action
+				}	
+				
+			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = @BMP_HUNT_RIOTS_COST_E
@@ -400,6 +487,14 @@ crisis = {
 			add_autonomy_ratio = {
 			value = -0.1
 			localization = BMP_Bristish_Needed
+			}
+			every_country = { 
+			limit = { is_Arab = yes }
+			add_opinion_modifier = {
+					target = ROOT
+					modifier = protest_action_light
+				}	
+				
 			}
 			clr_country_flag = BMP_Riots_gaza
 			if = {
@@ -540,7 +635,14 @@ crisis = {
 		complete_effect = {
 			custom_effect_tooltip = BMP_hunt_Riots_tt
 			add_manpower = -500
-			
+			every_country = { 
+			limit = { is_Arab = yes }
+			add_opinion_modifier = {
+					target = ROOT
+					modifier = protest_action
+				}	
+				
+			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = @BMP_HUNT_RIOTS_COST_E
@@ -609,6 +711,14 @@ crisis = {
 			localization = BMP_Bristish_Needed
 			}
 			clr_country_flag = BMP_Riots_Israel
+			every_country = { 
+			limit = { is_Arab = yes }
+			add_opinion_modifier = {
+					target = ROOT
+					modifier = protest_action_light
+				}	
+				
+			}
 			if = {
 				limit = {
 					NOT = { has_country_flag = BMP_Riots_westbank }
@@ -665,4 +775,38 @@ crisis = {
 			}
 		}
 	}
+}
+foreign_politics = {
+	Arab_riot_aid = {
+
+		icon = generic_political_discourse
+		available = {
+		is_Arab = yes
+		Not = { has_completed_focus = Arab_Brit_sub }
+		Not = { has_completed_focus = merJOR_Recognize_Peel_Commission_Plan }		
+		BMP = { has_idea = BMP_arab_revolt }
+		command_power > 25
+		}
+		
+		visible = {	
+		BMP = { has_idea = BMP_arab_revolt }
+		is_Arab = yes
+		}
+		
+		allowed = {
+			always = yes
+		}
+		
+          cost = 50
+          fire_only_once = yes
+          complete_effect = {
+               add_command_power = -25
+				BMP = {
+					add_timed_idea = {
+						idea = Arab_Meddle
+						days = 25
+						}
+					}
+            }
+    }
 }

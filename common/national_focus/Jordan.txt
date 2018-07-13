@@ -15,6 +15,10 @@ focus_tree = {
 		cost = 10.00
 		x = 8
 		y = 0
+		completion_reward = {
+				activate_decision = merJOR_Search_For_Oil
+				}
+
 
 	}
 	focus = {
@@ -37,6 +41,17 @@ focus_tree = {
 		}
 		x = 14
 		y = 1
+		completion_reward = {
+			add_ideas = BMP_British_Rule
+			every_country = { 
+				limit = { is_Arab = yes }
+				add_opinion_modifier = {
+						target = ROOT
+						modifier = protest_action
+					}	
+				
+				}
+			}
 
 	}
 	focus = {
@@ -45,6 +60,22 @@ focus_tree = {
 		cost = 10.00
 		x = 19
 		y = 0
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+						target = ROOT
+						modifier = protest_action_strong
+					}
+				}
+			every_country = { 
+				limit = { is_Arab = yes }
+				add_opinion_modifier = {
+						target = ROOT
+						modifier = took_stand_for_us
+					}	
+				
+			}
+		}
 
 	}
 	focus = {
@@ -68,6 +99,15 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
+		available = {
+			NOT = {
+				has_idea = merJOR_hyper_inflation_5
+			}
+		}
+		completion_reward = {
+			merJOR_hyper_inflation_level_up = yes
+			add_ideas = merJOR_Schools
+			}
 
 	}
 	focus = {
@@ -79,6 +119,18 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
+		available = {
+			NOT = {
+				has_idea = merJOR_hyper_inflation_5
+			}
+		}
+		completion_reward = {
+			merJOR_hyper_inflation_level_up = yes
+			swap_ideas = { 
+				remove_idea = merJOR_Schools 
+				add_idea = merJOR_Schools2
+				}
+		}
 
 	}
 	focus = {
@@ -90,6 +142,9 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
+		completion_reward = {
+			add_research_slot = 1
+		}
 
 	}
 	focus = {
@@ -101,6 +156,18 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
+		available = {
+			NOT = {
+				has_idea = security_liberty_first
+			}
+		}
+		completion_reward = {
+		add_stability = -0.15
+			swap_ideas = { 
+				remove_idea = merJOR_Tribes 
+				add_idea = merJOR_Tribes2
+				}
+		}
 
 	}
 	focus = {
@@ -112,6 +179,18 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
+		available = {
+			NOT = {
+				has_idea = security_liberty_first
+			}
+		}
+		completion_reward = {
+		add_stability = -0.25
+			swap_ideas = { 
+				remove_idea = merJOR_Tribes2 
+				add_idea = merJOR_Tribes3
+				}
+		}
 
 	}
 	focus = {
@@ -123,6 +202,16 @@ focus_tree = {
 		}
 		x = 4
 		y = 1
+		available = {
+			NOT = {
+				has_idea = merJOR_hyper_inflation_5
+			}
+		}
+		completion_reward = {
+			merJOR_hyper_inflation_level_up = yes
+			add_stability = 0.1
+			add_war_support = 0.05
+		}
 
 	}
 	focus = {
@@ -132,8 +221,17 @@ focus_tree = {
 		prerequisite = {
 			focus = merJOR_Subsidize_Farmers
 		}
+		available = {
+			NOT = {
+				has_idea = merJOR_hyper_inflation_5
+			}
+		}
 		x = 4
 		y = 2
+		completion_reward = {
+			merJOR_hyper_inflation_level_up = yes
+			add_ideas = merJOR_Social
+		}
 
 	}
 	focus = {
@@ -143,8 +241,20 @@ focus_tree = {
 		prerequisite = {
 			focus = merJOR_Welfare
 		}
+		available = {
+			NOT = {
+				has_idea = merJOR_hyper_inflation_5
+			}
+		}
 		x = 4
 		y = 3
+		completion_reward = {
+			merJOR_hyper_inflation_level_up = yes
+			swap_ideas = { 
+				remove_idea = merJOR_Social
+				add_idea = merJOR_Social2
+				}
+		}
 
 	}
 	focus = {
@@ -154,8 +264,16 @@ focus_tree = {
 		prerequisite = {
 			focus = merJOR_Bureaucracy
 		}
+		available = {
+			NOT = {
+				has_idea = merJOR_hyper_inflation_5
+			}
+		}
 		x = 6
 		y = 1
+		completion_reward = {
+					add_timed_idea = { idea = merJOR_Farms  days = 200 }
+		}
 
 	}
 	focus = {
@@ -170,6 +288,17 @@ focus_tree = {
 		}
 		x = 8
 		y = 1
+		available = {
+			has_country_flag = merJOR_oil_Found
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+						add_resource = {
+						type = oil
+						amount = 2
+						}
+					}
+		}
 
 	}
 	focus = {
@@ -181,6 +310,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 2
+		completion_reward = {
+			merJOR_hyper_inflation_level_down = yes
+		}
 
 	}
 	focus = {
@@ -192,6 +324,47 @@ focus_tree = {
 		}
 		x = 8
 		y = 2
+		completion_reward = { 
+			add_ideas = merJOR_oil
+		}
+
+	}
+	focus = {
+		id = merJOR_Road
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5.00
+		x = 10
+		y = 0
+		completion_reward = {
+					capital_scope = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}	
+		}
+
+	}
+	
+	focus = {
+		id = merJOR_construction
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		x = 10
+		y = 1
+		prerequisite = { focus = merJOR_Road }
+		completion_reward = {
+					capital_scope = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}	
+		}
 
 	}
 	focus = {
@@ -201,8 +374,34 @@ focus_tree = {
 		prerequisite = {
 			focus = merJOR_Develop_Oil_Industry
 		}
+		prerequisite = {
+			focus = merJOR_construction
+		}
 		x = 10
 		y = 2
+		completion_reward = {
+				activate_decision = merJOR_Mining
+		}
+
+	}
+	focus = {
+		id = merJOR_Industry
+		icon = GFX_goal_generic_construction
+		cost = 8.00
+		prerequisite = {
+			focus = merJOR_Mining_Operations
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.25
+				uses = 2
+				category = industry
+			}
+		}				
+		
 
 	}
 	focus = {
@@ -220,6 +419,35 @@ focus_tree = {
 		}
 		x = 8
 		y = 3
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+			merJOR_hyper_inflation_level_down = yes
+		}
+
+	}
+	focus = {
+		id = merJOR_Arming
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Industry
+		}
+		prerequisite = { 
+			focus = merJOR_equipment_effort_2			
+		}
+		x = 10
+		y = 4
+
+		completion_reward = {
+					capital_scope = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}		
+		}
 
 	}
 	focus = {
@@ -234,6 +462,10 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
+		swap_ideas = { 
+				remove_idea = Arab_Minor
+				add_idea = Arab_Minor2
+				}
 
 	}
 	focus = {
@@ -245,6 +477,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 3
+		completion_reward = {
+			remove_ideas = CHI_incompetent_officers
+			}
 
 	}
 	focus = {
@@ -256,9 +491,179 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.35
+				technology = motorised_infantry
+			}
+		}
 
 	}
+
+###############
+### Defense ###
+###############
 	focus = {
+		id = merJOR_fort_capital
+		icon = GFX_goal_generic_fortify_city
+		x = 11
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		available = {
+			OR = {
+				threat > 0.05
+				has_war = yes
+			}
+		}
+		completion_reward = {
+					capital_scope = {
+						add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+						}
+					}	
+		}
+	}
+	
+	focus = {
+		id = merJOR_forts
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = merJOR_fort_capital }
+		x = 11
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		available = {
+			OR = {
+				threat > 0.10
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = merJOR_deterrence
+			}
+	}
+	
+	focus = {
+		id = merJOR_Elec_Fort
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = merJOR_forts }
+		mutually_exclusive = { focus = merJOR_Walls }
+		x = 9
+		y = 7
+		cost = 9
+		available_if_capitulated = yes
+		available = {
+		has_tech = radio
+			OR = {
+				threat > 0.10
+				has_war = yes
+			}
+		}
+		completion_reward = {
+				swap_ideas = { 
+				remove_idea = merJOR_deterrence 
+				add_idea = merJOR_deterrence2
+				}
+			}
+	}
+	
+	focus = {
+		id = merJOR_Listen
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = merJOR_Elec_Fort }
+		mutually_exclusive = { focus = merJOR_Hide }
+		x = 8
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {
+				swap_ideas = { 
+				remove_idea = merJOR_deterrence2
+				add_idea = merJOR_deterrence2a
+				}
+			}
+	}
+	
+	focus = {
+		id = merJOR_Hide
+		icon = GFX_focus_shadow_government
+		prerequisite = { focus = merJOR_Elec_Fort }
+		mutually_exclusive = { focus = merJOR_Listen }
+		x = 10
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {
+				swap_ideas = { 
+				remove_idea = merJOR_deterrence2
+				add_idea = merJOR_deterrence2b
+				}
+			}
+	}
+	
+	focus = {
+		id = merJOR_Walls
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = merJOR_forts }
+		mutually_exclusive = { focus = merJOR_Elec_Fort }
+		x = 13
+		y = 7
+		cost = 9
+		available_if_capitulated = yes
+		available = {
+		has_tech = construction1
+			OR = {
+				threat > 0.10
+				has_war = yes
+			}
+		}
+		completion_reward = {
+				swap_ideas = { 
+				remove_idea = merJOR_deterrence 
+				add_idea = merJOR_deterrence3
+				}
+			}
+	}
+	
+	focus = {
+		id = merJOR_Walls_ground
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = merJOR_Walls }
+		mutually_exclusive = { focus = merJOR_Walls_Air }
+		x = 12
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		completion_reward = {
+				swap_ideas = { 
+				remove_idea = merJOR_deterrence3 
+				add_idea = merJOR_deterrence3b
+				}
+			}
+	}
+	
+	focus = {
+		id = merJOR_Walls_Air
+		icon = GFX_goal_fortify_city_AA
+		prerequisite = { focus = merJOR_Walls }
+		mutually_exclusive = { focus = merJOR_Walls_ground }
+		x = 14
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+				swap_ideas = { 
+				remove_idea = merJOR_deterrence3 
+				add_idea = merJOR_deterrence3a
+				}
+			}
+	}
+}
+focus = {
 		id = merJOR_Protest_Peel_Commission_Plan
 		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 10.00
@@ -346,7 +751,7 @@ focus_tree = {
 			focus = merJOR_Arab_Ultranationalism
 		}
 		prerequisite = {
-			focus = merJOR_Call_Upon_Arab_Leaders
+			focus = merJOR_Call_Upon_merJOR_Leaders
 		}
 		x = 20
 		y = 4
@@ -399,4 +804,3 @@ focus_tree = {
 		y = 4
 
 	}
-}
