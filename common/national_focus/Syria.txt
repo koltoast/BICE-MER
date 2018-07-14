@@ -1,0 +1,35 @@
+focus_tree = {
+	id = Syria
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SYR
+		}
+	}
+	default = no
+	focus = {
+		id = SYR_constitution
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		x = 6
+		y = 0
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = SYR_struggle #for independence
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = SYR_constitution
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+			add_political_power = 30
+			#some autonomy points
+		}
+	}
+}
