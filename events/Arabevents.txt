@@ -2,7 +2,7 @@
 # Arab Events
 ###########################
 
-add_namespace = Arab_events
+add_namespace = Arab
 
 #### Tribal movements ###
 country_event = {
@@ -161,9 +161,9 @@ country_event = {
 
 ##### Saudi Arabia ###
 news_event = {
-	id = SAU.1 # Al Madina (newspaper in SAU)
-	title = SAU.1.t
-	desc  = SAU.1.desc
+	id = Arab.2 # Al Madina (newspaper in SAU)
+	title = Arab.2.t
+	desc  = Arab.2.desc
 	picture = GFX_report_event_journalist_speech
 
 
@@ -189,9 +189,9 @@ news_event = {
 }
 
 news_event = {
-	id = SAU.2 # Dhahran founded 
-	title = SAU.2.t
-	desc  = SAU.2.desc
+	id = Arab.3 # Dhahran founded 
+	title = Arab.3.t
+	desc  = Arab.3.desc
 	picture = GFX_news_event_generic_rally
 
 
