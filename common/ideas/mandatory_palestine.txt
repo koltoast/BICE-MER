@@ -92,7 +92,21 @@ ideas = {
 				
 			}
 		}
-
+		
+		BMP_peel_commission {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = -0.05
+				
+			}
+		}
+		
 		BMP_encourage_refugee_smuggling {
 			
 			allowed = {

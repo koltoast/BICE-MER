@@ -1,0 +1,52 @@
+political_actions = {
+	IRQ_Consult_Shia = {
+		icon = consumer_goods
+		available = {
+			has_completed_focus = IRQ_Shia_deal			
+		}
+		visible = {
+			TAG = IRQ
+			NOT = { has_completed_focus = IRQ_send_army }					
+		}
+		fire_only_once = no
+		is_good = yes
+		ai_will_do = {
+			factor = 0			
+		}
+		cost = 25
+		complete_effect = {	
+				add_popularity = {
+							ideology = neutrality
+							popularity = 0.01
+				}			
+		}
+		days_re_enable = 25
+	}
+	
+	IRQ_build_assyria = {
+		icon = generic_construction
+		available = {
+			has_completed_focus = IRQ_simele_massacre			
+		}
+		visible = {
+			TAG = IRQ
+			NOT = { has_completed_focus = IRQ_Assyrian_friend }
+			has_completed_focus = IRQ_simele_massacre
+		}
+		fire_only_once = no
+		is_good = yes
+		ai_will_do = {
+			factor = 0	
+		}
+		cost = 5
+		days_remove = 50
+		modifier = {
+               civilian_factory_use = 1
+        }
+		complete_effect = {	
+			add_popularity = {
+							ideology = Liberalism
+							popularity = 0.01
+						}
+		}
+}

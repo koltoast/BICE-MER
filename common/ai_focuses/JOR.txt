@@ -1,0 +1,36 @@
+
+ai_historical_focus_list_JOR = {
+	ai_national_focuses = {
+	#1936
+	merJOR_Bureaucracy 			## 1.1.36 (70)
+	merJOR_Search_For_Oil_Deposits 				
+	merJOR_Protest_Balfour_Declaration		
+	merJOR_Agriculture         					
+	merJOR_Recognize_Peel_Commission_Plan					
+	merJOR_Road		
+	merJOR_construction
+	merJOR_Support_Britain
+	merJOR_Build_Schools
+	merJOR_Build_More_Schools
+	merJOR_Develop_Oil_Industry
+	merJOR_Jordanian_Petroleum_Company
+	merJOR_Mining_Operations
+	merJOR_Research_Funding
+	merJOR_Revise_Bedouin_Control_Law
+	merJOR_Subsidize_Farmers
+	merJOR_Trade
+	merJOR_Welfare
+	merJOR_Trade_More
+	merJOR_Industry
+	merJOR_Healthcare
+	merJOR_Integrate_Nomads
+	merJOR_Invite_More_British_Advisors
+	merJOR_Motorize_Arab_Legion
+	merJOR_Arming
+	merJOR_fort_capital
+	merJOR_forts
+	merJOR_Walls
+	merJOR_Walls_ground
+	}
+}
+### EOF ###

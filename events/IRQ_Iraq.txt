@@ -4,87 +4,53 @@
 
 add_namespace = iraq
 
-# Iraq-Anglo Treaty (British)
+# Shia Revolts (the army attacks)
 country_event = {
 	id = iraq.1
 	title = iraq.1.t
 	desc = iraq.1.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_generic_battle
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = iraq.1.a	#sounds good
 		IRQ = {
-			country_event = { days = 1 id = iraq.2 }
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = irq_eng_treaty
+			country_event = {
+			id = iraq.2
+			hours = 5
 			}
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = irq_eng_treaty_trade
-			}
+					
 		}
-		# REVISIT Balance research bonus
-		add_tech_bonus = {
-			name = air_doc_bonus
-			bonus = 0.5
-            uses = 2
-			category = air_doctrine
-		}
-		add_tech_bonus = {
-			name = fighter_bonus
-            bonus = 0.5
-            uses = 2
-            technology = fighter1
-            technology = fighter2
-            technology = fighter3
-		}
-	}
-	
-	option = {
-		name = iraq.1.b	#no way 
-		add_timed_idea = { idea = SOV_scientist_defect days = 365 }
-		ai_chance = { factor = 0 }
-		add_political_power = -10
-		add_opinion_modifier = { target = IRQ modifier = refused_AI_pact }# no pact 
-		IRQ = {
-			country_event = { days = 1 id = iraq.3 }
-		}
+		
 	}
 }
 
-# British Accept Iraq-Anglo Treaty
+# The army returns
 country_event = {
 	id = iraq.2
 	title = iraq.2.t
 	desc = iraq.2.d
-	picture = GFX_report_event_physics_lab_02
+	picture = GFX_report_event_generic_battle
 
 	is_triggered_only = yes
 	
 	option = {
-		name = iraq.2.a	#bah
-		# REVISIT Balance research bonus
-		add_tech_bonus = {
-			name = air_doc_bonus
-			bonus = 0.5
-            uses = 2
-			category = air_doctrine
-		}
-		add_tech_bonus = {
-			name = fighter_bonus
-            bonus = 0.5
-            uses = 2
-            technology = fighter1
-            technology = fighter2
-            technology = fighter3
-		}
-		ENG = {
-			add_opinion_modifier = { target = IRQ modifier = irq_eng_treaty }
-			add_opinion_modifier = { target = IRQ modifier = irq_eng_treaty_trade }
-		}
+		name = iraq.2.a	#huzah!
+		add_popularity = {
+				ideology = neutrality
+				popularity = -0.03
+				}
+			add_manpower = -90
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = -2
+				producer = IRQ
+				}
+			army_experience = 5
+			air_experience = 2
+			add_stability  = -0.05
+			set_country_flag = IRQ_army_sent
 	}
 }
 

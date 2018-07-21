@@ -19,8 +19,9 @@
  JOR_fascism_party_long:0 "Hizb ut-Tahrir"
  JOR_socialism_party:0 "NSP"
  JOR_socialism_party_long:0 "Al-Hizb Al-Watani Al-Ishtiraki"
- IRQ_democratic_party:0 "IDC"
- IRQ_democratic_party_long:0 "Iraq Democratic Coalition"
  IRQ_conservatism_party:0 "IDC"
  IRQ_conservatism_party_long:0 "Iraq Democratic Coalition"
+ IRQ_neutrality_party:0 "Ikha Party"
+ IRQ_neutrality_party_long:0 "Shia tribes"
+ IRQ_liberalism_party:0 "Assyrian Tribes"
  

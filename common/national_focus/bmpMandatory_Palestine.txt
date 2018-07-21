@@ -31,12 +31,17 @@ focus = {
 		completion_reward = {
 			
 			navy_experience = 2
-
-			add_building_construction = {
-				type = naval_base
-				province = 1015
-				level = 2
-				instant_build = yes
+			random_owned_controlled_state = {
+					limit = {
+						state = 454
+					}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					### Adds a port on the red sea
+					province = 1015	
+				}
 			}
 		}
 	}

@@ -22,6 +22,7 @@ focus_tree = {
 				tag = LIB
 				tag = PER
 				tag = EGY
+				tag = IRQ
 			}
 			has_dlc = "Waking the Tiger"
 		}

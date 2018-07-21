@@ -8,135 +8,149 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 50 y = 540 }
+	
+########### Navy #############
 	focus = {
-		id = IRQ_army_innovations
-		icon = GFX_goal_generic_axis_build_infantry
-		cost = 10
-		x = 3
+		id = IRQ_Sea_Trade
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 4
 		y = 0
-			completion_reward = {
-					army_experience = 5
-					add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 0.25
-							uses = 1
-							category = land_doctrine
-						}
-				}
+		cost = 7
 
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					state = 832
+				}
+				add_building_construction = {
+					type = naval_base
+					#### Coast of Al Basra ####
+					province = 2089
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
+	
 	focus = {
-		id = IRQ_air
-		icon = GFX_goal_generic_build_airforce
-		cost = 10
-		x = 11
+		id = IRQ_Trade_Fleet
+		icon = GFX_goal_continuous_increase_nu
+		x = 2
 		y = 0
-			complete_tooltip = {
-					air_experience = 25
-					if = {
-							limit = {
-									has_country_flag = aviation_effort_AB
-								}
-							add_building_construction = {
-									type = air_base
-									level = 2
-									instant_build = yes
-								}
-						}
-					add_tech_bonus = {
-							name = air_doc_bonus
-							bonus = 0.5
-							uses = 1
-							category = air_doctrine
-						}
-				}
-			completion_reward = {
-					air_experience = 25
-					if = {
-							limit = {
-									capital_scope = {
-											NOT = {
-													free_building_slots = {
-															building = air_base
-															size > 1
-														}
-												}
-										}
-								}
-							random_owned_controlled_state = {
-									limit = {
-											free_building_slots = {
-													building = air_base
-													size > 1
-												}
-										}
-									add_building_construction = {
-											type = air_base
-											level = 2
-											instant_build = yes
-										}
-									ROOT = {
-											set_country_flag = aviation_effort_AB
-										}
-								}
-						}
-					if = {
-							limit = {
-									capital_scope = {
-											free_building_slots = {
-													building = air_base
-													size > 1
-												}
-										}
-								}
-							capital_scope = {
-									add_building_construction = {
-											type = air_base
-											level = 2
-											instant_build = yes
-										}
-									ROOT = {
-											set_country_flag = aviation_effort_AB
-										}
-								}
-						}
-					add_tech_bonus = {
-							name = air_doc_bonus
-							bonus = 0.5
-							uses = 1
-							category = air_doctrine
-						}
-				}
+		cost = 6
 
+		available_if_capitulated = yes
+				available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		completion_reward = {
+			
+			navy_experience = 2
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 20
+				}
+		}
 	}
+	
 	focus = {
+		id = IRQ_convert_fleet
+		icon = GFX_goal_generic_amphibious_assault
+		x = 0
+		y = 0
+		cost = 6
+		available_if_capitulated = yes
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+			has_equipment = {
+				convoy > 39
+			}
+		}
+		completion_reward = {			
+			navy_experience = 2
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -40
+			}
+			hidden_effect = {
+				load_oob = IRQ_navy 
+			}
+			custom_effect_tooltip = IRQ_navy_tt
+		}
+		
+	}
+	
+	focus = {
+		id = IRQ_Shipbuilder
+		icon = GFX_focus_generic_cruiser2
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = {
+			focus = IRQ_convert_fleet
+		}
+		available_if_capitulated = yes
+				available = {
+							custom_trigger_tooltip = {
+								tooltip = IRQ_Shipbuilder_tt 
+								any_state = {
+									is_coastal = yes
+									is_controlled_by = ROOT
+									#### not Al Basra ####
+									NOT = { State = 832 }
+								}
+							}
+							hidden_trigger = {
+								any_state = {
+									is_coastal = yes
+									is_controlled_by = ROOT
+									#### not Al Basra ####
+									NOT = { State = 832 }
+								}
+							}
+				
+						}				
+		completion_reward = {
+			remove_ideas = IRQ_iraqi_navy
+		}
+	}
+	
+		focus = {
 		id = IRQ_dockyard
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10
-		x = 16
-		y = 0
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = IRQ_Trade_Fleet
+			focus = IRQ_Sea_Trade
+		}
 			available = {
-					OR = {
-							IRQ = {
-									controls_state = 656
-								}
-							any_other_country = {
-									is_in_faction_with = IRQ
-									controls_state = 656
-								}
-						}
+					any_state = {
+						is_coastal = yes
+						is_controlled_by = ROOT
+					}
 				}
 			complete_tooltip = {
 					navy_experience = 10
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 							type = dockyard
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 				}
 			completion_reward = {
-					remove_ideas = IRQ_iraqi_navy
 					navy_experience = 10
 					if = {
 							limit = {
@@ -145,7 +159,7 @@ focus_tree = {
 													dockyard > 0
 													free_building_slots = {
 															building = dockyard
-															size > 2
+															size > 1
 															include_locked = yes
 														}
 												}
@@ -159,7 +173,204 @@ focus_tree = {
 											is_coastal = yes
 											free_building_slots = {
 													building = dockyard
-													size > 2
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = dockyard
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	
+	focus = {
+		id = IRQ_destroyer
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 10
+		prerequisite = {
+			focus = IRQ_dockyard
+		}
+		x = 3
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 0.5
+							ahead_reduction = 1
+							uses = 1
+							technology = early_destroyer
+							technology = basic_destroyer
+							technology = improved_destroyer
+							technology = advanced_destroyer
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_submarines
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = IRQ_dockyard
+		}
+		x = 5
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 0.5
+							ahead_reduction = 1
+							uses = 1
+							technology = early_submarine
+							technology = basic_submarine
+							technology = improved_submarine
+							technology = advanced_submarine
+						}
+				}
+
+	}
+
+		focus = {
+		id = IRQ_coastal_navy
+		icon = GFX_goal_generic_build_navy
+		cost = 10
+		prerequisite = {
+			focus = IRQ_dockyard
+		}
+		prerequisite = {
+			focus = IRQ_Shipbuilder
+		}
+		x = 1
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 0.5
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+				}
+
+	}
+	focus = {
+		id = IRQ_dockyard2
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		prerequisite = {
+			focus = IRQ_coastal_navy
+		}
+		x = 1
+		y = 3
+			complete_tooltip = {
+					navy_experience = 30
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					navy_experience = 30
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 1
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 1
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 1
 													include_locked = yes
 												}
 										}
@@ -175,25 +386,387 @@ focus_tree = {
 
 	}
 	focus = {
-		id = IRQ_reform
-		icon = GFX_focus_rom_royal_dictatorship
+		id = IRQ_torpedoes
+		icon = GFX_goal_generic_occupy_start_war
 		cost = 10
-		x = 32
-		y = 0
-			complete_tooltip = {
-					remove_ideas = IRQ_revolt
-				}
+		prerequisite = {
+			focus = IRQ_submarines
+		}
+		x = 5
+		y = 3
 			completion_reward = {
-					add_political_power = 90
-					remove_ideas = IRQ_revolt
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 0.30
+							uses = 1
+							technology = early_submarine
+							technology = basic_submarine
+							technology = improved_submarine
+							technology = advanced_submarine
+						}
 				}
 
 	}
 	focus = {
+		id = IRQ_navy_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		prerequisite = {
+			focus = IRQ_destroyer
+		}
+		x = 3
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 0.30
+							uses = 1
+							technology = early_destroyer
+							technology = basic_destroyer
+							technology = improved_destroyer
+							technology = advanced_destroyer
+						}
+				}
+
+	}
+
+####### REFORMS #############
+	
+	focus = {
+		id = IRQ_send_army
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		mutually_exclusive = { focus = IRQ_Shia_deal }
+		x = 10
+		y = 0
+		available = {
+					has_army_manpower = {
+						size > 99
+					}
+					has_deployed_air_force_size = {
+						size > 9
+						type = fighter
+						}
+		}
+		completion_reward = {
+			country_event = {
+					id = iraq.1
+					days = 5
+					random = 10
+					}
+		}		
+	}
+	
+	focus = {
+		id = IRQ_reform
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10		
+		prerequisite = {
+			focus = IRQ_send_army
+		}
+		x = 10
+		y = 1
+		available = {
+					has_country_flag = IRQ_army_sent
+					neutrality < 0.1						
+		}
+			completion_reward = {
+					add_political_power = 90
+					remove_ideas = IRQ_revolt
+					hidden_effect = {
+						add_popularity = {
+							ideology = neutrality
+							popularity = -0.03
+						}
+					}
+				}
+
+	}
+	
+	focus = {
+		id = IRQ_Claim
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10		
+		prerequisite = {
+			focus = IRQ_reform
+		}
+		x = 9
+		y = 2
+		available = {
+			OR = {
+					AND = {
+						monarchism > 0.85
+						has_country_leader = {
+							name = "Ghazi I"
+							ruling_only = yes
+						}
+					}						
+					fascism > 0.5
+				}
+		}
+			completion_reward = {
+					### Kuwait
+					add_state_claim = 656
+				}
+
+	}
+	
+	focus = {
+		id = IRQ_Shia_deal
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		mutually_exclusive = { focus = IRQ_send_army }
+		x = 8
+		y = 0
+		available = {
+					neutrality > 0.05				
+						}
+		completion_reward = {
+					IRQ = {					
+						add_country_leader_trait = staunch_traditionalist
+					}
+		}
+	}
+	
+	focus = {
+		id = IRQ_Shia_Friend
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10		
+		prerequisite = {
+			focus = IRQ_Shia_deal
+		}
+		x = 8
+		y = 1
+		available = {
+					neutrality > 0.20				
+						}
+		completion_reward = {
+					remove_ideas = IRQ_revolt
+					hidden_effect = {
+						capital_scope = {
+							 ### create_unit = { division = "name = \"Shia Tribes\" division_template = \"Shia Tribes\" start_experience_factor = 0.75"  owner = IRQ }
+
+						}
+					}
+				}
+	}
+	
+	focus = {
+		id = IRQ_simele_massacre
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		prerequisite = {
+			focus = IRQ_reform
+			focus = IRQ_Shia_Friend
+		}
+		x = 7
+		y = 2
+		available = {
+					monarchism > 0.5				
+					}
+		completion_reward = {
+			remove_ideas = IRQ_simele					
+			add_timed_idea = { idea = IRQ_simele2  days = 100 }
+			Arab_hyper_inflation_level_up = yes
+			hidden_effect = {
+				add_popularity = {
+					ideology = Liberalism
+					popularity = 0.02
+				}
+			}
+		}
+
+	}
+	
+	focus = {
+		id = IRQ_Assyrian_friend
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		prerequisite = {
+			focus = IRQ_simele_massacre
+		}
+		x = 7
+		y = 3
+		available = {
+					Liberalism > 0.05				
+						}
+			completion_reward = {
+					hidden_effect = {
+						country_event = {
+							id = iraq.6
+							days = 1
+						}
+					}
+					add_opinion_modifier = {
+							target = PER
+							modifier = small_increase
+						}
+					add_opinion_modifier = {
+							target = SYR
+							modifier = small_increase
+						}	
+					add_opinion_modifier = {
+							target = TUR
+							modifier = small_increase
+						}					
+				}
+
+	}
+	
+	focus = {
+		id = IRQ_government
+		icon = GFX_focus_hun_elect_a_king
+		cost = 10.00
+		x = 11
+		y = 2
+		prerequisite = {
+			focus = IRQ_Shia_Friend
+			focus = IRQ_reform
+		}
+		completion_reward = {
+			add_political_power = 25
+			swap_ideas = { 
+				remove_idea = Arab_Minor
+				add_idea = Arab_Minor1
+			}
+		}		
+	}
+	
+	focus = {
+		id = IRQ_British_oil
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 10
+		y = 3
+		prerequisite = {
+			focus = IRQ_government
+		}
+		available = {
+			monarchism > 0.70				
+		}
+	}
+	
+	focus = {
+		id = IRQ_British_research
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 8
+		y = 4
+		prerequisite = {
+			focus = IRQ_British_oil
+		}
+		available = {
+			monarchism > 0.70				
+		}
+	}
+	
+	focus = {
+		id = IRQ_British_aid
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 10
+		y = 4
+		prerequisite = {
+			focus = IRQ_British_oil
+		}
+		available = {
+			monarchism > 0.60				
+		}
+		completion_reward = {
+			Arab_hyper_inflation_level_down = yes
+		}
+	}
+	
+	focus = {
+		id = IRQ_British_train
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 9
+		y = 5
+		prerequisite = {
+			focus = IRQ_British_aid
+			focus = IRQ_British_research
+		}
+		available = {
+			monarchism > 0.60				
+		}
+		completion_reward = {
+			remove_ideas = {
+				CHI_incompetent_officers
+				}
+		}
+	}
+
+	focus = {
+		id = IRQ_Ita_aid
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 12
+		y = 4
+		prerequisite = {
+			focus = IRQ_oil
+		}
+		available = {
+			fascism > 0.30				
+		}
+	}
+	
+	focus = {
+		id = IRQ_Ger_aid
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 14
+		y = 4
+		prerequisite = {
+			focus = IRQ_oil
+		}
+		available = {
+			fascism > 0.30				
+		}
+	}
+	
+	focus = {
+		id = IRQ_Prepare_coup
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 13
+		y = 5
+		prerequisite = {
+			focus = IRQ_Ger_aid
+			focus = IRQ_Ita_aid
+		}
+		available = {
+			fascism > 0.35				
+		}
+	}
+	
+	focus = {
+		id = IRQ_seize_airfields
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 13
+		y = 6
+		prerequisite = {
+			focus = IRQ_Prepare_coup
+		}
+		available = {
+			fascism > 0.5				
+			}
+		completion_reward = {
+			declare_war_on = {
+			target = ENG
+			type = annex_everything
+			}
+		}
+	}
+	
+#### Industry ####
+
+	focus = {
 		id = IRQ_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10
-		x = 22
+		x = 23
 		y = 0
 			bypass = {
 					custom_trigger_tooltip = {
@@ -276,59 +849,754 @@ focus_tree = {
 				}
 
 	}
+	
+	
 	focus = {
-		id = IRQ_anglo_treaty
-		icon = GFX_goal_generic_scientific_exchange
+		id = IRQ_Search_For_Oil_Deposits
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		x = 18
+		y = 0
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				date < 1937.1.1				
+			}
+		}
+		completion_reward = {
+				activate_decision = Arab_Search_For_Oil
+				}
+
+	}
+	
+	focus = {
+		id = IRQ_Bureaucracy
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 3
+		}
+        completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = IRQ_Build_Schools
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_Bureaucracy
+		}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		x = 13
+		y = 1
+		completion_reward = {			
+			add_ideas = Arab_Schools
+			Arab_hyper_inflation_level_up = yes
+			}
+
+
+	}
+	
+	focus = {
+		id = IRQ_Build_More_Schools
+		icon = GFX_focus_generic_self_management
+		cost = 12.00
+		x = 13
+		y = 2
+		prerequisite = {
+			focus = IRQ_Build_Schools
+				}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = Arab_Schools 
+				add_idea = Arab_Schools2
+				}
+			Arab_hyper_inflation_level_up = yes
+		}
+	}
+	
+	focus = {
+		id = IRQ_Research_Funding
+		icon = GFX_focus_research
+		cost = 15.00
+		prerequisite = {
+			focus = IRQ_Build_More_Schools
+		}
+		x = 14
+		y = 3
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			add_research_slot = 1
+			Arab_hyper_inflation_level_up = yes
+		}
+
+	}
+	
+	focus = {
+		id = IRQ_Revise_Bedouin_Control_Law
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 11.00
+		prerequisite = {
+			focus = IRQ_Bureaucracy
+		}
+		x = 15
+		y = 1
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 0
+				has_stability < 50				
+			}
+		}
+		available = {
+			NOT = {
+				has_idea = security_liberty_first													
+			}
+			OR = {
+				monarchism > 0.60
+				AND = {
+						has_government = fascism
+						fascism > 0.50
+				}
+			}
+		}
+		completion_reward = {
+		add_stability = -0.15
+			swap_ideas = { 
+				remove_idea = Arab_Tribes 
+				add_idea = Arab_Tribes2
+				}
+		}
+
+	}
+	
+	focus = {
+		id = IRQ_Integrate_Nomads
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 20.00
+		prerequisite = {
+			focus = IRQ_Revise_Bedouin_Control_Law
+		}
+		x = 15
+		y = 2
+		available = {
+			NOT = {
+				has_idea = security_liberty_first
+			}
+			OR = {
+				monarchism > 0.75
+				AND = {
+						has_government = fascism
+						fascism > 0.60
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 0
+				has_stability < 60				
+			}
+		}
+		completion_reward = {
+		add_stability = -0.25
+			swap_ideas = { 
+				remove_idea = Arab_Tribes2 
+				add_idea = Arab_Tribes3
+				}
+		}
+		
+	}
+	focus = {
+		id = IRQ_Subsidize_Farmers
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_Bureaucracy
+		}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		x = 17
+		y = 1
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.05
+			Arab_hyper_inflation_level_up = yes
+		}
+
+	}
+	
+	focus = {
+		id = IRQ_Welfare
+		icon = GFX_focus_generic_concessions
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_Subsidize_Farmers
+		}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
+		}
+		x = 17
+		y = 2
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			add_ideas = Arab_Social
+			Arab_hyper_inflation_level_up = yes
+		}
+	}
+	
+	focus = {
+		id = IRQ_Healthcare
+		icon = GFX_focus_generic_concessions
+		cost = 15.00
+		prerequisite = {
+			focus = IRQ_Welfare
+		}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		x = 17
+		y = 3
+		completion_reward = {			
+			swap_ideas = { 
+				remove_idea = Arab_Social
+				add_idea = Arab_Social2
+				}
+			Arab_hyper_inflation_level_up = yes
+		}
+	}
+	
+	focus = {
+		id = IRQ_Agriculture
+		icon = GFX_goal_generic_construct_civilian
+		cost = 6.00
+		prerequisite = {
+			focus = IRQ_Bureaucracy
+		}
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
+		}
+		x = 19
+		y = 1
+		ai_will_do = {
+			factor = 4		
+		}
+		completion_reward = {
+					add_timed_idea = { idea = Arab_Farms  days = 200 }
+		}
+	}
+	
+	focus = {
+		id = IRQ_Develop_Oil_Industry
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_Search_For_Oil_Deposits		
+		}
+		prerequisite = {
+			focus = IRQ_Bureaucracy
+		}
+		x = 21
+		y = 1
+		available = {
+			has_country_flag = Arab_oil_Found
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+						add_resource = {
+						type = oil
+						amount = 2
+						}
+					}
+		}
+	}
+	
+	focus = {
+		id = IRQ_Trade
+		icon = GFX_goal_generic_trade
+		cost = 8.00
+		prerequisite = {
+			focus = IRQ_Develop_Oil_Industry
+		}
+		available = { has_Arab_inflation = yes }		
+		x = 19
+		y = 2
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			Arab_hyper_inflation_level_down = yes
+		}
+	}
+	
+	focus = {
+		id = IRQ_Petroleum_Company
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = IRQ_Develop_Oil_Industry
+		}
+		x = 21
+		y = 2
+		completion_reward = { 
+			add_ideas = Arab_oil
+		}
+
+	}
+	
+	focus = {
+		id = IRQ_civ
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10
 		prerequisite = {
-			focus = IRQ_army_innovations
+			focus = IRQ_infrastructure
 		}
-		x = 3
+		x = 23
 		y = 1
 			bypass = {
-					OR = {
-							has_war_with = ENG
-							NOT = {
-									country_exists = ENG
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
 								}
 						}
 				}
-			completion_reward = {
-					ENG = {
-							country_event = {
-									id = iraq.1
-									days = 1
-								}
-							custom_effect_tooltip = needs_approval
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
 						}
-					effect_tooltip = {
-							add_tech_bonus = {
-									name = air_doc_bonus
-									bonus = 0.5
-									uses = 2
-									category = air_doctrine
+				}
+			completion_reward = {
+					capital_scope = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
 								}
-							add_tech_bonus = {
-									name = fighter_bonus
-									bonus = 0.5
-									uses = 2
-									technology = fighter1
-									technology = fighter2
-									technology = fighter3
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+					}
+				}
+
+	}
+
+	focus = {
+		id = IRQ_Mining_Operations
+		icon = GFX_goal_generic_construction2
+		cost = 13.00
+		prerequisite = {
+			focus = IRQ_Develop_Oil_Industry
+		}
+		prerequisite = {
+			focus = IRQ_civ
+		}
+		x = 23
+		y = 2
+		completion_reward = {
+				activate_decision = Arab_Mining
+		}
+
+	}
+	
+	focus = {
+		id = IRQ_Industry
+		icon = GFX_goal_generic_construction
+		cost = 8.00
+		prerequisite = {
+			focus = IRQ_Mining_Operations
+		}
+		x = 23
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.25
+				uses = 2
+				category = industry
+			}
+		}				
+		
+
+	}
+	focus = {
+		id = IRQ_fac
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = IRQ_Industry
+		}
+		prerequisite = {
+			focus = IRQ_arty2
+		}
+		x = 25
+		y = 5
+		available = {
+			OR = {
+				has_government = fascism
+				gives_military_access_to = ENG
+				has_war = yes
+				}
+		}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
 								}
 						}
 				}
 
 	}
+	
+	focus = {
+		id = IRQ_Trade_More
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 8.00
+		prerequisite = {
+			focus = IRQ_Petroleum_Company
+		}
+		prerequisite = {
+			focus = IRQ_Trade
+		}
+		prerequisite = {
+			focus = IRQ_Mining_Operations
+		}
+		available = { has_Arab_inflation = yes }
+		x = 21
+		y = 3
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+			Arab_hyper_inflation_level_down = yes
+		}
+
+	}
+	
+	focus = {
+		id = IRQ_infrastructure2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = IRQ_Industry
+		}
+		prerequisite = {
+			focus = IRQ_Trade_More
+		}
+		x = 21
+		y = 4
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	
+	focus = {
+		id = IRQ_civ2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = IRQ_Industry
+		}
+		x = 23
+		y = 5
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	
+	focus = {
+		id = IRQ_oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10
+		x = 12
+		y = 3
+		prerequisite = {
+			focus = IRQ_government
+		}
+		available = {
+			fascism > 0.25				
+		}
+		completion_reward = {
+				country_event = {
+						days = 1
+						id = iraq.5
+				}
+		}
+
+	}
+	
+##### ARMY #####
+	
+	
+	
+focus = {
+		id = IRQ_army_innovations
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		x = 25
+		y = 0
+		available = {
+			OR = {
+				has_government = fascism
+				gives_military_access_to = ENG
+				}
+		}
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.25
+							uses = 1
+							category = land_doctrine
+						}
+				}
+	}
+
 	focus = {
 		id = IRQ_equipment
 		icon = GFX_goal_generic_small_arms
 		cost = 10
+		x = 25
+		y = 1
 		prerequisite = {
-			focus = IRQ_anglo_treaty
+			focus = IRQ_army_innovations
 		}
-		x = 2
-		y = 2
 			completion_reward = {
 					add_tech_bonus = {
 							name = infantry_weapons_bonus
@@ -346,8 +1614,8 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_equipment
 		}
-		x = 0
-		y = 3
+		x = 25
+		y = 2
 			completion_reward = {
 					add_tech_bonus = {
 							name = infantry_weapons_bonus
@@ -358,15 +1626,19 @@ focus_tree = {
 				}
 
 	}
+	
 	focus = {
 		id = IRQ_motor
 		icon = GFX_goal_generic_army_motorized
 		cost = 10
-		prerequisite = {
-			focus = IRQ_anglo_treaty
-		}
-		x = 4
+		x = 28
 		y = 2
+		available = {
+			OR = {
+				has_government = fascism
+				gives_military_access_to = ENG
+				}
+		}
 			completion_reward = {
 					add_tech_bonus = {
 							name = motorized_bonus
@@ -376,6 +1648,7 @@ focus_tree = {
 				}
 
 	}
+	
 	focus = {
 		id = IRQ_doctrine
 		icon = GFX_goal_generic_army_doctrines
@@ -386,7 +1659,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_motor
 		}
-		x = 3
+		x = 27
 		y = 3
 			completion_reward = {
 					army_experience = 15
@@ -399,6 +1672,7 @@ focus_tree = {
 				}
 
 	}
+	
 	focus = {
 		id = IRQ_mechanized
 		icon = GFX_goal_generic_build_tank
@@ -406,8 +1680,14 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_motor
 		}
-		x = 6
+		x = 29
 		y = 3
+		available = {
+			OR = {
+				has_government = fascism
+				gives_military_access_to = ENG
+				}
+		}
 			completion_reward = {
 					add_tech_bonus = {
 							name = motorized_bonus
@@ -418,15 +1698,184 @@ focus_tree = {
 				}
 
 	}
+
 	focus = {
+		id = IRQ_tank
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = IRQ_mechanized
+		}
+		x = 29
+		y = 4
+		available = {
+			OR = {
+				has_government = fascism
+				gives_military_access_to = ENG
+				}
+		}
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 0.2
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	
+	focus = {
+		id = IRQ_mountain
+		icon = GFX_goal_generic_special_forces
+		cost = 10
+		prerequisite = {
+			focus = IRQ_doctrine
+		}
+		x = 27
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 0.5
+							uses = 1
+							technology = tech_mountaineers
+							technology = tech_mountaineers2
+							technology = tech_mountaineers3
+						}
+				}
+
+	}
+	
+	focus = {
+		id = IRQ_arty2
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		prerequisite = {
+			focus = IRQ_arty
+		}
+		x = 25
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 0.25
+							uses = 2
+							category = artillery
+						}
+				}
+
+	}
+	
+#### Airforce ####
+		
+	focus = {
+		id = IRQ_air
+		icon = GFX_goal_generic_build_airforce
+		cost = 10
+		x = 31
+		y = 0
+		available = {
+			OR = {
+				has_government = fascism
+				gives_military_access_to = ENG
+				}
+		}
+			complete_tooltip = {
+					air_experience = 25
+					if = {
+							limit = {
+									has_country_flag = aviation_effort_AB
+								}
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
+								}
+						}
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = air_doctrine
+						}
+				}
+			completion_reward = {
+					air_experience = 25
+					if = {
+							limit = {
+									capital_scope = {
+											NOT = {
+													free_building_slots = {
+															building = air_base
+															size > 1
+														}
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_AB
+										}
+								}
+						}
+					if = {
+							limit = {
+									capital_scope = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+								}
+							capital_scope = {
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_AB
+										}
+								}
+						}
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = air_doctrine
+						}
+				}
+
+
+	}
+	
+		focus = {
 		id = IRQ_fighters
 		icon = GFX_goal_generic_air_fighter
 		cost = 10
 		prerequisite = {
 			focus = IRQ_air
 		}
-		x = 11
+		x = 31
 		y = 1
+		available = {
+			OR = {
+				has_government = fascism
+				gives_military_access_to = ENG
+				}
+		}
 			completion_reward = {
 					add_tech_bonus = {
 							name = fighter_bonus
@@ -442,6 +1891,7 @@ focus_tree = {
 				}
 
 	}
+	
 	focus = {
 		id = IRQ_cas
 		icon = GFX_goal_generic_CAS
@@ -449,8 +1899,14 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_fighters
 		}
-		x = 9
+		x = 33
 		y = 2
+		available = {
+			OR = {
+				has_government = fascism
+				gives_military_access_to = ENG
+				}
+		}
 			completion_reward = {
 					add_tech_bonus = {
 							name = CAS_bonus
@@ -461,6 +1917,7 @@ focus_tree = {
 				}
 
 	}
+	
 	focus = {
 		id = IRQ_air2
 		icon = GFX_goal_generic_air_doctrine
@@ -468,8 +1925,14 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_fighters
 		}
-		x = 11
+		x = 31
 		y = 2
+		available = {
+			OR = {
+				has_government = fascism
+				gives_military_access_to = ENG
+				}
+		}
 			complete_tooltip = {
 					air_experience = 25
 					if = {
@@ -554,6 +2017,7 @@ focus_tree = {
 				}
 
 	}
+	
 	focus = {
 		id = IRQ_military_advance
 		icon = GFX_focus_research
@@ -564,769 +2028,17 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_cas
 		}
-		x = 11
+		x = 31
 		y = 3
-			completion_reward = {
+		available = {
+			has_government = fascism						
+		}
+		completion_reward = {
 					add_research_slot = 1
-				}
+		}
 
 	}
-	focus = {
-		id = IRQ_coastal_navy
-		icon = GFX_goal_generic_build_navy
-		cost = 10
-		prerequisite = {
-			focus = IRQ_dockyard
-		}
-		x = 16
-		y = 1
-			completion_reward = {
-					add_tech_bonus = {
-							name = sub_op_bonus
-							bonus = 0.5
-							uses = 2
-							technology = convoy_interdiction_ti
-							technology = unrestricted_submarine_warfare
-							technology = wolfpacks
-							technology = advanced_submarine_warfare
-							technology = combined_operations_raiding
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_dockyard2
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10
-		prerequisite = {
-			focus = IRQ_coastal_navy
-		}
-		x = 16
-		y = 2
-			complete_tooltip = {
-					navy_experience = 30
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-							type = dockyard
-							level = 3
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					navy_experience = 30
-					if = {
-							limit = {
-									NOT = {
-											any_owned_state = {
-													dockyard > 0
-													free_building_slots = {
-															building = dockyard
-															size > 2
-															include_locked = yes
-														}
-												}
-										}
-									any_owned_state = {
-											is_coastal = yes
-										}
-								}
-							random_owned_controlled_state = {
-									limit = {
-											is_coastal = yes
-											free_building_slots = {
-													building = dockyard
-													size > 2
-													include_locked = yes
-												}
-										}
-									add_extra_state_shared_building_slots = 3
-									add_building_construction = {
-											type = dockyard
-											level = 3
-											instant_build = yes
-										}
-								}
-							set_country_flag = naval_effort_built
-						}
-					if = {
-							limit = {
-									NOT = {
-											has_country_flag = naval_effort_built
-										}
-									any_owned_state = {
-											dockyard > 0
-											free_building_slots = {
-													building = dockyard
-													size > 2
-													include_locked = yes
-												}
-										}
-								}
-							random_owned_controlled_state = {
-									limit = {
-											dockyard > 0
-											free_building_slots = {
-													building = dockyard
-													size > 2
-													include_locked = yes
-												}
-										}
-									add_extra_state_shared_building_slots = 3
-									add_building_construction = {
-											type = dockyard
-											level = 3
-											instant_build = yes
-										}
-								}
-							set_country_flag = naval_effort_built
-						}
-					if = {
-							limit = {
-									NOT = {
-											has_country_flag = naval_effort_built
-										}
-									NOT = {
-											any_owned_state = {
-													free_building_slots = {
-															building = dockyard
-															size > 2
-															include_locked = yes
-														}
-												}
-										}
-								}
-							random_state = {
-									limit = {
-											controller = {
-													tag = ROOT
-												}
-											free_building_slots = {
-													building = dockyard
-													size > 2
-													include_locked = yes
-												}
-										}
-									add_extra_state_shared_building_slots = 3
-									add_building_construction = {
-											type = dockyard
-											level = 3
-											instant_build = yes
-										}
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_destroyer
-		icon = GFX_goal_generic_occupy_states_coastal
-		cost = 10
-		prerequisite = {
-			focus = IRQ_dockyard2
-		}
-		x = 15
-		y = 3
-			completion_reward = {
-					add_tech_bonus = {
-							name = dd_bonus
-							bonus = 0.5
-							ahead_reduction = 1
-							uses = 1
-							technology = early_destroyer
-							technology = basic_destroyer
-							technology = improved_destroyer
-							technology = advanced_destroyer
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_submarines
-		icon = GFX_goal_generic_navy_submarine
-		cost = 10
-		prerequisite = {
-			focus = IRQ_dockyard2
-		}
-		x = 17
-		y = 3
-			completion_reward = {
-					add_tech_bonus = {
-							name = ss_bonus
-							bonus = 0.5
-							ahead_reduction = 1
-							uses = 1
-							technology = early_submarine
-							technology = basic_submarine
-							technology = improved_submarine
-							technology = advanced_submarine
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_fac
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10
-		prerequisite = {
-			focus = IRQ_infrastructure
-		}
-		x = 21
-		y = 1
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = production_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = arms_factory
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = arms_factory
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_civ
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10
-		prerequisite = {
-			focus = IRQ_infrastructure
-		}
-		x = 23
-		y = 1
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = construction_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = industrial_complex
-											size < 2
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-							type = industrial_complex
-							level = 2
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 1
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_infrastructure2
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10
-		prerequisite = {
-			focus = IRQ_fac
-		}
-		prerequisite = {
-			focus = IRQ_civ
-		}
-		x = 22
-		y = 2
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = infrastructure_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = infrastructure
-											size < 1
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = infrastructure
-											size > 0
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 0
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = infrastructure
-											size > 1
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 1
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_building_construction = {
-									type = infrastructure
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_fac2
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10
-		prerequisite = {
-			focus = IRQ_infrastructure2
-		}
-		x = 21
-		y = 3
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = production_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = arms_factory
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = arms_factory
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_civ2
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10
-		prerequisite = {
-			focus = IRQ_infrastructure2
-		}
-		x = 23
-		y = 3
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = construction_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = industrial_complex
-											size < 2
-											include_locked = yes
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-							type = industrial_complex
-							level = 2
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 1
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_break_treaty
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10
-		prerequisite = {
-			focus = IRQ_reform
-		}
-		x = 30
-		y = 1
-			completion_reward = {
-					add_political_power = 120
-					add_opinion_modifier = {
-							target = ENG
-							modifier = break_anglo_iraq_treaty
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_oil
-		icon = GFX_goal_generic_oil_refinery
-		cost = 10
-		prerequisite = {
-			focus = IRQ_break_treaty
-		}
-		x = 27
-		y = 2
-			completion_reward = {
-					country_event = {
-							days = 1
-							id = iraq.5
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_oil_ref
-		icon = GFX_goal_generic_oil_refinery
-		cost = 10
-		prerequisite = {
-			focus = IRQ_oil
-		}
-		prerequisite = {
-			focus = IRQ_infrastructure2
-		}
-		x = 27
-		y = 3
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = synthetic_refinery_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = synthetic_refinery
-											size < 1
-										}
-								}
-						}
-				}
-			complete_tooltip = {
-					add_building_construction = {
-							type = synthetic_refinery
-							level = 1
-							instant_build = yes
-						}
-					add_building_construction = {
-							type = synthetic_refinery
-							level = 1
-							instant_build = yes
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = synthetic_refinery
-											size > 0
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = synthetic_refinery
-																			size > 0
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_building_construction = {
-									type = synthetic_refinery
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = synthetic_refinery
-											size > 1
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = synthetic_refinery
-																			size > 1
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_building_construction = {
-									type = synthetic_refinery
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_arab_nationalism
-		icon = GFX_goal_generic_propaganda
-		cost = 10
-		prerequisite = {
-			focus = IRQ_break_treaty
-		}
-		x = 30
-		y = 2
-			completion_reward = {
-					add_ideas = IRQ_nationalism
-				}
-
-	}
-	focus = {
-		id = IRQ_purge
-		icon = GFX_goal_demand_sudetenland
-		cost = 10
-		prerequisite = {
-			focus = IRQ_arab_nationalism
-		}
-		x = 30
-		y = 3
-			complete_tooltip = {
-					remove_ideas = IRQ_nuri_as_said
-				}
-			completion_reward = {
-					add_political_power = 120
-					remove_ideas = IRQ_nuri_as_said
-				}
-
-	}
-	focus = {
-		id = IRQ_tank
-		icon = GFX_goal_generic_army_tanks
-		cost = 10
-		prerequisite = {
-			focus = IRQ_mechanized
-		}
-		x = 6
-		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 0.2
-							uses = 2
-							category = armor
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_mountain
-		icon = GFX_goal_generic_special_forces
-		cost = 10
-		prerequisite = {
-			focus = IRQ_doctrine
-		}
-		x = 3
-		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = special_forces_bonus
-							bonus = 0.5
-							uses = 1
-							technology = tech_mountaineers
-							technology = tech_mountaineers2
-							technology = tech_mountaineers3
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_arty2
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10
-		prerequisite = {
-			focus = IRQ_arty
-		}
-		x = 0
-		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = infantry_weapons_bonus
-							bonus = 0.25
-							uses = 2
-							category = artillery
-						}
-				}
-
-	}
+	
 	focus = {
 		id = IRQ_rocket
 		icon = GFX_focus_rocketry
@@ -1334,8 +2046,11 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_military_advance
 		}
-		x = 11
+		x = 31
 		y = 4
+		available = {
+			has_government = fascism						
+		}
 			completion_reward = {
 					add_tech_bonus = {
 							name = jet_rocket_bonus
@@ -1347,119 +2062,135 @@ focus_tree = {
 				}
 
 	}
-	focus = {
-		id = IRQ_torpedoes
-		icon = GFX_goal_generic_occupy_start_war
-		cost = 10
-		prerequisite = {
-			focus = IRQ_submarines
+	
+##### Defenses #####
+		focus = {
+		id = IRQ_fort_capital
+		icon = GFX_goal_generic_fortify_city
+		x = 18
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		available = {
+			OR = {
+				threat > 0.05
+				has_war = yes
+				fascism > 0.10
+			}
 		}
+		completion_reward = {
+					capital_scope = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 1
+							instant_build = yes
+							}
+						add_building_construction = {
+							type = bunker
+							### Baghdad
+							province = 2097
+							level = 1
+							instant_build = yes
+							}
+					}	
+		}
+	}
+	
+	focus = {
+		id = IRQ_forts
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = IRQ_fort_capital }
+		x = 18
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		available = {
+			OR = {
+				threat > 0.10
+				has_war = yes
+				fascism > 0.15
+			}
+		}
+		completion_reward = {
+			add_ideas = Arab_deterrence
+			}
+	}
+		
+	focus = {
+		id = IRQ_Walls
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = IRQ_forts }
+		prerequisite = { focus = IRQ_civ2 }
+		x = 18
+		y = 6
+		cost = 9
+		available_if_capitulated = yes
+		available = {
+		has_tech = construction1
+			OR = {
+				threat > 0.10
+				has_war = yes
+				fascism > 0.20
+			}
+		}
+		completion_reward = {
+				swap_ideas = { 
+				remove_idea = Arab_deterrence 
+				add_idea = Arab_deterrence3
+				}
+			}
+	}
+	
+	focus = {
+		id = IRQ_Walls_ground
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = IRQ_Walls }
+		mutually_exclusive = { focus = IRQ_Walls_Air }
 		x = 17
-		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = ss_bonus
-							bonus = 0.30
-							uses = 1
-							technology = early_submarine
-							technology = basic_submarine
-							technology = improved_submarine
-							technology = advanced_submarine
-						}
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		available = {
+			OR = {
+				threat > 0.15
+				has_war = yes
+				fascism > 0.25
+			}
+		}
+		completion_reward = {
+				swap_ideas = { 
+				remove_idea = Arab_deterrence3 
+				add_idea = Arab_deterrence3b
 				}
-
+			}
 	}
+	
 	focus = {
-		id = IRQ_navy_doctrine
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10
-		prerequisite = {
-			focus = IRQ_destroyer
+		id = IRQ_Walls_Air
+		icon = GFX_goal_fortify_city_AA
+		prerequisite = { focus = IRQ_Walls }
+		mutually_exclusive = { focus = IRQ_Walls_ground }
+		x = 19
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		available = {
+			OR = {
+				threat > 0.15
+				has_war = yes
+				fascism > 0.25
+			}
 		}
-		x = 15
-		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = dd_bonus
-							bonus = 0.30
-							uses = 1
-							technology = early_destroyer
-							technology = basic_destroyer
-							technology = improved_destroyer
-							technology = advanced_destroyer
-						}
+		completion_reward = {
+				swap_ideas = { 
+				remove_idea = Arab_deterrence3 
+				add_idea = Arab_deterrence3a
 				}
-
-	}
-	focus = {
-		id = IRQ_assyrians
-		icon = GFX_focus_generic_military_mission
-		cost = 5
-		prerequisite = {
-			focus = IRQ_simele_massacre
-		}
-		x = 34
-		y = 2
-			completion_reward = {
-					country_event = {
-							days = 1
-							id = iraq.6
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_coup
-		icon = GFX_focus_generic_support_the_left_right
-		cost = 10
-		prerequisite = {
-			focus = IRQ_purge
-		}
-		x = 30
-		y = 4
-			bypass = {
-					has_government = fascism
-				}
-			completion_reward = {
-					set_politics = {
-							ruling_party = fascism
-							elections_allowed = no
-						}
-				}
-
-	}
-	focus = {
-		id = IRQ_simele_massacre
-		icon = GFX_goal_generic_national_unity
-		cost = 10
-		prerequisite = {
-			focus = IRQ_reform
-		}
-		x = 34
-		y = 1
-			complete_tooltip = {
-					remove_ideas = IRQ_simele
-				}
-			completion_reward = {
-					remove_ideas = IRQ_simele
-				}
-
-	}
-	focus = {
-		id = IRQ_university
-		icon = GFX_focus_research
-		cost = 10
-		prerequisite = {
-			focus = IRQ_fac2
-		}
-		prerequisite = {
-			focus = IRQ_civ2
-		}
-		x = 22
-		y = 4
-			completion_reward = {
-					add_research_slot = 1
-				}
-
+			}
 	}
 }
+############# End #####################
+
+
+
+

@@ -1,0 +1,142 @@
+
+focus = {
+		id = merJOR_Protest_Peel_Commission_Plan
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		available = {
+			threat > 0.25
+		}
+		prerequisite = {
+			focus = merJOR_Protest_Balfour_Declaration
+		}
+		mutually_exclusive = {
+			focus = merJOR_Recognize_Peel_Commission_Plan
+			focus = merJOR_Declare_Neutrality
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = merJOR_Expel_British_Administration
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Protest_Peel_Commission_Plan
+			focus = merJOR_Declare_Neutrality
+		}
+		mutually_exclusive = {
+			focus = merJOR_Support_Britain
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = merJOR_Call_Upon_Arab_Leaders
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Expel_British_Administration
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = merJOR_Close_Mosul-Haifa_Pipeline
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Expel_British_Administration
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = merJOR_Support_Germany
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Protest_Balfour_Declaration
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = merJOR_Arab_Ultranationalism
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Expel_British_Administration
+		}
+		prerequisite = {
+			focus = merJOR_Support_Germany
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = merJOR_Claim_Greater_Syria
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Arab_Ultranationalism
+		}
+		prerequisite = {
+			focus = merJOR_Call_Upon_merJOR_Leaders
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = merJOR_Found_Fascist_Movement
+		icon = GFX_focus_RAJ_indian_gurkhas
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Arab_Ultranationalism
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = merJOR_Declare_Fascist_State
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Found_Fascist_Movement
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = merJOR_Invite_German_Advisors
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Expel_British_Administration
+		}
+		prerequisite = {
+			focus = merJOR_Support_Germany
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = merJOR_Arab_League
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Call_Upon_Arab_Leaders
+		}
+		x = 17
+		y = 4
+
+	}

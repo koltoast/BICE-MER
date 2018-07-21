@@ -1,0 +1,13 @@
+#### The Iraq Navy ####
+
+units = {
+	navy = {
+		name = "Iraqi Coastal Defense Force"
+		#### Coast of Al Basra ####
+		base = 2089
+		location = 2089
+		ship = { name = "Al Shams" definition = destroyer equipment = { destroyer_early_ww1 = { amount = 1 owner = IRQ } } }	
+		ship = { name = "Al Basra" definition = destroyer equipment = { destroyer_early_ww1 = { amount = 1 owner = IRQ } } }	
+		ship = { name = "Al Fayhaa" definition = destroyer equipment = { destroyer_early_ww1 = { amount = 1 owner = IRQ } } }			
+	}
+}

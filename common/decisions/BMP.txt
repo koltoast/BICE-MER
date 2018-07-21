@@ -1,6 +1,6 @@
 @BMP_HUNT_RIOTS_COST_T = 249
 @BMP_HUNT_RIOTS_COST_E = -250
-@BMP_Irgun = 60
+@BMP_Irgun_time = 60
 			
 crisis = {
 	BMP_Riots_raids = {
@@ -62,7 +62,7 @@ crisis = {
 			}
 		}
 
-		days_mission_timeout = @BMP_Irgun	
+		days_mission_timeout = BMP_Irgun_time	
 
 			
 		
@@ -84,7 +84,7 @@ crisis = {
 		timeout_effect = {
 			hidden_effect = {
 				activate_mission = BMP_Irgun_raids
-				subtract_from_variable = { @BMP_Irgun = 1 }
+				subtract_from_variable = { BMP_Irgun_time = 1 }
 			}
 			
 			random_list = {
@@ -132,7 +132,7 @@ crisis = {
 			add_manpower = -15
 			hidden_effect = {
 				remove_mission = BMP_Irgun_raids
-				add_to_variable = { @BMP_Irgun = 10 }
+				add_to_variable = { BMP_Irgun_time = 10 }
 				activate_mission = BMP_Irgun_raids
 			}
 			add_command_power = -25					
@@ -258,7 +258,7 @@ crisis = {
 		icon = infiltrate_state
 
 		available = {
-			has_completed_focus = BMP_assist_great_britain focus
+			has_completed_focus = BMP_assist_great_britain
 			has_country_flag = BMP_Riots_WestBank
 		}
 		
@@ -328,8 +328,6 @@ crisis = {
 		activation = {
 			always = no #Triggered from effect
 		}
-		
-		custom_effect_tooltip = BMP_maintain_explanation
 
 		cancel_trigger = {
 			divisions_in_state = {
@@ -395,8 +393,8 @@ crisis = {
 		}
 
 		visible = {
-			NOT = { has_active_mission = BMP_maintain_Gaza }
-			has_country_flag = BMP_Riots_Gaza
+			NOT = { has_active_mission = BMP_maintain_gaza }
+			has_country_flag = BMP_Riots_gaza
 		}
 
 		is_good = yes
@@ -482,7 +480,7 @@ crisis = {
 		icon = infiltrate_state
 
 		available = {
-			has_completed_focus = BMP_assist_great_britain focus
+			has_completed_focus = BMP_assist_great_britain
 			has_country_flag = BMP_Riots_gaza
 		}
 		
@@ -704,7 +702,7 @@ crisis = {
 		icon = infiltrate_state
 
 		available = {
-			has_completed_focus = BMP_assist_great_britain focus
+			has_completed_focus = BMP_assist_great_britain
 			has_country_flag = BMP_Riots_Israel
 		}
 		

@@ -127,7 +127,7 @@ ideas = {
 					consumer_goods_factor = -0.02
 					conscription_factor = -0.05
 					drift_defence_factor = -0.05
-					monthly_population = .01
+					monthly_population = 0.01
 			}
 		}
 		
@@ -148,6 +148,7 @@ ideas = {
 				consumer_goods_factor = 0.02
 			}
 		}
+		
 		Arab_Schools2 {
 			
 			allowed = {
@@ -177,7 +178,7 @@ ideas = {
 			picture = idea_civilian_vehicils
 
 			modifier = {
-			monthly_population = .25
+			monthly_population = 0.25
 			}
 		}
 		
@@ -197,6 +198,7 @@ ideas = {
 			recon_factor = 0.01
 			}
 		}
+		
 		Arab_Heat {
 			
 			allowed = {
@@ -445,6 +447,25 @@ ideas = {
 			}
 		}
 		
+		Arab_autonomy = {
+			allowed = {
+				always = no
+			}
+		removal_cost = -1
+			modifier = {		
+				autonomy_gain = 0.25
+				}
+		}
+		
+		Arab_less_export = {
+			allowed = {
+				always = no
+			}
+		removal_cost = -1
+			modifier = {		
+				min_export = -0.05
+				}
+		}
 ##### Inflation Ideas #####
 		Arab_hyper_inflation_none = {
 			picture = chi_hyper_inflation

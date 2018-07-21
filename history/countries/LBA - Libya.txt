@@ -1,64 +1,30 @@
-﻿capital = 291
-
-oob = "IRQ_1936"
+﻿capital = 448
 
 # Starting tech
 set_technology = {
-	
-	### BICE STUFF ###
-	
 	BICE_sub_balance = 1
 	#BICE_airrange_balance = 1
-	
 	################# infantry ###############
-	
-	mortars = 1
-	mortars_2 = 1
 	tech_infantry_uniforms = 1
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	semi_motorised_infantry = 1
-	tech_mountaineers = 1
+	
 	tech_Garrison = 1
 	tech_Headquarters = 1
-	
 	################## support ##################
-	
-	tech_support = 1
-	tech_ac_recon = 1
-	tech_ac_recon2 = 1
 	tech_recon = 1
 	subtech_recon_cav_1 = 1
-	
 	################## artillery ###############
 	
-	gw_artillery = 1
-	interwar_artillery = 1
-	interwar_antiair = 1
-	
 	################## armor ##############
-	
-	gwtank = 1
-	basic_light_tank = 1
-	tech_Tankettes = 1
-	generic_armor = 1
-	
+	#generic_armor = 1
 	################## aircraft ##############
-	
-	early_fighter = 1
-	CAS1 = 1
 	generic_fighter = 1
 	generic_bomber = 1
 	generic_strategic_bomber = 1
-	
 	################# ships ################
-	
 	generic_submarine = 1
 	generic_naval = 1
-	
 	############### economy ############
-	
-	basic_machine_tools = 1
 	
 	ww1_infantry = 1
 	infantry_charge = 1
@@ -75,10 +41,10 @@ set_technology = {
 	
 
 	ww1_battlefield_support = 1
+	
 }
 
-set_convoys = 10
-
+set_convoys = 20
 add_ideas = { 	
 		export_focus
 		tax_low
@@ -102,11 +68,6 @@ add_ideas = {
 		unity_united_nation		
 		foreign_isolationism
 		neutrality_idea
-
-		IRQ_iraqi_navy
-		IRQ_simele
-		IRQ_revolt
-		IRQ_treaty
 }
 
 if = {
@@ -120,86 +81,6 @@ if = {
 		Arab_Tribes
 	}
 }
-
-###Country Leader###
-
-create_country_leader = {
-	name = "Ghazi I"
-	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "GFX_portrait_iraq_ghazi"
-	expire = "1965.1.1"
-	ideology = emiratism
-	traits = {
-		inexperienced_imperialist
-		fascist
-	}
-}
-
-create_country_leader = {
-	name = "Rashid Ali al-Gaylani"
-	desc = ""
-	picture = "gfx/leaders/IRQ/Rashid_Ali_al-Gaylani.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		fascist
-	}
-}
-
-create_country_leader = {
-	name = "Yusuf Salman Yusuf"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-	
-create_country_leader = {
-	name = "Khashif al-Ghita"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	expire = "1965.1.1"
-	ideology = pan_arabism
-	traits = {
-		#
-	}
-}
-
-###Army###
-
-create_corps_commander = {
-	name = "Mahmud Salman"
-	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
-	traits = { offensive_doctrine_CC  Terrible_General}
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Salah ed-Din es-Sabbagh"
-	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
-	traits = { trench_warfare_specialist  defensive_doctrine_CC Terrible_General}
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Kamal Shahib"
-	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
-	traits = { trait_mountaineer  defensive_doctrine_CC Bad_General}
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Fahmi Said"
-	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
-	traits = { desert_fox  Decent_General}
-	skill = 3
-}
-
-### 1939 OBB ###
-
 
 1939.1.1 = {
 
@@ -216,13 +97,9 @@ create_corps_commander = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "IRQ_1939"
 	set_technology = {
-		early_fighter = 1
-		CAS1 = 1
 		tech_support = 1
 		tech_recon = 1
-		infantry_weapons2 = 1
 		hmg = 1
 		gw_artillery = 1
 
@@ -233,7 +110,6 @@ create_corps_commander = {
 		fleet_in_being = 1
 		battlefleet_concentration = 1
 		convoy_sailing = 1
-
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -256,38 +132,70 @@ create_corps_commander = {
 	}
 }
 
+
 set_politics = {
 
 	parties = {
-
-		monarchism = { 
-			popularity = 85
-		}	
-
-	    conservatism = { 
-			popularity = 0
+		liberalism = { 
+			popularity = 25
 		}
 
-		Liberalism = { 
-			popularity = 0.5
-		}
-		
 		fascism = {
-			popularity = 4.5
+			popularity = 20
 		}
 		
 		communism = {
-			popularity = 0
+			popularity = 5
 			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			popularity = 10
+			popularity = 50
 		}
 	}
 	
-	ruling_party = monarchism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Bashir es Sadawi"
+	desc = ""
+	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_2.dds"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ettore Bastico"
+	desc = ""
+	picture = "gfx/leaders/LBA/Portrait_Italy_Guiseppe_Fioravanzo.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Idris Senussi"
+	desc = ""
+	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_2.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hassan as-Senussi"
+	desc = ""
+	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_3.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
 }

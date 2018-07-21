@@ -16,7 +16,7 @@ focus_tree = {
 		x = 8
 		y = 0
 		completion_reward = {
-				activate_decision = merJOR_Search_For_Oil
+				activate_decision = Arab_Search_For_Oil
 				}
 
 
@@ -101,12 +101,12 @@ focus_tree = {
 		y = 1
 		available = {
 			NOT = {
-				has_idea = merJOR_hyper_inflation_5
+				has_idea = Arab_hyper_inflation_5
 			}
 		}
 		completion_reward = {
-			merJOR_hyper_inflation_level_up = yes
-			add_ideas = merJOR_Schools
+			add_ideas = Arab_Schools
+			Arab_hyper_inflation_level_up = yes
 			}
 
 	}
@@ -121,15 +121,15 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = {
-				has_idea = merJOR_hyper_inflation_5
+				has_idea = Arab_hyper_inflation_5
 			}
 		}
-		completion_reward = {
-			merJOR_hyper_inflation_level_up = yes
+		completion_reward = {			
 			swap_ideas = { 
-				remove_idea = merJOR_Schools 
-				add_idea = merJOR_Schools2
+				remove_idea = Arab_Schools 
+				add_idea = Arab_Schools2
 				}
+			Arab_hyper_inflation_level_up = yes
 		}
 
 	}
@@ -164,8 +164,8 @@ focus_tree = {
 		completion_reward = {
 		add_stability = -0.15
 			swap_ideas = { 
-				remove_idea = merJOR_Tribes 
-				add_idea = merJOR_Tribes2
+				remove_idea = Arab_Tribes 
+				add_idea = Arab_Tribes2
 				}
 		}
 
@@ -187,8 +187,8 @@ focus_tree = {
 		completion_reward = {
 		add_stability = -0.25
 			swap_ideas = { 
-				remove_idea = merJOR_Tribes2 
-				add_idea = merJOR_Tribes3
+				remove_idea = Arab_Tribes2 
+				add_idea = Arab_Tribes3
 				}
 		}
 
@@ -204,13 +204,13 @@ focus_tree = {
 		y = 1
 		available = {
 			NOT = {
-				has_idea = merJOR_hyper_inflation_5
+				has_idea = Arab_hyper_inflation_5
 			}
 		}
-		completion_reward = {
-			merJOR_hyper_inflation_level_up = yes
+		completion_reward = {			
 			add_stability = 0.1
 			add_war_support = 0.05
+			Arab_hyper_inflation_level_up = yes
 		}
 
 	}
@@ -223,14 +223,14 @@ focus_tree = {
 		}
 		available = {
 			NOT = {
-				has_idea = merJOR_hyper_inflation_5
+				has_idea = Arab_hyper_inflation_5
 			}
 		}
 		x = 4
 		y = 2
-		completion_reward = {
-			merJOR_hyper_inflation_level_up = yes
-			add_ideas = merJOR_Social
+		completion_reward = {			
+			add_ideas = Arab_Social
+			Arab_hyper_inflation_level_up = yes
 		}
 
 	}
@@ -243,17 +243,17 @@ focus_tree = {
 		}
 		available = {
 			NOT = {
-				has_idea = merJOR_hyper_inflation_5
+				has_idea = Arab_hyper_inflation_5
 			}
 		}
 		x = 4
 		y = 3
-		completion_reward = {
-			merJOR_hyper_inflation_level_up = yes
+		completion_reward = {			
 			swap_ideas = { 
-				remove_idea = merJOR_Social
-				add_idea = merJOR_Social2
+				remove_idea = Arab_Social
+				add_idea = Arab_Social2
 				}
+			Arab_hyper_inflation_level_up = yes
 		}
 
 	}
@@ -266,13 +266,13 @@ focus_tree = {
 		}
 		available = {
 			NOT = {
-				has_idea = merJOR_hyper_inflation_5
+				has_idea = Arab_hyper_inflation_5
 			}
 		}
 		x = 6
 		y = 1
 		completion_reward = {
-					add_timed_idea = { idea = merJOR_Farms  days = 200 }
+					add_timed_idea = { idea = Arab_Farms  days = 200 }
 		}
 
 	}
@@ -289,7 +289,7 @@ focus_tree = {
 		x = 8
 		y = 1
 		available = {
-			has_country_flag = merJOR_oil_Found
+			has_country_flag = Arab_oil_Found
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -311,7 +311,7 @@ focus_tree = {
 		x = 6
 		y = 2
 		completion_reward = {
-			merJOR_hyper_inflation_level_down = yes
+			Arab_hyper_inflation_level_down = yes
 		}
 
 	}
@@ -325,7 +325,7 @@ focus_tree = {
 		x = 8
 		y = 2
 		completion_reward = { 
-			add_ideas = merJOR_oil
+			add_ideas = Arab_oil
 		}
 
 	}
@@ -380,7 +380,7 @@ focus_tree = {
 		x = 10
 		y = 2
 		completion_reward = {
-				activate_decision = merJOR_Mining
+				activate_decision = Arab_Mining
 		}
 
 	}
@@ -421,7 +421,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_ideas = liberty_ethos_focus
-			merJOR_hyper_inflation_level_down = yes
+			Arab_hyper_inflation_level_down = yes
 		}
 
 	}
@@ -431,9 +431,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = merJOR_Industry
-		}
-		prerequisite = { 
-			focus = merJOR_equipment_effort_2			
 		}
 		x = 10
 		y = 4
@@ -450,6 +447,7 @@ focus_tree = {
 		}
 
 	}
+	
 	focus = {
 		id = merJOR_Support_Britain
 		icon = GFX_focus_chi_british_cooperation
@@ -462,12 +460,14 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
-		swap_ideas = { 
+		completion_reward = {
+			swap_ideas = { 
 				remove_idea = Arab_Minor
 				add_idea = Arab_Minor2
 				}
-
+		}
 	}
+	
 	focus = {
 		id = merJOR_Invite_More_British_Advisors
 		icon = GFX_focus_generic_commonwealth_build_infantry
@@ -479,6 +479,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			remove_ideas = CHI_incompetent_officers
+			Arab_hyper_inflation_level_down = yes
 			}
 
 	}
@@ -543,7 +544,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_ideas = merJOR_deterrence
+			add_ideas = Arab_deterrence
 			}
 	}
 	
@@ -565,8 +566,8 @@ focus_tree = {
 		}
 		completion_reward = {
 				swap_ideas = { 
-				remove_idea = merJOR_deterrence 
-				add_idea = merJOR_deterrence2
+					remove_idea = Arab_deterrence 
+					add_idea = Arab_deterrence2
 				}
 			}
 	}
@@ -582,8 +583,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 				swap_ideas = { 
-				remove_idea = merJOR_deterrence2
-				add_idea = merJOR_deterrence2a
+					remove_idea = Arab_deterrence2
+					add_idea = Arab_deterrence2a
 				}
 			}
 	}
@@ -599,8 +600,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 				swap_ideas = { 
-				remove_idea = merJOR_deterrence2
-				add_idea = merJOR_deterrence2b
+					remove_idea = Arab_deterrence2
+					add_idea = Arab_deterrence2b
 				}
 			}
 	}
@@ -623,8 +624,8 @@ focus_tree = {
 		}
 		completion_reward = {
 				swap_ideas = { 
-				remove_idea = merJOR_deterrence 
-				add_idea = merJOR_deterrence3
+					remove_idea = Arab_deterrence 
+					add_idea = Arab_deterrence3
 				}
 			}
 	}
@@ -640,8 +641,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 				swap_ideas = { 
-				remove_idea = merJOR_deterrence3 
-				add_idea = merJOR_deterrence3b
+					remove_idea = Arab_deterrence3 
+					add_idea = Arab_deterrence3b
 				}
 			}
 	}
@@ -657,12 +658,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 				swap_ideas = { 
-				remove_idea = merJOR_deterrence3 
-				add_idea = merJOR_deterrence3a
+					remove_idea = Arab_deterrence3 
+					add_idea = Arab_deterrence3a
 				}
 			}
 	}
-}
+	
+###################
+### Alt History ###
+###################
 focus = {
 		id = merJOR_Protest_Peel_Commission_Plan
 		icon = GFX_focus_generic_strike_at_democracy2
@@ -679,8 +683,25 @@ focus = {
 		}
 		x = 18
 		y = 1
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+						target = ROOT
+						modifier = protest_action_strong
+					}
+				}
+			every_country = { 
+				limit = { is_Arab = yes }
+				add_opinion_modifier = {
+						target = ROOT
+						modifier = took_stand_for_us
+					}	
+				
+			}
+		}
 
 	}
+	
 	focus = {
 		id = merJOR_Expel_British_Administration
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
@@ -694,6 +715,11 @@ focus = {
 		}
 		x = 18
 		y = 2
+		completion_reward = {
+			set_stability = 0.2
+			set_war_support = 0.1
+			Arab_hyper_inflation_level_up = yes			
+			}
 
 	}
 	focus = {
@@ -703,7 +729,14 @@ focus = {
 		prerequisite = {
 			focus = merJOR_Expel_British_Administration
 		}
-		x = 17
+		prerequisite = {
+			focus = merJOR_Declare_Neutrality
+		}
+		completion_reward = {
+			add_ideas = Arab_autonomy
+		}
+		
+		x = 16
 		y = 3
 
 	}
@@ -714,8 +747,11 @@ focus = {
 		prerequisite = {
 			focus = merJOR_Expel_British_Administration
 		}
-		x = 20
+		x = 18
 		y = 3
+		completion_reward = {
+			add_ideas = Arab_less_export
+		}
 
 	}
 	focus = {
@@ -727,6 +763,20 @@ focus = {
 		}
 		x = 21
 		y = 1
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+						target = ROOT
+						modifier = fascism_leanings_good
+					}
+			}
+			ENG = {
+				add_opinion_modifier = {
+						target = ROOT
+						modifier = faction_traitor_trade
+					}
+			}
+		}
 
 	}
 	focus = {
@@ -739,8 +789,14 @@ focus = {
 		prerequisite = {
 			focus = merJOR_Support_Germany
 		}
-		x = 22
+		x = 20
 		y = 3
+		completion_reward = { 
+			declare_war_on = {
+				target = ENG
+				type = liberate_wargoal
+			}
+		}
 
 	}
 	focus = {
@@ -750,11 +806,26 @@ focus = {
 		prerequisite = {
 			focus = merJOR_Arab_Ultranationalism
 		}
-		prerequisite = {
-			focus = merJOR_Call_Upon_merJOR_Leaders
-		}
 		x = 20
 		y = 4
+		completion_reward = { 
+			### Golan
+			add_state_claim = 837
+			### Westbank
+			add_state_claim = 838
+			### Gaza
+			add_state_claim = 943
+			### Syria
+			add_state_claim = 554
+			### Lebanon
+			add_state_claim = 553
+			### Aleppo
+			add_state_claim = 677
+			### deir Az Zur
+			add_state_claim = 680
+			### Israel
+			add_state_claim = 454
+		}
 
 	}
 	focus = {
@@ -766,6 +837,10 @@ focus = {
 		}
 		x = 22
 		y = 4
+		completion_reward = {
+			add_ideas = nationalism
+		}
+		
 
 	}
 	focus = {
@@ -777,6 +852,12 @@ focus = {
 		}
 		x = 22
 		y = 5
+		available = {
+			has_government = fascism
+		}
+		completion_reward = {
+			load_focus_tree = generic_focus
+		}
 
 	}
 	focus = {
@@ -789,8 +870,11 @@ focus = {
 		prerequisite = {
 			focus = merJOR_Support_Germany
 		}
-		x = 24
+		x = 22
 		y = 3
+		completion_reward = {
+			add_ideas = Arab_german_advisors
+		}
 
 	}
 	focus = {
@@ -800,7 +884,16 @@ focus = {
 		prerequisite = {
 			focus = merJOR_Call_Upon_Arab_Leaders
 		}
-		x = 17
+		x = 16
 		y = 4
-
+		available = {
+			is_subject = no
+		}
+		completion_reward = {
+			load_focus_tree = arab_focus
+		}
 	}
+}
+
+##### END ######
+
