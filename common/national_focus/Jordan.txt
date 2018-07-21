@@ -41,6 +41,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 1
+		#available = {
+			#Peel Partition Plan finished
+		#}
 		completion_reward = {
 			add_ideas = BMP_British_Rule
 			every_country = { 
@@ -710,7 +713,7 @@ focus = {
 	
 	focus = {
 		id = merJOR_Expel_British_Administration
-		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		icon = GFX_focus_SAF_colonialist_crusade_ENG
 		cost = 10.00
 		prerequisite = {
 			focus = merJOR_Protest_Peel_Commission_Plan
@@ -868,7 +871,7 @@ focus = {
 	}
 	focus = {
 		id = merJOR_Invite_German_Advisors
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_goal_military_agreement_germany
 		cost = 10.00
 		prerequisite = {
 			focus = merJOR_Expel_British_Administration

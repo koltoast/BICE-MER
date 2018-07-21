@@ -1604,7 +1604,7 @@ focus_tree = {
 	
 focus = {
 		id = IRQ_army_innovations
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10
 		x = 25
 		y = 0

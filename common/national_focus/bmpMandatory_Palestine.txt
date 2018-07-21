@@ -845,7 +845,7 @@ focus = {
 focus = {
 	id = BMP_resist_the_empire
 	#icon = GFX_goal_generic_political_pressure
-	icon = GFX_focus_SAF_colonialist_crusade
+	icon = GFX_focus_SAF_colonialist_crusade_ENG
 	prerequisite = { focus = BMP_re-establish_the_mandate }
 	mutually_exclusive = { focus = BMP_assist_great_britain }
 	x = 13

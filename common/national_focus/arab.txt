@@ -1748,7 +1748,7 @@ focus = {
 	
 	focus = {
 		id = Arab_Ger_train
-		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		icon = GFX_goal_military_agreement_germany
 		prerequisite = { focus = Arab_Ger_sub }
 		prerequisite = { focus = Arab_officers }
 		x = 27
@@ -1775,7 +1775,7 @@ focus = {
 	
 	focus = {
 		id = Arab_Ita
-		icon = GFX_focus_ger_assassinate_mussolini
+		icon = GFX_focus_chi_reach_out_to_italy
 		prerequisite = { focus = Arab_axis }
 		mutually_exclusive = { focus = Arab_Ger }
 		x = 25
