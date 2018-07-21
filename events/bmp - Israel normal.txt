@@ -122,140 +122,140 @@ country_event = {
 }
 	
 #Israel holds all of Palestine for now 4
-country_event = {
-	id = bmpisrael.4
-	title = bmpisrael.4.t
-	desc = bmpisrael.4.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	trigger = {
-		tag = ISR
-		ISR = { exists = yes }
-		date > 1936.1.1
-		OR = {
-					has_war_with = SAU
-					has_war_with = JOR
-					has_war_with = IRQ
-					has_war_with = EGY
-					has_war_with = PAL
-					has_war_with = SYR
-					has_war_with = LEB
-					has_war_with = YEM
-					has_war_with = OMA
-					}
-		ISR = { controls_state = 454 } #ISRAEL
-		ISR = { controls_state = 838 } #WESTBANK
-		ISR = { controls_state = 943 } #GAZASTRIP
-	}
-
-	option = {
-		name = bmpisrael.4.a
-		ai_chance = { factor = 100 }
-		add_timed_idea = { idea = ISR_holds_all_of_palestine days = 71 }
-		remove_ideas = ISR_held_all_of_palestine_at_least_once
-		add_ideas = ISR_held_all_of_palestine_at_least_once
-	}
-}
-	
+#country_event = {
+#	id = bmpisrael.4
+#	title = bmpisrael.4.t
+#	desc = bmpisrael.4.d
+#	picture = GFX_report_event_generic_sign_treaty2
+#
+#	trigger = {
+#		tag = ISR
+#		ISR = { exists = yes }
+#		date > 1936.1.1
+#		OR = {
+#					has_war_with = SAU
+#					has_war_with = JOR
+#					has_war_with = IRQ
+#					has_war_with = EGY
+#					has_war_with = PAL
+#					has_war_with = SYR
+#					has_war_with = LEB
+#					has_war_with = YEM
+#					has_war_with = OMA
+#					}
+#		ISR = { controls_state = 454 } #ISRAEL
+#		ISR = { controls_state = 838 } #WESTBANK
+#		ISR = { controls_state = 943 } #GAZASTRIP
+#	}
+#
+#	option = {
+#		name = bmpisrael.4.a
+#		ai_chance = { factor = 100 }
+#		add_timed_idea = { idea = ISR_holds_all_of_palestine days = 71 }
+#		remove_ideas = ISR_held_all_of_palestine_at_least_once
+#		add_ideas = ISR_held_all_of_palestine_at_least_once
+#	}
+#}
+#	
 #Israel no longer holds all of Palestine 5
-country_event = {
-	id = bmpisrael.5
-	title = bmpisrael.5.t
-	desc = bmpisrael.5.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	trigger = {
-		tag = ISR
-		ISR = { exists = yes }
-		date > 1936.1.1
-		OR = {
-					has_war_with = SAU
-					has_war_with = JOR
-					has_war_with = IRQ
-					has_war_with = EGY
-					has_war_with = PAL
-					has_war_with = SYR
-					has_war_with = LEB
-					has_war_with = YEM
-					has_war_with = OMA
-					}
-		NOT = {
-			AND = {
-			ISR = { controls_state = 454 } #ISRAEL
-			ISR = { controls_state = 838 } #WESTBANK
-			ISR = { controls_state = 943 } #GAZASTRIP
-			}
-		}
-		has_idea = ISR_held_all_of_palestine_at_least_once
-	}
-
-	option = {
-		name = bmpisrael.5.a
-		ai_chance = { factor = 100 }
-		remove_ideas = ISR_holds_all_of_palestine
-		add_ideas = ISR_no_longer_holds_all_of_palestine
-	}
-}
-
+#country_event = {
+#	id = bmpisrael.5
+#	title = bmpisrael.5.t
+#	desc = bmpisrael.5.d
+#	picture = GFX_report_event_generic_sign_treaty2
+#
+#	trigger = {
+#		tag = ISR
+#		ISR = { exists = yes }
+#		date > 1936.1.1
+#		OR = {
+#					has_war_with = SAU
+#					has_war_with = JOR
+#					has_war_with = IRQ
+#					has_war_with = EGY
+#					has_war_with = PAL
+#					has_war_with = SYR
+#					has_war_with = LEB
+#					has_war_with = YEM
+#					has_war_with = OMA
+#					}
+#		NOT = {
+#			AND = {
+#			ISR = { controls_state = 454 } #ISRAEL
+#			ISR = { controls_state = 838 } #WESTBANK
+#			ISR = { controls_state = 943 } #GAZASTRIP
+#			}
+#		}
+#		has_idea = ISR_held_all_of_palestine_at_least_once
+#	}
+#
+#	option = {
+#		name = bmpisrael.5.a
+#		ai_chance = { factor = 100 }
+#		remove_ideas = ISR_holds_all_of_palestine
+#		add_ideas = ISR_no_longer_holds_all_of_palestine
+#	}
+#}
+#
 #Israel held all of Palestine for 71 days 6
-country_event = {
-	id = bmpisrael.6
-	title = bmpisrael.6.t
-	desc = bmpisrael.6.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	trigger = {
-		tag = ISR
-		ISR = { exists = yes }
-		date > 1936.1.1
-		OR = {
-					has_war_with = SAU
-					has_war_with = JOR
-					has_war_with = IRQ
-					has_war_with = EGY
-					has_war_with = PAL
-					has_war_with = SYR
-					has_war_with = LEB
-					has_war_with = YEM
-					has_war_with = OMA
-					}
-		ISR = { controls_state = 454 } #ISRAEL
-		ISR = { controls_state = 838 } #WESTBANK
-		ISR = { controls_state = 943 } #GAZASTRIP
-		has_idea = ISR_held_all_of_palestine_at_least_once
-		NOT = { has_idea = ISR_holds_all_of_palestine }
-		NOT = { has_idea = ISR_no_longer_holds_all_of_palestine }
-	}
-
-	option = {
-		name = bmpisrael.6.a
-		ai_chance = { factor = 100 }
-		ISR = {
-			transfer_state = 454 #ISRAEL
-			}
-		EGY = {
-			transfer_state = 943 #GAZASTRIP
-			}
-		JOR = {
-			transfer_state = 838 #WESTBANK
-			}
-		SAU = { white_peace = ISR }
-		JOR = { white_peace = ISR }
-		IRQ = { white_peace = ISR }
-		EGY = { white_peace = ISR }
-		PAL = { white_peace = ISR }
-		SYR = { white_peace = ISR }
-		LEB = { white_peace = ISR }
-		YEM = { white_peace = ISR }
-		OMA = { white_peace = ISR }
-		ISR = { white_peace = SAU }
-		ISR = { white_peace = JOR }
-		ISR = { white_peace = IRQ }
-		ISR = { white_peace = EGY }
-		ISR = { white_peace = PAL }
-		ISR = { white_peace = SYR }
-		ISR = { white_peace = LEB }
-		ISR = { white_peace = YEM }
-		ISR = { white_peace = OMA }
-	}
-}
+#country_event = {
+#	id = bmpisrael.6
+#	title = bmpisrael.6.t
+#	desc = bmpisrael.6.d
+#	picture = GFX_report_event_generic_sign_treaty2
+#
+#	trigger = {
+#		tag = ISR
+#		ISR = { exists = yes }
+#		date > 1936.1.1
+#		OR = {
+#					has_war_with = SAU
+#					has_war_with = JOR
+#					has_war_with = IRQ
+#					has_war_with = EGY
+#					has_war_with = PAL
+#					has_war_with = SYR
+#					has_war_with = LEB
+#					has_war_with = YEM
+#					has_war_with = OMA
+#					}
+#		ISR = { controls_state = 454 } #ISRAEL
+#		ISR = { controls_state = 838 } #WESTBANK
+#		ISR = { controls_state = 943 } #GAZASTRIP
+#		has_idea = ISR_held_all_of_palestine_at_least_once
+#		NOT = { has_idea = ISR_holds_all_of_palestine }
+#		NOT = { has_idea = ISR_no_longer_holds_all_of_palestine }
+#	}
+#
+#	option = {
+#		name = bmpisrael.6.a
+#		ai_chance = { factor = 100 }
+#		ISR = {
+#			transfer_state = 454 #ISRAEL
+#			}
+#		EGY = {
+#			transfer_state = 943 #GAZASTRIP
+#			}
+#		JOR = {
+#			transfer_state = 838 #WESTBANK
+#			}
+#		SAU = { white_peace = ISR }
+#		JOR = { white_peace = ISR }
+#		IRQ = { white_peace = ISR }
+#		EGY = { white_peace = ISR }
+#		PAL = { white_peace = ISR }
+#		SYR = { white_peace = ISR }
+#		LEB = { white_peace = ISR }
+#		YEM = { white_peace = ISR }
+#		OMA = { white_peace = ISR }
+#		ISR = { white_peace = SAU }
+#		ISR = { white_peace = JOR }
+#		ISR = { white_peace = IRQ }
+#		ISR = { white_peace = EGY }
+#		ISR = { white_peace = PAL }
+#		ISR = { white_peace = SYR }
+#		ISR = { white_peace = LEB }
+#		ISR = { white_peace = YEM }
+#		ISR = { white_peace = OMA }
+#	}
+#}

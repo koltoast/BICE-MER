@@ -142,8 +142,14 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
+		available = {
+			NOT = {
+				has_idea = Arab_hyper_inflation_5
+			}
+		}
 		completion_reward = {
 			add_research_slot = 1
+			Arab_hyper_inflation_level_up = yes
 		}
 
 	}

@@ -4,20 +4,37 @@ prospect_for_resources = {
 		icon = generic_construction
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = Arab_Mining_tt 
+					OR = {
+						has_completed_focus = IRQ_Mining_Operations
+						has_completed_focus = Arab_Mining_Operations
+						has_completed_focus = merJOR_Mining_Operations
+						}
+					}
+			hidden_trigger = {
+				OR = {
+					has_completed_focus = IRQ_Mining_Operations
+					has_completed_focus = Arab_Mining_Operations
+					has_completed_focus = merJOR_Mining_Operations
+				}
+			}
 		}
 		
+		
 		allowed = {
-			always = no
+			always = yes
 		}
 
 		days_remove = 90
 
-		visible = {			
+		visible = {		
+			is_Arab = yes			
 		}		
 
 		fixed_random_seed = no
 
-		fire_only_once = no
+		fire_only_once = yes
 		
 		modifier = {
 			civilian_factory_use = 2
@@ -88,6 +105,22 @@ prospect_for_resources = {
 		icon = oil
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = Arab_Search_For_Oil_tt 
+					OR = {
+						has_completed_focus = IRQ_Search_For_Oil_Deposits
+						has_completed_focus = Arab_Search_For_Oil_Deposits
+						has_completed_focus = merJOR_Search_For_Oil_Deposits
+						}
+					}
+			hidden_trigger = {
+				OR = {
+					has_completed_focus = IRQ_Search_For_Oil_Deposits
+					has_completed_focus = Arab_Search_For_Oil_Deposits
+					has_completed_focus = merJOR_Search_For_Oil_Deposits
+				}
+			}
+			
 		}
 		
 		allowed = {
@@ -96,13 +129,13 @@ prospect_for_resources = {
 
 		days_remove = 90
 
-		visible = {		
-			always = yes		
+		visible = {				
+			is_Arab = yes		
 		}		
 
 		fixed_random_seed = no
 
-		fire_only_once = no
+		fire_only_once = yes
 		
 		modifier = {
 			civilian_factory_use = 1
@@ -130,8 +163,6 @@ prospect_for_resources = {
 }
 
 foreign_politics = {
-
-
 	Arab_invite = {
 
 		icon = generic_political_discourse

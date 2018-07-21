@@ -1,8 +1,10 @@
 ﻿l_english:
  Arab_Mining:0 "Arab Mining Expedition"
  Arab_Mining_desc:0 ""
+ Arab_Mining_tt:0 "Has completed mining operations"
  Arab_Search_For_Oil:0 "Search for Oil"
  Arab_Search_For_Oil_desc:0 ""
+ Arab_Search_For_Oil_tt:0 "Has completed search for oil deposits"
  Arab_invite:0 "Invite [Root.GetName]"
  Arab_invite_desc:0 "We will send an invitation to [Root.GetName] to join the Arab League"
  Arab_invite_build:0 "sponser building projects in [Root.GetName]"
@@ -13,4 +15,3 @@
  Arab_research_standards_desc:0 "we need to standardise research in [Root.GetName] before being able to share ideas, they have of course generously allowed us bear the cost"
  institute_press_censorship_monarchism_state:0 "Institute Press Censorship"
  institute_press_censorship_monarchism_state_desc:0 "These are dangerous times and we can't allow dissenting voices to tear our country apart. Restricting the freedom of the press is necessary to ensure that the truth is heard loud and clear."
- 

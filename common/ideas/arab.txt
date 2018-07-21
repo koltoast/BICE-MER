@@ -254,7 +254,7 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 
 			modifier = {	
-			stability_weekly = 0.05	
+			stability_weekly = 0.005	
 			}
 		}
 		
@@ -269,8 +269,8 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 
 			modifier = {	
-			stability_weekly = 0.05	
-			war_support_weekly	= 0.05		
+			stability_weekly = 0.005	
+			war_support_weekly	= 0.005		
 			}
 		}
 		
