@@ -1,5 +1,7 @@
 ﻿capital = 455
 
+OOB = "JOR_1936"
+
 # Starting tech
 set_technology = {
 	BICE_sub_balance = 1

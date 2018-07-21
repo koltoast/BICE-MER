@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # Arab Events
 ###########################
 
@@ -15,9 +15,9 @@ country_event = {
 		is_Arab = yes
 		is_ai = no
 		OR = {
-			has idea = Arab_Tribes
-			has idea = Arab_Tribes2
-			has idea = Arab_Tribes3
+			has_idea = Arab_Tribes
+			has_idea = Arab_Tribes2
+			has_idea = Arab_Tribes3
 		}
 	}
 	
@@ -25,11 +25,11 @@ country_event = {
 		days = 360
 		modifier = {
 			factor = 0.5 
-			has idea = Arab_Tribes
+			has_idea = Arab_Tribes
 		}
 		modifier = {
 			factor = 0.8 
-			has idea = Arab_Tribes2
+			has_idea = Arab_Tribes2
 		}
 	}
 	immediate = {

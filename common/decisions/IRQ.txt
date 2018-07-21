@@ -139,15 +139,15 @@ operations = {
 					check_variable = { var = IRQ_Prepare_coup_prep value = 10 compare = greater_than_or_equals }
 					check_variable = { var = IRQ_Prepare_coup_prep value = 20 compare = less_than }
 				}
-				all_country = {
-					limit = { 
+				
+				limit = { 
 						OR = { 
 						is_subject_of = ENG
 						TAG = ENG
 						}
 					}
-					add_timed_idea = { idea = IRQ_ambushed_1 days = 30 }
-				}
+				add_timed_idea = { idea = IRQ_ambushed_1 days = 30 }
+				
 						
 			}
 			if = {
@@ -163,46 +163,44 @@ operations = {
 				limit = {
 					check_variable = { var = IRQ_Prepare_coup_prep value = 30 compare = greater_than_or_equals }
 					check_variable = { var = IRQ_Prepare_coup_prep value = 40 compare = less_than }
-				}
-				all_country = {
-					limit = { 
+				}				
+				limit = { 
 						OR = { 
 						is_subject_of = ENG
 						TAG = ENG
 						}
 					}
 					add_timed_idea = { idea = IRQ_ambushed_2 days = 60 }
-				}
+				
 			}
 			if = {
 				limit = {
 					check_variable = { var = IRQ_Prepare_coup_prep value = 40 compare = greater_than_or_equals }
 					check_variable = { var = IRQ_Prepare_coup_prep value = 50 compare = less_than }
 				}
-				all_country = {
-					limit = { 
+				
+				limit = { 
 						OR = { 
 						is_subject_of = ENG
 						TAG = ENG
 						}
 					}
-					add_timed_idea = { idea = IRQ_ambushed_2 days = 90 }
-				}
+				add_timed_idea = { idea = IRQ_ambushed_2 days = 90 }
+				
 			}
 			if = {
 				limit = {
 					check_variable = { var = IRQ_Prepare_coup_prep value = 50 compare = greater_than_or_equals }
 					check_variable = { var = IRQ_Prepare_coup_prep value = 60 compare = less_than }
-				}
-				all_country = {
-					limit = { 
+				}				
+				limit = { 
 						OR = { 
 						is_subject_of = ENG
 						TAG = ENG
 						}
-					}
-					add_timed_idea = { idea = IRQ_ambushed_3 days = 90 }
 				}
+					add_timed_idea = { idea = IRQ_ambushed_3 days = 90 }
+				
 			}
 		}
 	}
