@@ -12,8 +12,15 @@
  IRQ_revolt_desc:0 "1935 Rumaytha and Diwaniyya revolt or the 1935–1936 Iraqi Shia revolts consisted of a series of Shia tribal uprisings in the mid-Euphrates region against the Sunni dominated authority of the Kingdom of Iraq."
  IRQ_treaty:0 "Anglo-Iraqi treaty"
  IRQ_treaty_desc:0 "The Anglo-Iraqi treaty grants the United Kingdom free movement through our country and access to our oil reserves, in exchance they offer some military development. However the unequal terms of the treaty led to a undercurrent of resentment"
+ IRQ_ambushed_1:0 "Iraqi Ambush!"
+ IRQ_ambushed_1_desc:0 "The Iraq forces have caught us completely offguard, it will take time before we can mount an effective counterattack"
+ IQR_prepare_for_war:0 "Set up an ambush"
+ IQR_prepare_for_war_desc:0 "we can position a number of our forces ready to sieze arms and strike at the British and their allies"
+ IRQ_can_prepare_more_tt:0 "There are more positions we can occupy before we strike, the more we plan the better our ambush will be"
+ IRQ_Ambush:0 "Ambush the British!"
+ IRQ_Ambush_desc:0 "Let us drive these scum from our lands for the glory of IRAQ!"
+
  ###Ministers###
- 
  IRQ_ali_abn_hussein:0 "Ali Abn Hussein"
  IRQ_nuri_as_said:0 "Nuri as Said"
  IRQ_amir_al_illah:0 "Amir al Illah"

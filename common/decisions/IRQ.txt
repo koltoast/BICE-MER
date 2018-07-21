@@ -49,4 +49,162 @@ political_actions = {
 							popularity = 0.01
 						}
 		}
+	}
+}
+
+operations = {
+	IQR_prepare_for_war = {
+		available = {
+			has_completed_focus = IRQ_Prepare_coup
+			command_power > 29
+			NOT = { has_war_with = ENG }
+		}
+		visible = {
+			has_completed_focus = IRQ_Prepare_coup
+			check_variable = { var = IRQ_Prepare_coup_prep value = 50 compare = less_than }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			add_command_power = -30
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 50 compare = less_than_or_equals }
+				}
+				custom_effect_tooltip = IRQ_can_prepare_more_tt
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 10 compare = less_than }
+				}
+				set_variable = { var = IRQ_Prepare_coup_prep value = 10 }
+			}
+			else = {
+				add_to_variable = { var = IRQ_Prepare_coup_prep value = 10 }
+			}
+		}
+	}
+	IRQ_Ambush = {
+		available = {
+			has_completed_focus = IRQ_Prepare_coup
+			has_war_with = ENG
+		}
+		visible = {
+			check_variable = { var = IRQ_Prepare_coup_prep value = 0 compare = greater_than }
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 10 compare = greater_than_or_equals }
+				}
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = ENG }
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 20 compare = greater_than_or_equals }
+				}
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = ENG }
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 30 compare = greater_than_or_equals }
+				}
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 50 producer = ENG }					
+				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 200 producer = ENG }
+				
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 40 compare = greater_than_or_equals }
+				}
+				add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 5 producer = ENG }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 500 producer = ENG }
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 50 compare = greater_than_or_equals }
+				}
+				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 10 producer = ENG }
+				add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 5 producer = ENG }
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 10 compare = greater_than_or_equals }
+					check_variable = { var = IRQ_Prepare_coup_prep value = 20 compare = less_than }
+				}
+				all_country = {
+					limit = { 
+						OR = { 
+						is_subject_of = ENG
+						TAG = ENG
+						}
+					}
+					add_timed_idea = { idea = IRQ_ambushed_1 days = 30 }
+				}
+						
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 20 compare = greater_than_or_equals }
+					check_variable = { var = IRQ_Prepare_coup_prep value = 30 compare = less_than }
+				}
+				ENG = {
+					add_timed_idea = { idea = IRQ_ambushed_1 days = 60 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 30 compare = greater_than_or_equals }
+					check_variable = { var = IRQ_Prepare_coup_prep value = 40 compare = less_than }
+				}
+				all_country = {
+					limit = { 
+						OR = { 
+						is_subject_of = ENG
+						TAG = ENG
+						}
+					}
+					add_timed_idea = { idea = IRQ_ambushed_2 days = 60 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 40 compare = greater_than_or_equals }
+					check_variable = { var = IRQ_Prepare_coup_prep value = 50 compare = less_than }
+				}
+				all_country = {
+					limit = { 
+						OR = { 
+						is_subject_of = ENG
+						TAG = ENG
+						}
+					}
+					add_timed_idea = { idea = IRQ_ambushed_2 days = 90 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { var = IRQ_Prepare_coup_prep value = 50 compare = greater_than_or_equals }
+					check_variable = { var = IRQ_Prepare_coup_prep value = 60 compare = less_than }
+				}
+				all_country = {
+					limit = { 
+						OR = { 
+						is_subject_of = ENG
+						TAG = ENG
+						}
+					}
+					add_timed_idea = { idea = IRQ_ambushed_3 days = 90 }
+				}
+			}
+		}
+	}
+
 }

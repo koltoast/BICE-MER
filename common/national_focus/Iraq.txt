@@ -642,7 +642,8 @@ focus_tree = {
 			focus = IRQ_government
 		}
 		available = {
-			monarchism > 0.70				
+			monarchism > 0.70	
+			gives_military_access_to = ENG
 		}
 		completion_reward = {
 			ENG = {
@@ -665,7 +666,8 @@ focus_tree = {
 			focus = IRQ_British_oil
 		}
 		available = {
-			monarchism > 0.70				
+			monarchism > 0.70	
+			gives_military_access_to = ENG			
 		}
 		completion_reward = {
 			add_to_tech_sharing_group = commonwealth_research
@@ -686,7 +688,8 @@ focus_tree = {
 			focus = IRQ_British_oil
 		}
 		available = {
-			monarchism > 0.60				
+			monarchism > 0.60	
+			gives_military_access_to = ENG
 		}
 		completion_reward = {
 			Arab_hyper_inflation_level_down = yes
@@ -704,13 +707,36 @@ focus_tree = {
 			focus = IRQ_British_research
 		}
 		available = {
-			monarchism > 0.60				
+			monarchism > 0.60
+			gives_military_access_to = ENG
 		}
 		completion_reward = {
 			remove_ideas = {
 				CHI_incompetent_officers
 				}
 		}
+	}
+	
+	focus = {
+		id = IRQ_oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10
+		x = 12
+		y = 3
+		prerequisite = {
+			focus = IRQ_government
+		}
+		available = {
+			fascism > 0.25
+			NOT =  { has_war_with = ENG }
+		}
+		completion_reward = {
+				country_event = {
+						days = 1
+						id = iraq.5
+				}
+		}
+
 	}
 
 	focus = {
@@ -724,6 +750,18 @@ focus_tree = {
 		}
 		available = {
 			fascism > 0.30				
+		}
+		completion_reward = {	
+			add_equipment_to_stockpile = {
+				type = cr_32_fighter_equipment_1
+				amount = 50
+				producer = ITA
+			}
+			add_equipment_to_stockpile = {
+				type = sm81_bomber_equipment_1
+				amount = 25
+				producer = ITA
+			}
 		}
 	}
 	
@@ -739,6 +777,18 @@ focus_tree = {
 		available = {
 			fascism > 0.30				
 		}
+		completion_reward = {	
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 500
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_uniforms_1
+				amount = 500
+				producer = GER
+			}
+		}
 	}
 	
 	focus = {
@@ -752,7 +802,11 @@ focus_tree = {
 			focus = IRQ_Ita_aid
 		}
 		available = {
-			fascism > 0.35				
+			fascism > 0.35	
+			NOT =  { has_war_with = ENG }
+		}
+		completion_reward = {
+			custom_effect_tooltip = IRQ_Prepare_coup_tt
 		}
 	}
 	
@@ -766,12 +820,16 @@ focus_tree = {
 			focus = IRQ_Prepare_coup
 		}
 		available = {
-			fascism > 0.5				
-			}
+			fascism > 0.5	
+			NOT =  { has_war_with = ENG }
+		}
 		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
 			declare_war_on = {
-			target = ENG
-			type = annex_everything
+				target = ENG
+				type = annex_everything
 			}
 		}
 	}
@@ -1539,26 +1597,6 @@ focus_tree = {
 
 	}
 	
-	focus = {
-		id = IRQ_oil
-		icon = GFX_goal_generic_oil_refinery
-		cost = 10
-		x = 12
-		y = 3
-		prerequisite = {
-			focus = IRQ_government
-		}
-		available = {
-			fascism > 0.25				
-		}
-		completion_reward = {
-				country_event = {
-						days = 1
-						id = iraq.5
-				}
-		}
-
-	}
 	
 ##### ARMY #####
 	

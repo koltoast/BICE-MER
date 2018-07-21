@@ -155,6 +155,7 @@
  IRQ_Ita_aid:0 "Italian Aircraft"
  IRQ_Ger_aid:0 "German Guns"
  IRQ_Prepare_coup:0 "Prepare for a military coup"
+ IRQ_Prepare_coup_tt:0 "Unlocks ambush decisions"
  IRQ_seize_airfields:0 "sieze the airfields"
  
  

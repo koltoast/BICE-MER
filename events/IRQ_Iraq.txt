@@ -119,6 +119,9 @@ country_event = {
 			amount = 10
 			state = 676 #MOSUL
 		}
+		add_ideas = {
+		Arab_less_export
+		}
 	}
 }
 
