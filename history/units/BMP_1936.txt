@@ -20,8 +20,7 @@ division_template = {
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		military_police = { x = 0 y = 1 }
-		artillery_medium_mot = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3 }
+		artillery_medium_mot = { x = 0 y = 2 }		
 	}
 	
 	priority = 0
