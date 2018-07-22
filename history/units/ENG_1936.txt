@@ -922,7 +922,18 @@ units = {
 	#	start_experience_factor = 0.3
 	#	start_equipment_factor = 0.8
 	#}
-
+#	division= {	 #the Jerusalem & Lydda Areas division has been moved to BMP_1936
+#		#Jerusalem & Lydda Areas
+#		division_name = {
+#			is_name_ordered = yes
+#			name_order = 219
+#		}
+#		location = 4206
+#		division_template = "Regular Garrison"
+#		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+#		start_experience_factor = 0.1
+#		start_equipment_factor = 0.8
+#	}
 	division= {	
 		#Transjordan Area
 		division_name = {
