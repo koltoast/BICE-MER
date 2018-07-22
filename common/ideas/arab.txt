@@ -175,7 +175,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = idea_civilian_vehicils
+			picture = idea_generic_agrarian_reform
 
 			modifier = {
 			monthly_population = 0.25
@@ -615,9 +615,104 @@ ideas = {
 			modifier = { production_oil_factor = 0.05
 			}
 			
+			cost = 125
+		}
+		
+		Arab_Rail_company = {
+			
+			picture = generic_industrial_concern_1
+			
+							
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Arab_Rail_company_tt 
+					OR = {
+						has_completed_focus = Arab_Road
+						has_completed_focus = IRQ_infrastructure
+						has_completed_focus = merJOR_Road
+					}
+				}
+				hidden_trigger = {
+					OR = {
+						has_completed_focus = Arab_Jordanian_Petroleum_Company
+						has_completed_focus = IRQ_Petroleum_Company
+						has_completed_focus = merJOR_Jordanian_Petroleum_Company
+					}
+				}
+			}
+			allowed = {
+				is_Arab = yes			
+			}
+			
+			research_bonus = {			
+				construction_tech = 0.05			
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = { production_speed_infrastructure_factor = 0.10
+			}
+			
 			cost = 100
 		}
 		
+		
 	}
 	
+	intel_minister = {
+	
+		Arab_decrpt = {
+			
+			picture = generic_army_arab_2
+			
+			allowed = {
+				is_Arab = yes	
+				NOT = { TAG = IRQ }
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Arab_decrpt_tt 
+					OR = {
+						has_completed_focus = Arab_Listen
+						has_completed_focus = merJOR_Listen
+					}
+				}
+				hidden_trigger = {
+					OR = {
+						has_completed_focus = Arab_Listen
+						has_completed_focus = merJOR_Listen
+					}
+				}
+			}
+			
+			traits = { codebreaker }
+		}
+		
+		Arab_encrpt = {
+			
+			picture = generic_army_arab_1
+			
+			allowed = {
+				is_Arab = yes	
+				NOT = { TAG = IRQ }
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Arab_encrpt_tt 
+					OR = {
+						has_completed_focus = Arab_Hide
+						has_completed_focus = merJOR_Hide
+					}
+				}
+				hidden_trigger = {
+					OR = {
+						has_completed_focus = Arab_Hide
+						has_completed_focus = merJOR_Hide
+					}
+				}
+			}
+			
+			traits = { dismal_enigma }
+		}
+	}
 }
