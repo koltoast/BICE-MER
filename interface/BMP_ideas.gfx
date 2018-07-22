@@ -1,22 +1,21 @@
 spriteTypes = {
 
-
+#	spriteType = {
+#		name = "GFX_BMP_immigration"
+#		texturefile = "gfx/interface/ideas/mer_jewish_immigration.dds"
+#	}
+#	spriteType = {
+#		name = "BMP_immigration"
+#		texturefile = "gfx/interface/ideas/mer_jewish_immigration.dds"
+#	}
+#	spriteType = {
+#		name = "idea_bmpimmigration"
+#		texturefile = "gfx/interface/ideas/mer_jewish_immigration.dds"
+#	}
 
 	spriteType = {
-		name = "GFX_BMP_immigration"
-		texturefile = "gfx/interface/ideas/mer_jewish_immigration.dds"
+		name = "GFX_idea_bmp_jewish_immigration"
+		texturefile = "gfx/interface/ideas/idea_bmp_jewish_immigration.dds"
 	}
-	
-	
-	spriteType = {
-		name = "BMP_immigration"
-		texturefile = "gfx/interface/ideas/mer_jewish_immigration.dds"
-	}
-	
-	spriteType = {
-		name = "idea_bmpimmigration"
-		texturefile = "gfx/interface/ideas/mer_jewish_immigration.dds"
-	}
-
 
 }

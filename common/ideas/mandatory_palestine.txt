@@ -44,7 +44,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_manpower_bonus
+			picture = bmp_jewish_immigration
 
 			modifier = {
 				monthly_population = 1.5
@@ -62,7 +62,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = bmp_jewish_immigration
 
 			modifier = {
 				monthly_population = 0.1
@@ -115,7 +115,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = bmp_jewish_immigration
 
 			modifier = {
 				monthly_population = 0.15

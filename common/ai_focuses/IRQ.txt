@@ -47,7 +47,7 @@ ai_historical_focus_list_IRQ = {
 	IRQ_military_advance
 	IRQ_Walls_ground
 	IRQ_convert_fleet
-	IRQ_rocket
+	#IRQ_rocket #OP af
 	IRQ_destroyer
 	IRQ_submarines
 	IRQ_torpedoes

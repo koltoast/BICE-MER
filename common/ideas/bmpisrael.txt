@@ -9,7 +9,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = bmp_jewish_immigration
 
 			modifier = {
 				monthly_population = 1.5

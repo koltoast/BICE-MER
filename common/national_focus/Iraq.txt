@@ -2076,29 +2076,29 @@ focus = {
 
 	}
 	
-	focus = {
-		id = IRQ_rocket
-		icon = GFX_focus_rocketry
-		cost = 10
-		prerequisite = {
-			focus = IRQ_military_advance
-		}
-		x = 31
-		y = 4
-		available = {
-			has_government = fascism						
-		}
-			completion_reward = {
-					add_tech_bonus = {
-							name = jet_rocket_bonus
-							ahead_reduction = 0.5
-							uses = 2
-							category = rocketry
-							category = jet_technology
-						}
-				}
-
-	}
+#	focus = { #OP af
+#		id = IRQ_rocket
+#		icon = GFX_focus_rocketry
+#		cost = 10
+#		prerequisite = {
+#			focus = IRQ_military_advance
+#		}
+#		x = 31
+#		y = 4
+#		available = {
+#			has_government = fascism						
+#		}
+#			completion_reward = {
+#					add_tech_bonus = {
+#							name = jet_rocket_bonus
+#							ahead_reduction = 0.5
+#							uses = 2
+#							category = rocketry
+#							category = jet_technology
+#						}
+#				}
+#
+#	}
 	
 ##### Defenses #####
 		focus = {
