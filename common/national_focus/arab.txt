@@ -1965,7 +1965,7 @@ focus = {
 			}
 	}
 
-#### Independance #####
+#### Independence #####
 	focus = {
 		id = Arab_Indi
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties

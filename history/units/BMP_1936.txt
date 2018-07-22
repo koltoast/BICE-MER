@@ -11,7 +11,7 @@
 
 division_template = {
 	name = "Regular Garrison"
-	division_names_group = ENG_GAR_01
+	#division_names_group = ENG_GAR_01
 	
 	regiments = {
 		garrison = { x = 0 y = 0 }
@@ -45,11 +45,12 @@ units = {
 	#	start_equipment_factor = 0.8
 	#}
 	division= {	
+		name = "Jerusalem & Lydda Areas"
 		#Jerusalem & Lydda Areas
-		division_name = {
-			is_name_ordered = yes
-			name_order = 219
-		}
+		#division_name = {
+			#is_name_ordered = yes
+			#name_order = 219
+		#}
 		location = 4206
 		division_template = "Regular Garrison"		
 		#force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
