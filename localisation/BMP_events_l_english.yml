@@ -91,6 +91,7 @@
  mandate.14.d:0 "As our need for Special Forces grows, so does Orde Wingate’s desire to experiment with new tactics. Orde Wingate trains the government-sponsored Jewish militias, and he has begun to work on Special Night Squad tactics. He has proposed the implementation of these special night teams into our standard armed forces."
  mandate.14.a:0 "Tell him to begin training at once."
  mandate.14.b:0 "He has a thousand silly ideas. Tell him to focus on training more men."
+ mandate.14.b_tt:0 "Creates a small unit of militia"
  mandate.15.t:0 "End of the Arab Revolt"
  mandate.15.d:0 "The last of the revolting militias have been destroyed, and with them the chaos of the Arab Revolt. Jewish militias now play an increasingly prominent role in the defense of the Mandate, and the Palestine Police Force has learned many new tricks from the fighting."
  mandate.15.a:0 "One less problem to worry about."
@@ -101,6 +102,10 @@
  mandate.18.t:0 "Bridge destroyed"
  mandate.18.d:0 "Rioters have destroyed a Bridge causing chaos for local supply"
  mandate.19.desc:0 "Finally the day has come, let us cast our votes to see what the future holds"
+ mandate.20.t:0 "Marketplace bombing"
+ mandate.20.desc:0 "A bomb as gone off in a local marketplace"
+ mandate.22.t:0 "Delay in Peel commission"
+ mandate.22.d:0 "Although we had hoped the Peel commission's report would be ready by now it seems it will not publish until closer to the end of the year"
  bmpisrael.1.t:0 "Formation of the Israeli Defense Force"
  bmpisrael.1.d:0 "With the creation of our new nation, an army must also be created with it. Organizations such as the Haganah have long dreamed of defending Israel from foreign threats, and it has become the core of the new Israeli Defense Force. Local militias have also joined the IDF’s ranks. This new defense force will be vital in the struggle against our many enemies."
  bmpisrael.1.a:0 "We welcome them!"
@@ -117,3 +122,4 @@
  bmpisrael.4.t:0 "The End of the Arab-Israeli war"
  bmpisrael.4.d:0 "The Israeli forces have held their ground and peace talks are in effect"
  bmpisrael.4.a:0 ""
+ 

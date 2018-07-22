@@ -1,5 +1,5 @@
-@BMP_HUNT_RIOTS_COST_T = 249
-@BMP_HUNT_RIOTS_COST_E = -250
+@BMP_HUNT_RIOTS_COST_T = 349
+@BMP_HUNT_RIOTS_COST_E = -350
 @BMP_Irgun_time = 60
 			
 crisis = {
@@ -139,14 +139,14 @@ crisis = {
 		}		
 	}
 	
-######### Westbank riots ########
+######### westbank riots ########
 	BMP_pacify_Riots_West = {
 
 		icon = generic_oppression
 		
 		available = {
 			has_completed_focus = BMP_re-establish_the_mandate
-			has_country_flag = BMP_Riots_WestBank
+			has_country_flag = BMP_Riots_westbank
 			divisions_in_state = {
 				state = 838	
 				size > 1
@@ -171,14 +171,14 @@ crisis = {
 		}
 
 		visible = {
-			NOT = { has_active_mission = BMP_maintain_Westbank }
-			has_country_flag = BMP_Riots_WestBank
+			NOT = { has_active_mission = BMP_maintain_westbank }
+			has_country_flag = BMP_Riots_westbank
 		}
 
 		is_good = yes
 
 		complete_effect = {
-			activate_mission = BMP_maintain_Westbank
+			activate_mission = BMP_maintain_westbank
 			custom_effect_tooltip = BMP_maintain_explanation
 		}
 	}
@@ -190,7 +190,7 @@ crisis = {
 		available = {
 			has_completed_focus = BMP_re-establish_the_mandate
 			has_equipment = { infantry_equipment > @BMP_HUNT_RIOTS_COST_T }
-			has_country_flag = BMP_Riots_WestBank
+			has_country_flag = BMP_Riots_westbank
 			has_manpower > 500
 		}
 
@@ -200,7 +200,7 @@ crisis = {
 			state = 838
 		}
 		visible = {
-			has_country_flag = BMP_Riots_WestBank
+			has_country_flag = BMP_Riots_westbank
 		}
 		is_good = yes
 
@@ -241,25 +241,25 @@ crisis = {
 				popularity = -0.05
 				}
 
-			remove_mission = BMP_maintain_Westbank
-			clr_country_flag = BMP_Riots_WestBank
+			remove_mission = BMP_maintain_westbank
+			clr_country_flag = BMP_Riots_westbank
 			if = {
 				limit = {
-					NOT = { has_country_flag = BMP_Riots_Gaza }
-					NOT = { has_country_flag = BMP_Riots_Israel }
+					NOT = { has_country_flag = BMP_Riots_gaza }
+					NOT = { has_country_flag = BMP_Riots_israel }
 				}
 				remove_ideas = BMP_Riots
 				clr_country_flag = crisis_in_progress
 			}
 		}
 	}
-	BMP_British_Aid_Westbank = {
+	BMP_British_Aid_westbank = {
 
 		icon = infiltrate_state
 
 		available = {
 			has_completed_focus = BMP_assist_great_britain
-			has_country_flag = BMP_Riots_WestBank
+			has_country_flag = BMP_Riots_westbank
 		}
 		
 		days_remove = 60
@@ -269,7 +269,7 @@ crisis = {
 			state = 838
 		}
 		
-				fire_only_once = yes
+		fire_only_once = yes
 
 		##AI will do the job itself if able
 		ai_will_do = {
@@ -284,11 +284,18 @@ crisis = {
 		}
 
 		visible = {
-			NOT = { has_active_mission = BMP_maintain_Westbank }
-			has_country_flag = BMP_Riots_WestBank			
+			NOT = { has_active_mission = BMP_maintain_westbank }
+			NOT = { has_country_flag = BMP_brit_aid }
+			has_country_flag = BMP_Riots_westbank			
 		}
 
 		is_good = yes
+		
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BMP_brit_aid
+			}
+		}
 
 		remove_effect = {  
 			custom_effect_tooltip = BMP_Riots_Remove_West
@@ -304,18 +311,19 @@ crisis = {
 				}	
 				
 			}
-			clr_country_flag = BMP_Riots_WestBank
+			clr_country_flag = BMP_Riots_westbank
+			clr_country_flag = BMP_brit_aid
 			if = {
 				limit = {
-					NOT = { has_country_flag = BMP_Riots_Gaza }
-					NOT = { has_country_flag = BMP_Riots_Israel }
+					NOT = { has_country_flag = BMP_Riots_gaza }
+					NOT = { has_country_flag = BMP_Riots_israel }
 				}
 				remove_ideas = BMP_Riots
 				clr_country_flag = crisis_in_progress
 			}
 		}
 	}
-	BMP_maintain_Westbank = {
+	BMP_maintain_westbank = {
 
 		icon = generic_civil_support
 
@@ -349,26 +357,26 @@ crisis = {
 
 		timeout_effect = {
 			custom_effect_tooltip = BMP_Riots_Remove_West
-			clr_country_flag = BMP_Riots_WestBank
+			clr_country_flag = BMP_Riots_westbank
 			
 			if = {
 				limit = {
-					NOT = { has_country_flag = BMP_Riots_Gaza }
-					NOT = { has_country_flag = BMP_Riots_Israel }
+					NOT = { has_country_flag = BMP_Riots_gaza }
+					NOT = { has_country_flag = BMP_Riots_israel }
 				}
 				clr_country_flag = crisis_in_progress
 				remove_ideas = BMP_Riots
 			}
 		}
 	}
-########## Gaza Riots #############
-		BMP_pacify_Riots_Gaza = {
+########## gaza Riots #############
+		BMP_pacify_Riots_gaza = {
 
 		icon = generic_oppression
 		
 		available = {
 			has_completed_focus = BMP_re-establish_the_mandate
-			has_country_flag = BMP_Riots_Gaza
+			has_country_flag = BMP_Riots_gaza
 			divisions_in_state = {
 				state = 943	
 				size > 1
@@ -468,7 +476,7 @@ crisis = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = BMP_Riots_westbank }
-					NOT = { has_country_flag = BMP_Riots_Israel }
+					NOT = { has_country_flag = BMP_Riots_israel }
 				}
 				remove_ideas = BMP_Riots
 				clr_country_flag = crisis_in_progress
@@ -507,11 +515,18 @@ crisis = {
 
 		visible = {
 			NOT = { has_active_mission = BMP_maintain_gaza }
-			has_country_flag = BMP_Riots_gaza			
+			has_country_flag = BMP_Riots_gaza	
+			NOT = { has_country_flag = BMP_brit_aid }			
 		}
 
 		is_good = yes
-
+		
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BMP_brit_aid
+			}
+		}
+		
 		remove_effect = {  
 			custom_effect_tooltip = BMP_Riots_Remove_gaza
 			add_autonomy_ratio = {
@@ -530,7 +545,7 @@ crisis = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = BMP_Riots_westbank }
-					NOT = { has_country_flag = BMP_Riots_Israel }
+					NOT = { has_country_flag = BMP_Riots_israel }
 				}
 				remove_ideas = BMP_Riots
 				clr_country_flag = crisis_in_progress
@@ -576,7 +591,7 @@ crisis = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = BMP_Riots_westbank }
-					NOT = { has_country_flag = BMP_Riots_Israel }
+					NOT = { has_country_flag = BMP_Riots_israel }
 				}
 				clr_country_flag = crisis_in_progress
 				remove_ideas = BMP_Riots
@@ -584,13 +599,13 @@ crisis = {
 		}
 	}
 ###### Isreal Riots ###########
-		BMP_pacify_Riots_Israel = {
+		BMP_pacify_Riots_israel = {
 
 		icon = generic_oppression
 		
 		available = {
 			has_completed_focus = BMP_re-establish_the_mandate
-			has_country_flag = BMP_Riots_Israel
+			has_country_flag = BMP_Riots_israel
 			divisions_in_state = {
 				state = 454	
 				size > 1
@@ -615,26 +630,26 @@ crisis = {
 		}
 
 		visible = {
-			NOT = { has_active_mission = BMP_maintain_Israel }
-			has_country_flag = BMP_Riots_Israel
+			NOT = { has_active_mission = BMP_maintain_israel }
+			has_country_flag = BMP_Riots_israel
 		}
 
 		is_good = yes
 
 		complete_effect = {
-			activate_mission = BMP_maintain_Israel
+			activate_mission = BMP_maintain_israel
 			custom_effect_tooltip = BMP_maintain_explanation
 		}
 	}
 
-	BMP_hunt_Riots_Israel = {
+	BMP_hunt_Riots_israel = {
 
 		icon = generic_scorched_earth
 
 		available = {
 			has_completed_focus = BMP_re-establish_the_mandate
 			has_equipment = { infantry_equipment > @BMP_HUNT_RIOTS_COST_T }
-			has_country_flag = BMP_Riots_Israel
+			has_country_flag = BMP_Riots_israel
 			has_manpower > 500
 		}
 
@@ -644,7 +659,7 @@ crisis = {
 			state = 943
 		}
 		visible = {
-			has_country_flag = BMP_Riots_Israel
+			has_country_flag = BMP_Riots_israel
 		}
 		is_good = yes
 
@@ -685,8 +700,8 @@ crisis = {
 				popularity = -0.05
 				}
 
-			remove_mission = BMP_maintain_Israel
-			clr_country_flag = BMP_Riots_Israel
+			remove_mission = BMP_maintain_israel
+			clr_country_flag = BMP_Riots_israel
 			if = {
 				limit = {
 					NOT = { has_country_flag = BMP_Riots_westbank }
@@ -697,13 +712,13 @@ crisis = {
 			}
 		}
 	}
-	BMP_British_Aid_Israel = {
+	BMP_British_Aid_israel = {
 
 		icon = infiltrate_state
 
 		available = {
 			has_completed_focus = BMP_assist_great_britain
-			has_country_flag = BMP_Riots_Israel
+			has_country_flag = BMP_Riots_israel
 		}
 		
 		days_remove = 60
@@ -728,19 +743,26 @@ crisis = {
 		}
 
 		visible = {
-			NOT = { has_active_mission = BMP_maintain_Israel }
-			has_country_flag = BMP_Riots_Israel			
+			NOT = { has_active_mission = BMP_maintain_israel }
+			has_country_flag = BMP_Riots_israel		
+			NOT = { has_country_flag = BMP_brit_aid }
 		}
 
 		is_good = yes
 
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BMP_brit_aid
+			}
+		}
+		
 		remove_effect = {  
-			custom_effect_tooltip = BMP_Riots_Remove_Israel
+			custom_effect_tooltip = BMP_Riots_Remove_israel
 			add_autonomy_ratio = {
 			value = -0.1
 			localization = BMP_Bristish_Needed
 			}
-			clr_country_flag = BMP_Riots_Israel
+			clr_country_flag = BMP_Riots_israel
 			every_country = { 
 			limit = { is_Arab = yes }
 			add_opinion_modifier = {
@@ -752,14 +774,14 @@ crisis = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = BMP_Riots_westbank }
-					NOT = { has_country_flag = BMP_Riots_Gaza }
+					NOT = { has_country_flag = BMP_Riots_gaza }
 				}
 				remove_ideas = BMP_Riots
 				clr_country_flag = crisis_in_progress
 			}
 		}
 	}
-	BMP_maintain_Israel = {
+	BMP_maintain_israel = {
 
 		icon = generic_civil_support
 
@@ -792,13 +814,13 @@ crisis = {
 		is_good = yes
 
 		timeout_effect = {
-			custom_effect_tooltip = BMP_Riots_Remove_Israel
-			clr_country_flag = BMP_Riots_Israel
+			custom_effect_tooltip = BMP_Riots_Remove_israel
+			clr_country_flag = BMP_Riots_israel
 			
 			if = {
 				limit = {
 					NOT = { has_country_flag = BMP_Riots_westbank }
-					NOT = { has_country_flag = BMP_Riots_Gaza }
+					NOT = { has_country_flag = BMP_Riots_gaza }
 				}
 				clr_country_flag = crisis_in_progress
 				remove_ideas = BMP_Riots
@@ -866,20 +888,40 @@ foreign_politics = {
 		is_Arab = yes
 		}
 		
+		#### If BMP is a player the AI will be a little mean to them
+		ai_will_do = { 
+			factor = 0
+			modifier = {
+				add = 10
+				NOT = { has_country_flag = Arab_meddled }
+				BMP = {
+					is_ai = no
+					NOT = { has_idea = Arab_Meddle }
+				}
+				
+			}
+		}
+		
 		allowed = {
 			always = yes
 		}
 		
-          cost = 50
-          fire_only_once = yes
+        cost = 50
+        fire_only_once = yes
           complete_effect = {
-               add_command_power = -25
+				add_command_power = -25	
+				reverse_add_opinion_modifier = {
+					target = BMP
+					modifier = unprovoked_aggression
+				}			   
 				BMP = {
 					add_timed_idea = {
 						idea = Arab_Meddle
 						days = 25
 						}
 					}
+				### For the AI
+				hidden_effect =  { set_country_flag = Arab_meddled } 
             }
     }
 }

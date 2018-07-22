@@ -1,4 +1,4 @@
-﻿###########################
+﻿ ###########################
 # Mandatory Palestine Events
 ###########################
 
@@ -371,9 +371,9 @@ country_event = {
 		add_ideas = BMP_arab_revolt
 		add_ideas = BMP_arab_general_strikes
 		add_ideas = BMP_Riots
-		set_country_flag = BMP_Riots_WestBank
-		set_country_flag = BMP_Riots_Gaza
-		set_country_flag = BMP_Riots_Israel
+		set_country_flag = BMP_Riots_westbank
+		set_country_flag = BMP_Riots_gaza
+		set_country_flag = BMP_Riots_israel
 		set_country_flag = crisis_in_progress
 	}
 }
@@ -417,7 +417,11 @@ country_event = {
 	}
 	option = { 
 		name = mandate.14.b
-		load_oob = "BMP_orde_wingate"
+			hidden_effect = {
+				load_oob = "BMP_orde_wingate"
+			}
+			custom_effect_tooltip = mandate.14.b_tt
+		
 	}
 }
 
@@ -445,7 +449,12 @@ country_event = {
 		if = {
 			limit = { has_idea = BMP_arab_general_strikes }
 			remove_ideas = BMP_arab_general_strikes
-		}		
+		}	
+			
+		if = {
+			limit = { has_idea = Arab_Meddle }
+			remove_ideas = Arab_Meddle
+		}
 	}
 }
 
@@ -521,6 +530,22 @@ country_event = {
 	}
 }
 
+##Election Held
+country_event = {
+	id = mandate.19
+	title = Election
+	desc = mandate.19.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+	
+	option = {
+	Name = VOTE!
+	hold_election = BMP
+		}
+	
+}
+
 ### Market Place Bomb ###
 country_event = {
 	id = mandate.20
@@ -554,18 +579,29 @@ country_event = {
 		}
 	}
 }
-##Election Held
-country_event = {
-	id = mandate.19
-	title = Election
-	desc = mandate.19.desc
-	picture = GFX_report_event_election_vote
 
-	is_triggered_only = yes
+country_event = {
+	id = mandate.22 ##### Peel report not coming in April ###
+	title = mandate.22.t
+	desc = mandate.22.d
+	picture = GFX_report_event_generic_sign_treaty2
 	
-	option = {
-	Name = VOTE!
-	hold_election = BMP
+	fire_only_once = yes
+
+	trigger = {
+		tag = BMP
+		date > 1937.4.1 #1936.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = { 
+		name = mandate.11.a
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.10
 		}
-	
+	}
 }

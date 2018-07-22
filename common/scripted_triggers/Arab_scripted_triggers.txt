@@ -27,7 +27,6 @@ is_Arab = {
 				tag = MOR
 				tag = TUN
 				tag = IRQ
-				tag = LIB
 				tag = PER
 				tag = EGY
 	}
