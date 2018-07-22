@@ -102,6 +102,7 @@
  Arab_Arming_desc:0 "It is time to expand our military industry"
  Arab_War:0 "Ready for war"
  Arab_War_desc:0 "The current situation demands our military industry to be fully operational"
+ Arab_Desert_bonus:0 "Desert support company bonus"
  Arab_Desert_training:0 "Desert Combat"
  Arab_Desert_training_desc:0 "Our men have grown up in the deserts, with training we can use this to our advantage"
  Arab_Horse_effort:0 "Arabian Horses"

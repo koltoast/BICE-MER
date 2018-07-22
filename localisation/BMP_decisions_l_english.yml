@@ -30,3 +30,5 @@
   BMP_Riots_westbank:0 "Riot activity in the Westbank"
   BMP_Riots_gaza:0 "Riot activity in Gaza"
   BMP_Riots_israel:0 "Riot activity in Palestine"
+  BMP_brit_aid:0 "British currently assisting"
+  

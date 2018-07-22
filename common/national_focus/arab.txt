@@ -1142,6 +1142,11 @@ focus = {
 				bonus = 0.2
 				technology = motorised_infantry
 			}
+			add_tech_bonus = {
+				name = Arab_Desert_bonus
+				bonus = 0.5
+				technology = desert_equipment
+			}
 		}
 	}
 
