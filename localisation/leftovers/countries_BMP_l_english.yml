@@ -10,13 +10,13 @@
  BMP_neutrality:0 "Mandatory Palestine"
  BMP_neutrality_DEF:0 "The Mandate of Palestine"
  BMP_communism:0 "People's Republic of Palestine"
- BMP_communism_DEF:0 "The People's Republic of Palestine" 
+ BMP_communism_DEF:0 "The People's Republic of Palestine"
  BMP_fascism_ADJ:0 "Palestinian"
  BMP_conservatism_ADJ:0 "Palestinian"
  BMP_socialism_ADJ:0 "Palestinian"
  BMP_liberalism_ADJ:0 "Palestinian"
- BMP_neutrality_ADJ:0 "Mandatory Palestinian" 
- BMP_communism_ADJ:0 "Palestinian" 
+ BMP_neutrality_ADJ:0 "Mandatory Palestinian"
+ BMP_communism_ADJ:0 "Palestinian"
  
  BMP_monarchism:0 "Emirate of Palestine"
  ##### maybe Emirate of Palestine if the monarch is an arab? #######
