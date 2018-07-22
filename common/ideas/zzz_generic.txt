@@ -1,0 +1,5833 @@
+ideas = {
+
+	hidden_ideas = {
+		base_research ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_time_factor = 0.25
+			}
+		}
+		infantry_research_1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				infantry_folder = 0.05
+			}
+		}
+		infantry_research_2 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				infantry_folder = 0.1
+			}
+		}
+		infantry_research_3 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				infantry_folder = 0.15
+			}
+		}
+		infantry_research_4 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				infantry_folder = 0.2
+			}
+		}
+		infantry_research_5 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				infantry_folder = 0.25
+			}
+		}
+		support_research_1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				support_tech = 0.05
+			}
+		}
+		support_research_2 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				support_tech = 0.1
+			}
+		}
+		support_research_3 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				support_tech = 0.15
+			}
+		}
+		support_research_4 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				support_tech = 0.2
+			}
+		}
+		support_research_5 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				support_tech = 0.25
+			}
+		}
+		artillery_research_1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				artillery_tech = 0.05
+			}
+		}
+		artillery_research_2 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				artillery_tech = 0.1
+			}
+		}
+		artillery_research_3 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				artillery_tech = 0.15
+			}
+		}
+		artillery_research_4 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				artillery_tech = 0.2
+			}
+		}
+		artillery_research_5 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				artillery_tech = 0.25
+			}
+		}
+		armor_research_1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				armor = 0.05
+			}
+		}
+		armor_research_2 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+		armor_research_3 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				armor = 0.15
+			}
+		}
+		armor_research_4 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				armor = 0.2
+			}
+		}
+		armor_research_5 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				armor = 0.25
+			}
+		}
+		electronics_research_1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				electronics = 0.05
+			}
+		}
+		electronics_research_2 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				electronics = 0.1
+			}
+		}
+		electronics_research_3 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				electronics = 0.15
+			}
+		}
+		electronics_research_4 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				electronics = 0.2
+			}
+		}
+		electronics_research_5 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				electronics = 0.25
+			}
+		}
+		plane_research_1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				air_equipment = 0.05
+			}
+		}
+		plane_research_2 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		plane_research_3 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				air_equipment = 0.15
+			}
+		}
+		plane_research_4 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				air_equipment = 0.2
+			}
+		}
+		plane_research_5 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				air_equipment = 0.25
+			}
+		}
+		industry_research_1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				industry = 0.05
+			}
+		}
+		industry_research_2 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+		industry_research_3 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				industry = 0.15
+			}
+		}
+		industry_research_4 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				industry = 0.2
+			}
+		}
+		industry_research_5 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				industry = 0.25
+			}
+		}
+		land_doctrine_research_1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+		}
+		land_doctrine_research_2 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				land_doctrine = 0.2
+			}
+		}
+		land_doctrine_research_3 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				land_doctrine = 0.3
+			}
+		}
+		land_doctrine_research_4 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				land_doctrine = 0.4
+			}
+		}
+		land_doctrine_research_5 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			research_bonus = {
+				land_doctrine = 0.5
+			}
+		}
+		quality_branch_1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				infantry_uniforms = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				ss_infantry_uniforms = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				support_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				assault_rifle_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				garrison_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				HQ_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				sniper_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				SMG_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				HMG_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				mortar_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				urbanwar_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				para_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				amph_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				mount_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				desert_equip = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				arctic_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				jungle_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				horse_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes 
+				}
+				recon_equipment = {
+					 reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				flamethrowers = {
+					 reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				anti_air_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				HVanti_air_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				anti_tank_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				HVanti_tank_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				artillery_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				mountain_artillery_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				medartillery_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				Hvartillery_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				superartillery_equipment  = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				rocket_artillery_equipment  = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				infantrygun_equipment  = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				railartillery_equipment  = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+			}
+		}
+		
+		quality_branch_1_air ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				jet_fighter_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				CAS_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				rocket_interceptor_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				tac_bomber_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				jet_tac_bomber_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				jet_strat_bomber_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				heavy_fighter_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				strat_bomber_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				transport_plane_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				guided_missile_equipment = {
+					instant = yes
+					reliability = 0.05 build_cost_ic = 0.05
+				}
+				ar_76_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ar_65_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ar_68_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ar_81_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				me_109_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				me_109_early_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				me_109_mid_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				me_109_late_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				me_109_g_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				bf_109_h_equipment  = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				fw_190_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				fw_190_f_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ta_152_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				bv_155_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				he_51_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				he_100_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				he_112_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ju_87_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ju_87_b_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ju_87_d_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ju_87_d5_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ju_88_p_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				he_46_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				he_50_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				he_118_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				he_45_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				hs_123_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				hs_129_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				hs_132_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				spotter_planes_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				###PDF INTERCEPTORS###
+				me_163_interceptor_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ba_349_interceptor_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				me_163_c_interceptor_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				he_162_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				me_262_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				go_229_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				##CV_fighter##
+				cv_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				##CV_CAS##
+				cv_CAS_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				##CV_NAV_BOMBERS##
+				cv_nav_bomber_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				i_5_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				no_upgrade_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				i_15_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				i_152_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				i_153_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				i_16_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				yak_1_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				yak_7_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				yak_3_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				yak_9_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				lagg_1_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				lagg_3_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				lagg_5_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				lagg_7_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				mig_1_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				mig_3_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				i_14_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ip_1_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				il_2_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				il_10_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				r_5_bomber_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				r_5_nav_bomber_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				r_10_bomber_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				i_180_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				lagg_9_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				lagg_11_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				su_2_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				su_6_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				spotter_planes_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				cv_fighter_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				cv_CAS_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				cv_nav_bomber_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				mureaux_113_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				spad_510_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				bloch_151_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				bloch_157_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				d_371_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				d_500_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				d_520_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				potez_25_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				breguet_27_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				mureaux_115_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ln_411_CAS_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				pl_15_nav_bomber_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				spotter_planes_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				cv_fighter_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				cv_CAS_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				cv_nav_bomber_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				 pre_war_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    war_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    usa_boeing_p26_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    seversky_p35_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    republic_p43_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    bell_p63_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    republic_p47j_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    pre_war_af_equipment  = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    curtiss_p36_equipment  = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    curtiss_p40_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    northamerican_mustang_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    vought_corsair_not_carrier_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    northamerican_p51h_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    pre_war_mr_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    curtiss_hawk_ii_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    consolidated_p30_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    seversky_a8v1_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    bell_p39_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    republic_p47_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    republic_p72_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    prewar_cas_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    war_cas_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    northrop_a17_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    vultee_a19_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    vultee_a31_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    northamerican_a36_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    bell_p59_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    bell_p83_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    lockheed_p80_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    douglas_tbd_1a_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    cv_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    cv_CAS_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    cv_nav_bomber_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    spotter_planes_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+			 pre_war_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    war_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    gauntlet_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    gladiator_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    defiant_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    griffon_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    martinbaker_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    pre_war_af_equipment  = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    hawker_demon_equipment  = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    spitfire_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    late_spitfire_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    spiteful_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    pre_war_mr_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    hawker_fury_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    hawker_hurricane_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    hawker_typhoon_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    hawker_tempest_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    hawker_monofury_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    prewar_cas_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    war_cas_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    hawker_hind_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    fairey_battle_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    westland_lysander_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    hawker_hurricane_iic_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    gloster_meteor_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    dehaviland_vampire_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    cv_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    cv_CAS_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    cv_nav_bomber_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    spotter_planes_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+			  kawasaki_t92_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    kawasaki_ki_10_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    nakajima_ki_27_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    nakajima_ki_43_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    nakajima_ki_44_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    kawasaki_ki_61_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    nakajima_ki_84_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    tachikawa_ki_106_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    kawasaki_ki_100_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    mitsubishi_j2m_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    kawanishi_n1k1j_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    kawanishi_n1k2j_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    kyushu_j7w_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    nakajima_ki_4_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    tachikawa_ki_36_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    mitsubishi_ki_51_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    mansyu_ki_71_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    mitsubishi_j8m_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    kawasaki_ki_3_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    mitsubishi_ki_30_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    kawasaki_ki_32_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    kawasaki_ki_119_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    nakajima_kikka_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    cv_fighter_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    cv_CAS_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    cv_nav_bomber_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+		    spotter_planes_equipment = {
+		      reliability = 0.05 build_cost_ic = 0.05 instant = yes
+		    }
+			cr_series_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				g50_multirole_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				g50v_multirole_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				cv_CAS_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				g55_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				g56_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ca183_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				old_multirole_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ap1_multirole_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ba64_multirole_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ba65_multirole_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ca335_multirole_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				re2000_multirole_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				re2001_multirole_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				re2005_multirole_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				re2006_multirole_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				exported_interceptor_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ro41_interceptor_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				mc200_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				mc202_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				mc205_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				mc205n_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				mc206_fighter_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ro37_cas_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ca355_cas_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ba201_cas_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				re2002_multirole_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				sm93_cas_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				cr_32_fighter_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				cr_41_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				cr_42_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ss4_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				sai207_fighter_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				sai403_fighter_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				old_flying_boat_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				z501_flying_boat_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				g55s_naval_bomber_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ca111_transport_plane_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				ca133_transport_plane_equipment = {
+					reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				g12_transport_plane_equipment = {
+				  reliability = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+			}
+		}
+		
+		quantity_branch_1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = -0.05 build_cost_ic = -0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				infantry_uniforms = {
+					reliability = -0.05 build_cost_ic = -0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				ss_infantry_uniforms = {
+					reliability = -0.05 build_cost_ic = -0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				support_equipment = {
+					reliability = -0.05 build_cost_ic = -0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				assault_rifle_equipment = {
+					reliability = -0.05 build_cost_ic = -0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				garrison_equipment = {
+					reliability = -0.05 build_cost_ic = -0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				HQ_equipment = {
+					reliability = -0.05 build_cost_ic = -0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				sniper_equipment = {
+					reliability = -0.05 build_cost_ic = -0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				SMG_equipment = {
+					reliability = -0.05 build_cost_ic = -0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				HMG_equipment = {
+					reliability = -0.05 build_cost_ic = -0.05 instant = yes 
+				}
+			}
+			equipment_bonus = {
+				mortar_equipment = {
+					reliability = -0.05 build_cost_ic = -0.05 instant = yes 
+				}
+			}
+		}
+		autonomy_gain ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = 2
+			}
+		}
+		puppet_IC = {
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.25
+				mic_to_target_factor = 0.25
+			}
+		}
+		consumer_max ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.6
+				surrender_limit = 0.99
+			}
+		}
+		consumer_1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+		consumer_2 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		consumer_3 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		consumer_-1 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		consumer_-2 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		consumer_-3 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+		royal_check ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				
+			}
+		}
+		continuous_naval_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+		continuous_air_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				rocket_interceptor_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				heavy_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				guided_missile_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				ar_76_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ar_65_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ar_68_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ar_81_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				me_109_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				me_109_early_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				me_109_mid_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				me_109_late_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				me_109_g_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				bf_109_h_equipment  = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				fw_190_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				fw_190_f_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ta_152_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				bv_155_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				he_51_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				he_100_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				he_112_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ju_87_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ju_87_b_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ju_87_d_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ju_87_d5_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ju_88_p_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				he_46_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				he_50_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				he_118_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				he_45_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				hs_123_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				hs_129_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				hs_132_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				spotter_planes_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				###PDF INTERCEPTORS###
+				me_163_interceptor_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ba_349_interceptor_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				me_163_c_interceptor_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				he_162_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				me_262_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				go_229_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				##CV_fighter##
+				cv_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				##CV_CAS##
+				cv_CAS_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				##CV_NAV_BOMBERS##
+				cv_nav_bomber_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				i_5_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				no_upgrade_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				i_15_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				i_152_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				i_153_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				i_16_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				yak_1_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				yak_7_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				yak_3_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				yak_9_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				lagg_1_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				lagg_3_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				lagg_5_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				lagg_7_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				mig_1_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				mig_3_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				i_14_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ip_1_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				il_2_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				il_10_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				r_5_bomber_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				r_5_nav_bomber_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				r_10_bomber_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				i_180_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				lagg_9_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				lagg_11_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				su_2_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				su_6_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				spotter_planes_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				cv_fighter_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				cv_CAS_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				cv_nav_bomber_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				mureaux_113_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				spad_510_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				bloch_151_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				bloch_157_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				d_371_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				d_500_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				d_520_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				potez_25_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				breguet_27_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				mureaux_115_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ln_411_CAS_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				pl_15_nav_bomber_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				spotter_planes_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				cv_fighter_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				cv_CAS_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				cv_nav_bomber_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				 pre_war_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    war_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    usa_boeing_p26_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    seversky_p35_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    republic_p43_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    bell_p63_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    republic_p47j_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    pre_war_af_equipment  = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    curtiss_p36_equipment  = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    curtiss_p40_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    northamerican_mustang_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    vought_corsair_not_carrier_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    northamerican_p51h_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    pre_war_mr_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    curtiss_hawk_ii_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    consolidated_p30_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    seversky_a8v1_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    bell_p39_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    republic_p47_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    republic_p72_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    prewar_cas_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    war_cas_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    northrop_a17_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    vultee_a19_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    vultee_a31_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    northamerican_a36_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    bell_p59_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    bell_p83_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    lockheed_p80_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    douglas_tbd_1a_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    cv_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    cv_CAS_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    cv_nav_bomber_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    spotter_planes_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+			 pre_war_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    war_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    gauntlet_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    gladiator_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    defiant_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    griffon_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    martinbaker_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    pre_war_af_equipment  = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    hawker_demon_equipment  = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    spitfire_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    late_spitfire_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    spiteful_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    pre_war_mr_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    hawker_fury_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    hawker_hurricane_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    hawker_typhoon_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    hawker_tempest_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    hawker_monofury_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    prewar_cas_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    war_cas_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    hawker_hind_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    fairey_battle_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    westland_lysander_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    hawker_hurricane_iic_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    gloster_meteor_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    dehaviland_vampire_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    cv_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    cv_CAS_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    cv_nav_bomber_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    spotter_planes_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+			  kawasaki_t92_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    kawasaki_ki_10_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    nakajima_ki_27_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    nakajima_ki_43_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    nakajima_ki_44_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    kawasaki_ki_61_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    nakajima_ki_84_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    tachikawa_ki_106_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    kawasaki_ki_100_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    mitsubishi_j2m_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    kawanishi_n1k1j_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    kawanishi_n1k2j_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    kyushu_j7w_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    nakajima_ki_4_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    tachikawa_ki_36_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    mitsubishi_ki_51_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    mansyu_ki_71_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    mitsubishi_j8m_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    kawasaki_ki_3_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    mitsubishi_ki_30_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    kawasaki_ki_32_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    kawasaki_ki_119_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    nakajima_kikka_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    cv_fighter_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    cv_CAS_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    cv_nav_bomber_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+		    spotter_planes_equipment = {
+		      build_cost_ic = -0.10 instant = yes
+		    }
+			cr_series_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				g50_multirole_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				g50v_multirole_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				cv_CAS_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				g55_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				g56_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ca183_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				old_multirole_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ap1_multirole_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ba64_multirole_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				ba65_multirole_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ca335_multirole_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				re2000_multirole_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				re2001_multirole_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				re2005_multirole_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				re2006_multirole_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				exported_interceptor_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				ro41_interceptor_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				mc200_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				mc202_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				mc205_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				mc205n_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				mc206_fighter_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				ro37_cas_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ca355_cas_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ba201_cas_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				re2002_multirole_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				sm93_cas_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				cr_32_fighter_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				cr_41_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				cr_42_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ss4_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				sai207_fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				sai403_fighter_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				old_flying_boat_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				z501_flying_boat_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				g55s_naval_bomber_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+				ca111_transport_plane_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				ca133_transport_plane_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				g12_transport_plane_equipment = {
+				  build_cost_ic = -0.10 instant = yes
+				}
+			}		
+		}
+		### AI-air bonus ###
+		ai_air_upgrades_early = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			removal_cost = -1
+		}
+		ai_air_upgrades_mid = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			removal_cost = -1
+		}
+		ai_air_upgrades_late = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			removal_cost = -1
+		}
+	}
+	# Special ones that can be applied on other countries through focus system.
+	country = {
+		normal_difficulty_AI = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				attrition = -0.6
+				heat_attrition_factor = -0.6
+				winter_attrition_factor = -0.6
+			}
+		}
+		nationalism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+		internationalism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		fascist_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascism_drift = 0.1
+				fascism_acceptance = 85
+			}
+		}
+		monarchist_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = monarchism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				monarchism_drift = 0.05
+				monarchism_acceptance = 85
+			}
+		}
+		communist_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.1
+				communism_acceptance = 85
+			}
+		}
+		democratic_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				conservatism_drift = 0.1
+				conservatism_acceptance = 85
+				liberalism_drift = 0.1
+				liberalism_acceptance = 85
+				socialism_drift = 0.1
+				socialism_acceptance = 85
+			}
+		}
+		liberalism_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = liberalism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				liberalism_drift = 0.05
+				liberalism_acceptance = 85
+			}
+		}
+		socialism_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = socialism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				socialism_drift = 0.05
+				socialism_acceptance = 85
+			}
+		}
+		conservatism_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = conservatism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				conservatism_drift = 0.05
+				conservatism_acceptance = 85
+			}
+		}
+		soviet_german_friendship = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					AND = {
+						tag = GER
+						has_government = fascism
+						SOV = {
+							has_government = communism
+						}
+					}
+					AND = {
+						tag = SOV
+						has_government = communism
+						GER = {
+							has_government = fascism
+						}
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_acceptance = 100
+				fascism_acceptance = 100
+			}
+		}
+		communist_pressure = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		intermarial_influance = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				conservatism_drift = -0.05
+				socialism_drift = -0.05
+				liberalism_drift = -0.05
+				fascism_drift = -0.05
+			}
+		}
+		# Generic Focus Ideas
+		special_forces = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				special_forces_cap = 0.02
+			}
+		}
+		collectivist_ethos_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+		
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				conservatism_drift = -0.02
+				liberalism_drift = -0.02
+				socialism_drift = -0.02
+			}
+		}
+		liberty_ethos_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				trade_opinion_factor = 0.2
+			}
+		}
+		militarism_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.05
+				enemy_partisan_effect = -0.1
+			}
+		}
+		military_youth_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		paramilitarism_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+	
+			modifier = {
+				training_time_army_factor = -0.1
+			}
+		}
+		indoctrination_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		ideological_fanaticism_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			rule = {
+				can_create_factions = yes
+			}
+	
+			modifier = {
+				war_support_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		political_commissars_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}
+		Manpower_draft = {
+			picture = generic_infantry_bonus
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				conscription = 0.035
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				training_time_army_factor = 0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.05
+				political_power_factor = -0.025
+				stability_factor = -0.025
+			}
+		}
+		Partisan_Hell = {
+			picture = idea_partisans
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.012
+				enemy_partisan_effect = 0.25
+				foreign_subversive_activites = 0.25
+				supply_consumption_factor = 0.02
+				army_morale_factor = -0.1
+				production_speed_infrastructure_factor = -0.05
+			}
+		}
+		generic_civilian_trucks = {
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.01
+				production_factory_efficiency_gain_factor = -0.01
+				industrial_capacity_factory = -0.02
+			}
+		}
+		generic_civilian_cars = {
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				stability_factor = -0.02
+				political_power_factor = -0.03
+			}
+		}
+		
+		generic_petrol_ration = {
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				local_resources_factor = 0.01
+				stability_factor = -0.01
+				political_power_factor = -0.01
+			}
+		}
+		generic_metal_collection = {
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				local_resources_factor = 0.02
+			}
+		}
+		generic_peace_horses = {
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				local_resources_factor = -0.01
+				stability_factor = -0.01
+				political_power_factor = -0.01
+			}
+		}
+		generic_war_horses = {
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+			modifier = {
+				local_resources_factor = -0.02
+				stability_factor = -0.02
+				political_power_factor = -0.02
+			}
+		}
+		CHI_partisan_attacks = {
+			picture = idea_partisans
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			
+		}
+		PRC_partisan_attacks = {
+			picture = idea_partisans
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+		}
+		neutrality_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			cancel = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				join_faction_tension = 1.00
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+				ai_get_ally_desire_factor = -100
+			}
+		}
+		neutrality_war = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				#has_government = neutrality
+				always = yes
+			}
+
+			cancel = {
+				#has_war = yes
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				join_faction_tension = 1.00
+				army_core_defence_factor = 0.15
+				socialism_drift = -0.05
+				socialism_acceptance = -85
+				conservatism_drift = -0.05
+				conservatism_acceptance = -85
+				liberalism_drift = -0.05
+				liberalism_acceptance = -85
+				#democratic_drift = -0.05
+				#democratic_acceptance = -85
+				communism_drift = -0.05
+				communism_acceptance = -85
+				fascism_drift = -0.05
+				fascism_acceptance = -85
+				conscription = 0.03
+				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+				ai_get_ally_desire_factor = -100
+			}
+		}
+		deterrence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		volunteer_corps_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_volunteer_expedition_bonus
+
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+			}
+		}
+		foreign_expeditions_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.5
+			}
+		}
+		why_we_fight_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.1
+			}
+		}	
+		idea_political_correctness = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				foreign_subversive_activites = -0.75
+			}			
+		}
+		idea_monarchist_1 ={
+			allowed = { 
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		idea_monarchist_2 ={
+			allowed = { 
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		idea_monarchist_3 ={
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		idea_monarchist_4 ={
+			allowed = { 
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				training_time_factor = 0.50
+				army_org_factor = 0.2
+			}
+		}
+		royal_restoration ={
+			allowed = { 
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_FRA_swe
+			
+			modifier = {
+				stability_factor = 0.05
+				monarchism_drift = 0.05
+				political_power_factor = 0.02
+			}
+		}
+		general_strike = {
+			picture = FRA_matignon_agreements
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory =  -0.20
+				industrial_capacity_dockyard = -0.20
+				political_power_factor = -0.05
+				stability_factor = -0.02
+			}
+		}
+		general_strike_agreement = {
+			picture = FRA_matignon_agreements
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory =  -0.05
+				stability_factor = 0.02
+			}
+		}
+		labor_transition = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+			}
+		}
+		labor_transition2 = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				line_change_production_efficiency_factor = -0.025
+				production_speed_industrial_complex_factor = -0.025
+				production_speed_dockyard_factor = -0.025
+			}
+		}
+		low_training_standards = {
+			picture = generic_intel_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org_factor = -0.08
+				army_morale_factor = -0.08
+			}
+		}
+		low_training_standards2 = {
+			picture = generic_intel_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org_factor = -0.04
+				army_morale_factor = -0.04
+			}
+		}
+		civil_strife = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org_factor = -0.06
+				army_morale_factor = -0.04
+				industrial_capacity_dockyard = -0.06
+				industrial_capacity_factory = -0.06
+				political_power_factor = -0.10
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = -0.06
+				production_factory_efficiency_gain_factor = -0.06
+				conscription = -0.015
+				consumer_goods_factor = 0.05
+			}
+		}
+		civil_strife2 = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org_factor = -0.12
+				army_morale_factor = -0.12
+				industrial_capacity_dockyard = -0.12
+				industrial_capacity_factory = -0.12
+				political_power_factor = -0.15
+				stability_factor = -0.10
+				production_factory_max_efficiency_factor = -0.12
+				production_factory_efficiency_gain_factor = -0.12
+				conscription = -0.02
+				consumer_goods_factor = 0.12
+			}
+		}
+		civil_strife3 = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org_factor = -0.18
+				army_morale_factor = -0.18
+				industrial_capacity_dockyard = -0.18
+				industrial_capacity_factory = -0.18
+				political_power_factor = -0.20
+				stability_factor = -0.15
+				production_factory_max_efficiency_factor = -0.18
+				production_factory_efficiency_gain_factor = -0.18
+				conscription = -0.03
+				consumer_goods_factor = 0.18
+			}
+		}
+		civil_strife4 = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org_factor = -0.24
+				army_morale_factor = -0.24
+				industrial_capacity_dockyard = -0.24
+				industrial_capacity_factory = -0.24
+				political_power_factor = -0.25
+				stability_factor = -0.20
+				production_factory_max_efficiency_factor = -0.24
+				production_factory_efficiency_gain_factor = -0.24
+				conscription = -0.04
+				consumer_goods_factor = 0.24
+			}
+		}
+		civil_strife5 = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_org_factor = -0.30
+				army_morale_factor = -0.30
+				industrial_capacity_dockyard = -0.30
+				industrial_capacity_factory = -0.30
+				political_power_factor = -0.30
+				stability_factor = -0.25
+				production_factory_max_efficiency_factor = -0.30
+				production_factory_efficiency_gain_factor = -0.30
+				conscription = -0.05
+				consumer_goods_factor = 0.30
+			}
+		}
+		strong_communists = {
+			picture = generic_communism_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_morale_factor = -0.025
+				industrial_capacity_dockyard = -0.025
+				industrial_capacity_factory = -0.025
+				political_power_factor = -0.05
+				stability_factor = -0.025
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				communism_drift = 0.01
+				conscription = -0.005
+			}
+		}
+		strong_communists2 = {
+			picture = generic_communism_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_morale_factor = -0.05
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				communism_drift = 0.02
+				conscription = -0.01
+			}
+		}
+		strong_fascists = {
+			picture = generic_fascism_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_morale_factor = -0.025
+				industrial_capacity_dockyard = -0.025
+				industrial_capacity_factory = -0.025
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				fascism_drift = 0.01
+				conscription = -0.005
+			}
+		}
+		strong_fascists2 = {
+			picture = generic_fascism_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_morale_factor = -0.05
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				fascism_drift = 0.02
+				conscription = -0.01
+			}
+		}
+		strong_monarchists = {
+			picture = brittish_stoicism
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_morale_factor = -0.025
+				industrial_capacity_dockyard = -0.025
+				industrial_capacity_factory = -0.025
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				monarchism_drift = 0.01
+				conscription = -0.005
+			}
+		}
+		strong_monarchists2 = {
+			picture = brittish_stoicism
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_morale_factor = -0.05
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				monarchism_drift = 0.02
+				conscription = -0.01
+			}
+		}
+		strong_democrats = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_morale_factor = -0.025
+				industrial_capacity_dockyard = -0.025
+				industrial_capacity_factory = -0.025
+				political_power_factor = -0.05
+				stability_factor = -0.025
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				socialism_drift = 0.01
+				conservatism_drift = 0.01
+				liberalism_drift = 0.01
+				conscription = -0.005
+			}
+		}
+		strong_democrats2 = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_morale_factor = -0.05
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+				political_power_factor = -0.10
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				socialism_drift = 0.02
+				conservatism_drift = 0.02
+				liberalism_drift = 0.02
+				conscription = -0.01
+			}
+		}
+		fighting_foreign_influence = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.05
+			}
+		}
+		fighting_foreign_influence_propaganda = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.05
+			}
+		}
+		fighting_foreign_influence_propaganda2 = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.04
+			}
+		}
+		fighting_foreign_influence_propaganda3 = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.03
+			}
+		}
+		fighting_foreign_influence_arrest = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.20
+				stability_factor = -0.075
+			}
+		}
+		fighting_foreign_influence_arrest2 = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.06
+			}
+		}
+		fighting_foreign_influence_arrest3 = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.05
+			}
+		}
+		fighting_foreign_influence_kill = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.30
+				stability_factor = -0.10
+			}
+		}
+		fighting_foreign_influence_kill2 = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.09
+			}
+		}
+		fighting_foreign_influence_kill3 = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.20
+				stability_factor = -0.08
+			}
+		}
+		#Conservatism
+		sub_ideology_moderate = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = 0.025
+				drift_defence_factor = -0.10
+			}
+		}
+		sub_ideology_classical_liberalism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.075
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		sub_ideology_social_conservatism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.20
+			}
+		}
+		sub_ideology_nationalism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				enemy_partisan_effect = 0.10
+				foreign_subversive_activites = -0.05
+			}
+		}
+		#Liberalism
+		sub_ideology_centrism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = 0.025
+				drift_defence_factor = -0.10
+			}
+		}
+		sub_ideology_social_liberalism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				industrial_capacity_dockyard = 0.025
+				industrial_capacity_factory = 0.025
+			}
+		}
+		sub_ideology_progressivism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.025
+				political_power_factor = 0.01
+				consumer_goods_factor = 0.025
+			}
+		}
+		sub_ideology_populism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+			}
+		}
+		#Socialism
+		sub_ideology_social_democracy = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.025
+				consumer_goods_factor = 0.025
+			}
+		}
+		sub_ideology_syndicalism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+			}
+		}
+		#Communism
+		sub_ideology_marxism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = 0.025
+				drift_defence_factor = -0.10
+			}
+		}
+		sub_ideology_leninism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				stability_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				production_factory_max_efficiency_factor = -0.025
+				political_power_factor = 0.025
+				communism_drift = 0.01
+			}
+		}
+		sub_ideology_stalinism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				foreign_subversive_activites = -0.10
+				enemy_partisan_effect = 0.075
+				stability_factor = -0.05
+				political_power_factor = 0.025
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		sub_ideology_anti_revisionism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				enemy_partisan_effect = 0.10
+				foreign_subversive_activites = -0.05
+			}
+		}
+		sub_ideology_anarchist_communism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				enemy_partisan_effect = 0.10
+				foreign_subversive_activites = -0.05
+			}
+		}
+		#Fascism
+		sub_ideology_nazism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				enemy_partisan_effect = 0.10
+				political_power_factor = 0.075
+				production_factory_efficiency_gain_factor = -0.025
+				production_factory_max_efficiency_factor = -0.025
+				industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
+			}
+		}
+		sub_ideology_fascism_ideology = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				enemy_partisan_effect = 0.05
+				political_power_factor = 0.025
+				production_factory_efficiency_gain_factor = -0.01
+				production_factory_max_efficiency_factor = -0.01
+				industrial_capacity_factory = 0.01
+				industrial_capacity_dockyard = 0.01
+			}
+		}
+		sub_ideology_falangism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_dockyard = 0.025
+				industrial_capacity_factory = 0.025
+				stability_factor = -0.03
+			}
+		}
+		sub_ideology_vichy = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_dockyard = 0.025
+				industrial_capacity_factory = 0.025
+				stability_factor = -0.03
+			}
+		}
+		sub_ideology_rexism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_dockyard = 0.025
+				industrial_capacity_factory = 0.025
+				stability_factor = -0.03
+			}
+		}
+		#Neutrality
+		sub_ideology_despotism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+			}
+		}
+		sub_ideology_oligarchism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+			}
+		}
+		sub_ideology_moderatism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+			}
+		}
+		sub_ideology_the_peoples_tutelage = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+			}
+		}
+		#Monarchism
+		sub_ideology_absolutism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.025
+				drift_defence_factor = -0.05
+			}
+		}
+		sub_ideology_emiratism = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = -0.10
+			}
+		}
+		sub_ideology_imperial = {
+			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = -0.10
+			}
+		}
+		communism_banned = {
+			picture = anti_soviet_pact
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				communism_drift = -0.05
+			}
+		}
+		fascism_banned = {
+			picture = generic_fascism_banned
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				fascism_drift = -0.05
+			}
+		}
+		race_for_the_bomb = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.2
+			}
+			research_bonus = {
+				nuclear = 0.10
+			}
+		}
+		race_for_the_bomb_outclassed = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.25
+				political_power_factor = -0.5
+			}
+			research_bonus = {
+				nuclear = 0.15
+			}
+		}
+		received_attache = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.02
+				planning_speed = 0.10
+			}
+		}
+		draft_dodging = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = -0.2
+			}
+		}
+		draft_dodging_2 = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = -0.3
+			}
+		}
+		draft_dodging_3 = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = -0.4
+			}
+		}
+		strikes_1 = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				local_resources_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+		strikes_2 = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				local_resources_factor = -0.3
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+			}
+		}
+		strikes_3 = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.5
+				local_resources_factor = -0.5
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+			}
+		}
+		mutiny_1 = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				army_morale_factor = -0.2
+				training_time_factor = 0.2
+				army_attack_factor = -0.25
+				experience_gain_army = -0.1
+				army_org_factor = -0.1
+			}
+		}
+		mutiny_2 = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				army_morale_factor = -0.35
+				training_time_factor = 0.35
+				army_attack_factor = -0.5
+				experience_gain_army = -0.2
+				army_org_factor = -0.20
+			}
+		}
+		mutiny_3 = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				army_morale_factor = -0.5
+				training_time_factor = 0.5
+				army_attack_factor = -0.75
+				experience_gain_army = -0.3
+				army_org_factor = -0.5
+			}
+		}
+		# Civil War Ideas
+		civil_war_surprise_attack_plan = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus # TODO_CD
+			
+			modifier = {
+				army_core_attack_factor = 0.2
+			}
+		}
+		civil_war_rebuild_nation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				political_power_factor = 0.15
+				industry_repair_factor = 0.2
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.005
+				war_support_factor = -0.002
+			}
+		}
+	}
+	##################
+	####Politicians
+	##################
+	#HoS
+	head_of_state = {
+		generic_hos = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
+					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
+					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }
+					has_available_idea_with_traits = { idea = popular_figurehead limit = 1 }
+					has_available_idea_with_traits = { idea = great_leader limit = 1 }
+					has_available_idea_with_traits = { idea = silent_workhorse limit = 1 }
+					has_available_idea_with_traits = { idea = tough_guy limit = 1 }
+					has_available_idea_with_traits = { idea = inexperienced_amateur limit = 1 }
+					has_available_idea_with_traits = { idea = coalition_builder limit = 1 }
+					has_available_idea_with_traits = { idea = effective_leader limit = 1 }
+					has_available_idea_with_traits = { idea = naive_appeaser limit = 1 }
+					has_available_idea_with_traits = { idea = war_hero limit = 1 }
+					has_available_idea_with_traits = { idea = elder_statesman limit = 1 }
+					has_available_idea_with_traits = { idea = business_tycoon limit = 1 }
+					has_available_idea_with_traits = { idea = intellectual limit = 1 }
+					has_available_idea_with_traits = { idea = demagogue limit = 1 }
+					has_available_idea_with_traits = { idea = rising_star limit = 1 }
+				}
+			}
+			
+			traits = { effective_leader }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_hos1 = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
+					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
+					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }
+					has_available_idea_with_traits = { idea = popular_figurehead limit = 1 }
+					has_available_idea_with_traits = { idea = great_leader limit = 1 }
+					has_available_idea_with_traits = { idea = silent_workhorse limit = 1 }
+					has_available_idea_with_traits = { idea = tough_guy limit = 1 }
+					has_available_idea_with_traits = { idea = inexperienced_amateur limit = 1 }
+					has_available_idea_with_traits = { idea = coalition_builder limit = 1 }
+					has_available_idea_with_traits = { idea = effective_leader limit = 1 }
+					has_available_idea_with_traits = { idea = naive_appeaser limit = 1 }
+					has_available_idea_with_traits = { idea = war_hero limit = 1 }
+					has_available_idea_with_traits = { idea = elder_statesman limit = 1 }
+					has_available_idea_with_traits = { idea = business_tycoon limit = 1 }
+					has_available_idea_with_traits = { idea = intellectual limit = 1 }
+					has_available_idea_with_traits = { idea = demagogue limit = 1 }
+					has_available_idea_with_traits = { idea = rising_star limit = 1 }
+				}
+			}
+			
+			traits = { war_hero }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_hos2 = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = political_dancer limit = 1 }
+					has_available_idea_with_traits = { idea = staunch_constitutionalist limit = 1 }
+					has_available_idea_with_traits = { idea = ineffective_politician limit = 1 }
+					has_available_idea_with_traits = { idea = popular_figurehead limit = 1 }
+					has_available_idea_with_traits = { idea = great_leader limit = 1 }
+					has_available_idea_with_traits = { idea = silent_workhorse limit = 1 }
+					has_available_idea_with_traits = { idea = tough_guy limit = 1 }
+					has_available_idea_with_traits = { idea = inexperienced_amateur limit = 1 }
+					has_available_idea_with_traits = { idea = coalition_builder limit = 1 }
+					has_available_idea_with_traits = { idea = effective_leader limit = 1 }
+					has_available_idea_with_traits = { idea = naive_appeaser limit = 1 }
+					has_available_idea_with_traits = { idea = war_hero limit = 1 }
+					has_available_idea_with_traits = { idea = elder_statesman limit = 1 }
+					has_available_idea_with_traits = { idea = business_tycoon limit = 1 }
+					has_available_idea_with_traits = { idea = intellectual limit = 1 }
+					has_available_idea_with_traits = { idea = demagogue limit = 1 }
+					has_available_idea_with_traits = { idea = rising_star limit = 1 }
+				}
+			}
+			
+			traits = { business_tycoon }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#Foreign Ministers
+	foreign_minister = {
+		generic_foreign_minister = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = compassionate_gentleman limit = 1 }
+					has_available_idea_with_traits = { idea = ideological_crusader limit = 1 }
+					has_available_idea_with_traits = { idea = iron_fisted_brute limit = 1 }
+					has_available_idea_with_traits = { idea = smooth_talking_charmer limit = 1 }
+				}
+			}
+			
+			traits = { compassionate_gentleman }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#Propaganda/Security
+	interior_minister = {
+		generic_interior_minister = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = prince_of_terror limit = 1 }
+					has_available_idea_with_traits = { idea = backroom_backstabber limit = 1 }
+					has_available_idea_with_traits = { idea = efficient_sociopath limit = 1 }
+					has_available_idea_with_traits = { idea = crime_fighter limit = 1 }
+					has_available_idea_with_traits = { idea = hearts_and_minds limit = 1 }
+				}
+			}
+			
+			traits = { crime_fighter }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#Intelligence
+	intel_minister = {
+		generic_intel_minister = {
+			allowed = {
+				NOT = { has_available_idea_with_traits = { idea = codebreaker limit = 1 } }
+				NOT = { has_available_idea_with_traits = { idea = dismal_enigma limit = 1 } }
+				is_Arab = no
+			}
+			
+			traits = { dismal_enigma }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#Economic
+	economic_minister = {
+		generic_captain_of_industry = {
+			allowed = {
+				NOT = { has_available_idea_with_traits = { idea = captain_of_industry limit = 1 } }
+			}
+			
+			traits = { captain_of_industry }
+		}
+		generic_fortification_engineer = {
+			allowed = {
+				NOT = { has_available_idea_with_traits = { idea = fortification_engineer limit = 1 } }
+			}
+			
+			traits = { fortification_engineer }
+		}
+		generic_war_industrialist = {
+			allowed = {
+				NOT = { has_available_idea_with_traits = { idea = war_industrialist limit = 1 } }
+			}
+			
+			traits = { war_industrialist }
+		}
+		generic_economic_minister = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = capitalist limit = 1 }
+					has_available_idea_with_traits = { idea = theoretical_scientist limit = 1 }
+					has_available_idea_with_traits = { idea = administrative_genius limit = 1 }
+					has_available_idea_with_traits = { idea = resource_industrialist limit = 1 }
+					has_available_idea_with_traits = { idea = military_entrepreneur limit = 1 }
+					has_available_idea_with_traits = { idea = technical_especialist limit = 1 }
+					has_available_idea_with_traits = { idea = corrupt_kleptocrat limit = 1 }
+					has_available_idea_with_traits = { idea = industrial_planner limit = 1 }
+					has_available_idea_with_traits = { idea = armaments_organizer limit = 1 }
+					has_available_idea_with_traits = { idea = quartermaster_general limit = 1 }
+					has_available_idea_with_traits = { idea = financier limit = 1 }
+					has_available_idea_with_traits = { idea = committed_pacifist limit = 1 }
+					has_available_idea_with_traits = { idea = econ_interventionist limit = 1 }
+				}
+			}
+			
+			traits = { industrial_planner }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_economic_minister2 = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = capitalist limit = 1 }
+					has_available_idea_with_traits = { idea = theoretical_scientist limit = 1 }
+					has_available_idea_with_traits = { idea = administrative_genius limit = 1 }
+					has_available_idea_with_traits = { idea = resource_industrialist limit = 1 }
+					has_available_idea_with_traits = { idea = military_entrepreneur limit = 1 }
+					has_available_idea_with_traits = { idea = technical_especialist limit = 1 }
+					has_available_idea_with_traits = { idea = corrupt_kleptocrat limit = 1 }
+					has_available_idea_with_traits = { idea = industrial_planner limit = 1 }
+					has_available_idea_with_traits = { idea = armaments_organizer limit = 1 }
+					has_available_idea_with_traits = { idea = quartermaster_general limit = 1 }
+					has_available_idea_with_traits = { idea = financier limit = 1 }
+					has_available_idea_with_traits = { idea = committed_pacifist limit = 1 }
+					has_available_idea_with_traits = { idea = econ_interventionist limit = 1 }
+				}
+			}
+			
+			traits = { financier }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_economic_minister3 = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = military_entrepreneur limit = 1 }
+					has_available_idea_with_traits = { idea = armaments_organizer limit = 1 }
+					has_available_idea_with_traits = { idea = quartermaster_general limit = 1 }
+					has_available_idea_with_traits = { idea = guns_over_butter_advocate limit = 1 }
+				}
+			}
+			
+			traits = { military_entrepreneur }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#Political Advisors
+	political_advisor = {
+		# POLITICAL	
+		generic_communist_revolutionary = {
+			
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = ROM tag = CHI tag = MAN } }
+				NOT = {
+					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
+				}
+			}
+
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = NZL_the_lee_affair
+				}
+				
+			}
+			
+			traits = { communist_revolutionary }
+	
+			on_add = {
+				#country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_conservative_reformer = {
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN } }
+				NOT = {
+					has_available_idea_with_traits = { idea = conservative_reformer limit = 1 }
+				}
+				
+			}
+			
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					OR = {
+						has_completed_focus = NZL_strengthen_the_commonwealth
+						has_completed_focus = NZL_constitution_amendment_act
+					}
+				}
+			}
+			
+			traits = { conservative_reformer }
+	
+			on_add = {
+				#country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					democratic_govt = yes
+				}
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_liberal_reformer = {
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN } }
+				NOT = {
+					has_available_idea_with_traits = { idea = liberal_reformer limit = 1 }
+				}
+				
+			}
+			
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					OR = {
+						has_completed_focus = NZL_strengthen_the_commonwealth
+						has_completed_focus = NZL_constitution_amendment_act
+					}
+				}
+			}
+			
+			traits = { liberal_reformer }
+	
+			on_add = {
+				#country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					democratic_govt = yes
+				}
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_social_reformer = {
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN } }
+				NOT = {
+					has_available_idea_with_traits = { idea = socialist_reformer limit = 1 }
+				}
+				
+			}
+			
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					OR = {
+						has_completed_focus = NZL_strengthen_the_commonwealth
+						has_completed_focus = NZL_constitution_amendment_act
+					}
+				}
+			}
+			
+			traits = { socialist_reformer }
+	
+			on_add = {
+				#country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					democratic_govt = yes
+				}
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_fascist_demagogue = {
+			
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = PRC tag = CHI tag = MAN } }
+				NOT = {
+					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
+				}
+
+			}
+			
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = NZL_in_the_darkness
+				}
+				
+			}
+			
+			traits = { fascist_demagogue }
+	
+			on_add = {
+				#country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		generic_monarchist_advisor = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = royalist_reformer limit = 1 }
+				}
+				NOT = { tag = GER }
+			}
+
+			traits = { royalist_reformer }
+
+			on_add = {
+				country_event = political.30
+			}
+			
+			do_effect = {
+				NOT = {
+					has_government = monarchism
+				}
+			}
+	
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_government = monarchism }
+				}
+			}
+		}
+		generic_neutral_advisor = {
+			allowed = {
+				NOT = { 
+					has_government = fascism
+					has_government = communism
+					has_available_idea_with_traits = { idea = royalist_reformer limit = 1 }
+				}
+			}
+
+			traits = { staunch_traditionalist }
+
+			on_add = {
+				#country_event = political.30
+			}
+			
+			do_effect = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+	
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 1
+					NOT = { has_government = neutrality }
+				}
+				modifier = {
+					add = -1
+					tag = TUR
+				}
+			}
+		}
+		generic_speechwriter = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = speechwriter limit = 1 }
+				}
+			}
+
+			traits = { speechwriter }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		generic_sympathetic_judge = {
+			allowed = {
+				NOT = {
+					has_available_idea_with_traits = { idea = sympathetic_judge limit = 1 }
+				}
+			}
+
+			traits = { sympathetic_judge }
+			on_add = {
+				custom_effect_tooltip = judge_TT
+				increase_corruption = yes
+				set_country_flag = has_sympth_judge
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	#Theorist
+	theorist = {
+		generic_military_theorist = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+		generic_naval_theorist = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+		generic_air_warfare_theorist = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			research_bonus = {
+				air_warfare_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+	#Designers
+	#Armor
+	tank_manufacturer = {
+		designer = yes
+		
+		generic_tank_manufacturer = {
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				OR = {
+					original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR
+				}
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE } }
+				NOT = {
+					has_available_idea_with_traits = {
+						idea = armor_manufacturer
+						limit = 1
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = AST tag = SAF tag = NZL tag = CAN }
+						has_dlc = "Together for Victory"
+					}
+				}
+				NOT = {
+					OR = {
+						is_literally_china = yes
+						tag = MAN
+					}
+					has_dlc = "Waking the Tiger"
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { armor_manufacturer }
+		}
+	}
+	#Naval
+	naval_manufacturer = { 
+		designer = yes
+	
+		generic_naval_manufacturer = {
+			picture = generic_naval_manufacturer_1
+
+			allowed = {
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = SWE tag = HUN tag = CZE } }
+				NOT = {
+					has_available_idea_with_traits = {
+						idea = ships_manufacturer
+						limit = 1
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = AST tag = CAN tag = NZL tag = RAJ }
+						has_dlc = "Together for Victory"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { ships_manufacturer }
+		}
+	}
+	#Aircraft
+	aircraft_manufacturer = { 
+		designer = yes
+	
+		generic_light_aircraft_manufacturer = {
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = {
+					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
+				}
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { tag = ROM } NOT = { tag = YUG }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		generic_medium_aircraft_manufacturer = {
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = ROM } }
+				NOT = {
+					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
+				}
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { tag = YUG }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		generic_heavy_aircraft_manufacturer = {
+			picture = generic_air_manufacturer_2
+			
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM } }
+				NOT = {
+					has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
+				}
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { tag = YUG }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+		generic_naval_aircraft_manufacturer = {
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = YUG } }
+				NOT = {
+					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
+				}
+				if = {
+					limit = {
+						has_dlc = "Waking the Tiger"
+					}
+					NOT = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+	}
+	#Industrial
+	industrial_concern = {
+		generic_industrial_concern = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				OR = {
+					original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR
+				}
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN } }
+				NOT = {
+					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+		}
+		generic_electronics_concern = {
+			picture = generic_electronics_concern_1
+
+			allowed = {
+				OR = {
+					original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR
+				}
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = {
+					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
+				}
+				NOT = {
+					has_DLC = "Waking the Tiger"
+					OR = {
+						original_tag = MAN
+						is_literally_china = yes
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+		}
+	}
+	#Materials
+	materiel_manufacturer = {
+		designer = yes
+	
+		generic_motorized_equipment_manufacturer = {
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+				OR = {
+					original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR
+				}
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				#NOT = {
+				#	has_available_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
+				#}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		generic_infantry_equipment_manufacturer = {
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				OR = {
+					original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR
+				}
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN } }
+				NOT = {
+					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		generic_artillery_manufacturer = {
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				OR = {
+					original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR
+				}
+				NOT = {
+					OR = {
+						tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA
+					}
+				}
+				NOT = {
+					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = {
+							tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN
+						}
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+	#Supreme Commanders
+	supreme_commander = {
+		generic_supreme_commander = {
+			allowed = {
+				OR = {             
+					original_tag = SWE original_tag = DEN original_tag = NOR original_tag = ALB original_tag = GRE original_tag = TUR original_tag = SWI original_tag = SER
+					original_tag = YUG
+					original_tag = ROM
+					original_tag = SPR
+					original_tag = LAT
+					original_tag = EST
+					original_tag = LIT
+					original_tag = AUS
+					original_tag = POL
+					original_tag = CZE
+					original_tag = HOL
+					original_tag = BEL
+					original_tag = LUX
+					original_tag = DEN
+					original_tag = BUL
+					original_tag = POR
+					original_tag = FIN
+					original_tag = IRE
+					original_tag = HUN
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = CRO
+					original_tag = D01
+					original_tag = WGR
+					original_tag = DDR
+					original_tag = ISR
+					original_tag = UKR
+					original_tag = GEO
+					original_tag = KAZ
+					original_tag = AZR
+					original_tag = ARM
+					original_tag = BLR
+					original_tag = QUE
+					original_tag = NEW
+					original_tag = VLA
+					original_tag = WLL
+					original_tag = SAP
+					original_tag = ICE
+					original_tag = MOR
+				}
+			}
+			
+			traits = { supreme_com_planner }
+		}
+		generic_supreme_commander2 = {
+			allowed = {
+				OR = {
+					original_tag = SWE
+					original_tag = DEN
+					original_tag = NOR
+					original_tag = ALB
+					original_tag = GRE
+					original_tag = TUR
+					original_tag = SWI
+					original_tag = SER
+					original_tag = YUG
+					original_tag = ROM
+					original_tag = SPR
+					original_tag = LAT
+					original_tag = EST
+					original_tag = LIT
+					original_tag = AUS
+					original_tag = POL
+					original_tag = CZE
+					original_tag = HOL
+					original_tag = BEL
+					original_tag = LUX
+					original_tag = DEN
+					original_tag = BUL
+					original_tag = POR
+					original_tag = FIN
+					original_tag = IRE
+					original_tag = HUN
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = CRO
+					original_tag = D01
+					original_tag = WGR
+					original_tag = DDR
+					original_tag = ISR
+					original_tag = UKR
+					original_tag = GEO
+					original_tag = KAZ
+					original_tag = AZR
+					original_tag = ARM
+					original_tag = BLR
+					original_tag = QUE
+					original_tag = NEW
+					original_tag = VLA
+					original_tag = WLL
+					original_tag = SAP
+					original_tag = ICE
+					original_tag = NZL
+					original_tag = AST
+					original_tag = MNT
+					original_tag = MOR
+				}
+			}
+			
+			traits = { supreme_com_reformer }
+		}
+		generic_supreme_commander3 = {
+			allowed = {
+				OR = {
+					original_tag = SWE
+					original_tag = DEN
+					original_tag = NOR
+					original_tag = ALB
+					original_tag = GRE
+					original_tag = TUR
+					original_tag = SWI
+					original_tag = SER
+					original_tag = YUG
+					original_tag = ROM
+					original_tag = SPR
+					original_tag = LAT
+					original_tag = EST
+					original_tag = LIT
+					original_tag = AUS
+					original_tag = POL
+					original_tag = CZE
+					original_tag = HOL
+					original_tag = BEL
+					original_tag = LUX
+					original_tag = DEN
+					original_tag = BUL
+					original_tag = POR
+					original_tag = FIN
+					original_tag = IRE
+					original_tag = HUN
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = CRO
+					original_tag = D01
+					original_tag = WGR
+					original_tag = DDR
+					original_tag = ISR
+					original_tag = UKR
+					original_tag = GEO
+					original_tag = KAZ
+					original_tag = AZR
+					original_tag = ARM
+					original_tag = BLR
+					original_tag = QUE
+					original_tag = NEW
+					original_tag = VLA
+					original_tag = WLL
+					original_tag = SAP
+					original_tag = ICE
+					original_tag = NZL
+					original_tag = AST
+					original_tag = MNT
+					original_tag = MOR
+				}
+			}
+			
+			traits = { supreme_com_political }
+		}
+		generic_supreme_commander4 = {
+			allowed = {
+				OR = {
+					original_tag = SWE
+					original_tag = DEN
+					original_tag = NOR
+					original_tag = ALB
+					original_tag = GRE
+					original_tag = TUR
+					original_tag = SWI
+					original_tag = SER
+					original_tag = YUG
+					original_tag = ROM
+					original_tag = SPR
+					original_tag = LAT
+					original_tag = EST
+					original_tag = LIT
+					original_tag = AUS
+					original_tag = POL
+					original_tag = CZE
+					original_tag = HOL
+					original_tag = BEL
+					original_tag = LUX
+					original_tag = DEN
+					original_tag = BUL
+					original_tag = POR
+					original_tag = FIN
+					original_tag = IRE
+					original_tag = HUN
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = CRO
+					original_tag = D01
+					original_tag = WGR
+					original_tag = DDR
+					original_tag = ISR
+					original_tag = UKR
+					original_tag = GEO
+					original_tag = KAZ
+					original_tag = AZR
+					original_tag = ARM
+					original_tag = BLR
+					original_tag = QUE
+					original_tag = NEW
+					original_tag = VLA
+					original_tag = WLL
+					original_tag = SAP
+					original_tag = ICE
+					original_tag = NZL
+					original_tag = AST
+					original_tag = MNT
+					original_tag = MOR
+				}
+			}
+			
+			traits = { supreme_com_old_guard }
+		}
+		generic_supreme_commander_a1 = {
+			allowed = {
+				OR = {
+					original_tag = BHU
+					original_tag = CHI
+					original_tag = KOR
+					original_tag = MEN
+					original_tag = MAN
+					original_tag = NEP
+					original_tag = PHI
+					original_tag = SIA
+					original_tag = SIK
+					original_tag = TIB
+					original_tag = YUN
+					original_tag = MON
+					original_tag = TAN
+					original_tag = GXC
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = VIN
+					original_tag = CAM
+					original_tag = MAL
+					original_tag = INS
+					original_tag = LAO
+				}
+			}
+			
+			traits = { supreme_com_planner }
+		}
+		generic_supreme_commander_a2 = {
+			allowed = {
+				OR = {
+					original_tag = BHU
+					original_tag = CHI
+					original_tag = KOR
+					original_tag = MEN
+					original_tag = MAN
+					original_tag = NEP
+					original_tag = PHI
+					original_tag = SIA
+					original_tag = SIK
+					original_tag = TIB
+					original_tag = YUN
+					original_tag = MON
+					original_tag = TAN
+					original_tag = GXC
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = VIN
+					original_tag = CAM
+					original_tag = MAL
+					original_tag = INS
+					original_tag = LAO
+				}
+			}
+			
+			traits = { supreme_com_reformer }
+		}
+		generic_supreme_commander_a3 = {
+			allowed = {
+				OR = {
+					original_tag = BHU
+					original_tag = CHI
+					original_tag = KOR
+					original_tag = MEN
+					original_tag = MAN
+					original_tag = NEP
+					original_tag = PHI
+					original_tag = SIA
+					original_tag = SIK
+					original_tag = TIB
+					original_tag = YUN
+					original_tag = MON
+					original_tag = TAN
+					original_tag = GXC
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = VIN
+					original_tag = CAM
+					original_tag = MAL
+					original_tag = INS
+					original_tag = LAO
+				}
+			}
+			
+			traits = { supreme_com_political }
+		}
+		generic_supreme_commander_a4 = {
+			allowed = {
+				OR = {
+					original_tag = BHU
+					original_tag = CHI
+					original_tag = KOR
+					original_tag = MEN
+					original_tag = MAN
+					original_tag = NEP
+					original_tag = PHI
+					original_tag = SIA
+					original_tag = SIK
+					original_tag = TIB
+					original_tag = YUN
+					original_tag = MON
+					original_tag = TAN
+					original_tag = GXC
+					original_tag = SHX
+					original_tag = XSM
+					original_tag = VIN
+					original_tag = CAM
+					original_tag = MAL
+					original_tag = INS
+					original_tag = LAO
+				}
+			}
+			
+			traits = { supreme_com_old_guard }
+		}
+	}
+	#Amry
+	army_chief = {
+		generic_army_chief_off = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+		generic_army_chief_def = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+	}
+	#Navy
+	navy_chief = {		
+		generic_navy_chief_decisive_bat = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+		generic_navy_anti_submarine = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+	#Air
+	air_chief = {
+		generic_air_close_air_sup = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = MOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+		generic_air_chief_all_weather = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			traits = { air_chief_all_weather_2 }			
+		}
+	}
+	#High Command
+	high_command = {
+		generic_army_art = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+		generic_army_log = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+		generic_navy_fleet_log = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+		generic_air_air_combat_trainer = {
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = MOR }
+			}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+	}
+}
+### EOF ###
