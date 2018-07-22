@@ -1,6 +1,7 @@
 leader_traits = {
 	British_Ally = {
 		random = no
+		#ai_strategy = { befriend = ENG } but with proper code syntax
 		conservatism_acceptance = 50
 		liberalism_acceptance = 10
 		socialism_acceptance = 10
@@ -11,6 +12,7 @@ leader_traits = {
 	}
 	French_Ally = {
 		random = no
+		#ai_strategy = { befriend = FRA } but with proper code syntax
 		conservatism_acceptance = 10
 		liberalism_acceptance = 35
 		socialism_acceptance = 35
