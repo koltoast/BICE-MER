@@ -11,11 +11,15 @@ set_technology = {
 	infantry_weapons = 1
 	tech_Garrison = 1
 	tech_Headquarters = 1
+	semi_motorised_infantry = 1
 	################## support ##################
 	tech_recon = 1
 	subtech_recon_cav_1 = 1
+	desert_equipment = 1
 	################## artillery ###############
-	
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antiair = 1
 	################## armor ##############
 	#generic_armor = 1
 	################## aircraft ##############

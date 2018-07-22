@@ -577,5 +577,47 @@ ideas = {
 		}		
 		
 	}
+	industrial_concern = {
+					
+		Arab_oil_company = {
+			
+			picture = generic_industrial_concern_2
+			
+							
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Arab_oil_company_tt 
+					OR = {
+						has_completed_focus = Arab_Jordanian_Petroleum_Company
+						has_completed_focus = IRQ_Petroleum_Company
+						has_completed_focus = merJOR_Jordanian_Petroleum_Company
+					}
+				}
+				hidden_trigger = {
+					OR = {
+						has_completed_focus = Arab_Jordanian_Petroleum_Company
+						has_completed_focus = IRQ_Petroleum_Company
+						has_completed_focus = merJOR_Jordanian_Petroleum_Company
+					}
+				}
+			}
+			allowed = {
+				is_Arab = yes			
+			}
+			
+			research_bonus = {
+				synth_resources = 0.1
+				industry = 0.05			
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = { production_oil_factor = 0.05
+			}
+			
+			cost = 100
+		}
+		
+	}
 	
 }
