@@ -851,6 +851,17 @@ puppet_management = {
 				has_idea = BMP_arab_revolt
 			}		
 		}
+		### Ai should help AI if in trouble, players can suffer
+		ai_will_do = { 
+			factor = 0
+			modifier = {
+				add = 10				
+				BMP = {
+					is_ai = yes				
+				}
+				
+			}
+		}
 
 		is_good = yes
 		complete_effect = {
@@ -913,7 +924,7 @@ foreign_politics = {
 				reverse_add_opinion_modifier = {
 					target = BMP
 					modifier = unprovoked_aggression
-				}			   
+				} 			   
 				BMP = {
 					add_timed_idea = {
 						idea = Arab_Meddle

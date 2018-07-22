@@ -166,3 +166,63 @@ country_event = {
 		remove_ideas = IRQ_bakr_sidqi
 	}
 }
+#### Coup and ENG declares war AI v AI###
+country_event = {
+	id = iraq.8
+	title = iraq.8.t
+	desc = o
+	picture = GFX_report_event_generic_battle
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = IRQ
+		IRQ  = {
+			is_ai = yes
+			}
+		date > 1941.4.1
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = ok		
+		set_politics = {
+			ruling_party = fascism
+		}
+	}
+}
+
+country_event = {
+	id = iraq.9
+	title = iraq.9.t
+	desc = iraq.9.d
+	picture = GFX_report_event_generic_battle
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		ENG = {
+			is_ai = yes
+			}
+		IRQ  = {
+			is_ai = yes
+			}
+		date > 1941.5.2
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	option = {
+		name = ok		
+			declare_war_on = {
+				target = IRQ
+				type = puppet_wargoal_focus
+			}
+	}
+}
