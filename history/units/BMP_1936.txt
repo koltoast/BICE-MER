@@ -21,6 +21,7 @@ division_template = {
 		DIV_HQ = { x = 0 y = 0 }
 		military_police = { x = 0 y = 1 }
 		artillery_medium_mot = { x = 0 y = 2 }		
+		#anti_air = { x = 0 y = 3 } #removed by Aquillo apparently because BMP lacks the equipment
 	}
 	
 	priority = 0
@@ -28,6 +29,21 @@ division_template = {
 
 
 units = {
+	#division= {	
+	#	name = "Badiyat Ash Sham Garrison"
+	#	location = 1155
+	#	division_template = "Local Defence Force"
+	#	start_experience_factor = 0.1
+	#	start_equipment_factor = 0.15
+	#}
+	##Palestine Command##############################
+	#division= {	
+	#	name = "Palestine Command" 
+	#	location = 4206
+	#	division_template = "HQ Command" 
+	#	start_experience_factor = 0.3
+	#	start_equipment_factor = 0.8
+	#}
 	division= {	
 		#Jerusalem & Lydda Areas
 		division_name = {
@@ -36,6 +52,7 @@ units = {
 		}
 		location = 4206
 		division_template = "Regular Garrison"		
+		#force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
