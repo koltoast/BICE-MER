@@ -1,0 +1,199 @@
+﻿###########################
+# Iraq Events
+###########################
+
+add_namespace = iraq
+
+# Iraq-Anglo Treaty (British)
+country_event = {
+	id = iraq.1
+	title = iraq.1.t
+	desc = iraq.1.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.1.a	#sounds good
+		IRQ = {
+			country_event = { days = 1 id = iraq.2 }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = irq_eng_treaty
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = irq_eng_treaty_trade
+			}
+		}
+		# REVISIT Balance research bonus
+		add_tech_bonus = {
+			name = air_doc_bonus
+			bonus = 0.5
+            uses = 2
+			category = air_doctrine
+		}
+		add_tech_bonus = {
+			name = fighter_bonus
+            bonus = 0.5
+            uses = 2
+            technology = fighter1
+            technology = fighter2
+            technology = fighter3
+		}
+	}
+	
+	option = {
+		name = iraq.1.b	#no way 
+		add_timed_idea = { idea = SOV_scientist_defect days = 365 }
+		ai_chance = { factor = 0 }
+		add_political_power = -10
+		add_opinion_modifier = { target = IRQ modifier = refused_AI_pact }# no pact 
+		IRQ = {
+			country_event = { days = 1 id = iraq.3 }
+		}
+	}
+}
+
+# British Accept Iraq-Anglo Treaty
+country_event = {
+	id = iraq.2
+	title = iraq.2.t
+	desc = iraq.2.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.2.a	#bah
+		# REVISIT Balance research bonus
+		add_tech_bonus = {
+			name = air_doc_bonus
+			bonus = 0.5
+            uses = 2
+			category = air_doctrine
+		}
+		add_tech_bonus = {
+			name = fighter_bonus
+            bonus = 0.5
+            uses = 2
+            technology = fighter1
+            technology = fighter2
+            technology = fighter3
+		}
+		ENG = {
+			add_opinion_modifier = { target = IRQ modifier = irq_eng_treaty }
+			add_opinion_modifier = { target = IRQ modifier = irq_eng_treaty_trade }
+		}
+	}
+}
+
+# British Reject Iraq-Anglo Treaty
+country_event = {
+	id = iraq.3
+	title = iraq.3.t
+	desc = iraq.3.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.3.a
+		#add_opinion_modifier = { target = ENG modifier = refused_AI_pact }# no pact
+	}
+}
+
+#Ghazi I Death
+
+country_event = {
+	id = iraq.4
+	title = iraq.4.t 
+	desc = iraq.4.d
+	picture = GFX_country_event_king_ghazi
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = IRQ
+		date > 1939.4.4
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { # Abd al-Ilah
+		name = iraq.4.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "'Abd al-Ilah"
+			desc = "POLITICS_ABD_DESC"
+			picture = "Abd_al-Ilah.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {}
+		}
+	}
+}
+
+#IPC Nationalization
+country_event = {
+	id = iraq.5
+	title = iraq.5.t 
+	desc = iraq.5.d
+	picture = GFX_country_event_ipc_oil
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.5.a
+		add_resource = {
+			type = rubber
+			amount = 10
+			state = 676 #MOSUL
+		}
+	}
+}
+
+###Assyrian Levies###
+country_event = {
+	id = iraq.6
+	title = iraq.6.t
+	desc = iraq.6.d
+	picture = GFX_country_event_assyrians
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iraq.6.a
+		hidden_effect = {
+			load_oob = "IRQ_levies"
+		}
+		add_manpower = 2300
+	}
+}
+
+###Bakr Sidqi Assasination###
+country_event = {
+	id = iraq.7
+	title = iraq.7.t
+	desc = iraq.7.d
+	picture = GFX_country_event_bakr_sidqi
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = IRQ
+		date > 1937.8.11
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = iraq.7.a
+		remove_ideas = IRQ_bakr_sidqi
+	}
+}

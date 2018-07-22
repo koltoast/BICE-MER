@@ -10,6 +10,7 @@
  IRQ_simele2_desc:0 "The Simele massacre was a massacre committed by the armed forces of the Kingdom of Iraq led by Bakr Sidqi during a campaign systematically targeting the Assyrians of northern Iraq in August 1933. The term is used to describe not only the massacre in Simele, but also the killing spree that took place among 63 Assyrian villages in the Dohuk and Mosul districts that led to the deaths of between 5,000 and 6,000 Assyrians."
  IRQ_revolt:0 "Shia Revolts"
  IRQ_revolt_desc:0 "1935 Rumaytha and Diwaniyya revolt or the 1935–1936 Iraqi Shia revolts consisted of a series of Shia tribal uprisings in the mid-Euphrates region against the Sunni dominated authority of the Kingdom of Iraq."
+ #In each revolt, the response of the Iraqi government was to use military force to crush the rebellions with little mercy. #removed because now the player does it
  IRQ_treaty:0 "Anglo-Iraqi treaty"
  IRQ_treaty_desc:0 "The Anglo-Iraqi treaty grants the United Kingdom free movement through our country and access to our oil reserves, in exchance they offer some military development. However the unequal terms of the treaty led to a undercurrent of resentment"
  IRQ_ambushed_1:0 "Iraqi Ambush!"
