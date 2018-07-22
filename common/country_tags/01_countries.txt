@@ -1,2 +1,0 @@
-KUR = "countries/Kurdistan.txt"
-KUW = "countries/Kuwait.txt"
