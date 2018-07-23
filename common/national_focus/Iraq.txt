@@ -658,7 +658,7 @@ focus_tree = {
 	
 	focus = {
 		id = IRQ_British_research
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_research2
 		cost = 10.00
 		x = 8
 		y = 4
@@ -680,7 +680,7 @@ focus_tree = {
 	
 	focus = {
 		id = IRQ_British_aid
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		cost = 10.00
 		x = 10
 		y = 4
@@ -698,7 +698,7 @@ focus_tree = {
 	
 	focus = {
 		id = IRQ_British_train
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_military_academy
 		cost = 10.00
 		x = 9
 		y = 5
@@ -741,7 +741,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Ita_aid
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_expand_the_luftwaffe
 		cost = 10.00
 		x = 12
 		y = 4
@@ -767,7 +767,7 @@ focus_tree = {
 	
 	focus = {
 		id = IRQ_Ger_aid
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_ger_oppose_hitler
 		cost = 10.00
 		x = 14
 		y = 4
@@ -793,7 +793,7 @@ focus_tree = {
 	
 	focus = {
 		id = IRQ_Prepare_coup
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_AST_never_gallipoli
 		cost = 10.00
 		x = 13
 		y = 5
@@ -812,7 +812,7 @@ focus_tree = {
 	
 	focus = {
 		id = IRQ_seize_airfields
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
 		cost = 10.00
 		x = 13
 		y = 6
