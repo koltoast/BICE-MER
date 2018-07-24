@@ -1499,6 +1499,7 @@ focus = {
 		cost = 8.5
 		available = {
 			ENG_will_arab = yes
+			is_subject = no
 			}
 		bypass = {
 			is_subject_of = ENG
@@ -1575,6 +1576,7 @@ focus = {
 		cost = 8.5
 		available = {
 			FRA_will_arab = yes
+			is_subject = no
 			}	
 		bypass = {
 			is_subject_of = FRA
@@ -1713,6 +1715,7 @@ focus = {
 		cost = 8.5
 		available = {
 			GER_will_arab = yes
+			is_subject = no
 			}
 		bypass = {
 			is_subject_of = GER
@@ -1818,7 +1821,11 @@ focus = {
 		cost = 8.5
 		available = {
 			ITA_will_arab = yes
+			is_subject = no
 			}
+		bypass = {
+			is_subject_of = ITA
+		}
 		completion_reward = {	
 				ITA = { 
 					set_autonomy = { 
@@ -1919,7 +1926,11 @@ focus = {
 		cost = 8
 		available = {
 			SOV_will_arab = yes
+			OR ={
+				is_subject = no
+				is_subject_of = SOV
 			}
+		}
 		completion_reward = {	
 				SOV = { 
 					set_autonomy = { 
@@ -2063,9 +2074,11 @@ focus = {
 		x = 33
 		y = 5
 		cost = 7.5
-		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 0
+		}
+		available = {
+			is_subject = no
 		}
 		completion_reward = {	
 		create_faction = Arabian_League
@@ -2089,7 +2102,6 @@ focus = {
 		x = 31
 		y = 5
 		cost = 6.6
-		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 0
 		}
