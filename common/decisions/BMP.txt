@@ -1,6 +1,7 @@
-@BMP_HUNT_RIOTS_COST_T = 349
+@BMP_HUNT_RIOTS_COST_T = 349							
 @BMP_HUNT_RIOTS_COST_E = -350
 @BMP_Irgun_time = 60
+@BMP_Riot_time = 75
 			
 crisis = {
 	BMP_Riots_raids = {
@@ -11,7 +12,7 @@ crisis = {
 			NOT = { has_idea = BMP_Riots }
 		}
 
-		days_mission_timeout = 100
+		days_mission_timeout = BMP_Riot_time
 
 		activation = {
 			has_idea = BMP_Riots
@@ -907,7 +908,7 @@ foreign_politics = {
 				NOT = { has_country_flag = Arab_meddled }
 				BMP = {
 					is_ai = no
-					NOT = { has_idea = Arab_Meddle }
+					NOT = { has_idea = BMP_respite }
 				}
 				
 			}
@@ -924,15 +925,29 @@ foreign_politics = {
 				reverse_add_opinion_modifier = {
 					target = BMP
 					modifier = unprovoked_aggression
-				} 			   
+				}
+				reverse_add_opinion_modifier = {
+					target = ENG
+					modifier = protest_action
+				}				
 				BMP = {
 					add_timed_idea = {
 						idea = Arab_Meddle
 						days = 25
 						}
+				}				
+				
+				hidden_effect =  { 
+					subtract_from_variable = { BMP_Riot_time = 1 }
+					### For the AI
+					set_country_flag = Arab_meddled
+					BMP = {
+						add_timed_idea = {
+							idea = BMP_respite
+							days = 30
+						}
 					}
-				### For the AI
-				hidden_effect =  { set_country_flag = Arab_meddled } 
+				} 
             }
     }
 }

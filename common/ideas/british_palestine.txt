@@ -1,6 +1,13 @@
 ideas = {
 
+	hidden_ideas = {
+		BMP_respite = {
+			## no effect just an AI flag
+		}
+	}
+
 	country = {
+
 
 		BMP_jewish_militias1 = {
 			

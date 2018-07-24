@@ -1125,6 +1125,11 @@ focus = {
 
 	available_if_capitulated = yes
 	
+	available = {
+		NOT = { has_idea = BMP_arab_general_strikes
+		}
+	}
+	
 	completion_reward = {
 		838 = { #WESTBANK
 				if = {
@@ -1158,6 +1163,11 @@ focus = {
 	cost = 10
 
 	available_if_capitulated = yes
+	
+	available = {
+		NOT = { has_idea = BMP_arab_general_strikes
+		}
+	}
 	
 completion_reward = {
 			random_owned_controlled_state = {
