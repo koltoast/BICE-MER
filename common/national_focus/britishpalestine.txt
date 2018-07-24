@@ -1125,9 +1125,12 @@ focus = {
 
 	available_if_capitulated = yes
 	
+
 	available = {
-		NOT = { has_idea = BMP_arab_general_strikes
-		}
+			OR = {
+				is_ai = yes
+				NOT = { has_idea = BMP_arab_general_strikes }
+			}		
 	}
 	
 	completion_reward = {
@@ -1165,8 +1168,10 @@ focus = {
 	available_if_capitulated = yes
 	
 	available = {
-		NOT = { has_idea = BMP_arab_general_strikes
-		}
+			OR = {
+				is_ai = yes
+				NOT = { has_idea = BMP_arab_general_strikes }
+			}		
 	}
 	
 completion_reward = {
