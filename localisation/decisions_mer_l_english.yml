@@ -6,6 +6,7 @@
  Arab_Search_For_Oil:0 "Search for Oil"
  Arab_Search_For_Oil_desc:0 ""
  Arab_Search_For_Oil_tt:0 "Has completed search for oil deposits"
+ Arab_oil_Found_tt:0 "Oil Found!"
  Arab_invite:0 "Invite [Root.GetName]"
  Arab_invite_desc:0 "We will send an invitation to [Root.GetName] to join the Arab League"
  Arab_invite_build:0 "sponser building projects in [Root.GetName]"
