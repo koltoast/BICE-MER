@@ -150,14 +150,14 @@ prospect_for_resources = {
 					custom_effect_tooltip = Arab_oil_Found_tt
 				}
 				10 = {
-					set_country_flag = Arab_oil_Found
-					custom_effect_tooltip = Arab_oil_Found_tt
+					set_country_flag = Arab_oil_Found				
 					random_owned_controlled_state = {
 						add_resource = {
 						type = oil
 						amount = 1
 						}
 					}
+					custom_effect_tooltip = Arab_oil_Found_tt
 				}
 			}
 		}
