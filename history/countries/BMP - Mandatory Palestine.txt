@@ -75,7 +75,7 @@ add_ideas = {
 	
 	edu_minimal
 	
-	unity_divided_nation		
+	#unity_divided_nation		
 	foreign_isolationism
 }
 
@@ -99,7 +99,7 @@ set_country_flag = age_19
 
 set_country_flag = edu_minimal
 
-set_country_flag = unity_divided_nation
+#set_country_flag = unity_divided_nation
 set_country_flag = foreign_isolationism
 set_country_flag = neutrality_idea
 

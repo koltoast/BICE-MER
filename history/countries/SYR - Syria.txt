@@ -20,7 +20,7 @@ add_ideas = {
 		officer_train_none
 		edu_minimal
 		security_minor_restrictions
-		unity_united_nation		
+		#unity_united_nation		
 		foreign_isolationism
 		neutrality_idea
 }
