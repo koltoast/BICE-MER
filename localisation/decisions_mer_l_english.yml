@@ -17,6 +17,8 @@
  Arab_research_standards_desc:0 "we need to standardise research in [Root.GetName] before being able to share ideas, they have of course generously allowed us bear the cost"
  institute_press_censorship_monarchism_state:0 "Institute Press Censorship"
  institute_press_censorship_monarchism_state_desc:0 "These are dangerous times and we can't allow dissenting voices to tear our country apart. Restricting the freedom of the press is necessary to ensure that the truth is heard loud and clear."
+ money_cost_farm:0 "Cost 50 §Gmoney"
+ Arab_farming:0 "buy and develop more farmland"
  #BMP
   BMP_maintain_explanation:0 "Maintain divisions in the state for [?Root.BMP_maintain_timer|H0] days to pacify rioters in the region.\n"
   BMP_hunt_Riots_tt:0 "Rioting has gotten out of hand, its time to take a more direct approach \n"

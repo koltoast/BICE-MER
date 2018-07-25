@@ -10,6 +10,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
 	French_Ally = {
 		random = no
 		#ai_strategy = { befriend = FRA } but with proper code syntax
@@ -22,4 +23,28 @@ leader_traits = {
 		}
 	}
 	
+	independent_guy = {
+		random = no
+		#ai_strategy = { ???? } no idea what would work here if even needed
+		autonomy_gain = 0.15
+		stability_weekly = -0.001
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	Arab_Desert_tank = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.05 
+				reliability = 0.075 
+				heat_attrition_factor = -0.5
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

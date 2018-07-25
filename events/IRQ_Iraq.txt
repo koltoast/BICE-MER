@@ -179,9 +179,9 @@ country_event = {
 		create_country_leader = {
 			name = "'Abd al-Ilah"
 			desc = "POLITICS_ABD_DESC"
-			picture = "Abd_al-Ilah.dds"
+			picture = "Abd_al-Ilah.dds"  ### not currently working
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = emiratism
 			traits = {}
 		}
 	}

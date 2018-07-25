@@ -1480,7 +1480,10 @@ focus = {
 			}
 		}
 		completion_reward = {	
-			add_ideas = conservatism_influence
+			swap_ideas = { 
+				remove_idea = democratic_influence
+				add_idea = conservatism_influence
+			}
 			ENG = { 
 				add_opinion_modifier = {
 					target = ROOT
@@ -1557,7 +1560,10 @@ focus = {
 			}
 		}
 		completion_reward = {	
-			add_ideas = liberalism_influence
+			swap_ideas = { 
+				remove_idea = democratic_influence
+				add_idea = liberalism_influence
+			}
 			FRA = { 
 				add_opinion_modifier = {
 					target = ROOT

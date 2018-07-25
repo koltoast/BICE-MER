@@ -554,6 +554,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.20
 				industrial_capacity_factory = -0.20
+				stability_weekly = -0.001
 			}
 		}
 		Arab_hyper_inflation_5 = {
@@ -577,6 +578,39 @@ ideas = {
 		}		
 		
 	}
+	
+##### Political guys #####
+	tank_manufacturer = {
+		designer = yes
+		
+		Arab_tank_manufacturer = {
+			picture = generic_tank_manufacturer_2
+			
+			allowed = {
+				is_Arab = yes
+				NOT = { TAG = JOR }
+			}
+		
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Arab_tank_manufacturer_tt 
+					OR = {
+						has_completed_focus = Arab_armor_effort
+						has_completed_focus = IRQ_tank
+					}
+				}
+				hidden_trigger = {
+					OR = {
+						has_completed_focus = Arab_armor_effort
+						has_completed_focus = IRQ_tank
+					}
+				}
+			}
+			cost = 150
+			traits = { Arab_Desert_tank }
+		}
+	}
+			
 	industrial_concern = {
 					
 		Arab_oil_company = {
@@ -620,7 +654,7 @@ ideas = {
 		
 		Arab_Rail_company = {
 			
-			picture = generic_industrial_concern_1
+			picture = generic_build_infrastructure
 			
 							
 			available = {
@@ -634,9 +668,9 @@ ideas = {
 				}
 				hidden_trigger = {
 					OR = {
-						has_completed_focus = Arab_Jordanian_Petroleum_Company
-						has_completed_focus = IRQ_Petroleum_Company
-						has_completed_focus = merJOR_Jordanian_Petroleum_Company
+						has_completed_focus = Arab_Road
+						has_completed_focus = IRQ_infrastructure
+						has_completed_focus = merJOR_Road
 					}
 				}
 			}
@@ -658,6 +692,69 @@ ideas = {
 		
 		
 	}
+	
+	interior_minister = {
+		
+		Arab_interior = {
+		
+			picture = generic_army_arab_3
+			
+				allowed = {
+					is_Arab = yes	
+					NOT = { 
+						TAG = IRQ
+						TAG = JOR
+					}
+				}
+			
+			available = {
+				has_completed_focus = Arab_War_Command
+				}
+		
+			traits = { independent_guy }
+		}
+	}
+	
+	foreign_minister = {
+	
+		Arab_tough_negotiator = {
+			picture = generic_army_arab_3
+			
+			allowed = {
+				is_Arab = yes
+				}
+			
+			traits = { tough_negotiator }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		Arab_nice_guy = {
+			picture = generic_army_arab_2
+			
+			allowed = {
+				is_Arab = yes
+				}
+			
+			traits = { compassionate_gentleman }
+			
+			do_effect = {
+				
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+		
+		
 	
 	intel_minister = {
 	

@@ -605,3 +605,29 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mandate.23 ##### Failsafe if the AI stuffs up the revolt ###
+	title = mandate.23.t
+	desc = mandate.23.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BMP
+		date > 1938.3.2 
+		BMP = {
+			is_ai = yes
+		}				
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = { 
+		name = mandate.11.a
+		remove_ideas = BMP_Riots
+	}
+}

@@ -1,5 +1,50 @@
+economy_decisions = {
+	Arab_farming = {
+			
+			icon = generic_construction
+			
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Arab_Mining_tt 
+						OR = {
+							has_completed_focus = IRQ_Agriculture
+							has_completed_focus = Arab_Agriculture
+							has_completed_focus = merJOR_Agriculture
+						}
+				}
+				hidden_trigger = {
+					OR = {
+						has_completed_focus = IRQ_Agriculture
+						has_completed_focus = Arab_Agriculture
+						has_completed_focus = merJOR_Agriculture
+					}
+				}
+			}
+		allowed = {
+			Not = { has_idea = Arab_Farms }
+			custom_trigger_tooltip = { tooltip = money_cost_farm check_variable = { dx > 50 } }
+		}
+		
+		days_re_enable = 150
+		days_remove = 33
+		complete_effect = { 
+			subtract_from_variable = { dx = 50 }
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		remove_effect = {
+			add_timed_idea = { idea = Arab_Farms  days = 100 }
+		}
+	}
+}
+		
+		
+			
 prospect_for_resources = {
-		Arab_Mining = {
+	Arab_Mining = {
 
 		icon = generic_construction
 

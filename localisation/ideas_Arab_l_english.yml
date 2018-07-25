@@ -77,3 +77,8 @@
  Arab_Rail_company_tt:0 "Has completed Roads to the Capital"
  Arab_oil_company:0 "National Petroleum"
  Arab_oil_company_tt:0 "Has completed National Petroleum Company"
+ independent_guy:0 "Self Rule advocate"
+ Arab_Desert_tank:0 "Light Desert Tanks"
+ Arab_tank_manufacturer:0 "Desert Tank Manufacturer"
+ Arab_tank_manufacturer_tt:0 "Has completed national tank focus"
+ 

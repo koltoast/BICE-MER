@@ -370,7 +370,7 @@ ideas = {
 					
 		BMP_palestine_railways = {
 			
-			picture = generic_industrial_concern_1
+			picture = generic_build_infrastructure
 			
 			available = {
 				has_completed_focus = BMP_improve_palestinian_railways
