@@ -44,35 +44,35 @@ country_event = {
 					limit = { has_government = socialism }
 					add_popularity = {
 						ideology = socialism
-						popularity = -0.05
+						popularity = -0.03
 					}
 				}
 				if = { 
 					limit = { has_government = conservatism }
 					add_popularity = {
 						ideology = conservatism
-						popularity = -0.05
+						popularity = -0.03
 					}
 				}
 				if = { 
 					limit = { has_government = liberalism }
 					add_popularity = {
 						ideology = liberalism
-						popularity = -0.05
+						popularity = -0.03
 					}
 				}
 				if = { 
 					limit = { has_government = neutrality }
 					add_popularity = {
 						ideology = neutrality
-						popularity = -0.05
+						popularity = -0.03
 					}
 				}
 				if = { 
 					limit = { has_government = monarchism }
 					add_popularity = {
 						ideology = monarchism
-						popularity = -0.05
+						popularity = -0.03
 					}
 				}
 			}
@@ -81,35 +81,35 @@ country_event = {
 					limit = { has_government = socialism }
 					add_popularity = {
 						ideology = socialism
-						popularity = -0.10
+						popularity = -0.06
 					}
 				}
 				if = { 
 					limit = { has_government = conservatism }
 					add_popularity = {
 						ideology = conservatism
-						popularity = -0.10
+						popularity = -0.06
 					}
 				}
 				if = { 
 					limit = { has_government = liberalism }
 					add_popularity = {
 						ideology = liberalism
-						popularity = -0.10
+						popularity = -0.06
 					}
 				}
 				if = { 
 					limit = { has_government = neutrality }
 					add_popularity = {
 						ideology = neutrality
-						popularity = -0.10
+						popularity = -0.06
 					}
 				}
 				if = { 
 					limit = { has_government = monarchism }
 					add_popularity = {
 						ideology = monarchism
-						popularity = -0.10
+						popularity = -0.06
 					}
 				}
 			}
@@ -118,35 +118,35 @@ country_event = {
 					limit = { has_government = socialism }
 					add_popularity = {
 						ideology = socialism
-						popularity = -0.20
+						popularity = -0.12
 					}
 				}
 				if = { 
 					limit = { has_government = conservatism }
 					add_popularity = {
 						ideology = conservatism
-						popularity = -0.20
+						popularity = -0.12
 					}
 				}
 				if = { 
 					limit = { has_government = liberalism }
 					add_popularity = {
 						ideology = liberalism
-						popularity = -0.20
+						popularity = -0.12
 					}
 				}
 				if = { 
 					limit = { has_government = neutrality }
 					add_popularity = {
 						ideology = neutrality
-						popularity = -0.20
+						popularity = -0.12
 					}
 				}
 				if = { 
 					limit = { has_government = monarchism }
 					add_popularity = {
 						ideology = monarchism
-						popularity = -0.20
+						popularity = -0.12
 					}
 				}
 			}
