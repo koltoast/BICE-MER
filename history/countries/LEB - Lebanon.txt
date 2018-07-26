@@ -21,7 +21,7 @@ add_ideas = {
 		security_minor_restrictions
 		edu_minimal
 		
-		unity_united_nation		
+		#unity_united_nation		
 		foreign_isolationism
 		neutrality_idea
 }
