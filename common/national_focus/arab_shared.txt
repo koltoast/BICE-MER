@@ -79,7 +79,19 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 3
+			factor = 4
+			modifier = {
+				factor = 3
+				has_idea = Arab_hyper_inflation_2			
+			}
+			modifier = {
+				factor = 2
+				has_idea = Arab_hyper_inflation_3			
+			}
+			modifier = {
+				factor = 1
+				has_idea = Arab_hyper_inflation_4			
+			}
 		}
 		x = 0
 		y = 1
@@ -106,7 +118,19 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 3
+			factor = 4
+			modifier = {
+				factor = 3
+				has_idea = Arab_hyper_inflation_2			
+			}
+			modifier = {
+				factor = 2
+				has_idea = Arab_hyper_inflation_3			
+			}
+			modifier = {
+				factor = 1
+				has_idea = Arab_hyper_inflation_4			
+			}
 		}
 		completion_reward = {
 			swap_ideas = { 
@@ -132,7 +156,19 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 3
+			factor = 4
+			modifier = {
+				factor = 3
+				has_idea = Arab_hyper_inflation_2			
+			}
+			modifier = {
+				factor = 2
+				has_idea = Arab_hyper_inflation_3			
+			}
+			modifier = {
+				factor = 1
+				has_idea = Arab_hyper_inflation_4			
+			}
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -242,7 +278,19 @@ focus_tree = {
 		x = 4
 		y = 2
 		ai_will_do = {
-			factor = 3
+			factor = 4
+			modifier = {
+				factor = 3
+				has_idea = Arab_hyper_inflation_2			
+			}
+			modifier = {
+				factor = 2
+				has_idea = Arab_hyper_inflation_3			
+			}
+			modifier = {
+				factor = 1
+				has_idea = Arab_hyper_inflation_4			
+			}
 		}
 		completion_reward = {
 			add_ideas = Arab_Social
@@ -263,7 +311,19 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 3
+			factor = 4
+			modifier = {
+				factor = 3
+				has_idea = Arab_hyper_inflation_2			
+			}
+			modifier = {
+				factor = 2
+				has_idea = Arab_hyper_inflation_3			
+			}
+			modifier = {
+				factor = 1
+				has_idea = Arab_hyper_inflation_4			
+			}
 		}
 		x = 4
 		y = 3
@@ -334,7 +394,23 @@ focus_tree = {
 		x = 6
 		y = 2
 		ai_will_do = {
-			factor = 5
+			factor = 1
+			modifier = {
+				factor = 2
+				has_idea = Arab_hyper_inflation_2			
+			}
+			modifier = {
+				factor = 3
+				has_idea = Arab_hyper_inflation_3			
+			}
+			modifier = {
+				factor = 4
+				has_idea = Arab_hyper_inflation_4			
+			}
+			modifier = {
+				factor = 5
+				has_idea = Arab_hyper_inflation_5			
+			}
 		}
 		completion_reward = {
 			Arab_hyper_inflation_level_down = yes
@@ -438,6 +514,40 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = Arab_Market_Reforms
+		icon = GFX_focus_generic_industry_3
+		cost = 9.00
+		prerequisite = {
+			focus = Arab_Industry
+		}
+		x = 8
+		y = 5
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_idea = Arab_hyper_inflation_2			
+			}
+			modifier = {
+				factor = 3
+				has_idea = Arab_hyper_inflation_3			
+			}
+			modifier = {
+				factor = 4
+				has_idea = Arab_hyper_inflation_4			
+			}
+			modifier = {
+				factor = 5
+				has_idea = Arab_hyper_inflation_5			
+			}
+		}
+		completion_reward = {
+			Arab_hyper_inflation_level_down = yes
+		}				
+		
+
+	}
+	focus = {
 		id = Arab_Arming
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
@@ -510,6 +620,25 @@ focus_tree = {
 		available = { has_Arab_inflation = yes }
 		x = 8
 		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_idea = Arab_hyper_inflation_2			
+			}
+			modifier = {
+				factor = 3
+				has_idea = Arab_hyper_inflation_3			
+			}
+			modifier = {
+				factor = 4
+				has_idea = Arab_hyper_inflation_4			
+			}
+			modifier = {
+				factor = 5
+				has_idea = Arab_hyper_inflation_5			
+			}
+		}
 		completion_reward = {
 			add_ideas = liberty_ethos_focus
 			Arab_hyper_inflation_level_down = yes
@@ -525,7 +654,25 @@ focus = {
 		x = 12
 		y = 0
 		cost = 7
-
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_idea = Arab_hyper_inflation_2			
+			}
+			modifier = {
+				factor = 3
+				has_idea = Arab_hyper_inflation_3			
+			}
+			modifier = {
+				factor = 4
+				has_idea = Arab_hyper_inflation_4			
+			}
+			modifier = {
+				factor = 5
+				has_idea = Arab_hyper_inflation_5			
+			}
+		}
 		available_if_capitulated = yes
 		available = {
 			any_state = {
@@ -1442,20 +1589,21 @@ focus = {
 		cost = 7
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				factor = 5
 				OR = {
 					is_subject_of = ENG
 					is_subject_of = FRA
 					is_in_faction_with = ENG
+					is_subject_of = VIC
 					conservatism > 0.4
 					liberalism > 0.4
 				}
 			}
 		}
 		completion_reward = {		
-			add_ideas = democratic_influence
+			add_ideas = Arab_democratic_drift
 			set_country_flag = democratic_on_the_rise
 			}
 	}
@@ -1481,8 +1629,8 @@ focus = {
 		}
 		completion_reward = {	
 			swap_ideas = { 
-				remove_idea = democratic_influence
-				add_idea = conservatism_influence
+				remove_idea = Arab_democratic_drift
+				add_idea = Arab_conservatism_drift
 			}
 			ENG = { 
 				add_opinion_modifier = {
@@ -1555,21 +1703,38 @@ focus = {
 				factor = 5
 				OR = {
 					is_subject_of = FRA
+					is_subject_of = VIC
 					liberalism > 0.4
 				}
 			}
 		}
 		completion_reward = {	
-			swap_ideas = { 
-				remove_idea = democratic_influence
-				add_idea = liberalism_influence
-			}
-			FRA = { 
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = democratic_leanings_good
+			IF = { 
+				limit = { is_subject_of = VIC }
+				swap_ideas = { 
+					remove_idea = Arab_democratic_drift
+					add_idea = Arab_fascist_drift
 				}
-			}		
+				GER = { 
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = fascism_leanings_good
+					}
+				}	
+			}
+				
+			else = {
+				swap_ideas = { 
+					remove_idea = Arab_democratic_drift
+					add_idea = Arab_liberalism_drift
+				}
+				FRA = { 
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = democratic_leanings_good
+					}
+				}	
+			}
 		}
 	}
 
@@ -1662,7 +1827,7 @@ focus = {
 		cost = 7
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				factor = 5
 				OR = {
@@ -1675,7 +1840,7 @@ focus = {
 			}
 		}
 		completion_reward = {	
-			add_ideas = nationalism
+				add_ideas = Arab_fascist_drift
 				set_country_flag = fascism_on_the_rise
 			}
 	}
@@ -1704,11 +1869,7 @@ focus = {
 					target = ROOT
 					modifier = fascism_leanings_good
 				}
-			}
-			swap_ideas = { 
-				remove_idea = nationalism
-				add_idea = fascist_influence
-				}			
+			}			
 		}
 	}
 
@@ -1811,11 +1972,7 @@ focus = {
 					modifier = fascism_leanings_good
 				}
 			}
-			swap_ideas = { 
-				remove_idea = nationalism
-				add_idea = fascist_influence
-				}		
-			}
+		}
 	}
 	
 	focus = {
@@ -1903,7 +2060,7 @@ focus = {
 		cost = 8
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				factor = 5
 				OR = {
@@ -1913,7 +2070,7 @@ focus = {
 			}
 		}
 		completion_reward = {
-			add_ideas = internationalism
+			add_ideas = Arab_communist_drift
 			SOV = { 
 				add_opinion_modifier = {
 					target = ROOT
@@ -2026,7 +2183,7 @@ focus = {
 		}
 		completion_reward = {		
 			remove_ideas = idea_monarchist_1
-			add_ideas = socialism_influence
+			add_ideas = Arab_socialism_drift
 			}
 	}
 	
@@ -2048,7 +2205,7 @@ focus = {
 		}
 		completion_reward = {	
 			add_ideas = idea_monarchist_4
-			add_ideas = monarchist_influence
+			add_ideas = Arab_monarchist_drift
 			}
 	}
 	

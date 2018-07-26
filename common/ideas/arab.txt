@@ -466,6 +466,139 @@ ideas = {
 				min_export = -0.05
 				}
 		}
+		
+##### Drift Ideas ######
+
+		Arab_fascist_drift = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = triumphant_will
+			
+			modifier = {
+				fascism_drift = 0.05
+				fascism_acceptance = 20
+			}
+		}
+		Arab_monarchist_drift = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = monarchism
+			}
+
+			removal_cost = -1
+
+			picture = idea_FRA_swe
+			
+			modifier = {
+				monarchism_drift = 0.05
+				monarchism_acceptance = 20
+			}
+		}
+		Arab_communist_drift = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.05
+				communism_acceptance = 20
+			}
+		}
+		Arab_democratic_drift = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				democratic_govt = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				conservatism_drift = 0.05
+				conservatism_acceptance = 20
+				liberalism_drift = 0.05
+				liberalism_acceptance = 20
+				socialism_drift = 0.05
+				socialism_acceptance = 20
+			}
+		}
+		Arab_liberalism_drift = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = liberalism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				liberalism_drift = 0.05
+				liberalism_acceptance = 20
+			}
+		}
+		Arab_socialism_drift = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = socialism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				socialism_drift = 0.05
+				socialism_acceptance = 20
+			}
+		}
+		Arab_conservatism_drift = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = conservatism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				conservatism_drift = 0.05
+				conservatism_acceptance = 20
+			}
+		}
 ##### Inflation Ideas #####
 		Arab_hyper_inflation_none = {
 			picture = chi_hyper_inflation

@@ -82,6 +82,8 @@
  Arab_construction_desc:0 "Encouraging the civilain economy in our capital will bring great rewards"
  Arab_Industry:0 "Industry modernisation"
  Arab_Industry_desc:0 "Our industry is well behind the modern world, we must invest in new and improved methods"
+ Arab_Market_Reforms:0 "Market Reforms"
+ Arab_Market_Reforms_desc:0 "Inflation is killing our economy we must implement tough new reforms"
  Arab_fort_capital:0 "Defend the capital"
  Arab_fort_capital:0 "With tension in the world rising we must be ready to defend our seat of power"
  Arab_forts:0 "Fortification techniques"
