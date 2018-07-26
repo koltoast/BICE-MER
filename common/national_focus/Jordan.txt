@@ -304,7 +304,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 						add_resource = {
 						type = oil
-						amount = 2
+						amount = 1
 						}
 					}
 		}
