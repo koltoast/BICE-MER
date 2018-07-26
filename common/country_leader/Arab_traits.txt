@@ -1,7 +1,7 @@
 leader_traits = {
 	British_Ally = {
 		random = no
-		#ai_strategy = { befriend = ENG } but with proper code syntax
+		#ai_strategy = { befriend = ENG } but with proper code syntax #TODO
 		conservatism_acceptance = 50
 		liberalism_acceptance = 10
 		socialism_acceptance = 10
@@ -13,7 +13,7 @@ leader_traits = {
 	
 	French_Ally = {
 		random = no
-		#ai_strategy = { befriend = FRA } but with proper code syntax
+		#ai_strategy = { befriend = FRA } but with proper code syntax #TODO
 		conservatism_acceptance = 10
 		liberalism_acceptance = 35
 		socialism_acceptance = 35
@@ -25,7 +25,7 @@ leader_traits = {
 	
 	independent_guy = {
 		random = no
-		#ai_strategy = { ???? } no idea what would work here if even needed
+		#ai_strategy = { ???? } no idea what would work here if even needed #TODO
 		autonomy_gain = 0.15
 		stability_weekly = -0.001
 		ai_will_do = {
@@ -39,6 +39,7 @@ leader_traits = {
 			armor = {
 				maximum_speed = 0.05 
 				reliability = 0.05 
+				#heat_attrition_factor = -0.5 find the proper code syntax #TODO
 				default_morale = 0.05
 				armor_value = -0.05
 			}
