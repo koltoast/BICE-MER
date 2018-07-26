@@ -2483,8 +2483,8 @@ country_event = {
 								has_idea = Arab_liberalism_drift
 								}
 							}
-						remove_idea = Arab_democratic_drift
-						remove_idea = Arab_liberalism_drift
+						remove_ideas = Arab_democratic_drift
+						remove_ideas = Arab_liberalism_drift
 						add_ideas = Arab_fascist_drift
 					}
 				}
@@ -2513,8 +2513,8 @@ country_event = {
 								has_idea = Arab_liberalism_drift
 								}
 							}
-						remove_idea = Arab_democratic_drift
-						remove_idea = Arab_liberalism_drift
+						remove_ideas = Arab_democratic_drift
+						remove_ideas = Arab_liberalism_drift
 						add_ideas = Arab_fascist_drift
 					}
 				}

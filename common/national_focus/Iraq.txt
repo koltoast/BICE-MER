@@ -5,7 +5,8 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = IRQ
-		}
+			has_dlc = "Waking the Tiger"
+		}	
 	}
 	default = no
 	continuous_focus_position = { x = 50 y = 540 }
