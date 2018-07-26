@@ -38,8 +38,9 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				maximum_speed = 0.05 
-				reliability = 0.075 
-				heat_attrition_factor = -0.5
+				reliability = 0.05 
+				default_morale = 0.05
+				armor_value = -0.05
 			}
 		}
 		
