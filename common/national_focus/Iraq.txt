@@ -1809,7 +1809,7 @@ focus = {
 		
 	focus = {
 		id = IRQ_air
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_focus_IRQ_air #GFX_goal_generic_build_airforce
 		cost = 10
 		x = 31
 		y = 0

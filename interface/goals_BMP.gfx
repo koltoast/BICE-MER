@@ -3,12 +3,27 @@ spriteTypes = {
 	#### BMP goal icons
 
 	SpriteType = {
-	name = "GFX_BMP_jewish_militias"
-	texturefile = "gfx/interface/goals/BMP_jewish_militias.dds"			
-	}	
+	name = "GFX_focus_BMP_mandate"
+	texturefile = "gfx/interface/goals/focus_BMP_mandate.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_focus_BMP_jewish_militias"
+	texturefile = "gfx/interface/goals/focus_BMP_jewish_militias.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_focus_BMP_palestine_police"
+	texturefile = "gfx/interface/goals/focus_BMP_palestine_police.dds"			
+	}
 	
 	SpriteType = {
-	name = "GFX_BMP_crush_arab_revolt"
-	texturefile = "gfx/interface/goals/BMP_crush_arab_revolt.dds"			
-	}	
+	name = "GFX_focus_BMP_crush_arab_revolt"
+	texturefile = "gfx/interface/goals/focus_BMP_crush_arab_revolt.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_BMP_crush_pan_arab_revolt"
+	texturefile = "gfx/interface/goals/focus_BMP_crush_pan_arab_revolt.dds"			
+	}
 }

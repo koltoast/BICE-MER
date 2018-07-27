@@ -799,8 +799,7 @@ focus = {
 
 focus = {
 	id = BMP_reinforce_the_palestine_police_force
-	#icon = GFX_goal_generic_allies_build_infantry
-	icon = GFX_focus_generic_little_entente
+	icon = GFX_focus_BMP_palestine_police #GFX_focus_generic_little_entente #icon = GFX_goal_generic_allies_build_infantry
 	prerequisite = { focus = BMP_put_down_the_arab_revolt }
 	x = 11
 	y = 3
@@ -825,7 +824,7 @@ focus = {
 
 focus = {
 		id = BMP_re-establish_the_mandate
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_BMP_mandate #GFX_goal_generic_demand_territory
 		x = 12
 		y = 0
 		cost = 12
@@ -895,7 +894,7 @@ focus = {
 
 focus = {
 	id = BMP_jewish_militias
-	icon = GFX_BMP_jewish_militias
+	icon = GFX_focus_BMP_jewish_militias
 	prerequisite = { focus = BMP_put_down_the_arab_revolt }
 	x = 13
 	y = 3
@@ -945,7 +944,7 @@ focus = {
 
 focus = {
 	id = BMP_Underground_Government
-	icon = GFX_BMP_jewish_militias
+	icon = GFX_focus_BMP_jewish_militias
 	prerequisite = {  focus = BMP_secret_training_camps }
 	x = 13
 	y = 5
