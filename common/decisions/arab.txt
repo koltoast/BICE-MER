@@ -3,9 +3,9 @@ economy_decisions = {
 			
 			icon = generic_construction
 			
-			available = {
+		available = {
 				custom_trigger_tooltip = {
-					tooltip = Arab_Mining_tt 
+					tooltip = Arab_farming_tt 
 						OR = {
 							has_completed_focus = IRQ_Agriculture
 							has_completed_focus = Arab_Agriculture
