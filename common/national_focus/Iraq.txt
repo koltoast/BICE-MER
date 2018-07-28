@@ -681,7 +681,7 @@ focus_tree = {
 	
 	focus = {
 		id = IRQ_British_aid
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_focus_chi_british_cooperation #GFX_goal_tfv_strengthen_commonwealth_ties
 		cost = 10.00
 		x = 10
 		y = 4

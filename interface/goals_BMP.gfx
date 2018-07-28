@@ -8,6 +8,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_BMP_mandate"
+	texturefile = "gfx/interface/goals/focus_BMP_mandate.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_focus_BMP_jewish_militias"
 	texturefile = "gfx/interface/goals/focus_BMP_jewish_militias.dds"			
 	}
@@ -19,6 +24,11 @@ spriteTypes = {
 	
 	SpriteType = {
 	name = "GFX_focus_BMP_crush_arab_revolt"
+	texturefile = "gfx/interface/goals/focus_BMP_crush_arab_revolt.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_BMP_crush_arab_revolt"
 	texturefile = "gfx/interface/goals/focus_BMP_crush_arab_revolt.dds"			
 	}
 	

@@ -824,7 +824,7 @@ focus = {
 
 focus = {
 		id = BMP_re-establish_the_mandate
-		icon = GFX_focus_BMP_mandate #GFX_goal_generic_demand_territory
+		icon = GFX_BMP_mandate #GFX_goal_generic_demand_territory
 		x = 12
 		y = 0
 		cost = 12
@@ -844,7 +844,7 @@ focus = {
 
 focus = {
 		id = BMP_put_down_the_arab_revolt
-		icon = GFX_BMP_crush_arab_revolt
+		icon = GFX_focus_BMP_crush_arab_revolt
 		prerequisite = { focus = BMP_assist_great_britain focus = BMP_resist_the_empire }
 		x = 12
 		y = 2
