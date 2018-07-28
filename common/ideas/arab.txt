@@ -144,7 +144,7 @@ ideas = {
 			modifier = {
 				research_time_factor = -0.03
 				planning_speed = 0.005
-				max_planning = 0.005
+				max_planning = 0.01
 				consumer_goods_factor = 0.02
 			}
 		}
@@ -162,7 +162,7 @@ ideas = {
 			modifier = {
 				research_time_factor = -0.05
 				planning_speed = 0.008
-				max_planning = 0.01
+				max_planning = 0.02
 				consumer_goods_factor = 0.04
 			}
 		}
@@ -254,7 +254,7 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 
 			modifier = {	
-			stability_weekly = 0.005	
+			stability_weekly = 0.003	
 			}
 		}
 		
@@ -269,8 +269,9 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 
 			modifier = {	
-			stability_weekly = 0.005	
-			war_support_weekly	= 0.005		
+			stability_weekly = 0.003	
+			war_support_weekly	= 0.002	
+			monthly_population = 0.05			
 			}
 		}
 		
