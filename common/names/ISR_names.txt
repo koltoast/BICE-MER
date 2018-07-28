@@ -4,25 +4,6 @@
 # Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
 # Picking up a gender is random, and is influenced by the amount of names scripted.
 # Made by Alex Kamal
-
-default = {
-	male = {
-		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes"}
-		surnames = { }
-		callsigns = { }
-	}
-	#female = {
-	#	names = { "Juliette" "Anna" }
-	#	surnames = { }
-	#	callsigns = { "Queen Of The Sky" "The Red Princess" }
-	#}
-	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
-	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
-}
-
-###############################################################
-# The Jews
-###############################################################
 ISR = {
 	male = {
 		names = {  Moshe Yitzhak Efraim Binyamin Yosef Daniel David Michael Chaim Yehudah Ya'akov 
