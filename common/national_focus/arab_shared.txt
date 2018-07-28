@@ -81,15 +81,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 3
+				add = -1
 				has_idea = Arab_hyper_inflation_2			
 			}
 			modifier = {
-				factor = 2
+				add = -2
 				has_idea = Arab_hyper_inflation_3			
 			}
 			modifier = {
-				factor = 1
+				add = -3
 				has_idea = Arab_hyper_inflation_4			
 			}
 		}
@@ -120,15 +120,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 3
+				add = -1
 				has_idea = Arab_hyper_inflation_2			
 			}
 			modifier = {
-				factor = 2
+				add = -2
 				has_idea = Arab_hyper_inflation_3			
 			}
 			modifier = {
-				factor = 1
+				add = -3
 				has_idea = Arab_hyper_inflation_4			
 			}
 		}
@@ -158,15 +158,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 3
+				add = -1
 				has_idea = Arab_hyper_inflation_2			
 			}
 			modifier = {
-				factor = 2
+				add = -2
 				has_idea = Arab_hyper_inflation_3			
 			}
 			modifier = {
-				factor = 1
+				add = -3
 				has_idea = Arab_hyper_inflation_4			
 			}
 		}
@@ -280,17 +280,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 3
+				add = -1
 				has_idea = Arab_hyper_inflation_2			
 			}
 			modifier = {
-				factor = 2
+				add = -2
 				has_idea = Arab_hyper_inflation_3			
 			}
 			modifier = {
-				factor = 1
+				add = -3
 				has_idea = Arab_hyper_inflation_4			
 			}
+		
 		}
 		completion_reward = {
 			add_ideas = Arab_Social
@@ -313,15 +314,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 			modifier = {
-				factor = 3
+				add = -1
 				has_idea = Arab_hyper_inflation_2			
 			}
 			modifier = {
-				factor = 2
+				add = -2
 				has_idea = Arab_hyper_inflation_3			
 			}
 			modifier = {
-				factor = 1
+				add = -3
 				has_idea = Arab_hyper_inflation_4			
 			}
 		}
@@ -396,19 +397,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 2
+				add = 2
 				has_idea = Arab_hyper_inflation_2			
 			}
 			modifier = {
-				factor = 3
+				add = 3
 				has_idea = Arab_hyper_inflation_3			
 			}
 			modifier = {
-				factor = 4
+				add = 4
 				has_idea = Arab_hyper_inflation_4			
 			}
 			modifier = {
-				factor = 5
+				add = 5
 				has_idea = Arab_hyper_inflation_5			
 			}
 		}
@@ -426,6 +427,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 2
+		ai_will_do = {
+			factor = 2
+		}
 		completion_reward = { 
 			add_ideas = Arab_oil
 		}
@@ -436,7 +440,7 @@ focus_tree = {
 		id = Arab_Road
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5.00
-		x = 10
+		x = 11
 		y = 0
 		ai_will_do = {
 			factor = 2
@@ -455,14 +459,74 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = Arab_land
+		icon = GFX_goal_reichsautobahn
+		cost = 5.00
+		x = 12
+		y = 1
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = -1
+				num_of_controlled_states < 2		
+			}
+		}
+		prerequisite = { focus = Arab_Road }
+		completion_reward = {
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}	
+		}
+	}
+	
+	focus = {
 		id = Arab_construction
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 9.50
 		x = 10
 		y = 1
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = -1
+				num_of_controlled_states < 2		
+			}
+		}
 		prerequisite = { focus = Arab_Road }
 		completion_reward = {
 					capital_scope = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}	
+		}
+
+	}
+	
+	focus = {
+		id = Arab_construction2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 11
+		y = 3
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = -1
+				num_of_controlled_states < 2		
+			}
+		}
+		prerequisite = { focus = Arab_land }
+		completion_reward = {
+					random_owned_controlled_state = {
 						add_extra_state_shared_building_slots = 1
 						add_building_construction = {
 							type = industrial_complex
@@ -486,6 +550,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
+		ai_will_do = {
+			factor = 2
+		}
 		completion_reward = {
 				activate_decision = Arab_Mining
 		}
@@ -499,8 +566,14 @@ focus_tree = {
 		prerequisite = {
 			focus = Arab_Mining_Operations
 		}
+		prerequisite = {
+			focus = Arab_construction2
+		}
 		x = 10
 		y = 4
+		ai_will_do = {
+			factor = 2
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -514,30 +587,58 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = Arab_Steel
+		icon = GFX_focus_generic_steel
+		cost = 10
+		x = 15
+		y = 5
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = -1
+				num_of_controlled_states < 2		
+			}
+		}
+		prerequisite = {
+			focus = Arab_Industry
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = steel_refinery
+							level = 1
+							instant_build = yes
+						}
+					}	
+		}
+
+	}
+	focus = {
 		id = Arab_Market_Reforms
 		icon = GFX_focus_generic_industry_3
 		cost = 9.00
 		prerequisite = {
 			focus = Arab_Industry
 		}
-		x = 8
+		x = 12
 		y = 5
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 2
+				add = 2
 				has_idea = Arab_hyper_inflation_2			
 			}
 			modifier = {
-				factor = 3
+				add = 3
 				has_idea = Arab_hyper_inflation_3			
 			}
 			modifier = {
-				factor = 4
+				add = 4
 				has_idea = Arab_hyper_inflation_4			
 			}
 			modifier = {
-				factor = 5
+				add = 5
 				has_idea = Arab_hyper_inflation_5			
 			}
 		}
@@ -557,8 +658,11 @@ focus_tree = {
 		prerequisite = { 
 			focus = Arab_equipment_effort_2			
 		}
-		x = 15
+		x = 18
 		y = 5
+		ai_will_do = {
+			factor = 5
+		}
 
 		completion_reward = {
 					capital_scope = {
@@ -589,8 +693,11 @@ focus_tree = {
 				has_war = yes
 			}
 		}
-		x = 15
+		x = 18
 		y = 6
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 					capital_scope = {
 						add_extra_state_shared_building_slots = 2
@@ -617,25 +724,26 @@ focus_tree = {
 		prerequisite = {
 			focus = Arab_Mining_Operations
 		}
+		mutually_exclusive = { focus = Arab_Trade_less }
 		available = { has_Arab_inflation = yes }
-		x = 8
+		x = 9
 		y = 3
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 2
+				add = 2
 				has_idea = Arab_hyper_inflation_2			
 			}
 			modifier = {
-				factor = 3
+				add = 3
 				has_idea = Arab_hyper_inflation_3			
 			}
 			modifier = {
-				factor = 4
+				add = 4
 				has_idea = Arab_hyper_inflation_4			
 			}
 			modifier = {
-				factor = 5
+				add = 5
 				has_idea = Arab_hyper_inflation_5			
 			}
 		}
@@ -645,31 +753,72 @@ focus_tree = {
 		}
 
 	}
+	
+	focus = {
+		id = Arab_Trade_less
+		icon = GFX_focus_rom_parties_end
+		cost = 8.00
+		prerequisite = {
+			focus = Arab_Jordanian_Petroleum_Company
+		}
+		prerequisite = {
+			focus = Arab_Trade
+		}
+		prerequisite = {
+			focus = Arab_Mining_Operations
+		}
+		mutually_exclusive = { focus = Arab_Trade_More }
+		x = 7
+		y = 3
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = -1
+				has_idea = Arab_hyper_inflation_2			
+			}
+			modifier = {
+				add = -2
+				has_idea = Arab_hyper_inflation_3			
+			}
+			modifier = {
+				add = -2
+				has_idea = Arab_hyper_inflation_4			
+			}
+			modifier = {
+				add = -2
+				has_idea = Arab_hyper_inflation_5			
+			}
+		}
+		completion_reward = {
+			add_ideas = Arab_less_export
+		}
+
+	}
 ###################
 #### Naval ########
 ###################
 focus = {
 		id = Arab_Sea_Trade
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 12
+		x = 13
 		y = 0
 		cost = 7
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 2
+				add = 2
 				has_idea = Arab_hyper_inflation_2			
 			}
 			modifier = {
-				factor = 3
+				add = 3
 				has_idea = Arab_hyper_inflation_3			
 			}
 			modifier = {
-				factor = 4
+				add = 4
 				has_idea = Arab_hyper_inflation_4			
 			}
 			modifier = {
-				factor = 5
+				add = 5
 				has_idea = Arab_hyper_inflation_5			
 			}
 		}
@@ -698,9 +847,12 @@ focus = {
 focus = {
 		id = Arab_Trade_Fleet
 		icon = GFX_goal_continuous_increase_nu
-		x = 14
+		x = 15
 		y = 0
 		cost = 6
+		ai_will_do = {
+			factor = 2
+		}
 
 		available_if_capitulated = yes
 				available = {
@@ -725,10 +877,12 @@ focus = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = Arab_Sea_Trade }
 		prerequisite = { focus = Arab_Trade_Fleet }
-		x = 13
+		x = 14
 		y = 1
 		cost = 15
-
+		ai_will_do = {
+			factor = 3
+		}
 		available_if_capitulated = yes
 
 
@@ -851,10 +1005,12 @@ focus = {
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = Arab_military_dockyards }
 		mutually_exclusive = { focus = Arab_subsurface_fleet }
-		x = 14
+		x = 15
 		y = 2
 		cost = 10
-
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -884,10 +1040,12 @@ focus = {
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = Arab_military_dockyards }
 		mutually_exclusive = { focus = Arab_surface_fleet }
-		x = 12
+		x = 13
 		y = 2
 		cost = 10
-
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -911,9 +1069,11 @@ focus = {
 		id = Arab_advanced_subsurface_fleet
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = Arab_subsurface_fleet }
-		x = 12
+		x = 13
 		y = 3
-		
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 		cost = 12
 		completion_reward = {
@@ -939,6 +1099,9 @@ focus = {
 		x = 18
 		y = 0
 		cost = 7
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 		complete_tooltip = {
 			air_experience = 25
@@ -1020,6 +1183,9 @@ focus = {
 		mutually_exclusive = { focus = Arab_bomber_focus }
 		x = 17
 		y = 1
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1046,6 +1212,9 @@ focus = {
 		x = 19
 		y = 1
 		cost = 11
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -1067,7 +1236,9 @@ focus = {
 		x = 18
 		y = 2
 		cost = 10
-
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 		complete_tooltip = {
 			air_experience = 25
@@ -1151,6 +1322,9 @@ focus = {
 		x = 19
 		y = 3
 		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -1171,6 +1345,9 @@ focus = {
 		x = 16
 		y = 3
 		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -1192,6 +1369,9 @@ focus = {
 		x = 22
 		y = 0
 		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 5
@@ -1211,6 +1391,9 @@ focus = {
 		x = 21
 		y = 1
 		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -1229,6 +1412,9 @@ focus = {
 		prerequisite = { focus = Arab_army_effort }
 		x = 23
 		y = 1
+		ai_will_do = {
+			factor = 3
+		}
 		cost = 11
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1242,6 +1428,9 @@ focus = {
 		prerequisite = { focus = Arab_army_effort }
 		x = 22
 		y = 2
+		ai_will_do = {
+			factor = 3
+		}
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1261,6 +1450,9 @@ focus = {
 		prerequisite = { focus = Arab_equipment_effort }
 		x = 21
 		y = 3
+		ai_will_do = {
+			factor = 3
+		}
 		cost = 9
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1281,6 +1473,9 @@ focus = {
 		bypass = { has_tech = motorised_infantry }
 		x = 23
 		y = 3
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 12
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1304,6 +1499,9 @@ focus = {
 		x = 22
 		y = 4
 		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 5
@@ -1322,6 +1520,9 @@ focus = {
 		prerequisite = { focus = Arab_equipment_effort_2 }
 		x = 21
 		y = 5
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 12
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1335,6 +1536,9 @@ focus = {
 		prerequisite = { focus = Arab_motorization_effort }
 		x = 23
 		y = 5
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 12
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1355,6 +1559,9 @@ focus = {
 		prerequisite = { focus = Arab_armor_effort }
 		x = 22
 		y = 6
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 8
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1381,6 +1588,9 @@ focus = {
 		prerequisite = { focus = Arab_War }
 		x = 29
 		y = 7
+		ai_will_do = {
+			factor = 5
+		}
 		cost = 8
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1396,9 +1606,12 @@ focus = {
 	focus = {
 		id = Arab_fort_capital
 		icon = GFX_goal_generic_fortify_city
-		x = 11
+		x = 9
 		y = 5
 		cost = 7
+		ai_will_do = {
+			factor = 3
+		}
 		available_if_capitulated = yes
 		available = {
 			OR = {
@@ -1421,8 +1634,11 @@ focus = {
 		id = Arab_forts
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = Arab_fort_capital }
-		x = 11
+		x = 9
 		y = 6
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 8
 		available_if_capitulated = yes
 		available = {
@@ -1441,8 +1657,11 @@ focus = {
 		icon = GFX_goal_generic_radar
 		prerequisite = { focus = Arab_forts }
 		mutually_exclusive = { focus = Arab_Walls }
-		x = 9
+		x = 7
 		y = 7
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 9
 		available_if_capitulated = yes
 		available = {
@@ -1465,8 +1684,11 @@ focus = {
 		icon = GFX_goal_generic_radar
 		prerequisite = { focus = Arab_Elec_Fort }
 		mutually_exclusive = { focus = Arab_Hide }
-		x = 8
+		x = 6
 		y = 8
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 7
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1482,8 +1704,11 @@ focus = {
 		icon = GFX_focus_shadow_government
 		prerequisite = { focus = Arab_Elec_Fort }
 		mutually_exclusive = { focus = Arab_Listen }
-		x = 10
+		x = 8
 		y = 8
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 7
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1499,8 +1724,11 @@ focus = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = Arab_forts }
 		mutually_exclusive = { focus = Arab_Elec_Fort }
-		x = 13
+		x = 11
 		y = 7
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 9
 		available_if_capitulated = yes
 		available = {
@@ -1523,8 +1751,11 @@ focus = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = Arab_Walls }
 		mutually_exclusive = { focus = Arab_Walls_Air }
-		x = 12
+		x = 10
 		y = 8
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 7
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1540,8 +1771,11 @@ focus = {
 		icon = GFX_goal_fortify_city_AA
 		prerequisite = { focus = Arab_Walls }
 		mutually_exclusive = { focus = Arab_Walls_ground }
-		x = 14
+		x = 12
 		y = 8
+		ai_will_do = {
+			factor = 2
+		}
 		cost = 8
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1564,7 +1798,7 @@ focus = {
 		cost = 7.7
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 2
 			modifier = {
 				factor = 0
 				date < 1937.6.6				
@@ -1648,6 +1882,9 @@ focus = {
 		x = 35
 		y = 3
 		cost = 8.5
+		ai_will_do = {
+			factor = 2
+		}
 		available = {
 			ENG_will_arab = yes
 			is_subject = no
@@ -1673,6 +1910,9 @@ focus = {
 		prerequisite = { focus = Arab_Brit_sub }
 		x = 35
 		y = 4
+		ai_will_do = {
+			factor = 3
+		}
 		cost = 7.2
 		available_if_capitulated = yes
 		available = {
@@ -1745,6 +1985,9 @@ focus = {
 		x = 37
 		y = 3
 		cost = 8.5
+		ai_will_do = {
+			factor = 2
+		}
 		available = {
 			FRA_will_arab = yes
 			is_subject = no
@@ -1768,6 +2011,9 @@ focus = {
 		prerequisite = { focus = Arab_France_sub }
 		x = 37
 		y = 4
+		ai_will_do = {
+			factor = 3
+		}
 		cost = 7
 		available_if_capitulated = yes
 		available = {
@@ -1777,13 +2023,16 @@ focus = {
 		completion_reward = {
 				add_offsite_building = { type = shipyard level = 1 }
 				add_offsite_building = { type = subyard level = 1 }
-				add_to_variable = { Root.Shipyard_Buildings = 1 }
-				add_to_variable = { Root.Subyard_Buildings = 1 }
 				swap_ideas = { 
 					remove_idea = Arab_Minor1
 					add_idea = Arab_Minor2
 				}
-			Arab_hyper_inflation_level_down = yes
+				Arab_hyper_inflation_level_down = yes
+				hidden_effect = {
+					add_to_variable = { Root.Shipyard_Buildings = 1 }
+					add_to_variable = { Root.Subyard_Buildings = 1 }
+					check_special_buildings = yes
+					}
 			}					
 	}
 	
@@ -1794,6 +2043,9 @@ focus = {
 		x = 36
 		y = 5
 		cost = 7
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 		completion_reward = {	
 			if = {
@@ -1810,6 +2062,9 @@ focus = {
 		x = 36
 		y = 6
 		cost = 7
+		ai_will_do = {
+			factor = 3
+		}
 		available_if_capitulated = yes
 		completion_reward = {			
 			add_research_slot = 1
@@ -1880,6 +2135,9 @@ focus = {
 		x = 27
 		y = 3
 		cost = 8.5
+		ai_will_do = {
+			factor = 2
+		}
 		available = {
 			GER_will_arab = yes
 			is_subject = no
@@ -1904,6 +2162,9 @@ focus = {
 		x = 26
 		y = 4
 		cost = 7
+		ai_will_do = {
+			factor = 3
+		}
 		available_if_capitulated = yes
 		available = {
 			GER_will_arab = yes
@@ -1911,12 +2172,15 @@ focus = {
 		completion_reward = {
 				add_offsite_building = { type = arms_factory level = 1 }
 				add_offsite_building = { type = tank_factory level = 1 }
-				add_to_variable = { Root.Tank_Buildings = 1 }
 				swap_ideas = { 
 					remove_idea = Arab_Minor1
 					add_idea = Arab_Minor2
 				}
-				Arab_hyper_inflation_level_down = yes				
+				Arab_hyper_inflation_level_down = yes	
+				hidden_effect = {
+					add_to_variable = { Root.Tank_Buildings = 1 }
+					check_special_buildings = yes
+					}
 			}
 	}
 	
@@ -1928,6 +2192,9 @@ focus = {
 		x = 27
 		y = 5
 		cost = 7
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 		available = {
 			GER_will_arab = yes
@@ -1982,6 +2249,9 @@ focus = {
 		x = 25
 		y = 3
 		cost = 8.5
+		ai_will_do = {
+			factor = 2
+		}
 		available = {
 			ITA_will_arab = yes
 			is_subject = no
@@ -2006,6 +2276,9 @@ focus = {
 		x = 24
 		y = 4
 		cost = 7
+		ai_will_do = {
+			factor = 3
+		}
 		available_if_capitulated = yes
 		available = {
 			ITA_will_arab = yes
@@ -2017,6 +2290,7 @@ focus = {
 		
 		completion_reward = {		
 				add_offsite_building = { type = dockyard level = 1 }
+				
 				swap_ideas = { 
 					remove_idea = Arab_Minor1
 					add_idea = Arab_Minor2
@@ -2031,6 +2305,9 @@ focus = {
 		x = 25
 		y = 5
 		cost = 7
+		ai_will_do = {
+			factor = 3
+		}
 		available_if_capitulated = yes
 		available = {
 			ITA_will_arab = yes
@@ -2087,6 +2364,9 @@ focus = {
 		x = 29
 		y = 2
 		cost = 8
+		ai_will_do = {
+			factor = 2
+		}
 		available = {
 			SOV_will_arab = yes
 			OR ={
@@ -2112,6 +2392,9 @@ focus = {
 		x = 29
 		y = 3
 		cost = 8
+		ai_will_do = {
+			factor = 3
+		}
 		available_if_capitulated = yes
 		available = {
 			SOV_will_arab = yes
@@ -2133,6 +2416,9 @@ focus = {
 		x = 29
 		y = 4
 		cost = 9.2
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			remove_ideas = CHI_incompetent_officers
@@ -2216,6 +2502,9 @@ focus = {
 		x = 32
 		y = 4
 		cost = 12.5		
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {		
 			set_rule = { can_send_volunteers = yes }
 			every_country = { 
