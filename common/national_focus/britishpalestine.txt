@@ -1006,6 +1006,26 @@ focus = {
 
 }
 
+#focus = { #add this as postwar. requires UN stuff to exist
+#	id = BMP_UN
+#	icon = GFX_focus_un
+#	prerequisite = {  focus = BMP_send_a_message }
+#	x = 18
+#	y = 7
+#	cost = 10
+#
+#	available_if_capitulated = no
+#
+#	available = {
+#		has_global_flag = UN_active
+#		has_global_flag = UN_general_assembly
+#	}
+#	
+#	completion_reward = {
+#		country_event = { id = bmp_un.1 days = 0}
+#	}
+#}
+
 focus = {
 	id = BMP_demand_independence
 	icon = GFX_goal_generic_forceful_treaty

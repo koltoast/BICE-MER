@@ -235,8 +235,8 @@
  BMP_reinforce_the_palestine_police_force:0 "Reinforce the Palestine Police Force"
  BMP_reinforce_the_palestine_police_force_desc:0 "With the Arab Revolt finally quelled, we cannot let anything like it happen again. We should reinforce the Palestine Police Force."
  BMP_palestine_police_train:0 "Police training"
- BMP_re-establish_the_mandate:0 "Re-establish the Mandate"
- BMP_re-establish_the_mandate_desc:0 "With all of the trouble in Palestine, we must ensure that the Mandate government continues to function as the chief authority in the territory."
+ BMP_re-establish_the_mandate:0 "Strengthen the Mandate Government" #Re-establish the Mandate
+ BMP_re-establish_the_mandate_desc:0 "With all of the recent trouble in Palestine, we must ensure that the Mandate government continues to function as the chief authority in the territory."
  BMP_put_down_the_arab_revolt:0 "Put Down the Arab Revolt"
  BMP_put_down_the_arab_revolt_desc:0 "The Mandate cannot continue to function with our own population rising against us. This revolt must be quelled immediately."
  BMP_resist_the_empire:0 "Resist the Empire"
@@ -265,7 +265,9 @@
  BMP_Underground_Government:0 "Form an Underground Government"
  BMP_Underground_Government_desc:0 "We must organise our political systems to be ready to rule in place of Britain"
  BMP_Call_Elections:0 "Call for an Election"
- BMP_Call_Elections_desc:0 "Too long have we heard of the benefits of Democracy without the vote ourselves, In 30 days this country will head to the polls and let the peoples voice be heard"
+ BMP_Call_Elections_desc:0 "Too long have we heard of the benefits of Democracy without the vote ourselves, In 30 days this country will head to the polls and let the people's voice be heard"
+ BMP_UN:0 "Take the Issue to the UN"
+ BMP_UN_desc:0 "The situation in the Mandate has gotten very dire. We have no choice but to prepare for its independence. Perhaps the newly-founded UN can help us plan for this while being legitimate enough for the local population to accept the plan."
  # Industry
  BMP_improve_arab_railways:0 "Improve Arab Railways"
  BMP_improve_arab_railways_desc:0 "Like in the jewish-inhabited regions, the infrastructure in the arab regions is poor. More and better railways are the first solutions to this problem."
