@@ -616,7 +616,7 @@ focus_tree = {
 	
 	focus = {
 		id = IRQ_government
-		icon = GFX_focus_hun_elect_a_king
+		icon = GFX_focus_generic_treaty #GFX_focus_hun_elect_a_king
 		cost = 10.00
 		x = 11
 		y = 2

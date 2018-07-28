@@ -824,7 +824,7 @@ focus = {
 
 focus = {
 		id = BMP_re-establish_the_mandate
-		icon = GFX_BMP_mandate #GFX_goal_generic_demand_territory
+		icon = GFX_focus_BMP_mandate #GFX_goal_generic_demand_territory
 		x = 12
 		y = 0
 		cost = 12
