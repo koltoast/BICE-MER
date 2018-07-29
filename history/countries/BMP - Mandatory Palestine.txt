@@ -205,4 +205,16 @@ create_country_leader = {
 }
 ##### Field Marshals #####
 ##### Corps Commanders #####
+
+create_corps_commander = {
+	name = "Wingate, Orde" ## taken from ENG
+	picture = "Portrait_Britain_Generic_land_1.dds"
+	traits = { Awesome_General harsh_leader Silver_War_Badge trickster_CC commando jungle_rat }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 597
+}
 ### EOF ###
