@@ -983,6 +983,11 @@ focus = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = merJOR_Motorize_Arab_Legion_tt
+			add_tech_bonus = {
+					name = motorized_bonus
+					bonus = 0.35
+					category = motorized_equipment
+				}
 			hidden_effect = {
 				random_army_leader = {
 					limit = {
@@ -1016,11 +1021,7 @@ focus = {
 						recon_ac = { x = 0 y = 3 }
 					}
 				}
-				add_tech_bonus = {
-					name = motorized_bonus
-					bonus = 0.35
-					technology = motorised_infantry
-				}
+				set_cosmetic_tag = JOR_MONARCHY_1939
 			}
 		}
 	}
