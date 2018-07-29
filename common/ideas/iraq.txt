@@ -25,6 +25,8 @@ ideas = {
 	
 		IRQ_nationalism = {
 
+			picture = irq_nationalism
+
 			modifier = {
 				fascism_drift = 0.07
 			}
