@@ -1,7 +1,7 @@
 spriteTypes = {
 
 	SpriteType = {
-		name = "GFX_idea_IRQ_nationalism"
-		texturefile = "gfx/interface/ideas/IRQ_nationalism.dds"	
+		name = "GFX_idea_irq_nationalism"
+		texturefile = "gfx/interface/ideas/idea_irq_nationalism.dds"
 	}
 }
