@@ -40,7 +40,10 @@ focus_tree = {
 			focus = merJOR_Declare_Neutrality
 			focus = merJOR_Protest_Peel_Commission_Plan
 		}
-		x = 14
+		prerequisite = {
+			focus = merJOR_Arab_Legion
+		}
+		x = 12
 		y = 1
 		#available = {
 			#Peel Partition Plan finished
@@ -92,6 +95,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 1
+		prerequisite = {
+			focus = merJOR_Arab_Legion
+		}
 
 	}
 	focus = {
@@ -493,24 +499,6 @@ focus_tree = {
 			}
 
 	}
-	focus = {
-		id = merJOR_Motorize_Arab_Legion
-		icon = GFX_goal_generic_army_motorized
-		cost = 10.00
-		prerequisite = {
-			focus = merJOR_Invite_More_British_Advisors
-		}
-		x = 12
-		y = 4
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				bonus = 0.35
-				technology = motorised_infantry
-			}
-		}
-
-	}
 
 ###############
 ### Defense ###
@@ -901,6 +889,236 @@ focus = {
 		}
 		completion_reward = {
 			load_focus_tree = arab_focus
+		}
+	}
+### Arab Legion OOB #####
+	focus = {
+		id = merJOR_Arab_Legion
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		x = 14
+		y = 0
+		completion_reward = {
+			custom_effect_tooltip = merJOR_Arab_Legion_tt
+			hidden_effect = {
+				delete_unit_template_and_units = {
+					division_template = "Arab Legion 1930s"
+				}
+				division_template = {
+					name = "Arab Legion 1936"
+					is_locked = yes
+					priority = 2
+					regiments = {
+						light_infantry = { x = 0 y = 0 }
+						cavalry = { x = 1 y = 0 }
+					}
+					support = {
+						recon_cav = { x = 0 y = 0 }
+						desert_support = { x = 0 y = 1 }
+						military_police = { x = 0 y = 2 }
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = merJOR_Arab_Legion2
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Recognize_Peel_Commission_Plan 
+			focus = merJOR_Declare_Neutrality
+		}
+		x = 14
+		y = 3
+		available = {
+			BMP = {
+				OR = {
+					has_idea = BMP_arab_revolt
+					has_completed_focus = BMP_put_down_the_arab_revolt
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = merJOR_Arab_Legion2_tt
+			hidden_effect = {
+				delete_unit_template_and_units = {
+					division_template = "Arab Legion 1936"
+				}
+				division_template = {
+					name = "Arab Legion 1938"
+					is_locked = yes
+					priority = 2
+					regiments = {
+						light_infantry = { x = 0 y = 0 }
+						light_infantry = { x = 0 y = 1 }
+						cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+					}
+					support = {
+						recon_cav = { x = 0 y = 0 }
+						desert_support = { x = 0 y = 1 }
+						military_police = { x = 0 y = 2 }
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = merJOR_Motorize_Arab_Legion
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Arab_Legion2
+		}
+		prerequisite = {
+			focus = merJOR_Invite_More_British_Advisors
+		}
+		x = 14
+		y = 4
+		available = {
+			date > 1939.1.1
+		}
+		completion_reward = {
+			custom_effect_tooltip = merJOR_Motorize_Arab_Legion_tt
+			hidden_effect = {
+				random_army_leader = {
+					limit = {
+							has_trait = Most_Excellent_Order
+					}
+					retire = yes		
+				}				
+				create_corps_commander = {
+					name = "Glubb"
+					portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
+					traits = { Competent_General logistics_wizard_CC organizer War_Medal_1914_1915  }
+					skill = 2
+				}
+				delete_unit_template_and_units = {
+					division_template = "Arab Legion 1938"
+				}
+				division_template = {
+					name = "Arab Legion 1939"
+					is_locked = yes
+					priority = 2
+					regiments = {
+						semi_motorized = { x = 0 y = 0 }
+						semi_motorized = { x = 0 y = 1 }
+						cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+					}
+					support = {
+						recon_cav = { x = 0 y = 0 }
+						desert_support = { x = 0 y = 1 }
+						military_police = { x = 0 y = 2 }
+						recon_ac = { x = 0 y = 3 }
+					}
+				}
+				add_tech_bonus = {
+					name = motorized_bonus
+					bonus = 0.35
+					technology = motorised_infantry
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = merJOR_Arab_Legion_Mech
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Motorize_Arab_Legion
+		}
+		x = 14
+		y = 5
+		available = {
+			IRQ = {
+				OR = {
+					fascism > 0.25
+					has_government = fascism
+					NOT = { gives_military_access_to = ENG }
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = merJOR_Arab_Legion_Mech_tt
+			hidden_effect = {
+				delete_unit_template_and_units = {
+					division_template = "Arab Legion 1939"
+				}
+				division_template = {
+					name = "Arab Legion 1940"
+					is_locked = yes
+					priority = 3
+					regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						semi_motorized = { x = 1 y = 0 }
+						semi_motorized = { x = 1 y = 1 }
+						cavalry = { x = 2 y = 0 }
+						cavalry = { x = 2 y = 1 }
+					}
+					support = {
+						recon_cav = { x = 0 y = 0 }
+						desert_support = { x = 0 y = 1 }
+						recon_ac = { x = 0 y = 2 }
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = merJOR_Arab_Legion_fame
+		icon = GFX_focus_chi_army_reform
+		cost = 10.00
+		prerequisite = {
+			focus = merJOR_Arab_Legion_Mech
+		}
+		x = 14
+		y = 6
+		available = {
+			OR = {
+				has_war_with = SYR
+				has_war_with = LEB
+				IRQ = {
+					OR = {										
+						is_puppet_of = ENG
+						has_capitulated = yes
+						exists = no
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = Arab_Command
+			custom_effect_tooltip = merJOR_Arab_Legion_fame_tt
+			hidden_effect = {
+				delete_unit_template_and_units = {
+					division_template = "Arab Legion 1939"
+				}
+				division_template = {
+					name = "Arab Legion 1940"
+					is_locked = yes
+					priority = 3
+					regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						cavalry = { x = 2 y = 0 }
+						cavalry = { x = 2 y = 1 }
+					}
+					support = {
+						recon_cav = { x = 0 y = 0 }
+						desert_support = { x = 0 y = 1 }
+						recon_ac = { x = 0 y = 2 }
+					}
+				}
+			}
 		}
 	}
 }

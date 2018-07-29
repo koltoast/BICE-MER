@@ -5,7 +5,9 @@
 		Militia = { x = 0 y = 0 }
 		Militia = { x = 0 y = 1 }
 		Militia = { x = 0 y = 2 }
-
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
 	}
 }
 
@@ -29,8 +31,8 @@ division_template = {
 
 division_template = {
 
-	name = "Arab Legion 1936"
-	
+	name = "Arab Legion 1930s"
+	is_locked = yes
 	regiments = {
 		light_infantry = { x = 0 y = 0 }
 		#Militia = { x = 0 y = 0 }
@@ -45,7 +47,7 @@ units = {
 	division = {
 		name = "Arab Legion"
 		location = 7151
-		division_template = "Arab Legion 1936"
+		division_template = "Arab Legion 1930s"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}

@@ -512,8 +512,6 @@
  merJOR_Support_Britain_desc:0 "Support Britain"
  merJOR_Invite_More_British_Advisors:0 "Invite More British Advisors"
  merJOR_Invite_More_British_Advisors_desc:0 "Invite More British Advisors"
- merJOR_Motorize_Arab_Legion:0 "Motorize Arab Legion"
- merJOR_Motorize_Arab_Legion_desc:0 "Motorize Arab Legion"
  merJOR_Protest_Peel_Commission_Plan:0 "Protest Peel Commission Plan"
  merJOR_Protest_Peel_Commission_Plan_desc:0 "Our Masters in Britain have come up with a plan for what they think would stabilize Palestine, but without heeding the complaints of the local Arab population. We cannot allow them to pursue this plan!"
  merJOR_Expel_British_Administration:0 "Expel British Administration"
@@ -553,3 +551,22 @@
  merJOR_Walls_ground_desc:0 "Its boots on the ground, entrenced and ready that provide the best defence"
  merJOR_Walls_Air:0 "Air Defences"
  merJOR_Walls_Air_desc:0 "We can not hope to defend our skies with our small airforce, instead we will install defenses on the ground"
+ #legion
+ merJOR_Arab_Legion:0 "Strengthen the Legion"
+ merJOR_Arab_Legion_desc:0 "For too long we have allowed the legion to dwindle in size, Major-General Frederick Gerard Peake suggests that the current force is inadequate"
+ merJOR_Arab_Legion_tt:0 "Adds a unit of Cavalry and Military Police to the Legion"
+ merJOR_Arab_Legion2:0 "Increase the Legion"  
+ merJOR_Arab_Legion2_desc:0 "Recent events in Palestine show that we must increase the Legions presence in the region"
+ merJOR_Arab_Legion2_tt:0 "adds another unit of light infantry and cavalry to the Legion"
+ merJOR_Motorize_Arab_Legion:0 "Motorize Arab Legion"
+ merJOR_Motorize_Arab_Legion_desc:0 "Motorize Arab Legion"
+ merJOR_Motorize_Arab_Legion_tt:0 "Peake retires and is replaced by John Glubb, the legion becomes semi motorised."
+ merJOR_Arab_Legion_Mech:0 "Mechanize the Legion"
+ merJOR_Arab_Legion_Mech_desc:0 "The British are worried about events in Iraq and have approved mechanizing the Legion"
+ merJOR_Arab_Legion_Mech_tt:0 "Increases the size of the Legion and adds mechanized infantry"
+ merJOR_Arab_Legion_fame:0 "Fame of the Arab Legion"
+ merJOR_Arab_Legion_fame_desc:0 "With the recent success of the Legion and new threats to the north we have been approved to complete the mechanizing of the Legion"
+ merJOR_Arab_Legion_fame_tt:0 "converts all motorised units in the legion to mechanized"
+ 
+ 
+ 
