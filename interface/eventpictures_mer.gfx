@@ -2,9 +2,9 @@ spriteTypes = {
 
 	
 
-	#### END TFV EVENTS ####
+	#### Middle East Rework Event Pictures ####
 
-#####
+##### BMP
 
 spriteType = {
 		name = "GFX_report_event_mandate_bombing_of_the_king_david_hotel"
@@ -24,7 +24,7 @@ spriteType = {
 		texturefile = "gfx/event_pictures/report_king_david_hotel.dds"
 	}
 
-##########
+	
 spriteType = {
 		name = "GFX_report_altalena_affair"
 		texturefile = "gfx/event_pictures/report_altalena_affair.dds"
@@ -38,5 +38,20 @@ spriteType = {
 spriteType = {
 		name = "GFX_report_white_paper"
 		texturefile = "gfx/event_pictures/report_white_paper.dds"
+	}
+	#IRQ
+	spriteType = {
+		name = "GFX_country_event_king_ghazi"
+		texturefile = "gfx/event_pictures/king.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_ipc_oil"
+		texturefile = "gfx/event_pictures/ipc_oil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_country_event_assyrians"
+		texturefile = "gfx/event_pictures/assyrians.dds"
 	}
 }

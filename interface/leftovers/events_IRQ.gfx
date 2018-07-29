@@ -15,7 +15,7 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/assyrians.dds"
 	}
 	
-	spriteType = {
+	spriteType = { #CENSORED FROM BICE
 		name = "GFX_country_event_bakr_sidqi"
 		texturefile = "gfx/event_pictures/bakr_sidqi.dds"
 	}
