@@ -1,11 +1,11 @@
 on_actions = {
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
-	on_state_control_changed = {
-		effect = {
+#	on_state_control_changed = {
+#		effect = {
 			#this thing is meant for structuring the arab-israeli war and making it realistic
-		}
-	}
+#		}
+#	}
 	
 	on_subject_autonomy_level_change = { #i don't think this thing works? #might be because console doesn't seem to trigger on_actions
 		effect = {
