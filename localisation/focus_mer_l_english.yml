@@ -501,6 +501,8 @@
  merJOR_Bureaucracy_desc:0 "Bureaucracy will help us structure and organize our largely-disorganized country."
  merJOR_Arming:0 "Arm the Nation"
  merJOR_Arming_desc:0 "It is time to expand our military industry"
+ merJOR_Market_Reforms:0 "Market Reforms"
+ merJOR_Market_Reforms_desc:0 "Inflation is killing our economy we must implement tough new reforms"
  #Political
  merJOR_Recognize_Peel_Commission_Plan:0 "Recognize Peel Commission Plan"
  merJOR_Recognize_Peel_Commission_Plan_desc:0 "Our Allies in Britain have come up with a plan for stabilizing Palestine, and would like us to recognize it."
@@ -551,6 +553,9 @@
  merJOR_Walls_ground_desc:0 "Its boots on the ground, entrenced and ready that provide the best defence"
  merJOR_Walls_Air:0 "Air Defences"
  merJOR_Walls_Air_desc:0 "We can not hope to defend our skies with our small airforce, instead we will install defenses on the ground"
+ merJOR_aviation_effort:0 "Aviation Effort"
+ merJOR_aviation_effort_tt:0 "Not enough building slots for §YAir Base§!"
+ merJOR_aviation_effort_desc:0 "Nowhere are technological advances more rapid than in aerial warfare. Aviation is a subject that any modern nation must master."
  #legion
  merJOR_Arab_Legion:0 "Strengthen the Legion"
  merJOR_Arab_Legion_desc:0 "For too long we have allowed the legion to dwindle in size, Major-General Frederick Gerard Peake suggests that the current force is inadequate"
