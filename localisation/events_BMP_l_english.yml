@@ -109,12 +109,10 @@
  bmpisrael.1.t:0 "Formation of the Israeli Defense Force"
  bmpisrael.1.d:0 "With the creation of our new nation, an army must also be created with it. Organizations such as the Haganah have long dreamed of defending Israel from foreign threats, and it has become the core of the new Israeli Defense Force. Local militias have also joined the IDF’s ranks. This new defense force will be vital in the struggle against our many enemies."
  bmpisrael.1.a:0 "We welcome them!"
- bmpisrael.2.t:0 "The State of Israel has been formed"
- bmpisrael.2.d:0 "The Arab League calls upon us to aid our brothers in Palestine, who are currently losing their homeland to the Israelites"
- bmpisrael.2.a:0 "We must help them!"
- bmpisrael.2.t:0 "Calls for War"
+ bmpisrael.2.t:0 "Calls for War" #The State of Israel has been formed
  bmpisrael.2.d:0 "Western colonial powers have neglected their former Arab subjects. The creation of Israel, a Jewish nation, is not just an insult to the Arabs living in Palestine, but more importantly, a threat. People across our nation are calling for war to liberate our brethren!"
- bmpisrael.2.a:0 "We should check our options."
+ ###############The Arab League calls upon us to aid our brothers in Palestine, who are currently losing their homeland to the Israelites
+ bmpisrael.2.a:0 "We should check our options." #We must help them!
  bmpisrael.3.t:0 "The Altalena Affair"
  bmpisrael.3.d:0 "Our government has worked hard to turn the many paramilitary organizations into the Israeli Defense Force. While the Irgun has resisted our efforts, until now, they have been fighting alongside the IDF. However, after their doomed efforts to use the Altalena to smuggle in French weapons for their fighters, and the uproar caused by the killing of Irgun members by the IDF in a dispute over these weapons, it is clear we can no longer allow a rogue army to function and make deals with foreign powers from within our borders."
  bmpisrael.3.a:0 "We should send them an ultimatum, “Join us or be destroyed.”"
