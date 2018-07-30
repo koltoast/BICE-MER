@@ -210,7 +210,7 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-	name = "Frederick Peake"
+	name = "Peake, Frederick"
 	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
 	traits = { 
 		desert_fox 
