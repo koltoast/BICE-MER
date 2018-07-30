@@ -1,7 +1,7 @@
 leader_traits = {
 	British_Ally = {
 		random = no
-		#ai_strategy = { befriend = ENG } but with proper code syntax #TODO
+		ai_strategy = { type = befriend id = "ENG" value = 200 } #needs to be tested
 		conservatism_acceptance = 50
 		liberalism_acceptance = 10
 		socialism_acceptance = 10
@@ -13,7 +13,7 @@ leader_traits = {
 	
 	French_Ally = {
 		random = no
-		#ai_strategy = { befriend = FRA } but with proper code syntax #TODO
+		ai_strategy = { type = befriend id = "ENG" value = 200 } #needs to be tested
 		conservatism_acceptance = 10
 		liberalism_acceptance = 35
 		socialism_acceptance = 35
@@ -39,7 +39,7 @@ leader_traits = {
 			armor = {
 				maximum_speed = 0.05 
 				reliability = 0.05 
-				#heat_attrition_factor = -0.5 find the proper code syntax #TODO
+				#heat_attrition_factor = -0.5 #the syntax seems right; it seems that leaders can't have this modifier as a trait
 				default_morale = 0.05
 				armor_value = -0.05
 			}
