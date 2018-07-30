@@ -2,6 +2,7 @@ leader_traits = {
 	British_Ally = {
 		random = no
 		ai_strategy = { type = befriend id = "ENG" value = 200 } #needs to be tested
+		ai_strategy = { type = alliance id = "ENG" value = 200 } #needs to be tested
 		conservatism_acceptance = 50
 		liberalism_acceptance = 10
 		socialism_acceptance = 10
@@ -14,6 +15,7 @@ leader_traits = {
 	French_Ally = {
 		random = no
 		ai_strategy = { type = befriend id = "ENG" value = 200 } #needs to be tested
+		ai_strategy = { type = alliance id = "ENG" value = 200 } #needs to be tested
 		conservatism_acceptance = 10
 		liberalism_acceptance = 35
 		socialism_acceptance = 35
