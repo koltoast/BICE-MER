@@ -54,4 +54,9 @@ spriteType = {
 		name = "GFX_country_event_assyrians"
 		texturefile = "gfx/event_pictures/assyrians.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_country_event_bakr_sidqi"
+		texturefile = "gfx/event_pictures/bakr_sidqi.dds"
+	}
 }
