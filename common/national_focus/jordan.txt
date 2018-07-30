@@ -954,6 +954,14 @@ focus = {
 						military_police = { x = 0 y = 2 }
 					}
 				}
+				set_technology = {
+					tech_support = 1
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Arab Legion\" division_template = \"Arab Legion 1936\" start_experience_factor = 0.5 start_equipment_factor = 0.5" owner = JOR 
+					}
+				}
 			}
 		}
 	}
@@ -998,6 +1006,11 @@ focus = {
 						military_police = { x = 0 y = 2 }
 					}
 				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Arab Legion\" division_template = \"Arab Legion 1938\" start_experience_factor = 0.6 start_equipment_factor = 0.5" owner = JOR 
+					}
+				}
 			}
 		}
 	}
@@ -1018,12 +1031,7 @@ focus = {
 			date > 1939.1.1
 		}
 		completion_reward = {
-			custom_effect_tooltip = merJOR_Motorize_Arab_Legion_tt
-			add_tech_bonus = {
-					name = motorized_bonus
-					bonus = 0.35
-					category = motorized_equipment
-				}
+			custom_effect_tooltip = merJOR_Motorize_Arab_Legion_tt 
 			hidden_effect = {
 				random_army_leader = {
 					limit = {
@@ -1057,7 +1065,15 @@ focus = {
 						recon_ac = { x = 0 y = 3 }
 					}
 				}
+				set_technology = {
+					tech_ac_recon = 1
+				}
 				set_cosmetic_tag = JOR_MONARCHY_1939
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Arab Legion\" division_template = \"Arab Legion 1939\" start_experience_factor = 0.65 start_equipment_factor = 0.5" owner = JOR 
+					}
+				}
 			}
 		}
 	}
@@ -1109,6 +1125,14 @@ focus = {
 						recon_ac = { x = 0 y = 2 }
 					}
 				}
+				set_technology = {
+					mechanised_infantry = 1
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Arab Legion\" division_template = \"Arab Legion 1940\" start_experience_factor = 0.7 start_equipment_factor = 0.5" owner = JOR 
+					}
+				}
 			}
 		}
 	}
@@ -1140,10 +1164,10 @@ focus = {
 			custom_effect_tooltip = merJOR_Arab_Legion_fame_tt
 			hidden_effect = {
 				delete_unit_template_and_units = {
-					division_template = "Arab Legion 1939"
+					division_template = "Arab Legion 1940"
 				}
 				division_template = {
-					name = "Arab Legion 1940"
+					name = "Arab Legion 1941"
 					is_locked = yes
 					priority = 3
 					regiments = {
@@ -1158,6 +1182,11 @@ focus = {
 						recon_cav = { x = 0 y = 0 }
 						desert_support = { x = 0 y = 1 }
 						recon_ac = { x = 0 y = 2 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Arab Legion\" division_template = \"Arab Legion 1941\" start_experience_factor = 0.75 start_equipment_factor = 0.5" owner = JOR 
 					}
 				}
 			}

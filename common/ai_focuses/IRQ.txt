@@ -31,9 +31,12 @@ ai_historical_focus_list_IRQ = {
 	IRQ_fort_capital
 	IRQ_forts
 	IRQ_Welfare
+	IRQ_government	
+	IRQ_Trade_More ### coup happens here
+	IRQ_oil
+	IRQ_Ger_aid
+	IRQ_Ita_aid
 	IRQ_Trade_Fleet
-	IRQ_Healthcare
-	IRQ_Trade_More
 	IRQ_dockyard
 	IRQ_simele_massacre
 	IRQ_infrastructure2
@@ -45,6 +48,7 @@ ai_historical_focus_list_IRQ = {
 	IRQ_mechanized
 	IRQ_tank
 	IRQ_military_advance
+	IRQ_Healthcare
 	IRQ_Walls_ground
 	IRQ_convert_fleet
 	#IRQ_rocket #OP af
