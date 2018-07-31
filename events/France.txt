@@ -2468,12 +2468,12 @@ country_event = {
 					}
 				}
 				VIC = { 
-### If Vic doesn't annex and release but puppets directly the puppet keeps troops, If the puppet is released and then repuppeted it causes CTD
-#					annex_country = {
-#						target = SYR 
-#						transfer_troops = no
-#					}
-#					release = SYR
+### If Vic doesn't annex and release but puppets directly the puppet keeps troops, however then the game crashes after 2-3 hours, if the event is consoled no crash happens
+					annex_country = {
+						target = SYR 
+						transfer_troops = no
+					}
+					release = SYR
 					puppet = SYR 
 				}
 				SYR = {
@@ -2501,12 +2501,12 @@ country_event = {
 					}
 				}
 				VIC = { 
-### If Vic doesn't annex and release but puppets directly the puppet keeps troops, If the puppet is released and then repuppeted it causes CTD
-#					annex_country = {
-#						target = LEB 
-#						transfer_troops = no
-#					}
-#					release = LEB
+### If Vic doesn't annex and release but puppets directly the puppet keeps troops, however then the game crashes after 2-3 hours, if the event is consoled no crash happens
+					annex_country = {
+						target = LEB 
+						transfer_troops = no
+					}
+					release = LEB
 					puppet = LEB
 				}
 				LEB = {
