@@ -56,7 +56,7 @@ ideas = {
 			}
 		}
 	
-		IRQ_simele = { 
+		IRQ_internal_conflict = { 
 			
 			allowed = {
 				always = no
@@ -75,7 +75,7 @@ ideas = {
 			}
 		}
 		
-		IRQ_simele2 = { 
+		IRQ_internal_conflict2 = { 
 			
 			allowed = {
 				always = no
