@@ -509,6 +509,7 @@ ideas = {
 				OR = {
 					has_completed_focus = IRQ_Shipbuilder
 					has_completed_focus = IRQ_air2
+				}
 			}
 			
 			traits = { navy_naval_air_defense_2 }
