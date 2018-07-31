@@ -134,35 +134,35 @@ units = {
 	
 	division = {
 		name = "1. Alfurqat"
-		location = 2097
+		location = 2097 ## Baghdad in Baghdad
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "2. Alfurqat"
-		location = 10106
+		location = 10106 ## Mosul in Mosul
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "3. Alfurqat"
-		location = 2097
+		location = 2097 ## Baghdad in Baghdad
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "4. Alfurqat"
-		location = 2089
+		location = 2089 ## Basrah in Al Basra
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Independent Mechanized Brigade"
-		location = 2097
+		location = 1631 ## Ar Rutba in Al Hajara
 		division_template = "Mechanized Brigade"	
 		start_experience_factor = 0.3
 		start_equipment_factor = 1

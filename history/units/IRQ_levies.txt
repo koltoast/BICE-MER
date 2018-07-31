@@ -19,27 +19,27 @@ units = {
 
 	division = {
 		name = "1 Assyrian Levies"
-		location = 2097
+		location = 2097 ## Baghdad in Baghdad
 		division_template = "Assyrian Levies"
 	}
 	division = {
 		name = "2 Assyrian Levies"
-		location = 2097
+		location = 2097 ## Baghdad in Baghdad
 		division_template = "Assyrian Levies"
 	}
 	division = {
 		name = "3 Assyrian Levies"
-		location = 2097
+		location = 2097 ## Baghdad in Baghdad
 		division_template = "Assyrian Levies"
 	}
 	division = {
 		name = "4 Assyrian Levies"
-		location = 2097
+		location = 2097 ## Baghdad in Baghdad
 		division_template = "Assyrian Levies"
 	}
 	division = {
 		name = "5 Assyrian Levies"
-		location = 2097
+		location = 2097 ## Baghdad in Baghdad
 		division_template = "Assyrian Levies"
 	}
 }

@@ -38,32 +38,32 @@ division_template = {
 units = {
 	division = {
 		name = "1st Haganah Divison"
-		location = 1065
+		location = 1065 ## Haifia in Palestine
 		division_template = "Haganah Division"
 		
 	}
 
 	division = {
 		name = "2nd Haganah Divison"
-		location = 1201
+		location = 1015 ## Eilat in Palestine
 		division_template = "Haganah Division"
 	}
 
 	division = {
 		name = "3rd Haganah Divison"
-		location = 4206 ##Palestine 
+		location = 4206 ## Tel Aviv in Palestine 
 		division_template = "Haganah Division"
 	}
 
 	division = {
 		name = "4th Haganah Divison"
-		location = 13506
+		location = 1086 ## Jerusalem in Palestine
 		division_template = "Haganah Division"
 	}
 
 	division = {
 		name = "Palmach"
-		location = 4206 ##Palestine 
+		location = 4206 ## Tel Aviv in Palestine  
 		division_template = "Palmach Division"
 		start_experience_factor = 1
 	}

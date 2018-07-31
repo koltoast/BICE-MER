@@ -20,7 +20,7 @@ units = {
 
 	division = {
 		name = "Orde Wingate Forces"
-		location = 4206 ##Palestine 
+		location = 4206 ## Tel Aviv in Palestine 
 		division_template = "Orde Wingate Militia"
 		start_experience_factor = 0
 	}
