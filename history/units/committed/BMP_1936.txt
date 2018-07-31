@@ -31,7 +31,7 @@ division_template = {
 units = {
 	#division= {	
 	#	name = "Badiyat Ash Sham Garrison"
-	#	location = 1155
+	#	location = 1155 #suez canal east bank, east of port said
 	#	division_template = "Local Defence Force"
 	#	start_experience_factor = 0.1
 	#	start_equipment_factor = 0.15
@@ -39,7 +39,7 @@ units = {
 	##Palestine Command##############################
 	#division= {	
 	#	name = "Palestine Command" 
-	#	location = 4206
+	#	location = 1086 #jerusalem in Palestine, was 4206 Tel Aviv
 	#	division_template = "HQ Command" 
 	#	start_experience_factor = 0.3
 	#	start_equipment_factor = 0.8
@@ -51,7 +51,7 @@ units = {
 			#is_name_ordered = yes
 			#name_order = 219
 		#}
-		location = 4206 ## Tel Aviv in Palestine 
+		location = 1086 #jerusalem in Palestine, was 4206 Tel Aviv
 		division_template = "Regular Garrison"		
 		#force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1

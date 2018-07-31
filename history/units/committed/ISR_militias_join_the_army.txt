@@ -38,14 +38,14 @@ division_template = {
 units = {
 	division = {
 		name = "1st Haganah Divison"
-		location = 1065 ## Haifia in Palestine
+		location = 1065 ## Haifa in Palestine
 		division_template = "Haganah Division"
 		
 	}
 
 	division = {
 		name = "2nd Haganah Divison"
-		location = 1015 ## Eilat in Palestine
+		location = 1201 #south of haifa, north of tel aviv in Palestine, not Eilat 1015 because they didn't start with eilat
 		division_template = "Haganah Division"
 	}
 
@@ -57,7 +57,7 @@ units = {
 
 	division = {
 		name = "4th Haganah Divison"
-		location = 1086 ## Jerusalem in Palestine
+		location = 13235 ## south of tel aviv in Palestine like it used to be, not jerusalem 1086 because they mostly didn't start with it
 		division_template = "Haganah Division"
 	}
 
