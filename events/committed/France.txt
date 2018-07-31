@@ -184,8 +184,7 @@ country_event = {
 				19 = { is_controlled_by = GER }
 				29 = { is_controlled_by = GER }
 			}
-
-			surrender_progress > 0.45
+			surrender_progress > 0.5
 		}
 		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }
@@ -554,7 +553,7 @@ country_event = {
 		#	ideology = fascism
 		#	size = 0.5
 		#	capital = 26
-		#	states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 459 460 461 462 514 665 557 272 556 671 670 741 286 513 553 543 708 706 268 713 310 694 730 }
+		#	states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 459 460 461 462 514 665 557 272 556 671 750 670 741 286 513 553 543 708 706 268 713 310 694 730 }
 		#}
 		#random_other_country = {
 		#	limit = { original_tag = FRA has_government = fascism }
@@ -583,8 +582,7 @@ country_event = {
 		#		officer_train_low
 		#		security_liberty_first
 		#		edu_high
-		#
-		#		unity_divided_nation	
+
 		#		foreign_neutral
 		#		neutrality_idea_vichy
 		#	}

@@ -53,7 +53,7 @@ political_actions = {
 }
 
 operations = {
-	IQR_prepare_for_war = {
+	IRQ_prepare_for_war = {
 		available = {
 			has_completed_focus = IRQ_Prepare_coup
 			command_power > 29
