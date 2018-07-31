@@ -162,7 +162,7 @@ units = {
 	}
 	division = {
 		name = "Independent Mechanized Brigade"
-		location = 1631 ## Ar Rutba in Al Hajara
+		location = 1631 ## Ar Rutba in Al Hajara; was 2097 Baghdad. probably moved so that iraq would be ready for 1941
 		division_template = "Mechanized Brigade"	
 		start_experience_factor = 0.3
 		start_equipment_factor = 1

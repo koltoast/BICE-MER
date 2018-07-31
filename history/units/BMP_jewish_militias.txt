@@ -21,7 +21,7 @@ units = {
 
 	division = {
 		name = "Jewish Militia"
-		location = 4206 ## Tel Aviv in Palestine 
+		location = 1086 #jerusalem in Palestine, was 4206 Tel Aviv
 		division_template = "Jewish Militia"
 		start_experience_factor = 0
 	}

@@ -20,7 +20,7 @@ units = {
 
 	division = {
 		name = "Irgun"
-		location = 4206 ## Tel Aviv in Palestine 
+		location = 4206 ## Tel Aviv in Palestine  #might wanna make it 1086 jerusalem or 1065 haifa
 		division_template = "Irgun Division"
 		start_experience_factor = 1
 	}
