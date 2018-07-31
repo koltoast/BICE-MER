@@ -224,7 +224,7 @@ ideas = {
 #		}
 #	}
 ## Political Advisors	
-#	political_advisor = {
+	political_advisor = {
 #		IRQ_ali_abn_hussein = {
 #			picture = generic_political_advisor_arab_2
 #			allowed = {
