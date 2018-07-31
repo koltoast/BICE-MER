@@ -21,7 +21,7 @@ units = {
 
 	division = {
 		name = "Jewish Militia"
-		location = 4206
+		location = 4206 ##Palestine 
 		division_template = "Jewish Militia"
 		start_experience_factor = 0
 	}

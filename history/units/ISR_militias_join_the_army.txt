@@ -51,7 +51,7 @@ units = {
 
 	division = {
 		name = "3rd Haganah Divison"
-		location = 4206
+		location = 4206 ##Palestine 
 		division_template = "Haganah Division"
 	}
 
@@ -63,7 +63,7 @@ units = {
 
 	division = {
 		name = "Palmach"
-		location = 4206
+		location = 4206 ##Palestine 
 		division_template = "Palmach Division"
 		start_experience_factor = 1
 	}
