@@ -104,7 +104,7 @@ add_ideas = {
 		neutrality_idea
 
 		IRQ_iraqi_navy
-		IRQ_simele
+		IRQ_internal_conflict
 		IRQ_revolt
 		IRQ_treaty
 }
