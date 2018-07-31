@@ -554,7 +554,7 @@ ideas = {
 			picture = generic_navy_arab_1
 			
 			allowed = {
-				original_tag = IRQ ### to do add in focus
+				original_tag = IRQ 
 				has_completed_focus = IRQ_Shipbuilder
 			}
 			
