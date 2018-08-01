@@ -433,21 +433,21 @@ ideas = {
 			}
 		}
 		
-		IRQ_hamdi_al_pachachi = {
-
-			picture = generic_navy_arab_1
-			
-			allowed = {
-				original_tag = IRQ
-				has_completed_focus = IRQ_Shipbuilder
-			}
-			
-			traits = { navy_chief_decisive_battle_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+#		IRQ_hamdi_al_pachachi = {
+#
+#			picture = generic_navy_arab_1
+#			
+#			allowed = {
+#				original_tag = IRQ
+#				has_completed_focus = IRQ_Shipbuilder
+#			}
+#			
+#			traits = { navy_chief_decisive_battle_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 	}
 
 	high_command = {
